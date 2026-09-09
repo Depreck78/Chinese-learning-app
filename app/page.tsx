@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, Check, ClipboardCheck, Clock3, Eraser, Gauge, PencilLine, Play, RotateCcw, Search, Sparkles, Star, Volume2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, Check, ClipboardCheck, Clock3, Eraser, Gauge, Pause, PencilLine, Play, RotateCcw, Search, Sparkles, Star, Volume2, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Sidebar,
@@ -127,16 +127,26 @@ function WritingPad({ character }: { character: string }) {
     .map(([x, y]) => `${(x * 0.09765625).toFixed(2)},${(87.890625 - y * 0.09765625).toFixed(2)}`)
     .join(' ');
 
-  function playStrokeOrder() {
+  function runStrokeOrderCycle() {
     if (!strokeOrder) return;
-    if (demoTimer.current !== null) window.clearTimeout(demoTimer.current);
-    setGuide(true);
     setDemoRun((run) => run + 1);
-    setDemoPlaying(true);
-    demoTimer.current = window.setTimeout(() => {
-      setDemoPlaying(false);
+    const drawingDuration = Math.max((strokeOrder.strokes.length - 1) * 620 + 550, 550);
+    demoTimer.current = window.setTimeout(runStrokeOrderCycle, drawingDuration + 3000);
+  }
+
+  function toggleStrokeOrder() {
+    if (!strokeOrder) return;
+    if (demoPlaying) {
+      if (demoTimer.current !== null) window.clearTimeout(demoTimer.current);
       demoTimer.current = null;
-    }, Math.max(strokeOrder.strokes.length * 620, 900));
+      setDemoPlaying(false);
+      setDemoRun(0);
+      return;
+    }
+
+    setGuide(true);
+    setDemoPlaying(true);
+    runStrokeOrderCycle();
   }
 
   const strokeProgress = strokeOrder
@@ -180,12 +190,15 @@ function WritingPad({ character }: { character: string }) {
         </svg>
         <div className="pad-actions">
           <button className={`tool-button ${guide ? 'active' : ''}`} onClick={() => setGuide(!guide)} aria-pressed={guide}><Sparkles size={17} /> Guide</button>
-          <button className={`tool-button ${demoPlaying ? 'active' : ''}`} onClick={playStrokeOrder} disabled={!strokeOrder}><Play size={17} fill="currentColor" /> {demoPlaying ? 'Playing' : 'Play order'}</button>
+          <button className={`tool-button ${demoPlaying ? 'active' : ''}`} onClick={toggleStrokeOrder} disabled={!strokeOrder} aria-pressed={demoPlaying}>
+            {demoPlaying ? <Pause size={17} fill="currentColor" /> : <Play size={17} fill="currentColor" />}
+            {demoPlaying ? 'Pause' : 'Play'}
+          </button>
           <button className="tool-button" onClick={() => setStrokes(strokes.slice(0, -1))} disabled={!strokes.length}><RotateCcw size={17} /> Undo</button>
           <button className="tool-button" onClick={() => setStrokes([])} disabled={!strokes.length}><Eraser size={17} /> Clear</button>
         </div>
       </div>
-      <p className="pad-tip">Follow the numbered starts or play the order, then trace over the guide. The video remains available for a full demonstration.</p>
+      <p className="pad-tip">Follow the numbered starts or press Play to loop the strokes with a three-second pause between demonstrations.</p>
     </section>
   );
 }
