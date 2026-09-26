@@ -238,6 +238,8 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
   .study-plan-heading,.review-heading { grid-template-columns:1fr; }
   .plan-tabs-list,.review-grouping { grid-column:1; grid-row:2; justify-self:stretch; width:100%; }
   .study-plan-heading>p,.review-heading>p { grid-column:1; grid-row:3; }
+  /* Each pace fills half of the full-width switch. */
+  .plan-tabs-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .plan-tab { min-width:0; }
   .review-grouping button { width:100%; }
   .weekly-writing-heading { align-items:start; flex-direction:column; }
