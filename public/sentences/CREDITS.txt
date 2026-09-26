@@ -1,0 +1,4 @@
+Example sentences mostly come from Tatoeba (https://tatoeba.org), licensed CC BY 2.0 FR
+(https://creativecommons.org/licenses/by/2.0/fr/). Each Tatoeba sentence keeps its id as "tatoeba:<id>";
+see https://tatoeba.org/sentences/show/<id> for its authors. Traditional characters were converted to
+simplified and pinyin was added automatically. Sentences marked "hanzi-desk" were written for this app.
