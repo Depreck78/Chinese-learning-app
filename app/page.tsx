@@ -19,6 +19,7 @@ import { Progress, ProgressLabel, ProgressValue } from '@/components/ui/progress
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CHARACTERS, type CharacterEntry } from './characters';
 import { DictionaryFilterBar } from './dictionary-filter-bar';
+import { PlanCalendar } from './plan-calendar';
 import { DICTIONARY_FILTERS, matchesFilter, type DictionaryFilterId } from './dictionary-filters';
 import { AccountPanel } from './account-panel';
 import { AvatarBadge } from './avatar-badge';
@@ -227,6 +228,7 @@ function StudyPlanPanel({
   lessonsDone,
   learnedCount,
   completed,
+  history,
   resumeStep,
   onStart,
 }: {
@@ -236,9 +238,11 @@ function StudyPlanPanel({
   lessonsDone: number;
   learnedCount: number;
   completed: Set<string>;
+  history: StudyHistoryEntry[];
   resumeStep: number | null;
   onStart: () => void;
 }) {
+  const [showFullPlan, setShowFullPlan] = useState(false);
   const plan = STUDY_PLANS[mode];
   const remainingDays = Math.ceil((LESSONS.length - lessonsDone) / plan.lessonsPerDay);
   const mastery = learnedCount / CHARACTERS.length * 100;
@@ -262,6 +266,15 @@ function StudyPlanPanel({
         </Progress>
       </section>
 
+      <fieldset className="plan-view-switch">
+        <legend className="sr-only">Study plan view</legend>
+        <button aria-pressed={!showFullPlan} onClick={() => setShowFullPlan(false)}><Play size={16} />Today&apos;s lesson</button>
+        <button aria-pressed={showFullPlan} onClick={() => setShowFullPlan(true)}><CalendarDays size={16} />Full plan</button>
+      </fieldset>
+
+      {showFullPlan ? (
+        <PlanCalendar mode={mode} lessonsDone={lessonsDone} studyDays={dayNumber - 1} history={history} completed={completed} resuming={resumeStep !== null} onStart={onStart} />
+      ) : (
       <section className="daily-lesson">
         {characters.length ? (
           <>
@@ -288,6 +301,7 @@ function StudyPlanPanel({
           <Empty className="plan-complete"><span className="empty-glyph">成</span><h2>All lessons complete</h2><p>Your complete library is ready in Review.</p></Empty>
         )}
       </section>
+      )}
     </TabsContent>
   );
 }
@@ -526,7 +540,7 @@ export default function Home() {
               </TabsList>
               </header>
               {(['normal', 'intensive'] as const).map((mode) => (
-                <StudyPlanPanel key={mode} mode={mode} dayNumber={studyDaysCompleted + 1} lessons={todaysLessons[mode]} lessonsDone={lessonsDone} learnedCount={learnedCharacters.length} completed={completedSet} resumeStep={activeLesson && activeLesson.lessons.join() === todaysLessons[mode].map((lesson) => lesson.number).join() ? activeLesson.step : null} onStart={() => startLesson(mode)} />
+                <StudyPlanPanel key={mode} mode={mode} dayNumber={studyDaysCompleted + 1} lessons={todaysLessons[mode]} lessonsDone={lessonsDone} learnedCount={learnedCharacters.length} completed={completedSet} history={studyHistory} resumeStep={activeLesson && activeLesson.lessons.join() === todaysLessons[mode].map((lesson) => lesson.number).join() ? activeLesson.step : null} onStart={() => startLesson(mode)} />
               ))}
             </Tabs>
           </section>
