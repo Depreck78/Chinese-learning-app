@@ -81,8 +81,8 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
 .study-plan-page,.review-page { display:flex; flex-direction:column; }
 .study-plan-tabs { display:flex; flex-direction:column; width:100%; max-width:1160px; margin:0 auto; gap:0; }
 .study-plan-heading { display:grid; grid-template-columns:auto minmax(260px,1fr) auto; align-items:end; width:100%; gap:28px; }
-.study-plan-heading>p { align-self:center; max-width:460px; }
-.plan-tabs-list { display:grid; grid-template-columns:repeat(2,auto); align-self:center; width:auto; height:auto; padding:0; gap:0; border:1px solid var(--ink); border-radius:0; background:var(--paper-deep); }
+.study-plan-heading>p { align-self:end; max-width:460px; line-height:1.45; }
+.plan-tabs-list { display:grid; grid-template-columns:repeat(2,auto); align-self:end; width:auto; height:auto; padding:0; gap:0; border:1px solid var(--ink); border-radius:0; background:var(--paper-deep); }
 .plan-tab { min-width:128px; min-height:44px; height:auto; padding:7px 12px; border:0; border-right:1px solid var(--ink); border-radius:0; color:var(--ink-soft); cursor:pointer; }
 .plan-tab:last-child { border-right:0; }
 .plan-tab>span { display:flex; align-items:baseline; justify-content:center; gap:6px; }
@@ -209,7 +209,7 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
 .plan-complete h2,.plan-complete p { margin:0; }
 .plan-complete h2 { font:800 30px/1 'Barlow Condensed',sans-serif; }
 .review-heading { display:grid; grid-template-columns:auto minmax(260px,1fr) auto; align-items:end; }
-.review-heading>p { align-self:center; max-width:460px; }
+.review-heading>p { align-self:end; max-width:460px; line-height:1.45; }
 .review-grouping { display:grid; grid-template-columns:repeat(2,auto); min-width:0; margin:0; padding:0; border:1px solid var(--ink); background:var(--paper-deep); }
 .review-grouping button { min-height:42px; padding:0 14px; border:0; border-right:1px solid var(--ink); background:transparent; font-weight:700; cursor:pointer; }
 .review-grouping button:last-child { border-right:0; }
