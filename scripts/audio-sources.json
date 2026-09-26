@@ -1,0 +1,13249 @@
+{
+"characters": {
+"你": {
+"source": "hsk",
+"item": "你"
+},
+"好": {
+"source": "hsk",
+"item": "好"
+},
+"我": {
+"source": "hsk",
+"item": "我"
+},
+"是": {
+"source": "hsk",
+"item": "是"
+},
+"人": {
+"source": "hsk",
+"item": "人"
+},
+"中": {
+"source": "hsk",
+"item": "中"
+},
+"国": {
+"source": "hsk",
+"item": "国"
+},
+"学": {
+"source": "hsk",
+"item": "学"
+},
+"习": {
+"source": "hsk",
+"item": "席"
+},
+"汉": {
+"source": "hsk",
+"item": "汗"
+},
+"字": {
+"source": "hsk",
+"item": "字"
+},
+"爱": {
+"source": "hsk",
+"item": "爱"
+},
+"水": {
+"source": "hsk",
+"item": "水"
+},
+"火": {
+"source": "hsk",
+"item": "伙"
+},
+"山": {
+"source": "hsk",
+"item": "山"
+},
+"日": {
+"source": "hsk",
+"item": "日"
+},
+"月": {
+"source": "hsk",
+"item": "月"
+},
+"大": {
+"source": "hsk",
+"item": "大"
+},
+"小": {
+"source": "hsk",
+"item": "小"
+},
+"天": {
+"source": "hsk",
+"item": "天"
+},
+"地": {
+"source": "hsk",
+"item": "地"
+},
+"一": {
+"source": "hsk",
+"item": "一"
+},
+"二": {
+"source": "hsk",
+"item": "二"
+},
+"三": {
+"source": "hsk",
+"item": "三"
+},
+"上": {
+"source": "hsk",
+"item": "上"
+},
+"下": {
+"source": "hsk",
+"item": "下"
+},
+"来": {
+"source": "hsk",
+"item": "来"
+},
+"去": {
+"source": "hsk",
+"item": "去"
+},
+"看": {
+"source": "hsk",
+"item": "看"
+},
+"听": {
+"source": "hsk",
+"item": "听"
+},
+"说": {
+"source": "hsk",
+"item": "说"
+},
+"读": {
+"source": "hsk",
+"item": "读"
+},
+"写": {
+"source": "hsk",
+"item": "写"
+},
+"吃": {
+"source": "hsk",
+"item": "吃"
+},
+"喝": {
+"source": "hsk",
+"item": "喝"
+},
+"家": {
+"source": "hsk",
+"item": "家"
+},
+"朋": {
+"source": "hsk",
+"item": "棚"
+},
+"友": {
+"source": "hsk",
+"item": "有"
+},
+"生": {
+"source": "hsk",
+"item": "生"
+},
+"老": {
+"source": "hsk",
+"item": "老"
+},
+"师": {
+"source": "hsk",
+"item": "师"
+},
+"沥": {
+"source": "hsk",
+"item": "粒"
+},
+"咎": {
+"source": "hsk",
+"item": "旧"
+},
+"噩": {
+"source": "hsk",
+"item": "饿"
+},
+"嚏": {
+"source": "hsk",
+"item": "剃"
+},
+"骸": {
+"source": "syllable",
+"item": "hai2"
+},
+"讥": {
+"source": "hsk",
+"item": "击"
+},
+"浊": {
+"source": "commons",
+"title": "Zh-zhuó.ogg",
+"name": "zhuo2"
+},
+"蝗": {
+"source": "hsk",
+"item": "黄"
+},
+"惚": {
+"source": "hsk",
+"item": "呼"
+},
+"恍": {
+"source": "syllable",
+"item": "huang3"
+},
+"谬": {
+"source": "syllable",
+"item": "miu4"
+},
+"馨": {
+"source": "hsk",
+"item": "新"
+},
+"哄": {
+"source": "hsk",
+"item": "烘"
+},
+"媚": {
+"source": "syllable",
+"item": "mei4"
+},
+"诡": {
+"source": "hsk",
+"item": "鬼"
+},
+"祟": {
+"source": "hsk",
+"item": "碎"
+},
+"瘾": {
+"source": "hsk",
+"item": "引"
+},
+"讳": {
+"source": "hsk",
+"item": "会"
+},
+"叽": {
+"source": "hsk",
+"item": "击"
+},
+"琐": {
+"source": "hsk",
+"item": "锁"
+},
+"蚓": {
+"source": "hsk",
+"item": "引"
+},
+"蚯": {
+"source": "hsk",
+"item": "秋"
+},
+"峙": {
+"source": "hsk",
+"item": "治"
+},
+"梢": {
+"source": "hsk",
+"item": "梢"
+},
+"凋": {
+"source": "hsk",
+"item": "刁"
+},
+"炽": {
+"source": "syllable",
+"item": "chi4"
+},
+"霓": {
+"source": "hsk",
+"item": "泥"
+},
+"鞠": {
+"source": "hsk",
+"item": "居"
+},
+"祷": {
+"source": "hsk",
+"item": "岛"
+},
+"渲": {
+"source": "syllable",
+"item": "xuan4"
+},
+"偌": {
+"source": "hsk",
+"item": "弱"
+},
+"罄": {
+"source": "syllable",
+"item": "qing4"
+},
+"呗": {
+"source": "syllable",
+"item": "bei5"
+},
+"篡": {
+"source": "hsk",
+"item": "窜"
+},
+"绰": {
+"source": "syllable",
+"item": "chuo4"
+},
+"朽": {
+"source": "syllable",
+"item": "xiu3"
+},
+"嘘": {
+"source": "hsk",
+"item": "施"
+},
+"雏": {
+"source": "hsk",
+"item": "锄"
+},
+"陋": {
+"source": "hsk",
+"item": "漏"
+},
+"嘈": {
+"source": "hsk",
+"item": "槽"
+},
+"拭": {
+"source": "hsk",
+"item": "事"
+},
+"悖": {
+"source": "hsk",
+"item": "背"
+},
+"蹩": {
+"source": "hsk",
+"item": "别"
+},
+"蝠": {
+"source": "hsk",
+"item": "浮"
+},
+"蝙": {
+"source": "hsk",
+"item": "编"
+},
+"螂": {
+"source": "hsk",
+"item": "狼"
+},
+"蟑": {
+"source": "hsk",
+"item": "张"
+},
+"崴": {
+"source": "syllable",
+"item": "wai3"
+},
+"楞": {
+"source": "syllable",
+"item": "leng2"
+},
+"篆": {
+"source": "hsk",
+"item": "赚"
+},
+"晌": {
+"source": "hsk",
+"item": "赏"
+},
+"斓": {
+"source": "hsk",
+"item": "蓝"
+},
+"皙": {
+"source": "hsk",
+"item": "稀"
+},
+"茫": {
+"source": "hsk",
+"item": "忙"
+},
+"璧": {
+"source": "hsk",
+"item": "闭"
+},
+"萃": {
+"source": "hsk",
+"item": "脆"
+},
+"鹑": {
+"source": "hsk",
+"item": "纯"
+},
+"鹌": {
+"source": "hsk",
+"item": "安"
+},
+"唢": {
+"source": "hsk",
+"item": "锁"
+},
+"胯": {
+"source": "hsk",
+"item": "挎"
+},
+"框": {
+"source": "hsk",
+"item": "框"
+},
+"掷": {
+"source": "hsk",
+"item": "掷"
+},
+"疚": {
+"source": "hsk",
+"item": "旧"
+},
+"瞩": {
+"source": "hsk",
+"item": "煮"
+},
+"掘": {
+"source": "hsk",
+"item": "掘"
+},
+"榔": {
+"source": "hsk",
+"item": "狼"
+},
+"汹": {
+"source": "syllable",
+"item": "xiong1"
+},
+"潦": {
+"source": "syllable",
+"item": "liao3"
+},
+"锚": {
+"source": "hsk",
+"item": "毛"
+},
+"诀": {
+"source": "hsk",
+"item": "觉"
+},
+"丐": {
+"source": "hsk",
+"item": "盖"
+},
+"乞": {
+"source": "hsk",
+"item": "起"
+},
+"匕": {
+"source": "hsk",
+"item": "笔"
+},
+"冗": {
+"source": "syllable",
+"item": "rong3"
+},
+"耸": {
+"source": "hsk",
+"item": "耸"
+},
+"倔": {
+"source": "hsk",
+"item": "觉"
+},
+"匮": {
+"source": "syllable",
+"item": "kui4"
+},
+"滔": {
+"source": "syllable",
+"item": "tao1"
+},
+"刃": {
+"source": "commons",
+"title": "Zh-rèn.ogg",
+"name": "ren4"
+},
+"诱": {
+"source": "hsk",
+"item": "诱"
+},
+"岖": {
+"source": "hsk",
+"item": "区"
+},
+"崎": {
+"source": "hsk",
+"item": "齐"
+},
+"钮": {
+"source": "hsk",
+"item": "扭"
+},
+"亨": {
+"source": "hsk",
+"item": "哼"
+},
+"鹊": {
+"source": "hsk",
+"item": "却"
+},
+"汛": {
+"source": "hsk",
+"item": "训"
+},
+"聆": {
+"source": "hsk",
+"item": "灵"
+},
+"撬": {
+"source": "hsk",
+"item": "翘"
+},
+"诫": {
+"source": "hsk",
+"item": "借"
+},
+"咏": {
+"source": "hsk",
+"item": "涌"
+},
+"瘩": {
+"source": "commons",
+"title": "Zh-da.ogg",
+"name": "da5"
+},
+"疙": {
+"source": "hsk",
+"item": "歌"
+},
+"痪": {
+"source": "hsk",
+"item": "患"
+},
+"瘫": {
+"source": "hsk",
+"item": "贪"
+},
+"撼": {
+"source": "hsk",
+"item": "汗"
+},
+"鸥": {
+"source": "syllable",
+"item": "ou1"
+},
+"蕾": {
+"source": "hsk",
+"item": "垒"
+},
+"蝎": {
+"source": "hsk",
+"item": "些"
+},
+"橇": {
+"source": "hsk",
+"item": "敲"
+},
+"谚": {
+"source": "hsk",
+"item": "咽"
+},
+"彗": {
+"source": "hsk",
+"item": "会"
+},
+"猩": {
+"source": "hsk",
+"item": "星"
+},
+"哺": {
+"source": "hsk",
+"item": "补"
+},
+"冥": {
+"source": "hsk",
+"item": "名"
+},
+"坍": {
+"source": "hsk",
+"item": "贪"
+},
+"圳": {
+"source": "hsk",
+"item": "阵"
+},
+"剔": {
+"source": "hsk",
+"item": "踢"
+},
+"垛": {
+"source": "hsk",
+"item": "跺"
+},
+"儒": {
+"source": "hsk",
+"item": "如"
+},
+"咕": {
+"source": "syllable",
+"item": "gu1"
+},
+"嘀": {
+"source": "hsk",
+"item": "滴"
+},
+"墅": {
+"source": "syllable",
+"item": "shu4"
+},
+"讷": {
+"source": "syllable",
+"item": "ne4"
+},
+"迥": {
+"source": "syllable",
+"item": "jiong3"
+},
+"卦": {
+"source": "syllable",
+"item": "gua4"
+},
+"蚁": {
+"source": "hsk",
+"item": "乙"
+},
+"蚂": {
+"source": "hsk",
+"item": "马"
+},
+"涵": {
+"source": "hsk",
+"item": "寒"
+},
+"嗦": {
+"source": "hsk",
+"item": "缩"
+},
+"哆": {
+"source": "hsk",
+"item": "多"
+},
+"溢": {
+"source": "hsk",
+"item": "亿"
+},
+"诠": {
+"source": "hsk",
+"item": "全"
+},
+"弈": {
+"source": "hsk",
+"item": "亿"
+},
+"馈": {
+"source": "syllable",
+"item": "kui4"
+},
+"绎": {
+"source": "hsk",
+"item": "亿"
+},
+"捐": {
+"source": "hsk",
+"item": "捐"
+},
+"裸": {
+"source": "syllable",
+"item": "luo3"
+},
+"褥": {
+"source": "hsk",
+"item": "入"
+},
+"溃": {
+"source": "syllable",
+"item": "kui4"
+},
+"谱": {
+"source": "syllable",
+"item": "pu3"
+},
+"酋": {
+"source": "hsk",
+"item": "球"
+},
+"蛰": {
+"source": "hsk",
+"item": "折"
+},
+"茵": {
+"source": "hsk",
+"item": "阴"
+},
+"舟": {
+"source": "hsk",
+"item": "舟"
+},
+"嫉": {
+"source": "hsk",
+"item": "极"
+},
+"滤": {
+"source": "hsk",
+"item": "绿"
+},
+"嗅": {
+"source": "hsk",
+"item": "嗅"
+},
+"鸦": {
+"source": "hsk",
+"item": "呀"
+},
+"篓": {
+"source": "hsk",
+"item": "搂"
+},
+"盥": {
+"source": "hsk",
+"item": "灌"
+},
+"巍": {
+"source": "syllable",
+"item": "wei1"
+},
+"刨": {
+"source": "hsk",
+"item": "刨"
+},
+"嚼": {
+"source": "hsk",
+"item": "嚼"
+},
+"篱": {
+"source": "hsk",
+"item": "梨"
+},
+"栅": {
+"source": "commons",
+"title": "Zh-zhà.ogg",
+"name": "zha4"
+},
+"鬃": {
+"source": "syllable",
+"item": "zong1"
+},
+"缰": {
+"source": "hsk",
+"item": "将"
+},
+"滞": {
+"source": "hsk",
+"item": "治"
+},
+"伍": {
+"source": "hsk",
+"item": "伍"
+},
+"慷": {
+"source": "hsk",
+"item": "糠"
+},
+"憔": {
+"source": "hsk",
+"item": "桥"
+},
+"碌": {
+"source": "hsk",
+"item": "路"
+},
+"痊": {
+"source": "hsk",
+"item": "全"
+},
+"恿": {
+"source": "hsk",
+"item": "涌"
+},
+"臼": {
+"source": "hsk",
+"item": "旧"
+},
+"芋": {
+"source": "hsk",
+"item": "遇"
+},
+"褪": {
+"source": "hsk",
+"item": "退"
+},
+"莹": {
+"source": "hsk",
+"item": "赢"
+},
+"婉": {
+"source": "hsk",
+"item": "挽"
+},
+"憩": {
+"source": "hsk",
+"item": "气"
+},
+"勋": {
+"source": "syllable",
+"item": "xun1"
+},
+"忧": {
+"source": "hsk",
+"item": "优"
+},
+"赂": {
+"source": "hsk",
+"item": "路"
+},
+"卤": {
+"source": "syllable",
+"item": "lu3"
+},
+"椭": {
+"source": "hsk",
+"item": "妥"
+},
+"糙": {
+"source": "hsk",
+"item": "操"
+},
+"薏": {
+"source": "hsk",
+"item": "亿"
+},
+"稞": {
+"source": "hsk",
+"item": "棵"
+},
+"荞": {
+"source": "hsk",
+"item": "桥"
+},
+"芸": {
+"source": "hsk",
+"item": "云"
+},
+"肮": {
+"source": "syllable",
+"item": "ang1"
+},
+"豌": {
+"source": "hsk",
+"item": "湾"
+},
+"瘤": {
+"source": "hsk",
+"item": "留"
+},
+"萤": {
+"source": "hsk",
+"item": "赢"
+},
+"缅": {
+"source": "hsk",
+"item": "免"
+},
+"迭": {
+"source": "hsk",
+"item": "叠"
+},
+"茴": {
+"source": "hsk",
+"item": "回"
+},
+"蔻": {
+"source": "commons",
+"title": "Zh-kòu.ogg",
+"name": "kou4"
+},
+"芥": {
+"source": "hsk",
+"item": "借"
+},
+"豉": {
+"source": "hsk",
+"item": "尺"
+},
+"虹": {
+"source": "hsk",
+"item": "虹"
+},
+"揖": {
+"source": "hsk",
+"item": "一"
+},
+"遛": {
+"source": "hsk",
+"item": "六"
+},
+"疫": {
+"source": "hsk",
+"item": "亿"
+},
+"魔": {
+"source": "hsk",
+"item": "磨"
+},
+"啸": {
+"source": "hsk",
+"item": "笑"
+},
+"哮": {
+"source": "hsk",
+"item": "笑"
+},
+"咆": {
+"source": "hsk",
+"item": "刨"
+},
+"潘": {
+"source": "hsk",
+"item": "攀"
+},
+"札": {
+"source": "hsk",
+"item": "闸"
+},
+"槐": {
+"source": "hsk",
+"item": "怀"
+},
+"佑": {
+"source": "hsk",
+"item": "右"
+},
+"夷": {
+"source": "hsk",
+"item": "姨"
+},
+"鸯": {
+"source": "syllable",
+"item": "yang1"
+},
+"鸳": {
+"source": "syllable",
+"item": "yuan1"
+},
+"蜴": {
+"source": "hsk",
+"item": "亿"
+},
+"蜥": {
+"source": "hsk",
+"item": "稀"
+},
+"拙": {
+"source": "hsk",
+"item": "捉"
+},
+"袁": {
+"source": "hsk",
+"item": "元"
+},
+"埂": {
+"source": "hsk",
+"item": "梗"
+},
+"韭": {
+"source": "hsk",
+"item": "酒"
+},
+"咒": {
+"source": "hsk",
+"item": "皱"
+},
+"镖": {
+"source": "hsk",
+"item": "标"
+},
+"谍": {
+"source": "hsk",
+"item": "叠"
+},
+"菲": {
+"source": "hsk",
+"item": "飞"
+},
+"蛛": {
+"source": "hsk",
+"item": "株"
+},
+"蜘": {
+"source": "hsk",
+"item": "织"
+},
+"咐": {
+"source": "hsk",
+"item": "腹"
+},
+"呻": {
+"source": "hsk",
+"item": "深"
+},
+"踪": {
+"source": "syllable",
+"item": "zong1"
+},
+"脍": {
+"source": "hsk",
+"item": "快"
+},
+"炙": {
+"source": "hsk",
+"item": "治"
+},
+"抒": {
+"source": "hsk",
+"item": "梳"
+},
+"羁": {
+"source": "hsk",
+"item": "击"
+},
+"撰": {
+"source": "hsk",
+"item": "赚"
+},
+"抨": {
+"source": "syllable",
+"item": "peng1"
+},
+"楷": {
+"source": "syllable",
+"item": "kai3"
+},
+"胭": {
+"source": "hsk",
+"item": "烟"
+},
+"姬": {
+"source": "hsk",
+"item": "击"
+},
+"栈": {
+"source": "hsk",
+"item": "站"
+},
+"唠": {
+"source": "syllable",
+"item": "lao1"
+},
+"镶": {
+"source": "hsk",
+"item": "镶"
+},
+"蔓": {
+"source": "syllable",
+"item": "man4"
+},
+"枢": {
+"source": "hsk",
+"item": "梳"
+},
+"喧": {
+"source": "syllable",
+"item": "xuan1"
+},
+"淳": {
+"source": "hsk",
+"item": "纯"
+},
+"沫": {
+"source": "hsk",
+"item": "末"
+},
+"辍": {
+"source": "syllable",
+"item": "chuo4"
+},
+"诙": {
+"source": "hsk",
+"item": "灰"
+},
+"妞": {
+"source": "syllable",
+"item": "niu1"
+},
+"惶": {
+"source": "hsk",
+"item": "黄"
+},
+"葬": {
+"source": "hsk",
+"item": "葬"
+},
+"芯": {
+"source": "hsk",
+"item": "新"
+},
+"芦": {
+"source": "syllable",
+"item": "lu2"
+},
+"葫": {
+"source": "hsk",
+"item": "壶"
+},
+"沛": {
+"source": "hsk",
+"item": "配"
+},
+"薪": {
+"source": "hsk",
+"item": "新"
+},
+"栓": {
+"source": "hsk",
+"item": "拴"
+},
+"萌": {
+"source": "hsk",
+"item": "蒙"
+},
+"绵": {
+"source": "commons",
+"title": "Zh-mián.ogg",
+"name": "mian2"
+},
+"痘": {
+"source": "hsk",
+"item": "斗"
+},
+"涕": {
+"source": "hsk",
+"item": "剃"
+},
+"婿": {
+"source": "hsk",
+"item": "蓄"
+},
+"侄": {
+"source": "hsk",
+"item": "值"
+},
+"匣": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"榆": {
+"source": "hsk",
+"item": "于"
+},
+"擎": {
+"source": "hsk",
+"item": "晴"
+},
+"估": {
+"source": "syllable",
+"item": "gu1"
+},
+"芝": {
+"source": "hsk",
+"item": "织"
+},
+"酵": {
+"source": "hsk",
+"item": "叫"
+},
+"霞": {
+"source": "hsk",
+"item": "霞"
+},
+"轩": {
+"source": "syllable",
+"item": "xuan1"
+},
+"酿": {
+"source": "hsk",
+"item": "酿"
+},
+"豁": {
+"source": "hsk",
+"item": "或"
+},
+"滋": {
+"source": "syllable",
+"item": "zi1"
+},
+"醇": {
+"source": "hsk",
+"item": "纯"
+},
+"沱": {
+"source": "hsk",
+"item": "驮"
+},
+"垢": {
+"source": "hsk",
+"item": "购"
+},
+"酥": {
+"source": "syllable",
+"item": "su1"
+},
+"窖": {
+"source": "hsk",
+"item": "叫"
+},
+"螺": {
+"source": "hsk",
+"item": "锣"
+},
+"翡": {
+"source": "syllable",
+"item": "fei3"
+},
+"唯": {
+"source": "hsk",
+"item": "围"
+},
+"洛": {
+"source": "hsk",
+"item": "落"
+},
+"秽": {
+"source": "hsk",
+"item": "会"
+},
+"淫": {
+"source": "hsk",
+"item": "银"
+},
+"飓": {
+"source": "hsk",
+"item": "句"
+},
+"瀑": {
+"source": "syllable",
+"item": "pu4"
+},
+"霄": {
+"source": "hsk",
+"item": "削"
+},
+"坤": {
+"source": "syllable",
+"item": "kun1"
+},
+"翁": {
+"source": "syllable",
+"item": "weng1"
+},
+"翔": {
+"source": "syllable",
+"item": "xiang2"
+},
+"菩": {
+"source": "syllable",
+"item": "pu2"
+},
+"沽": {
+"source": "syllable",
+"item": "gu1"
+},
+"君": {
+"source": "hsk",
+"item": "君"
+},
+"荆": {
+"source": "hsk",
+"item": "惊"
+},
+"鹤": {
+"source": "syllable",
+"item": "he4"
+},
+"翅": {
+"source": "syllable",
+"item": "chi4"
+},
+"符": {
+"source": "hsk",
+"item": "浮"
+},
+"遵": {
+"source": "syllable",
+"item": "zun1"
+},
+"聪": {
+"source": "hsk",
+"item": "葱"
+},
+"积": {
+"source": "hsk",
+"item": "积"
+},
+"措": {
+"source": "hsk",
+"item": "错"
+},
+"剃": {
+"source": "hsk",
+"item": "剃"
+},
+"释": {
+"source": "hsk",
+"item": "事"
+},
+"梁": {
+"source": "hsk",
+"item": "梁"
+},
+"漱": {
+"source": "syllable",
+"item": "shu4"
+},
+"筝": {
+"source": "hsk",
+"item": "争"
+},
+"卉": {
+"source": "hsk",
+"item": "会"
+},
+"鳄": {
+"source": "hsk",
+"item": "饿"
+},
+"锦": {
+"source": "hsk",
+"item": "仅"
+},
+"韵": {
+"source": "hsk",
+"item": "运"
+},
+"涯": {
+"source": "hsk",
+"item": "芽"
+},
+"榕": {
+"source": "hsk",
+"item": "绒"
+},
+"雄": {
+"source": "hsk",
+"item": "雄"
+},
+"嘎": {
+"source": "syllable",
+"item": "ga1"
+},
+"颇": {
+"source": "hsk",
+"item": "颇"
+},
+"乌": {
+"source": "hsk",
+"item": "屋"
+},
+"丈": {
+"source": "hsk",
+"item": "丈"
+},
+"楠": {
+"source": "hsk",
+"item": "男"
+},
+"陀": {
+"source": "hsk",
+"item": "驮"
+},
+"杭": {
+"source": "syllable",
+"item": "hang2"
+},
+"娲": {
+"source": "hsk",
+"item": "挖"
+},
+"鸽": {
+"source": "hsk",
+"item": "歌"
+},
+"寨": {
+"source": "hsk",
+"item": "寨"
+},
+"犊": {
+"source": "hsk",
+"item": "毒"
+},
+"湾": {
+"source": "hsk",
+"item": "湾"
+},
+"颈": {
+"source": "hsk",
+"item": "颈"
+},
+"祠": {
+"source": "hsk",
+"item": "词"
+},
+"擅": {
+"source": "hsk",
+"item": "善"
+},
+"绘": {
+"source": "hsk",
+"item": "绘"
+},
+"怅": {
+"source": "commons",
+"title": "Zh-chàng.ogg",
+"name": "chang4"
+},
+"惆": {
+"source": "hsk",
+"item": "仇"
+},
+"韧": {
+"source": "commons",
+"title": "Zh-rèn.ogg",
+"name": "ren4"
+},
+"喱": {
+"source": "hsk",
+"item": "梨"
+},
+"啫": {
+"source": "hsk",
+"item": "者"
+},
+"沐": {
+"source": "hsk",
+"item": "木"
+},
+"缤": {
+"source": "syllable",
+"item": "bin1"
+},
+"浏": {
+"source": "hsk",
+"item": "留"
+},
+"偕": {
+"source": "hsk",
+"item": "邪"
+},
+"蓉": {
+"source": "hsk",
+"item": "绒"
+},
+"芙": {
+"source": "hsk",
+"item": "浮"
+},
+"鬓": {
+"source": "syllable",
+"item": "bin4"
+},
+"瑕": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"苔": {
+"source": "hsk",
+"item": "台"
+},
+"翼": {
+"source": "hsk",
+"item": "翼"
+},
+"沧": {
+"source": "hsk",
+"item": "舱"
+},
+"绞": {
+"source": "hsk",
+"item": "绞"
+},
+"榨": {
+"source": "hsk",
+"item": "榨"
+},
+"杖": {
+"source": "hsk",
+"item": "帐"
+},
+"簪": {
+"source": "syllable",
+"item": "zan1"
+},
+"镯": {
+"source": "commons",
+"title": "Zh-zhuó.ogg",
+"name": "zhuo2"
+},
+"坠": {
+"source": "syllable",
+"item": "zhui4"
+},
+"讼": {
+"source": "hsk",
+"item": "送"
+},
+"槟": {
+"source": "syllable",
+"item": "bin1"
+},
+"伯": {
+"source": "syllable",
+"item": "bo2"
+},
+"姆": {
+"source": "hsk",
+"item": "亩"
+},
+"僧": {
+"source": "syllable",
+"item": "seng1"
+},
+"渊": {
+"source": "syllable",
+"item": "yuan1"
+},
+"卓": {
+"source": "commons",
+"title": "Zh-zhuó.ogg",
+"name": "zhuo2"
+},
+"逸": {
+"source": "hsk",
+"item": "亿"
+},
+"伪": {
+"source": "hsk",
+"item": "尾"
+},
+"婪": {
+"source": "hsk",
+"item": "蓝"
+},
+"霍": {
+"source": "hsk",
+"item": "或"
+},
+"靡": {
+"source": "hsk",
+"item": "迷"
+},
+"疏": {
+"source": "hsk",
+"item": "梳"
+},
+"趋": {
+"source": "hsk",
+"item": "区"
+},
+"绽": {
+"source": "hsk",
+"item": "站"
+},
+"魅": {
+"source": "syllable",
+"item": "mei4"
+},
+"辟": {
+"source": "hsk",
+"item": "屁"
+},
+"拓": {
+"source": "syllable",
+"item": "tuo4"
+},
+"塑": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"皂": {
+"source": "hsk",
+"item": "造"
+},
+"淇": {
+"source": "hsk",
+"item": "齐"
+},
+"薯": {
+"source": "hsk",
+"item": "属"
+},
+"沃": {
+"source": "hsk",
+"item": "卧"
+},
+"县": {
+"source": "hsk",
+"item": "县"
+},
+"诈": {
+"source": "commons",
+"title": "Zh-zhà.ogg",
+"name": "zha4"
+},
+"伦": {
+"source": "syllable",
+"item": "lun2"
+},
+"俭": {
+"source": "hsk",
+"item": "拣"
+},
+"伎": {
+"source": "hsk",
+"item": "既"
+},
+"拘": {
+"source": "hsk",
+"item": "居"
+},
+"聘": {
+"source": "hsk",
+"item": "聘"
+},
+"腆": {
+"source": "syllable",
+"item": "tian3"
+},
+"矜": {
+"source": "hsk",
+"item": "斤"
+},
+"尬": {
+"source": "syllable",
+"item": "ga4"
+},
+"尴": {
+"source": "hsk",
+"item": "甘"
+},
+"雅": {
+"source": "hsk",
+"item": "哑"
+},
+"怯": {
+"source": "syllable",
+"item": "qie4"
+},
+"侣": {
+"source": "hsk",
+"item": "旅"
+},
+"蛮": {
+"source": "hsk",
+"item": "瞒"
+},
+"殴": {
+"source": "syllable",
+"item": "ou1"
+},
+"范": {
+"source": "hsk",
+"item": "泛"
+},
+"儆": {
+"source": "hsk",
+"item": "景"
+},
+"倡": {
+"source": "commons",
+"title": "Zh-chàng.ogg",
+"name": "chang4"
+},
+"嚣": {
+"source": "hsk",
+"item": "削"
+},
+"獗": {
+"source": "hsk",
+"item": "觉"
+},
+"扼": {
+"source": "hsk",
+"item": "饿"
+},
+"遏": {
+"source": "hsk",
+"item": "饿"
+},
+"慑": {
+"source": "hsk",
+"item": "射"
+},
+"躯": {
+"source": "hsk",
+"item": "区"
+},
+"拯": {
+"source": "hsk",
+"item": "整"
+},
+"畸": {
+"source": "hsk",
+"item": "击"
+},
+"佣": {
+"source": "syllable",
+"item": "yong1"
+},
+"委": {
+"source": "hsk",
+"item": "尾"
+},
+"潜": {
+"source": "hsk",
+"item": "钱"
+},
+"仿": {
+"source": "hsk",
+"item": "纺"
+},
+"统": {
+"source": "hsk",
+"item": "桶"
+},
+"靴": {
+"source": "syllable",
+"item": "xue1"
+},
+"呕": {
+"source": "syllable",
+"item": "ou3"
+},
+"仔": {
+"source": "hsk",
+"item": "宰"
+},
+"坷": {
+"source": "hsk",
+"item": "渴"
+},
+"乎": {
+"source": "hsk",
+"item": "呼"
+},
+"策": {
+"source": "hsk",
+"item": "测"
+},
+"革": {
+"source": "hsk",
+"item": "隔"
+},
+"承": {
+"source": "hsk",
+"item": "盛"
+},
+"缭": {
+"source": "hsk",
+"item": "聊"
+},
+"咨": {
+"source": "syllable",
+"item": "zi1"
+},
+"盈": {
+"source": "hsk",
+"item": "赢"
+},
+"莲": {
+"source": "hsk",
+"item": "联"
+},
+"侦": {
+"source": "syllable",
+"item": "zhen1"
+},
+"侠": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"销": {
+"source": "hsk",
+"item": "销"
+},
+"怡": {
+"source": "hsk",
+"item": "姨"
+},
+"睑": {
+"source": "hsk",
+"item": "拣"
+},
+"榈": {
+"source": "hsk",
+"item": "驴"
+},
+"诺": {
+"source": "syllable",
+"item": "nuo4"
+},
+"粟": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"煸": {
+"source": "hsk",
+"item": "编"
+},
+"蚝": {
+"source": "syllable",
+"item": "hao2"
+},
+"仁": {
+"source": "hsk",
+"item": "人"
+},
+"焖": {
+"source": "commons",
+"title": "Zh-mèn.ogg",
+"name": "men4"
+},
+"骼": {
+"source": "hsk",
+"item": "隔"
+},
+"胱": {
+"source": "hsk",
+"item": "光"
+},
+"胰": {
+"source": "hsk",
+"item": "姨"
+},
+"阑": {
+"source": "hsk",
+"item": "蓝"
+},
+"喻": {
+"source": "hsk",
+"item": "遇"
+},
+"俱": {
+"source": "hsk",
+"item": "句"
+},
+"蜃": {
+"source": "hsk",
+"item": "渗"
+},
+"皆": {
+"source": "hsk",
+"item": "皆"
+},
+"啼": {
+"source": "hsk",
+"item": "蹄"
+},
+"莫": {
+"source": "hsk",
+"item": "莫"
+},
+"琉": {
+"source": "hsk",
+"item": "留"
+},
+"坪": {
+"source": "hsk",
+"item": "瓶"
+},
+"饯": {
+"source": "hsk",
+"item": "箭"
+},
+"频": {
+"source": "commons",
+"title": "Zh-pín.ogg",
+"name": "pin2"
+},
+"葵": {
+"source": "syllable",
+"item": "kui2"
+},
+"桐": {
+"source": "hsk",
+"item": "铜"
+},
+"梧": {
+"source": "hsk",
+"item": "无"
+},
+"莉": {
+"source": "hsk",
+"item": "粒"
+},
+"嘉": {
+"source": "hsk",
+"item": "家"
+},
+"颐": {
+"source": "hsk",
+"item": "姨"
+},
+"汰": {
+"source": "syllable",
+"item": "tai4"
+},
+"镭": {
+"source": "hsk",
+"item": "雷"
+},
+"逊": {
+"source": "hsk",
+"item": "训"
+},
+"迪": {
+"source": "hsk",
+"item": "敌"
+},
+"速": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"链": {
+"source": "hsk",
+"item": "练"
+},
+"栏": {
+"source": "hsk",
+"item": "蓝"
+},
+"察": {
+"source": "hsk",
+"item": "查"
+},
+"洽": {
+"source": "syllable",
+"item": "qia4"
+},
+"账": {
+"source": "hsk",
+"item": "帐"
+},
+"羽": {
+"source": "hsk",
+"item": "与"
+},
+"跤": {
+"source": "hsk",
+"item": "娇"
+},
+"乓": {
+"source": "syllable",
+"item": "pang1"
+},
+"乒": {
+"source": "syllable",
+"item": "ping1"
+},
+"程": {
+"source": "hsk",
+"item": "盛"
+},
+"艇": {
+"source": "hsk",
+"item": "艇"
+},
+"垒": {
+"source": "hsk",
+"item": "垒"
+},
+"镁": {
+"source": "hsk",
+"item": "镁"
+},
+"击": {
+"source": "hsk",
+"item": "击"
+},
+"栗": {
+"source": "hsk",
+"item": "粒"
+},
+"坯": {
+"source": "hsk",
+"item": "坯"
+},
+"茧": {
+"source": "hsk",
+"item": "茧"
+},
+"锌": {
+"source": "hsk",
+"item": "锌"
+},
+"穗": {
+"source": "hsk",
+"item": "穗"
+},
+"犁": {
+"source": "hsk",
+"item": "犁"
+},
+"磷": {
+"source": "hsk",
+"item": "磷"
+},
+"泻": {
+"source": "hsk",
+"item": "泻"
+},
+"亦": {
+"source": "hsk",
+"item": "亦"
+},
+"咋": {
+"source": "syllable",
+"item": "za3"
+},
+"呸": {
+"source": "syllable",
+"item": "pei1"
+},
+"沪": {
+"source": "hsk",
+"item": "护"
+},
+"滇": {
+"source": "hsk",
+"item": "掂"
+},
+"癣": {
+"source": "hsk",
+"item": "选"
+},
+"皖": {
+"source": "hsk",
+"item": "挽"
+},
+"黔": {
+"source": "hsk",
+"item": "钱"
+},
+"喽": {
+"source": "commons",
+"title": "Zh-lou.ogg",
+"name": "lou5"
+},
+"蔫": {
+"source": "syllable",
+"item": "nian1"
+},
+"撵": {
+"source": "hsk",
+"item": "撵"
+},
+"寇": {
+"source": "commons",
+"title": "Zh-kòu.ogg",
+"name": "kou4"
+},
+"埠": {
+"source": "hsk",
+"item": "埠"
+},
+"抠": {
+"source": "hsk",
+"item": "抠"
+},
+"赣": {
+"source": "syllable",
+"item": "gan4"
+},
+"湘": {
+"source": "hsk",
+"item": "乡"
+},
+"磕": {
+"source": "hsk",
+"item": "磕"
+},
+"啪": {
+"source": "hsk",
+"item": "趴"
+},
+"糠": {
+"source": "hsk",
+"item": "糠"
+},
+"炕": {
+"source": "hsk",
+"item": "炕"
+},
+"袄": {
+"source": "hsk",
+"item": "袄"
+},
+"铙": {
+"source": "syllable",
+"item": "nao2"
+},
+"铝": {
+"source": "hsk",
+"item": "铝"
+},
+"熘": {
+"source": "hsk",
+"item": "溜"
+},
+"捺": {
+"source": "syllable",
+"item": "na4"
+},
+"藕": {
+"source": "syllable",
+"item": "ou3"
+},
+"笙": {
+"source": "hsk",
+"item": "声"
+},
+"箫": {
+"source": "hsk",
+"item": "削"
+},
+"撇": {
+"source": "syllable",
+"item": "pie3"
+},
+"娟": {
+"source": "hsk",
+"item": "捐"
+},
+"冀": {
+"source": "hsk",
+"item": "既"
+},
+"笋": {
+"source": "hsk",
+"item": "笋"
+},
+"癖": {
+"source": "hsk",
+"item": "匹"
+},
+"砌": {
+"source": "hsk",
+"item": "砌"
+},
+"忿": {
+"source": "hsk",
+"item": "份"
+},
+"妾": {
+"source": "syllable",
+"item": "qie4"
+},
+"疮": {
+"source": "hsk",
+"item": "疮"
+},
+"殡": {
+"source": "syllable",
+"item": "bin4"
+},
+"毙": {
+"source": "hsk",
+"item": "闭"
+},
+"窘": {
+"source": "syllable",
+"item": "jiong3"
+},
+"殓": {
+"source": "hsk",
+"item": "练"
+},
+"觑": {
+"source": "hsk",
+"item": "去"
+},
+"虔": {
+"source": "hsk",
+"item": "钱"
+},
+"赝": {
+"source": "hsk",
+"item": "咽"
+},
+"恣": {
+"source": "hsk",
+"item": "字"
+},
+"吕": {
+"source": "hsk",
+"item": "旅"
+},
+"眶": {
+"source": "hsk",
+"item": "矿"
+},
+"晦": {
+"source": "hsk",
+"item": "会"
+},
+"屉": {
+"source": "hsk",
+"item": "剃"
+},
+"俯": {
+"source": "hsk",
+"item": "俯"
+},
+"昙": {
+"source": "hsk",
+"item": "谈"
+},
+"赈": {
+"source": "hsk",
+"item": "阵"
+},
+"斌": {
+"source": "syllable",
+"item": "bin1"
+},
+"吆": {
+"source": "hsk",
+"item": "腰"
+},
+"杳": {
+"source": "hsk",
+"item": "咬"
+},
+"娜": {
+"source": "syllable",
+"item": "na4"
+},
+"紊": {
+"source": "hsk",
+"item": "稳"
+},
+"粼": {
+"source": "hsk",
+"item": "淋"
+},
+"苞": {
+"source": "hsk",
+"item": "剥"
+},
+"奚": {
+"source": "hsk",
+"item": "稀"
+},
+"舀": {
+"source": "hsk",
+"item": "咬"
+},
+"歼": {
+"source": "hsk",
+"item": "间"
+},
+"鲤": {
+"source": "syllable",
+"item": "li3"
+},
+"夙": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"鳖": {
+"source": "hsk",
+"item": "憋"
+},
+"哦": {
+"source": "hsk",
+"item": "哦"
+},
+"粕": {
+"source": "hsk",
+"item": "破"
+},
+"窜": {
+"source": "hsk",
+"item": "窜"
+},
+"丙": {
+"source": "hsk",
+"item": "丙"
+},
+"卒": {
+"source": "hsk",
+"item": "足"
+},
+"粲": {
+"source": "syllable",
+"item": "can4"
+},
+"踝": {
+"source": "hsk",
+"item": "怀"
+},
+"焊": {
+"source": "hsk",
+"item": "焊"
+},
+"荧": {
+"source": "hsk",
+"item": "赢"
+},
+"搂": {
+"source": "hsk",
+"item": "搂"
+},
+"殃": {
+"source": "syllable",
+"item": "yang1"
+},
+"穹": {
+"source": "hsk",
+"item": "穷"
+},
+"烙": {
+"source": "syllable",
+"item": "lao4"
+},
+"烩": {
+"source": "hsk",
+"item": "会"
+},
+"嘣": {
+"source": "hsk",
+"item": "绷"
+},
+"觅": {
+"source": "hsk",
+"item": "密"
+},
+"溜": {
+"source": "hsk",
+"item": "溜"
+},
+"瞑": {
+"source": "hsk",
+"item": "名"
+},
+"仄": {
+"source": "syllable",
+"item": "ze4"
+},
+"嘿": {
+"source": "hsk",
+"item": "嘿"
+},
+"夭": {
+"source": "hsk",
+"item": "腰"
+},
+"圃": {
+"source": "syllable",
+"item": "pu3"
+},
+"隋": {
+"source": "commons",
+"title": "Zh-suí.ogg",
+"name": "sui2"
+},
+"纬": {
+"source": "hsk",
+"item": "尾"
+},
+"隧": {
+"source": "hsk",
+"item": "碎"
+},
+"腋": {
+"source": "hsk",
+"item": "夜"
+},
+"膻": {
+"source": "hsk",
+"item": "山"
+},
+"臃": {
+"source": "syllable",
+"item": "yong1"
+},
+"郭": {
+"source": "hsk",
+"item": "锅"
+},
+"膳": {
+"source": "hsk",
+"item": "善"
+},
+"悴": {
+"source": "hsk",
+"item": "脆"
+},
+"裳": {
+"source": "commons",
+"title": "Zh-shang.ogg",
+"name": "shang5"
+},
+"轧": {
+"source": "hsk",
+"item": "轧"
+},
+"憨": {
+"source": "syllable",
+"item": "han1"
+},
+"瞟": {
+"source": "syllable",
+"item": "piao3"
+},
+"瞳": {
+"source": "hsk",
+"item": "铜"
+},
+"吏": {
+"source": "hsk",
+"item": "粒"
+},
+"狩": {
+"source": "hsk",
+"item": "售"
+},
+"扉": {
+"source": "hsk",
+"item": "飞"
+},
+"胚": {
+"source": "syllable",
+"item": "pei1"
+},
+"辖": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"叱": {
+"source": "syllable",
+"item": "chi4"
+},
+"孺": {
+"source": "hsk",
+"item": "如"
+},
+"崔": {
+"source": "hsk",
+"item": "催"
+},
+"瘪": {
+"source": "syllable",
+"item": "bie3"
+},
+"冯": {
+"source": "hsk",
+"item": "逢"
+},
+"胧": {
+"source": "hsk",
+"item": "聋"
+},
+"悚": {
+"source": "hsk",
+"item": "耸"
+},
+"琳": {
+"source": "hsk",
+"item": "淋"
+},
+"彤": {
+"source": "hsk",
+"item": "铜"
+},
+"膺": {
+"source": "hsk",
+"item": "鹰"
+},
+"渝": {
+"source": "hsk",
+"item": "于"
+},
+"嶙": {
+"source": "hsk",
+"item": "淋"
+},
+"孢": {
+"source": "hsk",
+"item": "剥"
+},
+"蜀": {
+"source": "hsk",
+"item": "属"
+},
+"孳": {
+"source": "syllable",
+"item": "zi1"
+},
+"愣": {
+"source": "hsk",
+"item": "愣"
+},
+"愕": {
+"source": "hsk",
+"item": "饿"
+},
+"陕": {
+"source": "hsk",
+"item": "陕"
+},
+"闽": {
+"source": "syllable",
+"item": "min3"
+},
+"粤": {
+"source": "hsk",
+"item": "月"
+},
+"麾": {
+"source": "hsk",
+"item": "灰"
+},
+"禹": {
+"source": "hsk",
+"item": "与"
+},
+"黛": {
+"source": "hsk",
+"item": "代"
+},
+"赡": {
+"source": "hsk",
+"item": "善"
+},
+"戕": {
+"source": "hsk",
+"item": "枪"
+},
+"釜": {
+"source": "hsk",
+"item": "俯"
+},
+"敝": {
+"source": "hsk",
+"item": "闭"
+},
+"戾": {
+"source": "hsk",
+"item": "粒"
+},
+"摞": {
+"source": "hsk",
+"item": "落"
+},
+"毡": {
+"source": "hsk",
+"item": "粘"
+},
+"杉": {
+"source": "hsk",
+"item": "山"
+},
+"宋": {
+"source": "hsk",
+"item": "送"
+},
+"黝": {
+"source": "hsk",
+"item": "有"
+},
+"缎": {
+"source": "hsk",
+"item": "断"
+},
+"劾": {
+"source": "hsk",
+"item": "和"
+},
+"躇": {
+"source": "hsk",
+"item": "锄"
+},
+"葛": {
+"source": "syllable",
+"item": "ge3"
+},
+"锄": {
+"source": "hsk",
+"item": "锄"
+},
+"琶": {
+"source": "hsk",
+"item": "爬"
+},
+"畴": {
+"source": "hsk",
+"item": "仇"
+},
+"赵": {
+"source": "hsk",
+"item": "照"
+},
+"雌": {
+"source": "hsk",
+"item": "雌"
+},
+"踊": {
+"source": "hsk",
+"item": "涌"
+},
+"煦": {
+"source": "hsk",
+"item": "蓄"
+},
+"妓": {
+"source": "hsk",
+"item": "既"
+},
+"谗": {
+"source": "hsk",
+"item": "缠"
+},
+"俺": {
+"source": "syllable",
+"item": "an3"
+},
+"晰": {
+"source": "hsk",
+"item": "稀"
+},
+"闰": {
+"source": "syllable",
+"item": "run4"
+},
+"虏": {
+"source": "syllable",
+"item": "lu3"
+},
+"睐": {
+"source": "hsk",
+"item": "赖"
+},
+"彬": {
+"source": "syllable",
+"item": "bin1"
+},
+"硅": {
+"source": "hsk",
+"item": "硅"
+},
+"徜": {
+"source": "hsk",
+"item": "尝"
+},
+"毗": {
+"source": "hsk",
+"item": "皮"
+},
+"赐": {
+"source": "syllable",
+"item": "ci4"
+},
+"贮": {
+"source": "hsk",
+"item": "助"
+},
+"囱": {
+"source": "hsk",
+"item": "葱"
+},
+"嵌": {
+"source": "hsk",
+"item": "嵌"
+},
+"黜": {
+"source": "commons",
+"title": "Zh-chù.ogg",
+"name": "chu4"
+},
+"兢": {
+"source": "hsk",
+"item": "惊"
+},
+"惟": {
+"source": "hsk",
+"item": "围"
+},
+"氢": {
+"source": "hsk",
+"item": "氢"
+},
+"囚": {
+"source": "hsk",
+"item": "球"
+},
+"雁": {
+"source": "hsk",
+"item": "咽"
+},
+"囤": {
+"source": "syllable",
+"item": "tun2"
+},
+"亢": {
+"source": "hsk",
+"item": "炕"
+},
+"悍": {
+"source": "hsk",
+"item": "汗"
+},
+"窿": {
+"source": "hsk",
+"item": "聋"
+},
+"笆": {
+"source": "hsk",
+"item": "八"
+},
+"狈": {
+"source": "hsk",
+"item": "背"
+},
+"囹": {
+"source": "hsk",
+"item": "灵"
+},
+"踌": {
+"source": "hsk",
+"item": "仇"
+},
+"玲": {
+"source": "hsk",
+"item": "灵"
+},
+"豫": {
+"source": "hsk",
+"item": "遇"
+},
+"诽": {
+"source": "syllable",
+"item": "fei3"
+},
+"贾": {
+"source": "hsk",
+"item": "假"
+},
+"曹": {
+"source": "hsk",
+"item": "槽"
+},
+"拗": {
+"source": "syllable",
+"item": "niu4"
+},
+"澄": {
+"source": "hsk",
+"item": "盛"
+},
+"臣": {
+"source": "commons",
+"title": "Zh-chén.ogg",
+"name": "chen2"
+},
+"蔼": {
+"source": "hsk",
+"item": "矮"
+},
+"帖": {
+"source": "hsk",
+"item": "铁"
+},
+"炭": {
+"source": "hsk",
+"item": "炭"
+},
+"棚": {
+"source": "hsk",
+"item": "棚"
+},
+"氓": {
+"source": "hsk",
+"item": "忙"
+},
+"炬": {
+"source": "hsk",
+"item": "句"
+},
+"沈": {
+"source": "hsk",
+"item": "审"
+},
+"啬": {
+"source": "commons",
+"title": "Zh-sè.ogg",
+"name": "se4"
+},
+"御": {
+"source": "hsk",
+"item": "遇"
+},
+"冶": {
+"source": "hsk",
+"item": "野"
+},
+"喇": {
+"source": "syllable",
+"item": "la3"
+},
+"熨": {
+"source": "hsk",
+"item": "运"
+},
+"敷": {
+"source": "syllable",
+"item": "fu1"
+},
+"侮": {
+"source": "hsk",
+"item": "舞"
+},
+"舆": {
+"source": "hsk",
+"item": "于"
+},
+"乙": {
+"source": "hsk",
+"item": "乙"
+},
+"乃": {
+"source": "hsk",
+"item": "乃"
+},
+"肖": {
+"source": "hsk",
+"item": "笑"
+},
+"沓": {
+"source": "hsk",
+"item": "答"
+},
+"搀": {
+"source": "hsk",
+"item": "搀"
+},
+"瞪": {
+"source": "hsk",
+"item": "瞪"
+},
+"蝉": {
+"source": "hsk",
+"item": "蝉"
+},
+"袱": {
+"source": "hsk",
+"item": "浮"
+},
+"涤": {
+"source": "hsk",
+"item": "敌"
+},
+"呈": {
+"source": "hsk",
+"item": "呈"
+},
+"棺": {
+"source": "hsk",
+"item": "官"
+},
+"煌": {
+"source": "hsk",
+"item": "黄"
+},
+"卵": {
+"source": "hsk",
+"item": "卵"
+},
+"吟": {
+"source": "hsk",
+"item": "银"
+},
+"熏": {
+"source": "hsk",
+"item": "熏"
+},
+"勉": {
+"source": "hsk",
+"item": "免"
+},
+"猖": {
+"source": "syllable",
+"item": "chang1"
+},
+"呐": {
+"source": "syllable",
+"item": "na4"
+},
+"莓": {
+"source": "hsk",
+"item": "煤"
+},
+"孟": {
+"source": "hsk",
+"item": "梦"
+},
+"栋": {
+"source": "hsk",
+"item": "栋"
+},
+"箭": {
+"source": "hsk",
+"item": "箭"
+},
+"弥": {
+"source": "hsk",
+"item": "迷"
+},
+"戚": {
+"source": "hsk",
+"item": "七"
+},
+"庐": {
+"source": "syllable",
+"item": "lu2"
+},
+"迈": {
+"source": "hsk",
+"item": "迈"
+},
+"芭": {
+"source": "hsk",
+"item": "八"
+},
+"艾": {
+"source": "hsk",
+"item": "爱"
+},
+"蒂": {
+"source": "hsk",
+"item": "地"
+},
+"囊": {
+"source": "syllable",
+"item": "nang2"
+},
+"垂": {
+"source": "hsk",
+"item": "垂"
+},
+"奠": {
+"source": "hsk",
+"item": "店"
+},
+"稼": {
+"source": "hsk",
+"item": "架"
+},
+"僚": {
+"source": "hsk",
+"item": "聊"
+},
+"董": {
+"source": "syllable",
+"item": "dong3"
+},
+"氏": {
+"source": "hsk",
+"item": "事"
+},
+"骚": {
+"source": "syllable",
+"item": "sao1"
+},
+"番": {
+"source": "hsk",
+"item": "番"
+},
+"帕": {
+"source": "syllable",
+"item": "pa4"
+},
+"循": {
+"source": "hsk",
+"item": "寻"
+},
+"署": {
+"source": "hsk",
+"item": "属"
+},
+"玛": {
+"source": "hsk",
+"item": "马"
+},
+"蓬": {
+"source": "hsk",
+"item": "棚"
+},
+"虑": {
+"source": "hsk",
+"item": "绿"
+},
+"滨": {
+"source": "syllable",
+"item": "bin1"
+},
+"瑞": {
+"source": "syllable",
+"item": "rui4"
+},
+"衡": {
+"source": "hsk",
+"item": "横"
+},
+"曼": {
+"source": "syllable",
+"item": "man4"
+},
+"谓": {
+"source": "hsk",
+"item": "位"
+},
+"柏": {
+"source": "hsk",
+"item": "百"
+},
+"蔑": {
+"source": "hsk",
+"item": "灭"
+},
+"亭": {
+"source": "hsk",
+"item": "停"
+},
+"裂": {
+"source": "hsk",
+"item": "裂"
+},
+"陈": {
+"source": "commons",
+"title": "Zh-chén.ogg",
+"name": "chen2"
+},
+"尚": {
+"source": "hsk",
+"item": "尚"
+},
+"蒙": {
+"source": "hsk",
+"item": "蒙"
+},
+"绍": {
+"source": "hsk",
+"item": "哨"
+},
+"丁": {
+"source": "hsk",
+"item": "丁"
+},
+"甲": {
+"source": "hsk",
+"item": "甲"
+},
+"苏": {
+"source": "syllable",
+"item": "su1"
+},
+"络": {
+"source": "hsk",
+"item": "落"
+},
+"降": {
+"source": "hsk",
+"item": "降"
+},
+"刺": {
+"source": "hsk",
+"item": "刺"
+},
+"麦": {
+"source": "hsk",
+"item": "卖"
+},
+"摩": {
+"source": "hsk",
+"item": "磨"
+},
+"登": {
+"source": "hsk",
+"item": "登"
+},
+"斗": {
+"source": "hsk",
+"item": "斗"
+},
+"李": {
+"source": "syllable",
+"item": "li3"
+},
+"麻": {
+"source": "hsk",
+"item": "麻"
+},
+"免": {
+"source": "hsk",
+"item": "免"
+},
+"属": {
+"source": "hsk",
+"item": "属"
+},
+"及": {
+"source": "hsk",
+"item": "极"
+},
+"率": {
+"source": "hsk",
+"item": "率"
+},
+"暴": {
+"source": "hsk",
+"item": "抱"
+},
+"差": {
+"source": "hsk",
+"item": "差"
+},
+"兰": {
+"source": "hsk",
+"item": "蓝"
+},
+"久": {
+"source": "hsk",
+"item": "久"
+},
+"幸": {
+"source": "hsk",
+"item": "性"
+},
+"街": {
+"source": "hsk",
+"item": "街"
+},
+"维": {
+"source": "hsk",
+"item": "围"
+},
+"农": {
+"source": "hsk",
+"item": "浓"
+},
+"卫": {
+"source": "hsk",
+"item": "位"
+},
+"鲁": {
+"source": "syllable",
+"item": "lu3"
+},
+"并": {
+"source": "hsk",
+"item": "并"
+},
+"环": {
+"source": "hsk",
+"item": "环"
+},
+"折": {
+"source": "hsk",
+"item": "折"
+},
+"顾": {
+"source": "hsk",
+"item": "顾"
+},
+"阿": {
+"source": "hsk",
+"item": "阿"
+},
+"致": {
+"source": "hsk",
+"item": "致"
+},
+"营": {
+"source": "hsk",
+"item": "营"
+},
+"财": {
+"source": "hsk",
+"item": "财"
+},
+"示": {
+"source": "hsk",
+"item": "事"
+},
+"此": {
+"source": "syllable",
+"item": "ci3"
+},
+"专": {
+"source": "hsk",
+"item": "专"
+},
+"藏": {
+"source": "hsk",
+"item": "藏"
+},
+"设": {
+"source": "hsk",
+"item": "设"
+},
+"散": {
+"source": "hsk",
+"item": "伞"
+},
+"激": {
+"source": "hsk",
+"item": "激"
+},
+"据": {
+"source": "hsk",
+"item": "据"
+},
+"尼": {
+"source": "hsk",
+"item": "泥"
+},
+"存": {
+"source": "hsk",
+"item": "存"
+},
+"标": {
+"source": "hsk",
+"item": "标"
+},
+"支": {
+"source": "hsk",
+"item": "支"
+},
+"局": {
+"source": "hsk",
+"item": "局"
+},
+"越": {
+"source": "hsk",
+"item": "越"
+},
+"聚": {
+"source": "hsk",
+"item": "聚"
+},
+"惊": {
+"source": "hsk",
+"item": "惊"
+},
+"毁": {
+"source": "hsk",
+"item": "毁"
+},
+"青": {
+"source": "hsk",
+"item": "青"
+},
+"温": {
+"source": "hsk",
+"item": "温"
+},
+"害": {
+"source": "hsk",
+"item": "害"
+},
+"足": {
+"source": "hsk",
+"item": "足"
+},
+"质": {
+"source": "hsk",
+"item": "质"
+},
+"曲": {
+"source": "hsk",
+"item": "取"
+},
+"首": {
+"source": "hsk",
+"item": "首"
+},
+"王": {
+"source": "hsk",
+"item": "王"
+},
+"象": {
+"source": "hsk",
+"item": "象"
+},
+"伤": {
+"source": "hsk",
+"item": "伤"
+},
+"际": {
+"source": "hsk",
+"item": "既"
+},
+"斤": {
+"source": "hsk",
+"item": "斤"
+},
+"导": {
+"source": "hsk",
+"item": "岛"
+},
+"倒": {
+"source": "hsk",
+"item": "到"
+},
+"济": {
+"source": "hsk",
+"item": "既"
+},
+"精": {
+"source": "hsk",
+"item": "精"
+},
+"求": {
+"source": "hsk",
+"item": "求"
+},
+"族": {
+"source": "hsk",
+"item": "族"
+},
+"止": {
+"source": "hsk",
+"item": "止"
+},
+"考": {
+"source": "hsk",
+"item": "考"
+},
+"巴": {
+"source": "hsk",
+"item": "八"
+},
+"性": {
+"source": "hsk",
+"item": "性"
+},
+"厘": {
+"source": "hsk",
+"item": "梨"
+},
+"腌": {
+"source": "hsk",
+"item": "烟"
+},
+"峦": {
+"source": "syllable",
+"item": "luan2"
+},
+"豚": {
+"source": "syllable",
+"item": "tun2"
+},
+"脓": {
+"source": "hsk",
+"item": "浓"
+},
+"崭": {
+"source": "hsk",
+"item": "盏"
+},
+"堕": {
+"source": "hsk",
+"item": "跺"
+},
+"叩": {
+"source": "commons",
+"title": "Zh-kòu.ogg",
+"name": "kou4"
+},
+"鹏": {
+"source": "hsk",
+"item": "棚"
+},
+"汞": {
+"source": "hsk",
+"item": "汞"
+},
+"巩": {
+"source": "syllable",
+"item": "gong3"
+},
+"溅": {
+"source": "hsk",
+"item": "溅"
+},
+"忏": {
+"source": "commons",
+"title": "Zh-chàn.ogg",
+"name": "chan4"
+},
+"铸": {
+"source": "hsk",
+"item": "铸"
+},
+"涮": {
+"source": "syllable",
+"item": "shuan4"
+},
+"亩": {
+"source": "hsk",
+"item": "亩"
+},
+"踩": {
+"source": "hsk",
+"item": "踩"
+},
+"肛": {
+"source": "hsk",
+"item": "刚"
+},
+"拣": {
+"source": "hsk",
+"item": "拣"
+},
+"禾": {
+"source": "hsk",
+"item": "和"
+},
+"沏": {
+"source": "hsk",
+"item": "沏"
+},
+"拴": {
+"source": "hsk",
+"item": "拴"
+},
+"裔": {
+"source": "hsk",
+"item": "亿"
+},
+"德": {
+"source": "syllable",
+"item": "de2"
+},
+"斯": {
+"source": "hsk",
+"item": "思"
+},
+"罗": {
+"source": "hsk",
+"item": "锣"
+},
+"怦": {
+"source": "syllable",
+"item": "peng1"
+},
+"慎": {
+"source": "hsk",
+"item": "渗"
+},
+"脐": {
+"source": "hsk",
+"item": "齐"
+},
+"锣": {
+"source": "hsk",
+"item": "锣"
+},
+"抄": {
+"source": "hsk",
+"item": "抄"
+},
+"黏": {
+"source": "hsk",
+"item": "年"
+},
+"炒": {
+"source": "hsk",
+"item": "炒"
+},
+"株": {
+"source": "hsk",
+"item": "株"
+},
+"填": {
+"source": "hsk",
+"item": "填"
+},
+"沙": {
+"source": "hsk",
+"item": "沙"
+},
+"戮": {
+"source": "hsk",
+"item": "路"
+},
+"凿": {
+"source": "hsk",
+"item": "凿"
+},
+"拎": {
+"source": "syllable",
+"item": "lin1"
+},
+"褐": {
+"source": "syllable",
+"item": "he4"
+},
+"垦": {
+"source": "syllable",
+"item": "ken3"
+},
+"拽": {
+"source": "hsk",
+"item": "拽"
+},
+"畔": {
+"source": "hsk",
+"item": "畔"
+},
+"删": {
+"source": "hsk",
+"item": "删"
+},
+"窒": {
+"source": "hsk",
+"item": "治"
+},
+"窑": {
+"source": "hsk",
+"item": "窑"
+},
+"暧": {
+"source": "hsk",
+"item": "爱"
+},
+"曝": {
+"source": "hsk",
+"item": "抱"
+},
+"闩": {
+"source": "hsk",
+"item": "拴"
+},
+"稚": {
+"source": "hsk",
+"item": "治"
+},
+"伺": {
+"source": "syllable",
+"item": "ci4"
+},
+"哇": {
+"source": "hsk",
+"item": "哇"
+},
+"扛": {
+"source": "hsk",
+"item": "扛"
+},
+"在": {
+"source": "hsk",
+"item": "在"
+},
+"系": {
+"source": "hsk",
+"item": "系"
+},
+"有": {
+"source": "hsk",
+"item": "有"
+},
+"跪": {
+"source": "hsk",
+"item": "跪"
+},
+"粪": {
+"source": "hsk",
+"item": "粪"
+},
+"甭": {
+"source": "hsk",
+"item": "甭"
+},
+"黯": {
+"source": "hsk",
+"item": "按"
+},
+"挎": {
+"source": "hsk",
+"item": "挎"
+},
+"彰": {
+"source": "hsk",
+"item": "张"
+},
+"熄": {
+"source": "hsk",
+"item": "熄"
+},
+"啃": {
+"source": "hsk",
+"item": "啃"
+},
+"熔": {
+"source": "hsk",
+"item": "熔"
+},
+"廓": {
+"source": "hsk",
+"item": "阔"
+},
+"每": {
+"source": "hsk",
+"item": "每"
+},
+"桩": {
+"source": "hsk",
+"item": "桩"
+},
+"隆": {
+"source": "hsk",
+"item": "聋"
+},
+"陪": {
+"source": "hsk",
+"item": "陪"
+},
+"肋": {
+"source": "hsk",
+"item": "累"
+},
+"腱": {
+"source": "hsk",
+"item": "箭"
+},
+"聋": {
+"source": "hsk",
+"item": "聋"
+},
+"斩": {
+"source": "hsk",
+"item": "斩"
+},
+"烁": {
+"source": "syllable",
+"item": "shuo4"
+},
+"胀": {
+"source": "hsk",
+"item": "胀"
+},
+"掰": {
+"source": "hsk",
+"item": "掰"
+},
+"崽": {
+"source": "hsk",
+"item": "宰"
+},
+"冤": {
+"source": "hsk",
+"item": "冤"
+},
+"午": {
+"source": "hsk",
+"item": "舞"
+},
+"猿": {
+"source": "hsk",
+"item": "元"
+},
+"涛": {
+"source": "syllable",
+"item": "tao1"
+},
+"驭": {
+"source": "hsk",
+"item": "遇"
+},
+"琢": {
+"source": "commons",
+"title": "Zh-zhuó.ogg",
+"name": "zhuo2"
+},
+"讹": {
+"source": "hsk",
+"item": "鹅"
+},
+"怂": {
+"source": "hsk",
+"item": "耸"
+},
+"垮": {
+"source": "hsk",
+"item": "垮"
+},
+"驿": {
+"source": "hsk",
+"item": "亿"
+},
+"瞄": {
+"source": "commons",
+"title": "Zh-miáo.ogg",
+"name": "miao2"
+},
+"驯": {
+"source": "hsk",
+"item": "训"
+},
+"闺": {
+"source": "hsk",
+"item": "龟"
+},
+"绅": {
+"source": "hsk",
+"item": "深"
+},
+"倘": {
+"source": "hsk",
+"item": "躺"
+},
+"窥": {
+"source": "hsk",
+"item": "亏"
+},
+"驴": {
+"source": "hsk",
+"item": "驴"
+},
+"甩": {
+"source": "hsk",
+"item": "甩"
+},
+"瓣": {
+"source": "hsk",
+"item": "伴"
+},
+"绷": {
+"source": "hsk",
+"item": "绷"
+},
+"捍": {
+"source": "hsk",
+"item": "汗"
+},
+"撮": {
+"source": "hsk",
+"item": "左"
+},
+"帜": {
+"source": "hsk",
+"item": "治"
+},
+"巅": {
+"source": "hsk",
+"item": "掂"
+},
+"炖": {
+"source": "hsk",
+"item": "顿"
+},
+"臀": {
+"source": "syllable",
+"item": "tun2"
+},
+"吴": {
+"source": "hsk",
+"item": "无"
+},
+"鲸": {
+"source": "hsk",
+"item": "惊"
+},
+"孪": {
+"source": "syllable",
+"item": "luan2"
+},
+"崛": {
+"source": "hsk",
+"item": "觉"
+},
+"帷": {
+"source": "hsk",
+"item": "围"
+},
+"陡": {
+"source": "hsk",
+"item": "陡"
+},
+"赦": {
+"source": "hsk",
+"item": "射"
+},
+"庇": {
+"source": "hsk",
+"item": "闭"
+},
+"哼": {
+"source": "hsk",
+"item": "哼"
+},
+"幢": {
+"source": "hsk",
+"item": "幢"
+},
+"灼": {
+"source": "commons",
+"title": "Zh-zhuó.ogg",
+"name": "zhuo2"
+},
+"腼": {
+"source": "hsk",
+"item": "免"
+},
+"溉": {
+"source": "hsk",
+"item": "盖"
+},
+"弘": {
+"source": "hsk",
+"item": "红"
+},
+"爵": {
+"source": "hsk",
+"item": "觉"
+},
+"宰": {
+"source": "hsk",
+"item": "宰"
+},
+"砰": {
+"source": "syllable",
+"item": "peng1"
+},
+"奢": {
+"source": "syllable",
+"item": "she1"
+},
+"悯": {
+"source": "syllable",
+"item": "min3"
+},
+"岔": {
+"source": "hsk",
+"item": "岔"
+},
+"膛": {
+"source": "hsk",
+"item": "糖"
+},
+"赠": {
+"source": "syllable",
+"item": "zeng4"
+},
+"憾": {
+"source": "hsk",
+"item": "汗"
+},
+"沸": {
+"source": "commons",
+"title": "Zh-fèi.ogg",
+"name": "fei4"
+},
+"牒": {
+"source": "hsk",
+"item": "叠"
+},
+"肪": {
+"source": "hsk",
+"item": "防"
+},
+"弧": {
+"source": "hsk",
+"item": "壶"
+},
+"弩": {
+"source": "syllable",
+"item": "nu3"
+},
+"诧": {
+"source": "hsk",
+"item": "差"
+},
+"勘": {
+"source": "syllable",
+"item": "kan1"
+},
+"蹬": {
+"source": "hsk",
+"item": "蹬"
+},
+"奸": {
+"source": "hsk",
+"item": "奸"
+},
+"碳": {
+"source": "hsk",
+"item": "探"
+},
+"梗": {
+"source": "hsk",
+"item": "梗"
+},
+"傅": {
+"source": "hsk",
+"item": "腹"
+},
+"坝": {
+"source": "hsk",
+"item": "坝"
+},
+"竿": {
+"source": "hsk",
+"item": "竿"
+},
+"耿": {
+"source": "hsk",
+"item": "梗"
+},
+"砸": {
+"source": "hsk",
+"item": "砸"
+},
+"吩": {
+"source": "hsk",
+"item": "分"
+},
+"旷": {
+"source": "hsk",
+"item": "矿"
+},
+"萄": {
+"source": "hsk",
+"item": "逃"
+},
+"葡": {
+"source": "syllable",
+"item": "pu2"
+},
+"昔": {
+"source": "hsk",
+"item": "稀"
+},
+"纺": {
+"source": "hsk",
+"item": "纺"
+},
+"贿": {
+"source": "hsk",
+"item": "会"
+},
+"呵": {
+"source": "hsk",
+"item": "呵"
+},
+"膨": {
+"source": "hsk",
+"item": "棚"
+},
+"腺": {
+"source": "hsk",
+"item": "线"
+},
+"募": {
+"source": "hsk",
+"item": "木"
+},
+"屿": {
+"source": "hsk",
+"item": "与"
+},
+"臊": {
+"source": "syllable",
+"item": "sao4"
+},
+"驮": {
+"source": "hsk",
+"item": "驮"
+},
+"腥": {
+"source": "hsk",
+"item": "腥"
+},
+"晋": {
+"source": "hsk",
+"item": "禁"
+},
+"拦": {
+"source": "hsk",
+"item": "拦"
+},
+"巫": {
+"source": "hsk",
+"item": "屋"
+},
+"脯": {
+"source": "syllable",
+"item": "pu2"
+},
+"馒": {
+"source": "hsk",
+"item": "瞒"
+},
+"沦": {
+"source": "syllable",
+"item": "lun2"
+},
+"缕": {
+"source": "hsk",
+"item": "旅"
+},
+"嚷": {
+"source": "hsk",
+"item": "嚷"
+},
+"惧": {
+"source": "hsk",
+"item": "句"
+},
+"卜": {
+"source": "hsk",
+"item": "补"
+},
+"恤": {
+"source": "hsk",
+"item": "蓄"
+},
+"暇": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"暄": {
+"source": "syllable",
+"item": "xuan1"
+},
+"嫩": {
+"source": "hsk",
+"item": "嫩"
+},
+"睫": {
+"source": "hsk",
+"item": "劫"
+},
+"瞌": {
+"source": "hsk",
+"item": "棵"
+},
+"鼎": {
+"source": "hsk",
+"item": "顶"
+},
+"睦": {
+"source": "hsk",
+"item": "木"
+},
+"贞": {
+"source": "syllable",
+"item": "zhen1"
+},
+"孵": {
+"source": "syllable",
+"item": "fu1"
+},
+"沾": {
+"source": "hsk",
+"item": "沾"
+},
+"眯": {
+"source": "hsk",
+"item": "迷"
+},
+"眺": {
+"source": "syllable",
+"item": "tiao4"
+},
+"陨": {
+"source": "syllable",
+"item": "yun3"
+},
+"枕": {
+"source": "syllable",
+"item": "zhen3"
+},
+"舔": {
+"source": "syllable",
+"item": "tian3"
+},
+"斧": {
+"source": "hsk",
+"item": "俯"
+},
+"躺": {
+"source": "hsk",
+"item": "躺"
+},
+"尸": {
+"source": "hsk",
+"item": "施"
+},
+"哎": {
+"source": "syllable",
+"item": "ai1"
+},
+"茉": {
+"source": "hsk",
+"item": "末"
+},
+"峭": {
+"source": "hsk",
+"item": "翘"
+},
+"晾": {
+"source": "hsk",
+"item": "晾"
+},
+"掀": {
+"source": "hsk",
+"item": "掀"
+},
+"粘": {
+"source": "hsk",
+"item": "粘"
+},
+"籽": {
+"source": "hsk",
+"item": "籽"
+},
+"丸": {
+"source": "hsk",
+"item": "丸"
+},
+"坎": {
+"source": "hsk",
+"item": "砍"
+},
+"倚": {
+"source": "hsk",
+"item": "倚"
+},
+"筐": {
+"source": "hsk",
+"item": "筐"
+},
+"缸": {
+"source": "hsk",
+"item": "缸"
+},
+"舶": {
+"source": "syllable",
+"item": "bo2"
+},
+"蹦": {
+"source": "hsk",
+"item": "蹦"
+},
+"捶": {
+"source": "hsk",
+"item": "捶"
+},
+"稠": {
+"source": "hsk",
+"item": "仇"
+},
+"宪": {
+"source": "hsk",
+"item": "线"
+},
+"蹭": {
+"source": "syllable",
+"item": "ceng4"
+},
+"乖": {
+"source": "hsk",
+"item": "乖"
+},
+"煮": {
+"source": "hsk",
+"item": "煮"
+},
+"咙": {
+"source": "hsk",
+"item": "聋"
+},
+"秧": {
+"source": "syllable",
+"item": "yang1"
+},
+"肘": {
+"source": "syllable",
+"item": "zhou3"
+},
+"鹿": {
+"source": "hsk",
+"item": "鹿"
+},
+"稣": {
+"source": "syllable",
+"item": "su1"
+},
+"掠": {
+"source": "hsk",
+"item": "略"
+},
+"婶": {
+"source": "hsk",
+"item": "审"
+},
+"穴": {
+"source": "hsk",
+"item": "穴"
+},
+"灶": {
+"source": "hsk",
+"item": "灶"
+},
+"侨": {
+"source": "hsk",
+"item": "桥"
+},
+"羔": {
+"source": "hsk",
+"item": "高"
+},
+"畏": {
+"source": "hsk",
+"item": "畏"
+},
+"顷": {
+"source": "hsk",
+"item": "请"
+},
+"缔": {
+"source": "hsk",
+"item": "地"
+},
+"垄": {
+"source": "hsk",
+"item": "拢"
+},
+"睬": {
+"source": "hsk",
+"item": "踩"
+},
+"衔": {
+"source": "hsk",
+"item": "衔"
+},
+"窟": {
+"source": "hsk",
+"item": "哭"
+},
+"鳞": {
+"source": "hsk",
+"item": "淋"
+},
+"焚": {
+"source": "hsk",
+"item": "坟"
+},
+"鞍": {
+"source": "hsk",
+"item": "安"
+},
+"蚀": {
+"source": "hsk",
+"item": "十"
+},
+"蚌": {
+"source": "hsk",
+"item": "磅"
+},
+"厄": {
+"source": "hsk",
+"item": "饿"
+},
+"藉": {
+"source": "hsk",
+"item": "极"
+},
+"彷": {
+"source": "hsk",
+"item": "旁"
+},
+"塌": {
+"source": "hsk",
+"item": "塌"
+},
+"脖": {
+"source": "syllable",
+"item": "bo2"
+},
+"煎": {
+"source": "hsk",
+"item": "煎"
+},
+"骇": {
+"source": "hsk",
+"item": "害"
+},
+"鹰": {
+"source": "hsk",
+"item": "鹰"
+},
+"厦": {
+"source": "hsk",
+"item": "厦"
+},
+"傍": {
+"source": "hsk",
+"item": "磅"
+},
+"躬": {
+"source": "hsk",
+"item": "供"
+},
+"兆": {
+"source": "hsk",
+"item": "兆"
+},
+"幽": {
+"source": "hsk",
+"item": "优"
+},
+"屡": {
+"source": "hsk",
+"item": "旅"
+},
+"蠢": {
+"source": "hsk",
+"item": "蠢"
+},
+"辫": {
+"source": "hsk",
+"item": "变"
+},
+"菇": {
+"source": "syllable",
+"item": "gu1"
+},
+"隘": {
+"source": "hsk",
+"item": "爱"
+},
+"拱": {
+"source": "hsk",
+"item": "拱"
+},
+"骤": {
+"source": "hsk",
+"item": "皱"
+},
+"痹": {
+"source": "hsk",
+"item": "闭"
+},
+"敞": {
+"source": "hsk",
+"item": "场"
+},
+"虐": {
+"source": "syllable",
+"item": "nve4"
+},
+"苛": {
+"source": "hsk",
+"item": "棵"
+},
+"挫": {
+"source": "hsk",
+"item": "错"
+},
+"臂": {
+"source": "hsk",
+"item": "闭"
+},
+"嗽": {
+"source": "syllable",
+"item": "sou4"
+},
+"捅": {
+"source": "hsk",
+"item": "捅"
+},
+"皱": {
+"source": "hsk",
+"item": "皱"
+},
+"肌": {
+"source": "hsk",
+"item": "击"
+},
+"爪": {
+"source": "hsk",
+"item": "爪"
+},
+"烘": {
+"source": "hsk",
+"item": "烘"
+},
+"烛": {
+"source": "syllable",
+"item": "zhu2"
+},
+"匠": {
+"source": "hsk",
+"item": "降"
+},
+"崩": {
+"source": "hsk",
+"item": "绷"
+},
+"琼": {
+"source": "hsk",
+"item": "穷"
+},
+"窍": {
+"source": "hsk",
+"item": "翘"
+},
+"叙": {
+"source": "hsk",
+"item": "蓄"
+},
+"煽": {
+"source": "hsk",
+"item": "山"
+},
+"怜": {
+"source": "hsk",
+"item": "联"
+},
+"刹": {
+"source": "hsk",
+"item": "杀"
+},
+"蕉": {
+"source": "hsk",
+"item": "娇"
+},
+"砖": {
+"source": "hsk",
+"item": "砖"
+},
+"诵": {
+"source": "hsk",
+"item": "送"
+},
+"懈": {
+"source": "hsk",
+"item": "泻"
+},
+"粱": {
+"source": "hsk",
+"item": "凉"
+},
+"枚": {
+"source": "hsk",
+"item": "枚"
+},
+"吁": {
+"source": "hsk",
+"item": "需"
+},
+"刘": {
+"source": "hsk",
+"item": "留"
+},
+"罕": {
+"source": "hsk",
+"item": "喊"
+},
+"阐": {
+"source": "syllable",
+"item": "chan3"
+},
+"捎": {
+"source": "hsk",
+"item": "捎"
+},
+"胳": {
+"source": "hsk",
+"item": "歌"
+},
+"呀": {
+"source": "hsk",
+"item": "呀"
+},
+"掂": {
+"source": "hsk",
+"item": "掂"
+},
+"暮": {
+"source": "hsk",
+"item": "木"
+},
+"憋": {
+"source": "hsk",
+"item": "憋"
+},
+"驳": {
+"source": "syllable",
+"item": "bo2"
+},
+"缚": {
+"source": "hsk",
+"item": "腹"
+},
+"旨": {
+"source": "hsk",
+"item": "止"
+},
+"郊": {
+"source": "hsk",
+"item": "娇"
+},
+"浆": {
+"source": "hsk",
+"item": "将"
+},
+"潭": {
+"source": "hsk",
+"item": "潭"
+},
+"舰": {
+"source": "hsk",
+"item": "箭"
+},
+"蝇": {
+"source": "hsk",
+"item": "赢"
+},
+"颊": {
+"source": "hsk",
+"item": "颊"
+},
+"雀": {
+"source": "hsk",
+"item": "却"
+},
+"宅": {
+"source": "syllable",
+"item": "zhai2"
+},
+"俏": {
+"source": "hsk",
+"item": "翘"
+},
+"譬": {
+"source": "hsk",
+"item": "屁"
+},
+"惕": {
+"source": "hsk",
+"item": "剃"
+},
+"斋": {
+"source": "hsk",
+"item": "摘"
+},
+"槽": {
+"source": "hsk",
+"item": "槽"
+},
+"蹄": {
+"source": "hsk",
+"item": "蹄"
+},
+"郑": {
+"source": "hsk",
+"item": "证"
+},
+"寓": {
+"source": "hsk",
+"item": "寓"
+},
+"旬": {
+"source": "hsk",
+"item": "寻"
+},
+"泌": {
+"source": "hsk",
+"item": "密"
+},
+"棠": {
+"source": "hsk",
+"item": "糖"
+},
+"竹": {
+"source": "syllable",
+"item": "zhu2"
+},
+"枫": {
+"source": "hsk",
+"item": "封"
+},
+"届": {
+"source": "hsk",
+"item": "届"
+},
+"渴": {
+"source": "hsk",
+"item": "渴"
+},
+"讶": {
+"source": "hsk",
+"item": "轧"
+},
+"锤": {
+"source": "hsk",
+"item": "锤"
+},
+"讽": {
+"source": "syllable",
+"item": "feng3"
+},
+"剖": {
+"source": "syllable",
+"item": "pou1"
+},
+"纤": {
+"source": "hsk",
+"item": "掀"
+},
+"殊": {
+"source": "hsk",
+"item": "梳"
+},
+"披": {
+"source": "hsk",
+"item": "披"
+},
+"悟": {
+"source": "hsk",
+"item": "悟"
+},
+"晶": {
+"source": "hsk",
+"item": "惊"
+},
+"坑": {
+"source": "hsk",
+"item": "坑"
+},
+"覆": {
+"source": "hsk",
+"item": "腹"
+},
+"姿": {
+"source": "syllable",
+"item": "zi1"
+},
+"枝": {
+"source": "hsk",
+"item": "枝"
+},
+"钓": {
+"source": "hsk",
+"item": "钓"
+},
+"催": {
+"source": "hsk",
+"item": "催"
+},
+"颂": {
+"source": "hsk",
+"item": "送"
+},
+"辐": {
+"source": "hsk",
+"item": "浮"
+},
+"泼": {
+"source": "hsk",
+"item": "泼"
+},
+"廷": {
+"source": "hsk",
+"item": "停"
+},
+"猜": {
+"source": "hsk",
+"item": "猜"
+},
+"橘": {
+"source": "hsk",
+"item": "局"
+},
+"磋": {
+"source": "hsk",
+"item": "搓"
+},
+"履": {
+"source": "hsk",
+"item": "旅"
+},
+"屠": {
+"source": "hsk",
+"item": "图"
+},
+"竖": {
+"source": "hsk",
+"item": "竖"
+},
+"煞": {
+"source": "hsk",
+"item": "厦"
+},
+"梳": {
+"source": "hsk",
+"item": "梳"
+},
+"瞧": {
+"source": "hsk",
+"item": "瞧"
+},
+"峻": {
+"source": "hsk",
+"item": "俊"
+},
+"胁": {
+"source": "hsk",
+"item": "邪"
+},
+"崖": {
+"source": "hsk",
+"item": "崖"
+},
+"缴": {
+"source": "hsk",
+"item": "缴"
+},
+"茅": {
+"source": "hsk",
+"item": "毛"
+},
+"桂": {
+"source": "hsk",
+"item": "跪"
+},
+"坊": {
+"source": "hsk",
+"item": "防"
+},
+"纱": {
+"source": "hsk",
+"item": "纱"
+},
+"诬": {
+"source": "hsk",
+"item": "屋"
+},
+"枉": {
+"source": "hsk",
+"item": "网"
+},
+"淌": {
+"source": "hsk",
+"item": "躺"
+},
+"惰": {
+"source": "hsk",
+"item": "跺"
+},
+"郁": {
+"source": "hsk",
+"item": "遇"
+},
+"孕": {
+"source": "hsk",
+"item": "运"
+},
+"肢": {
+"source": "hsk",
+"item": "织"
+},
+"咳": {
+"source": "hsk",
+"item": "壳"
+},
+"甸": {
+"source": "hsk",
+"item": "店"
+},
+"啦": {
+"source": "hsk",
+"item": "啦"
+},
+"撕": {
+"source": "hsk",
+"item": "撕"
+},
+"巢": {
+"source": "hsk",
+"item": "潮"
+},
+"辽": {
+"source": "hsk",
+"item": "聊"
+},
+"肿": {
+"source": "hsk",
+"item": "肿"
+},
+"庸": {
+"source": "syllable",
+"item": "yong1"
+},
+"拢": {
+"source": "hsk",
+"item": "拢"
+},
+"督": {
+"source": "syllable",
+"item": "du1"
+},
+"钞": {
+"source": "hsk",
+"item": "超"
+},
+"惹": {
+"source": "hsk",
+"item": "惹"
+},
+"厢": {
+"source": "hsk",
+"item": "乡"
+},
+"捆": {
+"source": "hsk",
+"item": "捆"
+},
+"丘": {
+"source": "hsk",
+"item": "秋"
+},
+"睹": {
+"source": "hsk",
+"item": "堵"
+},
+"甥": {
+"source": "hsk",
+"item": "声"
+},
+"悼": {
+"source": "hsk",
+"item": "到"
+},
+"咬": {
+"source": "hsk",
+"item": "咬"
+},
+"昭": {
+"source": "hsk",
+"item": "招"
+},
+"匪": {
+"source": "syllable",
+"item": "fei3"
+},
+"恳": {
+"source": "syllable",
+"item": "ken3"
+},
+"厨": {
+"source": "hsk",
+"item": "锄"
+},
+"贷": {
+"source": "hsk",
+"item": "贷"
+},
+"勿": {
+"source": "hsk",
+"item": "勿"
+},
+"艳": {
+"source": "hsk",
+"item": "咽"
+},
+"刁": {
+"source": "hsk",
+"item": "刁"
+},
+"堤": {
+"source": "hsk",
+"item": "堤"
+},
+"哨": {
+"source": "hsk",
+"item": "哨"
+},
+"狐": {
+"source": "hsk",
+"item": "壶"
+},
+"睁": {
+"source": "hsk",
+"item": "睁"
+},
+"寞": {
+"source": "hsk",
+"item": "末"
+},
+"碧": {
+"source": "hsk",
+"item": "闭"
+},
+"寡": {
+"source": "syllable",
+"item": "gua3"
+},
+"绢": {
+"source": "syllable",
+"item": "juan4"
+},
+"炊": {
+"source": "hsk",
+"item": "吹"
+},
+"犹": {
+"source": "hsk",
+"item": "油"
+},
+"吝": {
+"source": "syllable",
+"item": "lin4"
+},
+"阀": {
+"source": "hsk",
+"item": "伐"
+},
+"灿": {
+"source": "syllable",
+"item": "can4"
+},
+"驰": {
+"source": "hsk",
+"item": "池"
+},
+"逢": {
+"source": "hsk",
+"item": "逢"
+},
+"懦": {
+"source": "syllable",
+"item": "nuo4"
+},
+"弓": {
+"source": "hsk",
+"item": "弓"
+},
+"荐": {
+"source": "hsk",
+"item": "箭"
+},
+"粹": {
+"source": "hsk",
+"item": "脆"
+},
+"帘": {
+"source": "hsk",
+"item": "联"
+},
+"泽": {
+"source": "hsk",
+"item": "则"
+},
+"杨": {
+"source": "hsk",
+"item": "扬"
+},
+"裕": {
+"source": "hsk",
+"item": "遇"
+},
+"腻": {
+"source": "syllable",
+"item": "ni4"
+},
+"捡": {
+"source": "hsk",
+"item": "捡"
+},
+"谤": {
+"source": "hsk",
+"item": "磅"
+},
+"亿": {
+"source": "hsk",
+"item": "亿"
+},
+"浩": {
+"source": "hsk",
+"item": "耗"
+},
+"歪": {
+"source": "hsk",
+"item": "歪"
+},
+"喘": {
+"source": "hsk",
+"item": "喘"
+},
+"衍": {
+"source": "hsk",
+"item": "眼"
+},
+"隶": {
+"source": "hsk",
+"item": "粒"
+},
+"危": {
+"source": "syllable",
+"item": "wei1"
+},
+"踏": {
+"source": "commons",
+"title": "Zh-tà.ogg",
+"name": "ta4"
+},
+"宵": {
+"source": "hsk",
+"item": "削"
+},
+"妖": {
+"source": "hsk",
+"item": "腰"
+},
+"靶": {
+"source": "hsk",
+"item": "把"
+},
+"猎": {
+"source": "hsk",
+"item": "劣"
+},
+"壤": {
+"source": "hsk",
+"item": "嚷"
+},
+"耶": {
+"source": "syllable",
+"item": "ye1"
+},
+"犀": {
+"source": "hsk",
+"item": "稀"
+},
+"秒": {
+"source": "hsk",
+"item": "秒"
+},
+"攀": {
+"source": "hsk",
+"item": "攀"
+},
+"毅": {
+"source": "hsk",
+"item": "亿"
+},
+"兜": {
+"source": "hsk",
+"item": "兜"
+},
+"疯": {
+"source": "hsk",
+"item": "疯"
+},
+"骄": {
+"source": "hsk",
+"item": "娇"
+},
+"饲": {
+"source": "syllable",
+"item": "si4"
+},
+"凯": {
+"source": "syllable",
+"item": "kai3"
+},
+"腰": {
+"source": "hsk",
+"item": "腰"
+},
+"鄙": {
+"source": "hsk",
+"item": "笔"
+},
+"霉": {
+"source": "hsk",
+"item": "霉"
+},
+"逝": {
+"source": "hsk",
+"item": "事"
+},
+"涩": {
+"source": "commons",
+"title": "Zh-sè.ogg",
+"name": "se4"
+},
+"焦": {
+"source": "hsk",
+"item": "娇"
+},
+"溶": {
+"source": "hsk",
+"item": "溶"
+},
+"禽": {
+"source": "hsk",
+"item": "禽"
+},
+"裹": {
+"source": "hsk",
+"item": "裹"
+},
+"乔": {
+"source": "hsk",
+"item": "桥"
+},
+"卑": {
+"source": "hsk",
+"item": "碑"
+},
+"逻": {
+"source": "hsk",
+"item": "锣"
+},
+"悄": {
+"source": "hsk",
+"item": "敲"
+},
+"赎": {
+"source": "hsk",
+"item": "熟"
+},
+"饶": {
+"source": "hsk",
+"item": "饶"
+},
+"柳": {
+"source": "syllable",
+"item": "liu3"
+},
+"饥": {
+"source": "hsk",
+"item": "击"
+},
+"膏": {
+"source": "hsk",
+"item": "高"
+},
+"慰": {
+"source": "hsk",
+"item": "位"
+},
+"嘱": {
+"source": "hsk",
+"item": "煮"
+},
+"癌": {
+"source": "hsk",
+"item": "癌"
+},
+"帆": {
+"source": "hsk",
+"item": "帆"
+},
+"昌": {
+"source": "syllable",
+"item": "chang1"
+},
+"秤": {
+"source": "hsk",
+"item": "秤"
+},
+"颤": {
+"source": "commons",
+"title": "Zh-chàn.ogg",
+"name": "chan4"
+},
+"盼": {
+"source": "hsk",
+"item": "盼"
+},
+"酬": {
+"source": "hsk",
+"item": "仇"
+},
+"齿": {
+"source": "hsk",
+"item": "尺"
+},
+"娃": {
+"source": "syllable",
+"item": "wa2"
+},
+"赴": {
+"source": "hsk",
+"item": "赴"
+},
+"摧": {
+"source": "hsk",
+"item": "催"
+},
+"喂": {
+"source": "hsk",
+"item": "喂"
+},
+"粒": {
+"source": "hsk",
+"item": "粒"
+},
+"嘲": {
+"source": "hsk",
+"item": "潮"
+},
+"轴": {
+"source": "syllable",
+"item": "zhou2"
+},
+"瞎": {
+"source": "hsk",
+"item": "瞎"
+},
+"冈": {
+"source": "hsk",
+"item": "刚"
+},
+"瓷": {
+"source": "hsk",
+"item": "瓷"
+},
+"懊": {
+"source": "syllable",
+"item": "ao4"
+},
+"躁": {
+"source": "hsk",
+"item": "造"
+},
+"赚": {
+"source": "hsk",
+"item": "赚"
+},
+"艘": {
+"source": "hsk",
+"item": "艘"
+},
+"哗": {
+"source": "commons",
+"title": "Zh-huá.ogg",
+"name": "hua2"
+},
+"盯": {
+"source": "hsk",
+"item": "盯"
+},
+"龟": {
+"source": "hsk",
+"item": "龟"
+},
+"剩": {
+"source": "hsk",
+"item": "剩"
+},
+"雹": {
+"source": "hsk",
+"item": "薄"
+},
+"猾": {
+"source": "commons",
+"title": "Zh-huá.ogg",
+"name": "hua2"
+},
+"喉": {
+"source": "syllable",
+"item": "hou2"
+},
+"尤": {
+"source": "hsk",
+"item": "油"
+},
+"舱": {
+"source": "hsk",
+"item": "舱"
+},
+"翠": {
+"source": "hsk",
+"item": "脆"
+},
+"渔": {
+"source": "hsk",
+"item": "于"
+},
+"撩": {
+"source": "syllable",
+"item": "liao1"
+},
+"仗": {
+"source": "hsk",
+"item": "帐"
+},
+"骆": {
+"source": "hsk",
+"item": "落"
+},
+"慨": {
+"source": "syllable",
+"item": "kai3"
+},
+"扭": {
+"source": "hsk",
+"item": "扭"
+},
+"侧": {
+"source": "hsk",
+"item": "侧"
+},
+"驻": {
+"source": "hsk",
+"item": "驻"
+},
+"肝": {
+"source": "hsk",
+"item": "肝"
+},
+"踢": {
+"source": "hsk",
+"item": "踢"
+},
+"嫂": {
+"source": "hsk",
+"item": "扫"
+},
+"晃": {
+"source": "hsk",
+"item": "晃"
+},
+"绸": {
+"source": "hsk",
+"item": "仇"
+},
+"淀": {
+"source": "hsk",
+"item": "店"
+},
+"悠": {
+"source": "hsk",
+"item": "优"
+},
+"唇": {
+"source": "hsk",
+"item": "纯"
+},
+"仓": {
+"source": "hsk",
+"item": "舱"
+},
+"盲": {
+"source": "hsk",
+"item": "忙"
+},
+"叮": {
+"source": "hsk",
+"item": "盯"
+},
+"畜": {
+"source": "commons",
+"title": "Zh-chù.ogg",
+"name": "chu4"
+},
+"辰": {
+"source": "commons",
+"title": "Zh-chén.ogg",
+"name": "chen2"
+},
+"耕": {
+"source": "hsk",
+"item": "耕"
+},
+"孜": {
+"source": "syllable",
+"item": "zi1"
+},
+"哑": {
+"source": "hsk",
+"item": "哑"
+},
+"涌": {
+"source": "hsk",
+"item": "涌"
+},
+"邪": {
+"source": "hsk",
+"item": "邪"
+},
+"歹": {
+"source": "syllable",
+"item": "dai3"
+},
+"宇": {
+"source": "hsk",
+"item": "与"
+},
+"屑": {
+"source": "hsk",
+"item": "屑"
+},
+"驼": {
+"source": "hsk",
+"item": "驮"
+},
+"械": {
+"source": "hsk",
+"item": "泻"
+},
+"掩": {
+"source": "hsk",
+"item": "掩"
+},
+"昧": {
+"source": "syllable",
+"item": "mei4"
+},
+"羡": {
+"source": "hsk",
+"item": "线"
+},
+"氛": {
+"source": "hsk",
+"item": "分"
+},
+"耀": {
+"source": "hsk",
+"item": "要"
+},
+"痴": {
+"source": "hsk",
+"item": "吃"
+},
+"濒": {
+"source": "syllable",
+"item": "bin1"
+},
+"贡": {
+"source": "hsk",
+"item": "共"
+},
+"役": {
+"source": "hsk",
+"item": "亿"
+},
+"笨": {
+"source": "hsk",
+"item": "笨"
+},
+"锡": {
+"source": "hsk",
+"item": "锡"
+},
+"廊": {
+"source": "hsk",
+"item": "狼"
+},
+"逛": {
+"source": "hsk",
+"item": "逛"
+},
+"蒸": {
+"source": "hsk",
+"item": "蒸"
+},
+"昏": {
+"source": "hsk",
+"item": "昏"
+},
+"趁": {
+"source": "hsk",
+"item": "趁"
+},
+"隙": {
+"source": "hsk",
+"item": "细"
+},
+"扳": {
+"source": "hsk",
+"item": "扳"
+},
+"袭": {
+"source": "hsk",
+"item": "席"
+},
+"纠": {
+"source": "hsk",
+"item": "揪"
+},
+"践": {
+"source": "hsk",
+"item": "箭"
+},
+"闸": {
+"source": "hsk",
+"item": "闸"
+},
+"浙": {
+"source": "hsk",
+"item": "这"
+},
+"愧": {
+"source": "syllable",
+"item": "kui4"
+},
+"呆": {
+"source": "hsk",
+"item": "呆"
+},
+"砍": {
+"source": "hsk",
+"item": "砍"
+},
+"洒": {
+"source": "hsk",
+"item": "洒"
+},
+"抹": {
+"source": "hsk",
+"item": "抹"
+},
+"脊": {
+"source": "syllable",
+"item": "ji3"
+},
+"戈": {
+"source": "hsk",
+"item": "歌"
+},
+"恢": {
+"source": "hsk",
+"item": "灰"
+},
+"塘": {
+"source": "hsk",
+"item": "塘"
+},
+"贩": {
+"source": "hsk",
+"item": "泛"
+},
+"抑": {
+"source": "hsk",
+"item": "亿"
+},
+"捞": {
+"source": "syllable",
+"item": "lao1"
+},
+"赃": {
+"source": "hsk",
+"item": "脏"
+},
+"杠": {
+"source": "syllable",
+"item": "gang4"
+},
+"剥": {
+"source": "hsk",
+"item": "剥"
+},
+"搏": {
+"source": "syllable",
+"item": "bo2"
+},
+"悉": {
+"source": "hsk",
+"item": "稀"
+},
+"戳": {
+"source": "syllable",
+"item": "chuo1"
+},
+"腊": {
+"source": "commons",
+"title": "Zh-là.ogg",
+"name": "la4"
+},
+"锻": {
+"source": "hsk",
+"item": "断"
+},
+"贼": {
+"source": "hsk",
+"item": "贼"
+},
+"茂": {
+"source": "commons",
+"title": "Zh-mào.ogg",
+"name": "mao4"
+},
+"契": {
+"source": "hsk",
+"item": "气"
+},
+"奴": {
+"source": "syllable",
+"item": "nu2"
+},
+"埃": {
+"source": "syllable",
+"item": "ai1"
+},
+"愉": {
+"source": "hsk",
+"item": "于"
+},
+"狡": {
+"source": "hsk",
+"item": "搅"
+},
+"狭": {
+"source": "commons",
+"title": "Zh-xiá.ogg",
+"name": "xia2"
+},
+"狱": {
+"source": "hsk",
+"item": "遇"
+},
+"媳": {
+"source": "hsk",
+"item": "席"
+},
+"勃": {
+"source": "syllable",
+"item": "bo2"
+},
+"磁": {
+"source": "hsk",
+"item": "词"
+},
+"赔": {
+"source": "hsk",
+"item": "赔"
+},
+"叠": {
+"source": "hsk",
+"item": "叠"
+},
+"稻": {
+"source": "hsk",
+"item": "到"
+},
+"捧": {
+"source": "hsk",
+"item": "捧"
+},
+"玻": {
+"source": "hsk",
+"item": "拨"
+},
+"芽": {
+"source": "hsk",
+"item": "芽"
+},
+"沿": {
+"source": "hsk",
+"item": "言"
+},
+"糟": {
+"source": "hsk",
+"item": "糟"
+},
+"罩": {
+"source": "hsk",
+"item": "罩"
+},
+"综": {
+"source": "syllable",
+"item": "zong1"
+},
+"壶": {
+"source": "hsk",
+"item": "壶"
+},
+"柱": {
+"source": "hsk",
+"item": "助"
+},
+"揽": {
+"source": "hsk",
+"item": "懒"
+},
+"燥": {
+"source": "hsk",
+"item": "造"
+},
+"舌": {
+"source": "hsk",
+"item": "蛇"
+},
+"胞": {
+"source": "hsk",
+"item": "剥"
+},
+"柄": {
+"source": "hsk",
+"item": "柄"
+},
+"怠": {
+"source": "hsk",
+"item": "代"
+},
+"顽": {
+"source": "hsk",
+"item": "完"
+},
+"巡": {
+"source": "hsk",
+"item": "寻"
+},
+"芳": {
+"source": "hsk",
+"item": "方"
+},
+"扁": {
+"source": "hsk",
+"item": "扁"
+},
+"兼": {
+"source": "hsk",
+"item": "兼"
+},
+"浸": {
+"source": "hsk",
+"item": "浸"
+},
+"谨": {
+"source": "hsk",
+"item": "仅"
+},
+"返": {
+"source": "hsk",
+"item": "返"
+},
+"洪": {
+"source": "hsk",
+"item": "红"
+},
+"铲": {
+"source": "hsk",
+"item": "铲"
+},
+"颁": {
+"source": "hsk",
+"item": "般"
+},
+"拌": {
+"source": "hsk",
+"item": "拌"
+},
+"痕": {
+"source": "syllable",
+"item": "hen2"
+},
+"宏": {
+"source": "hsk",
+"item": "红"
+},
+"逮": {
+"source": "syllable",
+"item": "dai3"
+},
+"削": {
+"source": "hsk",
+"item": "削"
+},
+"娇": {
+"source": "hsk",
+"item": "娇"
+},
+"勾": {
+"source": "hsk",
+"item": "勾"
+},
+"疆": {
+"source": "hsk",
+"item": "将"
+},
+"脉": {
+"source": "hsk",
+"item": "卖"
+},
+"邀": {
+"source": "hsk",
+"item": "邀"
+},
+"押": {
+"source": "hsk",
+"item": "押"
+},
+"绊": {
+"source": "hsk",
+"item": "伴"
+},
+"键": {
+"source": "hsk",
+"item": "箭"
+},
+"蜡": {
+"source": "commons",
+"title": "Zh-là.ogg",
+"name": "la4"
+},
+"抚": {
+"source": "hsk",
+"item": "俯"
+},
+"割": {
+"source": "hsk",
+"item": "割"
+},
+"腔": {
+"source": "hsk",
+"item": "腔"
+},
+"纵": {
+"source": "syllable",
+"item": "zong4"
+},
+"芬": {
+"source": "hsk",
+"item": "分"
+},
+"邦": {
+"source": "hsk",
+"item": "帮"
+},
+"逗": {
+"source": "hsk",
+"item": "逗"
+},
+"晓": {
+"source": "hsk",
+"item": "小"
+},
+"悦": {
+"source": "hsk",
+"item": "月"
+},
+"辜": {
+"source": "syllable",
+"item": "gu1"
+},
+"撑": {
+"source": "hsk",
+"item": "撑"
+},
+"堡": {
+"source": "hsk",
+"item": "饱"
+},
+"腕": {
+"source": "hsk",
+"item": "万"
+},
+"遥": {
+"source": "hsk",
+"item": "窑"
+},
+"酷": {
+"source": "hsk",
+"item": "库"
+},
+"膜": {
+"source": "hsk",
+"item": "膜"
+},
+"娱": {
+"source": "hsk",
+"item": "于"
+},
+"辉": {
+"source": "hsk",
+"item": "灰"
+},
+"缠": {
+"source": "hsk",
+"item": "缠"
+},
+"钠": {
+"source": "syllable",
+"item": "na4"
+},
+"纳": {
+"source": "syllable",
+"item": "na4"
+},
+"蚊": {
+"source": "hsk",
+"item": "文"
+},
+"坟": {
+"source": "hsk",
+"item": "坟"
+},
+"屈": {
+"source": "hsk",
+"item": "区"
+},
+"耗": {
+"source": "hsk",
+"item": "耗"
+},
+"弦": {
+"source": "hsk",
+"item": "弦"
+},
+"澳": {
+"source": "syllable",
+"item": "ao4"
+},
+"津": {
+"source": "hsk",
+"item": "斤"
+},
+"刑": {
+"source": "hsk",
+"item": "刑"
+},
+"甚": {
+"source": "hsk",
+"item": "渗"
+},
+"纲": {
+"source": "hsk",
+"item": "纲"
+},
+"搅": {
+"source": "hsk",
+"item": "搅"
+},
+"恒": {
+"source": "hsk",
+"item": "横"
+},
+"铜": {
+"source": "hsk",
+"item": "铜"
+},
+"添": {
+"source": "hsk",
+"item": "添"
+},
+"桑": {
+"source": "syllable",
+"item": "sang1"
+},
+"轰": {
+"source": "hsk",
+"item": "烘"
+},
+"愈": {
+"source": "hsk",
+"item": "愈"
+},
+"纹": {
+"source": "hsk",
+"item": "文"
+},
+"璃": {
+"source": "hsk",
+"item": "梨"
+},
+"堪": {
+"source": "syllable",
+"item": "kan1"
+},
+"挣": {
+"source": "hsk",
+"item": "挣"
+},
+"摘": {
+"source": "hsk",
+"item": "摘"
+},
+"赌": {
+"source": "hsk",
+"item": "赌"
+},
+"恰": {
+"source": "syllable",
+"item": "qia4"
+},
+"跌": {
+"source": "hsk",
+"item": "跌"
+},
+"叛": {
+"source": "hsk",
+"item": "盼"
+},
+"撞": {
+"source": "hsk",
+"item": "撞"
+},
+"忌": {
+"source": "hsk",
+"item": "忌"
+},
+"劫": {
+"source": "hsk",
+"item": "劫"
+},
+"映": {
+"source": "hsk",
+"item": "映"
+},
+"蓄": {
+"source": "hsk",
+"item": "蓄"
+},
+"慧": {
+"source": "hsk",
+"item": "会"
+},
+"扒": {
+"source": "hsk",
+"item": "爬"
+},
+"妨": {
+"source": "hsk",
+"item": "防"
+},
+"盾": {
+"source": "hsk",
+"item": "顿"
+},
+"辅": {
+"source": "hsk",
+"item": "俯"
+},
+"绕": {
+"source": "hsk",
+"item": "绕"
+},
+"泊": {
+"source": "syllable",
+"item": "bo2"
+},
+"谣": {
+"source": "hsk",
+"item": "窑"
+},
+"渠": {
+"source": "hsk",
+"item": "渠"
+},
+"壳": {
+"source": "hsk",
+"item": "壳"
+},
+"轨": {
+"source": "hsk",
+"item": "鬼"
+},
+"滥": {
+"source": "hsk",
+"item": "烂"
+},
+"凝": {
+"source": "syllable",
+"item": "ning2"
+},
+"颠": {
+"source": "hsk",
+"item": "掂"
+},
+"怖": {
+"source": "hsk",
+"item": "部"
+},
+"篷": {
+"source": "hsk",
+"item": "棚"
+},
+"慕": {
+"source": "hsk",
+"item": "木"
+},
+"笛": {
+"source": "hsk",
+"item": "敌"
+},
+"伐": {
+"source": "hsk",
+"item": "伐"
+},
+"浑": {
+"source": "syllable",
+"item": "hun2"
+},
+"拧": {
+"source": "hsk",
+"item": "拧"
+},
+"婴": {
+"source": "hsk",
+"item": "鹰"
+},
+"磅": {
+"source": "hsk",
+"item": "磅"
+},
+"镑": {
+"source": "hsk",
+"item": "磅"
+},
+"趾": {
+"source": "hsk",
+"item": "止"
+},
+"腹": {
+"source": "hsk",
+"item": "腹"
+},
+"延": {
+"source": "hsk",
+"item": "言"
+},
+"博": {
+"source": "syllable",
+"item": "bo2"
+},
+"昼": {
+"source": "hsk",
+"item": "皱"
+},
+"仙": {
+"source": "hsk",
+"item": "掀"
+},
+"菊": {
+"source": "hsk",
+"item": "局"
+},
+"牡": {
+"source": "hsk",
+"item": "亩"
+},
+"绒": {
+"source": "hsk",
+"item": "绒"
+},
+"橱": {
+"source": "hsk",
+"item": "锄"
+},
+"拟": {
+"source": "hsk",
+"item": "拟"
+},
+"芒": {
+"source": "hsk",
+"item": "忙"
+},
+"檬": {
+"source": "hsk",
+"item": "蒙"
+},
+"柠": {
+"source": "syllable",
+"item": "ning2"
+},
+"荔": {
+"source": "hsk",
+"item": "粒"
+},
+"椰": {
+"source": "syllable",
+"item": "ye1"
+},
+"猕": {
+"source": "hsk",
+"item": "迷"
+},
+"樱": {
+"source": "hsk",
+"item": "鹰"
+},
+"芹": {
+"source": "hsk",
+"item": "禽"
+},
+"蘑": {
+"source": "hsk",
+"item": "磨"
+},
+"萝": {
+"source": "hsk",
+"item": "锣"
+},
+"豆": {
+"source": "hsk",
+"item": "斗"
+},
+"茄": {
+"source": "syllable",
+"item": "qie2"
+},
+"柿": {
+"source": "hsk",
+"item": "事"
+},
+"融": {
+"source": "hsk",
+"item": "绒"
+},
+"哲": {
+"source": "hsk",
+"item": "折"
+},
+"妃": {
+"source": "hsk",
+"item": "飞"
+},
+"嫔": {
+"source": "commons",
+"title": "Zh-pín.ogg",
+"name": "pin2"
+},
+"烽": {
+"source": "hsk",
+"item": "封"
+},
+"饨": {
+"source": "syllable",
+"item": "tun2"
+},
+"馄": {
+"source": "syllable",
+"item": "hun2"
+},
+"乍": {
+"source": "commons",
+"title": "Zh-zhà.ogg",
+"name": "zha4"
+},
+"轿": {
+"source": "hsk",
+"item": "叫"
+},
+"注": {
+"source": "hsk",
+"item": "助"
+},
+"耽": {
+"source": "hsk",
+"item": "担"
+},
+"硕": {
+"source": "syllable",
+"item": "shuo4"
+},
+"姻": {
+"source": "hsk",
+"item": "阴"
+},
+"逆": {
+"source": "syllable",
+"item": "ni4"
+},
+"蟹": {
+"source": "hsk",
+"item": "泻"
+},
+"螃": {
+"source": "hsk",
+"item": "旁"
+},
+"荤": {
+"source": "hsk",
+"item": "昏"
+},
+"材": {
+"source": "hsk",
+"item": "财"
+},
+"拇": {
+"source": "hsk",
+"item": "亩"
+},
+"膊": {
+"source": "syllable",
+"item": "bo2"
+},
+"膀": {
+"source": "hsk",
+"item": "绑"
+},
+"俄": {
+"source": "hsk",
+"item": "鹅"
+},
+"讯": {
+"source": "hsk",
+"item": "讯"
+},
+"橡": {
+"source": "hsk",
+"item": "像"
+},
+"士": {
+"source": "hsk",
+"item": "事"
+},
+"谐": {
+"source": "hsk",
+"item": "邪"
+},
+"淘": {
+"source": "hsk",
+"item": "逃"
+},
+"掏": {
+"source": "syllable",
+"item": "tao1"
+},
+"捣": {
+"source": "hsk",
+"item": "捣"
+},
+"黎": {
+"source": "hsk",
+"item": "梨"
+},
+"扯": {
+"source": "hsk",
+"item": "扯"
+},
+"钩": {
+"source": "hsk",
+"item": "钩"
+},
+"灌": {
+"source": "hsk",
+"item": "灌"
+},
+"蹈": {
+"source": "hsk",
+"item": "岛"
+},
+"柴": {
+"source": "syllable",
+"item": "chai2"
+},
+"岭": {
+"source": "hsk",
+"item": "岭"
+},
+"陶": {
+"source": "hsk",
+"item": "逃"
+},
+"叉": {
+"source": "hsk",
+"item": "叉"
+},
+"振": {
+"source": "hsk",
+"item": "阵"
+},
+"遮": {
+"source": "hsk",
+"item": "遮"
+},
+"纷": {
+"source": "hsk",
+"item": "分"
+},
+"摊": {
+"source": "hsk",
+"item": "摊"
+},
+"筒": {
+"source": "hsk",
+"item": "筒"
+},
+"跨": {
+"source": "hsk",
+"item": "挎"
+},
+"斥": {
+"source": "syllable",
+"item": "chi4"
+},
+"携": {
+"source": "hsk",
+"item": "邪"
+},
+"坛": {
+"source": "hsk",
+"item": "坛"
+},
+"恭": {
+"source": "hsk",
+"item": "供"
+},
+"糊": {
+"source": "hsk",
+"item": "呼"
+},
+"铅": {
+"source": "hsk",
+"item": "铅"
+},
+"勒": {
+"source": "hsk",
+"item": "勒"
+},
+"钥": {
+"source": "hsk",
+"item": "要"
+},
+"盟": {
+"source": "hsk",
+"item": "蒙"
+},
+"滩": {
+"source": "hsk",
+"item": "滩"
+},
+"偶": {
+"source": "syllable",
+"item": "ou3"
+},
+"漆": {
+"source": "hsk",
+"item": "漆"
+},
+"逞": {
+"source": "syllable",
+"item": "cheng3"
+},
+"媒": {
+"source": "hsk",
+"item": "煤"
+},
+"廉": {
+"source": "hsk",
+"item": "联"
+},
+"牵": {
+"source": "hsk",
+"item": "牵"
+},
+"允": {
+"source": "syllable",
+"item": "yun3"
+},
+"榜": {
+"source": "hsk",
+"item": "绑"
+},
+"彻": {
+"source": "hsk",
+"item": "撤"
+},
+"叹": {
+"source": "hsk",
+"item": "探"
+},
+"艰": {
+"source": "hsk",
+"item": "间"
+},
+"棵": {
+"source": "hsk",
+"item": "棵"
+},
+"孙": {
+"source": "syllable",
+"item": "sun1"
+},
+"崇": {
+"source": "syllable",
+"item": "chong2"
+},
+"扑": {
+"source": "hsk",
+"item": "扑"
+},
+"斑": {
+"source": "hsk",
+"item": "斑"
+},
+"鉴": {
+"source": "hsk",
+"item": "箭"
+},
+"妆": {
+"source": "hsk",
+"item": "桩"
+},
+"寂": {
+"source": "hsk",
+"item": "既"
+},
+"晕": {
+"source": "hsk",
+"item": "运"
+},
+"挪": {
+"source": "hsk",
+"item": "挪"
+},
+"妥": {
+"source": "hsk",
+"item": "妥"
+},
+"矛": {
+"source": "hsk",
+"item": "毛"
+},
+"匆": {
+"source": "hsk",
+"item": "葱"
+},
+"尺": {
+"source": "hsk",
+"item": "尺"
+},
+"驶": {
+"source": "hsk",
+"item": "驶"
+},
+"抖": {
+"source": "hsk",
+"item": "抖"
+},
+"粮": {
+"source": "hsk",
+"item": "凉"
+},
+"熊": {
+"source": "hsk",
+"item": "熊"
+},
+"牧": {
+"source": "hsk",
+"item": "木"
+},
+"朴": {
+"source": "syllable",
+"item": "pu3"
+},
+"孤": {
+"source": "syllable",
+"item": "gu1"
+},
+"纽": {
+"source": "hsk",
+"item": "扭"
+},
+"刮": {
+"source": "hsk",
+"item": "刮"
+},
+"串": {
+"source": "hsk",
+"item": "串"
+},
+"晒": {
+"source": "hsk",
+"item": "晒"
+},
+"敲": {
+"source": "hsk",
+"item": "敲"
+},
+"杜": {
+"source": "hsk",
+"item": "镀"
+},
+"殿": {
+"source": "hsk",
+"item": "殿"
+},
+"撒": {
+"source": "hsk",
+"item": "洒"
+},
+"溪": {
+"source": "hsk",
+"item": "溪"
+},
+"劝": {
+"source": "hsk",
+"item": "劝"
+},
+"享": {
+"source": "hsk",
+"item": "响"
+},
+"郎": {
+"source": "hsk",
+"item": "狼"
+},
+"浴": {
+"source": "hsk",
+"item": "遇"
+},
+"朵": {
+"source": "hsk",
+"item": "朵"
+},
+"岳": {
+"source": "hsk",
+"item": "月"
+},
+"熙": {
+"source": "hsk",
+"item": "稀"
+},
+"俊": {
+"source": "hsk",
+"item": "俊"
+},
+"衷": {
+"source": "hsk",
+"item": "钟"
+},
+"燕": {
+"source": "hsk",
+"item": "咽"
+},
+"垫": {
+"source": "hsk",
+"item": "垫"
+},
+"豪": {
+"source": "syllable",
+"item": "hao2"
+},
+"仇": {
+"source": "hsk",
+"item": "仇"
+},
+"罢": {
+"source": "hsk",
+"item": "罢"
+},
+"籍": {
+"source": "hsk",
+"item": "极"
+},
+"井": {
+"source": "hsk",
+"item": "井"
+},
+"距": {
+"source": "hsk",
+"item": "距"
+},
+"搁": {
+"source": "hsk",
+"item": "搁"
+},
+"捉": {
+"source": "hsk",
+"item": "捉"
+},
+"椒": {
+"source": "hsk",
+"item": "娇"
+},
+"寸": {
+"source": "hsk",
+"item": "寸"
+},
+"嗓": {
+"source": "syllable",
+"item": "sang3"
+},
+"彼": {
+"source": "hsk",
+"item": "彼"
+},
+"婆": {
+"source": "syllable",
+"item": "po2"
+},
+"慈": {
+"source": "hsk",
+"item": "词"
+},
+"鸣": {
+"source": "hsk",
+"item": "鸣"
+},
+"惩": {
+"source": "hsk",
+"item": "惩"
+},
+"泡": {
+"source": "hsk",
+"item": "泡"
+},
+"惑": {
+"source": "hsk",
+"item": "或"
+},
+"舵": {
+"source": "hsk",
+"item": "跺"
+},
+"耍": {
+"source": "hsk",
+"item": "耍"
+},
+"搜": {
+"source": "hsk",
+"item": "搜"
+},
+"慌": {
+"source": "hsk",
+"item": "慌"
+},
+"霜": {
+"source": "hsk",
+"item": "霜"
+},
+"涨": {
+"source": "hsk",
+"item": "涨"
+},
+"饰": {
+"source": "hsk",
+"item": "事"
+},
+"既": {
+"source": "hsk",
+"item": "既"
+},
+"暖": {
+"source": "hsk",
+"item": "暖"
+},
+"奋": {
+"source": "hsk",
+"item": "份"
+},
+"席": {
+"source": "hsk",
+"item": "席"
+},
+"虚": {
+"source": "hsk",
+"item": "虚"
+},
+"瓦": {
+"source": "hsk",
+"item": "瓦"
+},
+"狂": {
+"source": "hsk",
+"item": "狂"
+},
+"逐": {
+"source": "syllable",
+"item": "zhu2"
+},
+"谋": {
+"source": "hsk",
+"item": "谋"
+},
+"盔": {
+"source": "hsk",
+"item": "亏"
+},
+"混": {
+"source": "hsk",
+"item": "混"
+},
+"荣": {
+"source": "hsk",
+"item": "绒"
+},
+"依": {
+"source": "hsk",
+"item": "依"
+},
+"州": {
+"source": "hsk",
+"item": "州"
+},
+"探": {
+"source": "hsk",
+"item": "探"
+},
+"构": {
+"source": "hsk",
+"item": "购"
+},
+"股": {
+"source": "hsk",
+"item": "股"
+},
+"壁": {
+"source": "hsk",
+"item": "壁"
+},
+"攻": {
+"source": "hsk",
+"item": "攻"
+},
+"鼓": {
+"source": "hsk",
+"item": "鼓"
+},
+"户": {
+"source": "hsk",
+"item": "户"
+},
+"庄": {
+"source": "hsk",
+"item": "庄"
+},
+"协": {
+"source": "hsk",
+"item": "邪"
+},
+"怀": {
+"source": "hsk",
+"item": "怀"
+},
+"升": {
+"source": "hsk",
+"item": "升"
+},
+"盛": {
+"source": "hsk",
+"item": "盛"
+},
+"初": {
+"source": "hsk",
+"item": "初"
+},
+"坦": {
+"source": "syllable",
+"item": "tan3"
+},
+"塞": {
+"source": "hsk",
+"item": "塞"
+},
+"附": {
+"source": "hsk",
+"item": "腹"
+},
+"冒": {
+"source": "commons",
+"title": "Zh-mào.ogg",
+"name": "mao4"
+},
+"趟": {
+"source": "hsk",
+"item": "趟"
+},
+"吊": {
+"source": "hsk",
+"item": "吊"
+},
+"渗": {
+"source": "hsk",
+"item": "渗"
+},
+"惨": {
+"source": "hsk",
+"item": "惨"
+},
+"悬": {
+"source": "hsk",
+"item": "悬"
+},
+"馅": {
+"source": "hsk",
+"item": "线"
+},
+"立": {
+"source": "hsk",
+"item": "立"
+},
+"争": {
+"source": "hsk",
+"item": "争"
+},
+"英": {
+"source": "hsk",
+"item": "鹰"
+},
+"告": {
+"source": "hsk",
+"item": "告"
+},
+"将": {
+"source": "hsk",
+"item": "将"
+},
+"展": {
+"source": "hsk",
+"item": "盏"
+},
+"社": {
+"source": "hsk",
+"item": "社"
+},
+"调": {
+"source": "hsk",
+"item": "调"
+},
+"亲": {
+"source": "hsk",
+"item": "亲"
+},
+"亚": {
+"source": "hsk",
+"item": "轧"
+},
+"克": {
+"source": "hsk",
+"item": "克"
+},
+"片": {
+"source": "hsk",
+"item": "片"
+},
+"者": {
+"source": "hsk",
+"item": "者"
+},
+"板": {
+"source": "hsk",
+"item": "板"
+},
+"线": {
+"source": "hsk",
+"item": "线"
+},
+"使": {
+"source": "hsk",
+"item": "始"
+},
+"园": {
+"source": "hsk",
+"item": "园"
+},
+"该": {
+"source": "hsk",
+"item": "该"
+},
+"式": {
+"source": "hsk",
+"item": "式"
+},
+"传": {
+"source": "hsk",
+"item": "传"
+},
+"带": {
+"source": "hsk",
+"item": "代"
+},
+"掺": {
+"source": "hsk",
+"item": "掺"
+},
+"叼": {
+"source": "hsk",
+"item": "叼"
+},
+"桔": {
+"source": "hsk",
+"item": "局"
+},
+"绣": {
+"source": "hsk",
+"item": "绣"
+},
+"术": {
+"source": "syllable",
+"item": "shu4"
+},
+"光": {
+"source": "hsk",
+"item": "光"
+},
+"由": {
+"source": "hsk",
+"item": "由"
+},
+"惫": {
+"source": "hsk",
+"item": "背"
+},
+"入": {
+"source": "hsk",
+"item": "入"
+},
+"蚕": {
+"source": "hsk",
+"item": "蚕"
+},
+"瞒": {
+"source": "hsk",
+"item": "瞒"
+},
+"掐": {
+"source": "hsk",
+"item": "掐"
+},
+"爹": {
+"source": "hsk",
+"item": "爹"
+},
+"眨": {
+"source": "hsk",
+"item": "眨"
+},
+"橙": {
+"source": "hsk",
+"item": "盛"
+},
+"鱿": {
+"source": "hsk",
+"item": "油"
+},
+"肴": {
+"source": "hsk",
+"item": "窑"
+},
+"叨": {
+"source": "hsk",
+"item": "刀"
+},
+"锈": {
+"source": "hsk",
+"item": "锈"
+},
+"务": {
+"source": "hsk",
+"item": "雾"
+},
+"吨": {
+"source": "hsk",
+"item": "吨"
+},
+"清": {
+"source": "hsk",
+"item": "清"
+},
+"办": {
+"source": "hsk",
+"item": "办"
+},
+"糯": {
+"source": "syllable",
+"item": "nuo4"
+},
+"才": {
+"source": "hsk",
+"item": "才"
+},
+"受": {
+"source": "hsk",
+"item": "受"
+},
+"解": {
+"source": "hsk",
+"item": "解"
+},
+"义": {
+"source": "hsk",
+"item": "亿"
+},
+"赛": {
+"source": "hsk",
+"item": "赛"
+},
+"制": {
+"source": "hsk",
+"item": "制"
+},
+"言": {
+"source": "hsk",
+"item": "言"
+},
+"袍": {
+"source": "hsk",
+"item": "刨"
+},
+"贱": {
+"source": "hsk",
+"item": "贱"
+},
+"巷": {
+"source": "hsk",
+"item": "巷"
+},
+"锯": {
+"source": "hsk",
+"item": "锯"
+},
+"盏": {
+"source": "hsk",
+"item": "盏"
+},
+"抛": {
+"source": "hsk",
+"item": "抛"
+},
+"翘": {
+"source": "hsk",
+"item": "翘"
+},
+"敛": {
+"source": "hsk",
+"item": "脸"
+},
+"惭": {
+"source": "hsk",
+"item": "蚕"
+},
+"浇": {
+"source": "hsk",
+"item": "浇"
+},
+"枣": {
+"source": "hsk",
+"item": "枣"
+},
+"蹲": {
+"source": "hsk",
+"item": "蹲"
+},
+"泣": {
+"source": "hsk",
+"item": "气"
+},
+"吼": {
+"source": "hsk",
+"item": "吼"
+},
+"烹": {
+"source": "syllable",
+"item": "peng1"
+},
+"恕": {
+"source": "syllable",
+"item": "shu4"
+},
+"计": {
+"source": "hsk",
+"item": "计"
+},
+"杏": {
+"source": "hsk",
+"item": "杏"
+},
+"严": {
+"source": "hsk",
+"item": "严"
+},
+"凳": {
+"source": "hsk",
+"item": "瞪"
+},
+"蛾": {
+"source": "hsk",
+"item": "鹅"
+},
+"谜": {
+"source": "hsk",
+"item": "迷"
+},
+"舅": {
+"source": "hsk",
+"item": "旧"
+},
+"殉": {
+"source": "hsk",
+"item": "训"
+},
+"俘": {
+"source": "hsk",
+"item": "浮"
+},
+"贤": {
+"source": "hsk",
+"item": "闲"
+},
+"产": {
+"source": "hsk",
+"item": "产"
+},
+"度": {
+"source": "hsk",
+"item": "度"
+},
+"而": {
+"source": "hsk",
+"item": "而"
+},
+"果": {
+"source": "hsk",
+"item": "裹"
+},
+"所": {
+"source": "hsk",
+"item": "所"
+},
+"化": {
+"source": "hsk",
+"item": "划"
+},
+"平": {
+"source": "hsk",
+"item": "平"
+},
+"应": {
+"source": "hsk",
+"item": "应"
+},
+"比": {
+"source": "hsk",
+"item": "比"
+},
+"于": {
+"source": "hsk",
+"item": "于"
+},
+"场": {
+"source": "hsk",
+"item": "场"
+},
+"非": {
+"source": "hsk",
+"item": "非"
+},
+"以": {
+"source": "hsk",
+"item": "以"
+},
+"为": {
+"source": "hsk",
+"item": "为"
+},
+"个": {
+"source": "hsk",
+"item": "个"
+},
+"揪": {
+"source": "hsk",
+"item": "揪"
+},
+"赊": {
+"source": "syllable",
+"item": "she1"
+},
+"跺": {
+"source": "hsk",
+"item": "跺"
+},
+"粽": {
+"source": "syllable",
+"item": "zong4"
+},
+"搓": {
+"source": "hsk",
+"item": "搓"
+},
+"旭": {
+"source": "hsk",
+"item": "蓄"
+},
+"剁": {
+"source": "hsk",
+"item": "跺"
+},
+"揉": {
+"source": "hsk",
+"item": "揉"
+},
+"灸": {
+"source": "hsk",
+"item": "酒"
+},
+"歇": {
+"source": "hsk",
+"item": "歇"
+},
+"捏": {
+"source": "hsk",
+"item": "捏"
+},
+"鲨": {
+"source": "hsk",
+"item": "杀"
+},
+"踱": {
+"source": "commons",
+"title": "Zh-duó.ogg",
+"name": "duo2"
+},
+"渣": {
+"source": "hsk",
+"item": "渣"
+},
+"镀": {
+"source": "hsk",
+"item": "镀"
+},
+"劈": {
+"source": "hsk",
+"item": "劈"
+},
+"吻": {
+"source": "hsk",
+"item": "吻"
+},
+"疤": {
+"source": "hsk",
+"item": "疤"
+},
+"钙": {
+"source": "hsk",
+"item": "钙"
+},
+"碱": {
+"source": "hsk",
+"item": "碱"
+},
+"梨": {
+"source": "hsk",
+"item": "梨"
+},
+"趴": {
+"source": "hsk",
+"item": "趴"
+},
+"揍": {
+"source": "hsk",
+"item": "揍"
+},
+"煲": {
+"source": "hsk",
+"item": "剥"
+},
+"肾": {
+"source": "hsk",
+"item": "渗"
+},
+"咽": {
+"source": "hsk",
+"item": "咽"
+},
+"唉": {
+"source": "hsk",
+"item": "爱"
+},
+"腮": {
+"source": "hsk",
+"item": "腮"
+},
+"惦": {
+"source": "hsk",
+"item": "店"
+},
+"膝": {
+"source": "hsk",
+"item": "稀"
+},
+"奈": {
+"source": "hsk",
+"item": "耐"
+},
+"佘": {
+"source": "hsk",
+"item": "蛇"
+},
+"缉": {
+"source": "hsk",
+"item": "击"
+},
+"基": {
+"source": "hsk",
+"item": "击"
+},
+"援": {
+"source": "hsk",
+"item": "元"
+},
+"庞": {
+"source": "hsk",
+"item": "旁"
+},
+"谦": {
+"source": "hsk",
+"item": "铅"
+},
+"酪": {
+"source": "syllable",
+"item": "lao4"
+},
+"宙": {
+"source": "hsk",
+"item": "皱"
+},
+"喊": {
+"source": "hsk",
+"item": "喊"
+},
+"嫌": {
+"source": "hsk",
+"item": "嫌"
+},
+"筋": {
+"source": "hsk",
+"item": "筋"
+},
+"僵": {
+"source": "hsk",
+"item": "僵"
+},
+"惠": {
+"source": "hsk",
+"item": "会"
+},
+"帐": {
+"source": "hsk",
+"item": "帐"
+},
+"启": {
+"source": "hsk",
+"item": "起"
+},
+"绪": {
+"source": "hsk",
+"item": "蓄"
+},
+"腾": {
+"source": "hsk",
+"item": "腾"
+},
+"宗": {
+"source": "syllable",
+"item": "zong1"
+},
+"捷": {
+"source": "hsk",
+"item": "劫"
+},
+"症": {
+"source": "hsk",
+"item": "症"
+},
+"辑": {
+"source": "hsk",
+"item": "极"
+},
+"励": {
+"source": "hsk",
+"item": "粒"
+},
+"拒": {
+"source": "hsk",
+"item": "拒"
+},
+"燃": {
+"source": "commons",
+"title": "Zh-rán.ogg",
+"name": "ran2"
+},
+"础": {
+"source": "syllable",
+"item": "chu3"
+},
+"宠": {
+"source": "syllable",
+"item": "chong3"
+},
+"授": {
+"source": "hsk",
+"item": "授"
+},
+"拍": {
+"source": "hsk",
+"item": "拍"
+},
+"却": {
+"source": "hsk",
+"item": "却"
+},
+"汇": {
+"source": "hsk",
+"item": "汇"
+},
+"渐": {
+"source": "hsk",
+"item": "渐"
+},
+"略": {
+"source": "hsk",
+"item": "略"
+},
+"审": {
+"source": "hsk",
+"item": "审"
+},
+"冠": {
+"source": "hsk",
+"item": "官"
+},
+"柬": {
+"source": "hsk",
+"item": "拣"
+},
+"束": {
+"source": "hsk",
+"item": "束"
+},
+"庭": {
+"source": "hsk",
+"item": "停"
+},
+"且": {
+"source": "hsk",
+"item": "且"
+},
+"拔": {
+"source": "hsk",
+"item": "拔"
+},
+"脾": {
+"source": "hsk",
+"item": "皮"
+},
+"拨": {
+"source": "hsk",
+"item": "拨"
+},
+"丧": {
+"source": "syllable",
+"item": "sang4"
+},
+"诊": {
+"source": "syllable",
+"item": "zhen3"
+},
+"拐": {
+"source": "hsk",
+"item": "拐"
+},
+"括": {
+"source": "hsk",
+"item": "阔"
+},
+"诸": {
+"source": "hsk",
+"item": "株"
+},
+"狠": {
+"source": "hsk",
+"item": "狠"
+},
+"狼": {
+"source": "hsk",
+"item": "狼"
+},
+"尘": {
+"source": "commons",
+"title": "Zh-chén.ogg",
+"name": "chen2"
+},
+"唐": {
+"source": "hsk",
+"item": "糖"
+},
+"召": {
+"source": "hsk",
+"item": "照"
+},
+"聊": {
+"source": "hsk",
+"item": "聊"
+},
+"徐": {
+"source": "syllable",
+"item": "xu2"
+},
+"炉": {
+"source": "syllable",
+"item": "lu2"
+},
+"岩": {
+"source": "hsk",
+"item": "言"
+},
+"厉": {
+"source": "hsk",
+"item": "粒"
+},
+"唤": {
+"source": "hsk",
+"item": "唤"
+},
+"笼": {
+"source": "hsk",
+"item": "聋"
+},
+"乳": {
+"source": "hsk",
+"item": "乳"
+},
+"滴": {
+"source": "hsk",
+"item": "滴"
+},
+"衰": {
+"source": "hsk",
+"item": "摔"
+},
+"徽": {
+"source": "hsk",
+"item": "灰"
+},
+"伟": {
+"source": "hsk",
+"item": "尾"
+},
+"赁": {
+"source": "syllable",
+"item": "lin4"
+},
+"凭": {
+"source": "hsk",
+"item": "凭"
+},
+"弊": {
+"source": "hsk",
+"item": "闭"
+},
+"赏": {
+"source": "hsk",
+"item": "赏"
+},
+"岗": {
+"source": "hsk",
+"item": "港"
+},
+"倍": {
+"source": "hsk",
+"item": "倍"
+},
+"揭": {
+"source": "hsk",
+"item": "揭"
+},
+"佳": {
+"source": "hsk",
+"item": "佳"
+},
+"辛": {
+"source": "hsk",
+"item": "新"
+},
+"枯": {
+"source": "hsk",
+"item": "枯"
+},
+"耻": {
+"source": "hsk",
+"item": "尺"
+},
+"梅": {
+"source": "hsk",
+"item": "煤"
+},
+"苍": {
+"source": "hsk",
+"item": "舱"
+},
+"骂": {
+"source": "hsk",
+"item": "骂"
+},
+"贪": {
+"source": "hsk",
+"item": "贪"
+},
+"桶": {
+"source": "hsk",
+"item": "桶"
+},
+"沟": {
+"source": "hsk",
+"item": "沟"
+},
+"恼": {
+"source": "syllable",
+"item": "nao3"
+},
+"悔": {
+"source": "hsk",
+"item": "悔"
+},
+"撤": {
+"source": "hsk",
+"item": "撤"
+},
+"雇": {
+"source": "hsk",
+"item": "雇"
+},
+"疾": {
+"source": "hsk",
+"item": "极"
+},
+"肯": {
+"source": "hsk",
+"item": "肯"
+},
+"册": {
+"source": "hsk",
+"item": "册"
+},
+"扶": {
+"source": "hsk",
+"item": "扶"
+},
+"兑": {
+"source": "hsk",
+"item": "队"
+},
+"锁": {
+"source": "hsk",
+"item": "锁"
+},
+"桃": {
+"source": "hsk",
+"item": "桃"
+},
+"眠": {
+"source": "commons",
+"title": "Zh-mián.ogg",
+"name": "mian2"
+},
+"绑": {
+"source": "hsk",
+"item": "绑"
+},
+"欺": {
+"source": "hsk",
+"item": "七"
+},
+"畅": {
+"source": "commons",
+"title": "Zh-chàng.ogg",
+"name": "chang4"
+},
+"尊": {
+"source": "hsk",
+"item": "尊"
+},
+"匙": {
+"source": "commons",
+"title": "Zh-shi.ogg",
+"name": "shi5"
+},
+"训": {
+"source": "hsk",
+"item": "训"
+},
+"辱": {
+"source": "hsk",
+"item": "乳"
+},
+"脂": {
+"source": "hsk",
+"item": "织"
+},
+"铃": {
+"source": "hsk",
+"item": "铃"
+},
+"缝": {
+"source": "hsk",
+"item": "缝"
+},
+"雕": {
+"source": "hsk",
+"item": "刁"
+},
+"烂": {
+"source": "hsk",
+"item": "烂"
+},
+"骑": {
+"source": "hsk",
+"item": "骑"
+},
+"若": {
+"source": "hsk",
+"item": "若"
+},
+"亏": {
+"source": "hsk",
+"item": "亏"
+},
+"胎": {
+"source": "syllable",
+"item": "tai1"
+},
+"储": {
+"source": "syllable",
+"item": "chu3"
+},
+"漠": {
+"source": "hsk",
+"item": "末"
+},
+"霸": {
+"source": "hsk",
+"item": "罢"
+},
+"荡": {
+"source": "hsk",
+"item": "荡"
+},
+"桨": {
+"source": "hsk",
+"item": "桨"
+},
+"仰": {
+"source": "hsk",
+"item": "痒"
+},
+"尝": {
+"source": "hsk",
+"item": "尝"
+},
+"暑": {
+"source": "hsk",
+"item": "属"
+},
+"缓": {
+"source": "hsk",
+"item": "缓"
+},
+"辆": {
+"source": "hsk",
+"item": "辆"
+},
+"竭": {
+"source": "hsk",
+"item": "劫"
+},
+"阁": {
+"source": "hsk",
+"item": "隔"
+},
+"隐": {
+"source": "hsk",
+"item": "引"
+},
+"棍": {
+"source": "syllable",
+"item": "gun4"
+},
+"滚": {
+"source": "hsk",
+"item": "滚"
+},
+"驱": {
+"source": "hsk",
+"item": "区"
+},
+"贯": {
+"source": "hsk",
+"item": "灌"
+},
+"佩": {
+"source": "hsk",
+"item": "配"
+},
+"窃": {
+"source": "syllable",
+"item": "qie4"
+},
+"猛": {
+"source": "hsk",
+"item": "猛"
+},
+"培": {
+"source": "commons",
+"title": "Zh-péi.ogg",
+"name": "pei2"
+},
+"旋": {
+"source": "hsk",
+"item": "旋"
+},
+"献": {
+"source": "hsk",
+"item": "献"
+},
+"烫": {
+"source": "hsk",
+"item": "烫"
+},
+"径": {
+"source": "hsk",
+"item": "敬"
+},
+"永": {
+"source": "hsk",
+"item": "涌"
+},
+"倾": {
+"source": "hsk",
+"item": "轻"
+},
+"誓": {
+"source": "hsk",
+"item": "事"
+},
+"川": {
+"source": "hsk",
+"item": "穿"
+},
+"筹": {
+"source": "hsk",
+"item": "仇"
+},
+"锋": {
+"source": "hsk",
+"item": "封"
+},
+"丹": {
+"source": "hsk",
+"item": "丹"
+},
+"偿": {
+"source": "hsk",
+"item": "偿"
+},
+"跃": {
+"source": "hsk",
+"item": "跃"
+},
+"涂": {
+"source": "hsk",
+"item": "涂"
+},
+"握": {
+"source": "hsk",
+"item": "握"
+},
+"岸": {
+"source": "hsk",
+"item": "岸"
+},
+"剂": {
+"source": "hsk",
+"item": "既"
+},
+"泥": {
+"source": "hsk",
+"item": "泥"
+},
+"渡": {
+"source": "hsk",
+"item": "渡"
+},
+"竞": {
+"source": "hsk",
+"item": "敬"
+},
+"竟": {
+"source": "hsk",
+"item": "竟"
+},
+"摸": {
+"source": "hsk",
+"item": "摸"
+},
+"棉": {
+"source": "commons",
+"title": "Zh-mián.ogg",
+"name": "mian2"
+},
+"详": {
+"source": "syllable",
+"item": "xiang2"
+},
+"宿": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"雷": {
+"source": "hsk",
+"item": "雷"
+},
+"搭": {
+"source": "hsk",
+"item": "搭"
+},
+"党": {
+"source": "hsk",
+"item": "党"
+},
+"兄": {
+"source": "hsk",
+"item": "兄"
+},
+"抓": {
+"source": "hsk",
+"item": "抓"
+},
+"吓": {
+"source": "hsk",
+"item": "吓"
+},
+"荒": {
+"source": "hsk",
+"item": "荒"
+},
+"挑": {
+"source": "hsk",
+"item": "挑"
+},
+"疼": {
+"source": "hsk",
+"item": "疼"
+},
+"尾": {
+"source": "hsk",
+"item": "尾"
+},
+"屏": {
+"source": "hsk",
+"item": "瓶"
+},
+"堵": {
+"source": "hsk",
+"item": "堵"
+},
+"杰": {
+"source": "hsk",
+"item": "劫"
+},
+"析": {
+"source": "hsk",
+"item": "稀"
+},
+"晨": {
+"source": "commons",
+"title": "Zh-chén.ogg",
+"name": "chen2"
+},
+"谊": {
+"source": "hsk",
+"item": "亿"
+},
+"忍": {
+"source": "syllable",
+"item": "ren3"
+},
+"堆": {
+"source": "hsk",
+"item": "堆"
+},
+"润": {
+"source": "syllable",
+"item": "run4"
+},
+"涉": {
+"source": "hsk",
+"item": "射"
+},
+"伏": {
+"source": "hsk",
+"item": "伏"
+},
+"齐": {
+"source": "hsk",
+"item": "齐"
+},
+"昂": {
+"source": "syllable",
+"item": "ang2"
+},
+"泛": {
+"source": "hsk",
+"item": "泛"
+},
+"漫": {
+"source": "syllable",
+"item": "man4"
+},
+"拥": {
+"source": "syllable",
+"item": "yong1"
+},
+"甘": {
+"source": "hsk",
+"item": "甘"
+},
+"奔": {
+"source": "syllable",
+"item": "ben1"
+},
+"档": {
+"source": "hsk",
+"item": "荡"
+},
+"矿": {
+"source": "hsk",
+"item": "矿"
+},
+"扮": {
+"source": "hsk",
+"item": "扮"
+},
+"峡": {
+"source": "hsk",
+"item": "峡"
+},
+"阔": {
+"source": "hsk",
+"item": "阔"
+},
+"闭": {
+"source": "hsk",
+"item": "闭"
+},
+"怨": {
+"source": "hsk",
+"item": "愿"
+},
+"珠": {
+"source": "hsk",
+"item": "株"
+},
+"钉": {
+"source": "hsk",
+"item": "钉"
+},
+"监": {
+"source": "hsk",
+"item": "间"
+},
+"肚": {
+"source": "hsk",
+"item": "镀"
+},
+"冻": {
+"source": "hsk",
+"item": "冻"
+},
+"剑": {
+"source": "hsk",
+"item": "箭"
+},
+"胆": {
+"source": "hsk",
+"item": "胆"
+},
+"仅": {
+"source": "hsk",
+"item": "仅"
+},
+"窝": {
+"source": "hsk",
+"item": "窝"
+},
+"碑": {
+"source": "hsk",
+"item": "碑"
+},
+"欧": {
+"source": "syllable",
+"item": "ou1"
+},
+"帝": {
+"source": "hsk",
+"item": "地"
+},
+"幅": {
+"source": "hsk",
+"item": "幅"
+},
+"徒": {
+"source": "hsk",
+"item": "图"
+},
+"炸": {
+"source": "hsk",
+"item": "闸"
+},
+"拖": {
+"source": "hsk",
+"item": "拖"
+},
+"陷": {
+"source": "hsk",
+"item": "陷"
+},
+"磨": {
+"source": "hsk",
+"item": "磨"
+},
+"陆": {
+"source": "hsk",
+"item": "陆"
+},
+"钻": {
+"source": "hsk",
+"item": "钻"
+},
+"阵": {
+"source": "hsk",
+"item": "阵"
+},
+"偏": {
+"source": "hsk",
+"item": "偏"
+},
+"稀": {
+"source": "hsk",
+"item": "稀"
+},
+"域": {
+"source": "hsk",
+"item": "遇"
+},
+"隔": {
+"source": "hsk",
+"item": "隔"
+},
+"刷": {
+"source": "hsk",
+"item": "刷"
+},
+"爽": {
+"source": "syllable",
+"item": "shuang3"
+},
+"饼": {
+"source": "hsk",
+"item": "饼"
+},
+"坡": {
+"source": "hsk",
+"item": "坡"
+},
+"戒": {
+"source": "hsk",
+"item": "借"
+},
+"汤": {
+"source": "hsk",
+"item": "汤"
+},
+"贸": {
+"source": "commons",
+"title": "Zh-mào.ogg",
+"name": "mao4"
+},
+"含": {
+"source": "hsk",
+"item": "含"
+},
+"企": {
+"source": "hsk",
+"item": "起"
+},
+"均": {
+"source": "hsk",
+"item": "均"
+},
+"执": {
+"source": "hsk",
+"item": "值"
+},
+"赖": {
+"source": "hsk",
+"item": "赖"
+},
+"辈": {
+"source": "hsk",
+"item": "辈"
+},
+"漏": {
+"source": "hsk",
+"item": "漏"
+},
+"凑": {
+"source": "hsk",
+"item": "凑"
+},
+"横": {
+"source": "hsk",
+"item": "横"
+},
+"毫": {
+"source": "syllable",
+"item": "hao2"
+},
+"炼": {
+"source": "hsk",
+"item": "炼"
+},
+"扰": {
+"source": "syllable",
+"item": "rao3"
+},
+"池": {
+"source": "hsk",
+"item": "池"
+},
+"描": {
+"source": "commons",
+"title": "Zh-miáo.ogg",
+"name": "miao2"
+},
+"访": {
+"source": "hsk",
+"item": "纺"
+},
+"核": {
+"source": "hsk",
+"item": "核"
+},
+"稿": {
+"source": "hsk",
+"item": "稿"
+},
+"阻": {
+"source": "hsk",
+"item": "组"
+},
+"乏": {
+"source": "hsk",
+"item": "伐"
+},
+"掌": {
+"source": "hsk",
+"item": "掌"
+},
+"肠": {
+"source": "hsk",
+"item": "肠"
+},
+"库": {
+"source": "hsk",
+"item": "库"
+},
+"贝": {
+"source": "hsk",
+"item": "背"
+},
+"匹": {
+"source": "hsk",
+"item": "匹"
+},
+"拼": {
+"source": "hsk",
+"item": "拼"
+},
+"障": {
+"source": "hsk",
+"item": "帐"
+},
+"予": {
+"source": "hsk",
+"item": "予"
+},
+"楚": {
+"source": "syllable",
+"item": "chu3"
+},
+"碎": {
+"source": "hsk",
+"item": "碎"
+},
+"概": {
+"source": "hsk",
+"item": "盖"
+},
+"搞": {
+"source": "hsk",
+"item": "搞"
+},
+"扩": {
+"source": "hsk",
+"item": "阔"
+},
+"缩": {
+"source": "hsk",
+"item": "缩"
+},
+"扎": {
+"source": "hsk",
+"item": "扎"
+},
+"征": {
+"source": "hsk",
+"item": "征"
+},
+"摇": {
+"source": "hsk",
+"item": "窑"
+},
+"摄": {
+"source": "hsk",
+"item": "摄"
+},
+"织": {
+"source": "hsk",
+"item": "织"
+},
+"阶": {
+"source": "hsk",
+"item": "接"
+},
+"敏": {
+"source": "syllable",
+"item": "min3"
+},
+"谎": {
+"source": "syllable",
+"item": "huang3"
+},
+"朗": {
+"source": "syllable",
+"item": "lang3"
+},
+"铺": {
+"source": "hsk",
+"item": "铺"
+},
+"债": {
+"source": "hsk",
+"item": "债"
+},
+"似": {
+"source": "hsk",
+"item": "似"
+},
+"侵": {
+"source": "hsk",
+"item": "亲"
+},
+"驾": {
+"source": "hsk",
+"item": "架"
+},
+"捕": {
+"source": "hsk",
+"item": "补"
+},
+"壮": {
+"source": "hsk",
+"item": "壮"
+},
+"碰": {
+"source": "hsk",
+"item": "碰"
+},
+"棒": {
+"source": "hsk",
+"item": "磅"
+},
+"淋": {
+"source": "hsk",
+"item": "淋"
+},
+"宾": {
+"source": "syllable",
+"item": "bin1"
+},
+"幕": {
+"source": "hsk",
+"item": "幕"
+},
+"挺": {
+"source": "hsk",
+"item": "挺"
+},
+"苹": {
+"source": "hsk",
+"item": "瓶"
+},
+"潮": {
+"source": "hsk",
+"item": "潮"
+},
+"赤": {
+"source": "syllable",
+"item": "chi4"
+},
+"姑": {
+"source": "syllable",
+"item": "gu1"
+},
+"貌": {
+"source": "commons",
+"title": "Zh-mào.ogg",
+"name": "mao4"
+},
+"抵": {
+"source": "hsk",
+"item": "抵"
+},
+"棋": {
+"source": "hsk",
+"item": "棋"
+},
+"滑": {
+"source": "hsk",
+"item": "滑"
+},
+"辩": {
+"source": "hsk",
+"item": "变"
+},
+"述": {
+"source": "syllable",
+"item": "shu4"
+},
+"触": {
+"source": "hsk",
+"item": "触"
+},
+"谷": {
+"source": "hsk",
+"item": "骨"
+},
+"览": {
+"source": "hsk",
+"item": "懒"
+},
+"宣": {
+"source": "syllable",
+"item": "xuan1"
+},
+"例": {
+"source": "hsk",
+"item": "例"
+},
+"透": {
+"source": "hsk",
+"item": "透"
+},
+"伴": {
+"source": "hsk",
+"item": "伴"
+},
+"违": {
+"source": "hsk",
+"item": "围"
+},
+"占": {
+"source": "hsk",
+"item": "站"
+},
+"继": {
+"source": "hsk",
+"item": "继"
+},
+"译": {
+"source": "hsk",
+"item": "亿"
+},
+"夹": {
+"source": "hsk",
+"item": "家"
+},
+"抗": {
+"source": "hsk",
+"item": "炕"
+},
+"峰": {
+"source": "hsk",
+"item": "封"
+},
+"祝": {
+"source": "hsk",
+"item": "祝"
+},
+"段": {
+"source": "hsk",
+"item": "段"
+},
+"避": {
+"source": "hsk",
+"item": "避"
+},
+"寄": {
+"source": "hsk",
+"item": "寄"
+},
+"刊": {
+"source": "syllable",
+"item": "kan1"
+},
+"扣": {
+"source": "hsk",
+"item": "扣"
+},
+"弃": {
+"source": "hsk",
+"item": "气"
+},
+"绩": {
+"source": "hsk",
+"item": "既"
+},
+"宫": {
+"source": "hsk",
+"item": "宫"
+},
+"逃": {
+"source": "hsk",
+"item": "逃"
+},
+"罚": {
+"source": "hsk",
+"item": "罚"
+},
+"灭": {
+"source": "hsk",
+"item": "灭"
+},
+"阅": {
+"source": "hsk",
+"item": "阅"
+},
+"柔": {
+"source": "hsk",
+"item": "揉"
+},
+"劲": {
+"source": "hsk",
+"item": "劲"
+},
+"辞": {
+"source": "hsk",
+"item": "辞"
+},
+"扬": {
+"source": "hsk",
+"item": "扬"
+},
+"码": {
+"source": "hsk",
+"item": "马"
+},
+"舒": {
+"source": "hsk",
+"item": "梳"
+},
+"挥": {
+"source": "hsk",
+"item": "挥"
+},
+"促": {
+"source": "hsk",
+"item": "促"
+},
+"圈": {
+"source": "hsk",
+"item": "圈"
+},
+"敬": {
+"source": "hsk",
+"item": "敬"
+},
+"限": {
+"source": "hsk",
+"item": "限"
+},
+"贴": {
+"source": "hsk",
+"item": "贴"
+},
+"伙": {
+"source": "hsk",
+"item": "伙"
+},
+"控": {
+"source": "syllable",
+"item": "kong4"
+},
+"碍": {
+"source": "hsk",
+"item": "爱"
+},
+"较": {
+"source": "hsk",
+"item": "较"
+},
+"祖": {
+"source": "hsk",
+"item": "组"
+},
+"互": {
+"source": "hsk",
+"item": "护"
+},
+"状": {
+"source": "hsk",
+"item": "幢"
+},
+"练": {
+"source": "hsk",
+"item": "练"
+},
+"胡": {
+"source": "hsk",
+"item": "胡"
+},
+"鬼": {
+"source": "hsk",
+"item": "鬼"
+},
+"损": {
+"source": "hsk",
+"item": "损"
+},
+"恐": {
+"source": "hsk",
+"item": "孔"
+},
+"余": {
+"source": "hsk",
+"item": "于"
+},
+"废": {
+"source": "hsk",
+"item": "废"
+},
+"腐": {
+"source": "hsk",
+"item": "俯"
+},
+"判": {
+"source": "hsk",
+"item": "盼"
+},
+"盖": {
+"source": "hsk",
+"item": "盖"
+},
+"售": {
+"source": "hsk",
+"item": "售"
+},
+"著": {
+"source": "hsk",
+"item": "著"
+},
+"拜": {
+"source": "hsk",
+"item": "拜"
+},
+"繁": {
+"source": "hsk",
+"item": "繁"
+},
+"丰": {
+"source": "hsk",
+"item": "封"
+},
+"址": {
+"source": "hsk",
+"item": "止"
+},
+"迹": {
+"source": "hsk",
+"item": "既"
+},
+"兵": {
+"source": "hsk",
+"item": "兵"
+},
+"弄": {
+"source": "hsk",
+"item": "弄"
+},
+"秀": {
+"source": "hsk",
+"item": "嗅"
+},
+"宝": {
+"source": "hsk",
+"item": "宝"
+},
+"遭": {
+"source": "hsk",
+"item": "遭"
+},
+"洲": {
+"source": "hsk",
+"item": "洲"
+},
+"副": {
+"source": "hsk",
+"item": "副"
+},
+"纯": {
+"source": "hsk",
+"item": "纯"
+},
+"稳": {
+"source": "hsk",
+"item": "稳"
+},
+"丽": {
+"source": "hsk",
+"item": "粒"
+},
+"迅": {
+"source": "hsk",
+"item": "训"
+},
+"巧": {
+"source": "hsk",
+"item": "巧"
+},
+"顶": {
+"source": "hsk",
+"item": "顶"
+},
+"摆": {
+"source": "hsk",
+"item": "摆"
+},
+"累": {
+"source": "hsk",
+"item": "累"
+},
+"迎": {
+"source": "hsk",
+"item": "迎"
+},
+"至": {
+"source": "hsk",
+"item": "至"
+},
+"箱": {
+"source": "hsk",
+"item": "箱"
+},
+"苗": {
+"source": "commons",
+"title": "Zh-miáo.ogg",
+"name": "miao2"
+},
+"闯": {
+"source": "hsk",
+"item": "闯"
+},
+"菌": {
+"source": "hsk",
+"item": "菌"
+},
+"喷": {
+"source": "hsk",
+"item": "喷"
+},
+"扔": {
+"source": "hsk",
+"item": "扔"
+},
+"污": {
+"source": "hsk",
+"item": "污"
+},
+"瓜": {
+"source": "hsk",
+"item": "瓜"
+},
+"淹": {
+"source": "hsk",
+"item": "淹"
+},
+"逼": {
+"source": "hsk",
+"item": "逼"
+},
+"疲": {
+"source": "hsk",
+"item": "皮"
+},
+"迁": {
+"source": "hsk",
+"item": "迁"
+},
+"挤": {
+"source": "hsk",
+"item": "挤"
+},
+"荷": {
+"source": "syllable",
+"item": "he4"
+},
+"挽": {
+"source": "hsk",
+"item": "挽"
+},
+"圾": {
+"source": "hsk",
+"item": "击"
+},
+"垃": {
+"source": "syllable",
+"item": "la1"
+},
+"仍": {
+"source": "hsk",
+"item": "仍"
+},
+"欣": {
+"source": "hsk",
+"item": "新"
+},
+"或": {
+"source": "hsk",
+"item": "或"
+},
+"脆": {
+"source": "hsk",
+"item": "脆"
+},
+"颗": {
+"source": "hsk",
+"item": "颗"
+},
+"拾": {
+"source": "hsk",
+"item": "拾"
+},
+"梯": {
+"source": "hsk",
+"item": "踢"
+},
+"邻": {
+"source": "hsk",
+"item": "邻"
+},
+"狮": {
+"source": "hsk",
+"item": "施"
+},
+"豹": {
+"source": "hsk",
+"item": "抱"
+},
+"雨": {
+"source": "hsk",
+"item": "雨"
+},
+"持": {
+"source": "hsk",
+"item": "池"
+},
+"奶": {
+"source": "hsk",
+"item": "奶"
+},
+"益": {
+"source": "hsk",
+"item": "亿"
+},
+"套": {
+"source": "commons",
+"title": "Zh-tào.ogg",
+"name": "tao4"
+},
+"筑": {
+"source": "hsk",
+"item": "筑"
+},
+"封": {
+"source": "hsk",
+"item": "封"
+},
+"威": {
+"source": "syllable",
+"item": "wei1"
+},
+"施": {
+"source": "hsk",
+"item": "施"
+},
+"况": {
+"source": "hsk",
+"item": "矿"
+},
+"翻": {
+"source": "hsk",
+"item": "翻"
+},
+"曾": {
+"source": "hsk",
+"item": "曾"
+},
+"检": {
+"source": "hsk",
+"item": "拣"
+},
+"弹": {
+"source": "hsk",
+"item": "弹"
+},
+"居": {
+"source": "hsk",
+"item": "居"
+},
+"供": {
+"source": "hsk",
+"item": "供"
+},
+"哈": {
+"source": "syllable",
+"item": "ha1"
+},
+"波": {
+"source": "hsk",
+"item": "拨"
+},
+"骨": {
+"source": "hsk",
+"item": "骨"
+},
+"即": {
+"source": "hsk",
+"item": "即"
+},
+"发": {
+"source": "syllable",
+"item": "fa4"
+},
+"印": {
+"source": "hsk",
+"item": "印"
+},
+"桥": {
+"source": "hsk",
+"item": "桥"
+},
+"疑": {
+"source": "hsk",
+"item": "姨"
+},
+"烈": {
+"source": "hsk",
+"item": "劣"
+},
+"序": {
+"source": "hsk",
+"item": "蓄"
+},
+"遇": {
+"source": "hsk",
+"item": "遇"
+},
+"厂": {
+"source": "hsk",
+"item": "场"
+},
+"宜": {
+"source": "hsk",
+"item": "姨"
+},
+"模": {
+"source": "hsk",
+"item": "磨"
+},
+"批": {
+"source": "hsk",
+"item": "批"
+},
+"申": {
+"source": "hsk",
+"item": "深"
+},
+"夏": {
+"source": "hsk",
+"item": "夏"
+},
+"吸": {
+"source": "hsk",
+"item": "吸"
+},
+"啊": {
+"source": "syllable",
+"item": "a4"
+},
+"般": {
+"source": "hsk",
+"item": "般"
+},
+"俩": {
+"source": "hsk",
+"item": "俩"
+},
+"层": {
+"source": "hsk",
+"item": "层"
+},
+"赶": {
+"source": "hsk",
+"item": "赶"
+},
+"迫": {
+"source": "hsk",
+"item": "破"
+},
+"增": {
+"source": "hsk",
+"item": "增"
+},
+"杆": {
+"source": "hsk",
+"item": "杆"
+},
+"够": {
+"source": "hsk",
+"item": "够"
+},
+"洞": {
+"source": "hsk",
+"item": "洞"
+},
+"归": {
+"source": "hsk",
+"item": "归"
+},
+"索": {
+"source": "hsk",
+"item": "锁"
+},
+"推": {
+"source": "hsk",
+"item": "推"
+},
+"确": {
+"source": "hsk",
+"item": "却"
+},
+"称": {
+"source": "hsk",
+"item": "称"
+},
+"招": {
+"source": "hsk",
+"item": "招"
+},
+"临": {
+"source": "hsk",
+"item": "临"
+},
+"负": {
+"source": "hsk",
+"item": "负"
+},
+"章": {
+"source": "hsk",
+"item": "章"
+},
+"顺": {
+"source": "hsk",
+"item": "顺"
+},
+"乱": {
+"source": "hsk",
+"item": "乱"
+},
+"播": {
+"source": "hsk",
+"item": "播"
+},
+"虽": {
+"source": "hsk",
+"item": "虽"
+},
+"采": {
+"source": "hsk",
+"item": "采"
+},
+"组": {
+"source": "hsk",
+"item": "组"
+},
+"误": {
+"source": "hsk",
+"item": "误"
+},
+"灵": {
+"source": "hsk",
+"item": "灵"
+},
+"俗": {
+"source": "hsk",
+"item": "俗"
+},
+"普": {
+"source": "syllable",
+"item": "pu3"
+},
+"态": {
+"source": "syllable",
+"item": "tai4"
+},
+"守": {
+"source": "hsk",
+"item": "守"
+},
+"托": {
+"source": "hsk",
+"item": "托"
+},
+"途": {
+"source": "hsk",
+"item": "图"
+},
+"毒": {
+"source": "hsk",
+"item": "毒"
+},
+"未": {
+"source": "hsk",
+"item": "未"
+},
+"末": {
+"source": "hsk",
+"item": "末"
+},
+"良": {
+"source": "hsk",
+"item": "良"
+},
+"染": {
+"source": "hsk",
+"item": "染"
+},
+"操": {
+"source": "hsk",
+"item": "操"
+},
+"订": {
+"source": "hsk",
+"item": "订"
+},
+"史": {
+"source": "hsk",
+"item": "史"
+},
+"评": {
+"source": "hsk",
+"item": "评"
+},
+"案": {
+"source": "hsk",
+"item": "案"
+},
+"航": {
+"source": "syllable",
+"item": "hang2"
+},
+"遗": {
+"source": "hsk",
+"item": "姨"
+},
+"配": {
+"source": "hsk",
+"item": "配"
+},
+"则": {
+"source": "hsk",
+"item": "则"
+},
+"希": {
+"source": "hsk",
+"item": "稀"
+},
+"适": {
+"source": "hsk",
+"item": "事"
+},
+"迷": {
+"source": "hsk",
+"item": "迷"
+},
+"责": {
+"source": "hsk",
+"item": "则"
+},
+"续": {
+"source": "hsk",
+"item": "续"
+},
+"究": {
+"source": "hsk",
+"item": "揪"
+},
+"编": {
+"source": "hsk",
+"item": "编"
+},
+"录": {
+"source": "hsk",
+"item": "录"
+},
+"官": {
+"source": "hsk",
+"item": "官"
+},
+"担": {
+"source": "hsk",
+"item": "担"
+},
+"劳": {
+"source": "hsk",
+"item": "牢"
+},
+"须": {
+"source": "hsk",
+"item": "须"
+},
+"型": {
+"source": "hsk",
+"item": "型"
+},
+"势": {
+"source": "hsk",
+"item": "事"
+},
+"版": {
+"source": "hsk",
+"item": "版"
+},
+"绝": {
+"source": "hsk",
+"item": "绝"
+},
+"源": {
+"source": "hsk",
+"item": "源"
+},
+"项": {
+"source": "hsk",
+"item": "项"
+},
+"刚": {
+"source": "hsk",
+"item": "刚"
+},
+"冲": {
+"source": "hsk",
+"item": "冲"
+},
+"露": {
+"source": "hsk",
+"item": "露"
+},
+"典": {
+"source": "hsk",
+"item": "点"
+},
+"刻": {
+"source": "hsk",
+"item": "刻"
+},
+"更": {
+"source": "hsk",
+"item": "更"
+},
+"困": {
+"source": "hsk",
+"item": "困"
+},
+"舍": {
+"source": "hsk",
+"item": "射"
+},
+"拿": {
+"source": "hsk",
+"item": "拿"
+},
+"投": {
+"source": "hsk",
+"item": "投"
+},
+"引": {
+"source": "hsk",
+"item": "引"
+},
+"往": {
+"source": "hsk",
+"item": "往"
+},
+"极": {
+"source": "hsk",
+"item": "极"
+},
+"签": {
+"source": "hsk",
+"item": "铅"
+},
+"具": {
+"source": "hsk",
+"item": "具"
+},
+"杂": {
+"source": "hsk",
+"item": "砸"
+},
+"呢": {
+"source": "hsk",
+"item": "呢"
+},
+"参": {
+"source": "hsk",
+"item": "餐"
+},
+"器": {
+"source": "hsk",
+"item": "器"
+},
+"管": {
+"source": "hsk",
+"item": "管"
+},
+"与": {
+"source": "hsk",
+"item": "与"
+},
+"随": {
+"source": "hsk",
+"item": "随"
+},
+"抽": {
+"source": "hsk",
+"item": "抽"
+},
+"块": {
+"source": "hsk",
+"item": "块"
+},
+"休": {
+"source": "hsk",
+"item": "修"
+},
+"寺": {
+"source": "hsk",
+"item": "寺"
+},
+"形": {
+"source": "hsk",
+"item": "形"
+},
+"室": {
+"source": "hsk",
+"item": "室"
+},
+"何": {
+"source": "hsk",
+"item": "何"
+},
+"决": {
+"source": "hsk",
+"item": "决"
+},
+"许": {
+"source": "hsk",
+"item": "许"
+},
+"觉": {
+"source": "hsk",
+"item": "觉"
+},
+"接": {
+"source": "hsk",
+"item": "接"
+},
+"飞": {
+"source": "hsk",
+"item": "飞"
+},
+"游": {
+"source": "hsk",
+"item": "游"
+},
+"部": {
+"source": "hsk",
+"item": "部"
+},
+"容": {
+"source": "hsk",
+"item": "容"
+},
+"功": {
+"source": "hsk",
+"item": "功"
+},
+"议": {
+"source": "hsk",
+"item": "亿"
+},
+"排": {
+"source": "hsk",
+"item": "排"
+},
+"脸": {
+"source": "hsk",
+"item": "脸"
+},
+"观": {
+"source": "hsk",
+"item": "官"
+},
+"量": {
+"source": "hsk",
+"item": "量"
+},
+"空": {
+"source": "syllable",
+"item": "kong1"
+},
+"证": {
+"source": "hsk",
+"item": "证"
+},
+"息": {
+"source": "hsk",
+"item": "稀"
+},
+"台": {
+"source": "hsk",
+"item": "台"
+},
+"试": {
+"source": "hsk",
+"item": "试"
+},
+"消": {
+"source": "hsk",
+"item": "消"
+},
+"处": {
+"source": "hsk",
+"item": "处"
+},
+"任": {
+"source": "commons",
+"title": "Zh-rèn.ogg",
+"name": "ren4"
+},
+"号": {
+"source": "hsk",
+"item": "耗"
+},
+"装": {
+"source": "hsk",
+"item": "装"
+},
+"半": {
+"source": "hsk",
+"item": "半"
+},
+"边": {
+"source": "hsk",
+"item": "边"
+},
+"特": {
+"source": "hsk",
+"item": "特"
+},
+"拉": {
+"source": "syllable",
+"item": "la1"
+},
+"向": {
+"source": "hsk",
+"item": "向"
+},
+"代": {
+"source": "hsk",
+"item": "代"
+},
+"赋": {
+"source": "hsk",
+"item": "腹"
+},
+"业": {
+"source": "hsk",
+"item": "夜"
+},
+"毕": {
+"source": "hsk",
+"item": "闭"
+},
+"但": {
+"source": "hsk",
+"item": "但"
+},
+"价": {
+"source": "hsk",
+"item": "价"
+},
+"论": {
+"source": "hsk",
+"item": "论"
+},
+"衣": {
+"source": "hsk",
+"item": "一"
+},
+"放": {
+"source": "hsk",
+"item": "放"
+},
+"让": {
+"source": "hsk",
+"item": "让"
+},
+"结": {
+"source": "hsk",
+"item": "结"
+},
+"口": {
+"source": "hsk",
+"item": "口"
+},
+"候": {
+"source": "hsk",
+"item": "后"
+},
+"相": {
+"source": "hsk",
+"item": "相"
+},
+"音": {
+"source": "hsk",
+"item": "音"
+},
+"孩": {
+"source": "syllable",
+"item": "hai2"
+},
+"城": {
+"source": "hsk",
+"item": "城"
+},
+"房": {
+"source": "hsk",
+"item": "防"
+},
+"种": {
+"source": "hsk",
+"item": "种"
+},
+"样": {
+"source": "hsk",
+"item": "样"
+},
+"通": {
+"source": "hsk",
+"item": "通"
+},
+"交": {
+"source": "hsk",
+"item": "交"
+},
+"见": {
+"source": "hsk",
+"item": "见"
+},
+"期": {
+"source": "hsk",
+"item": "期"
+},
+"护": {
+"source": "hsk",
+"item": "护"
+},
+"保": {
+"source": "hsk",
+"item": "保"
+},
+"从": {
+"source": "hsk",
+"item": "从"
+},
+"些": {
+"source": "hsk",
+"item": "些"
+},
+"门": {
+"source": "hsk",
+"item": "门"
+},
+"全": {
+"source": "hsk",
+"item": "全"
+},
+"朱": {
+"source": "hsk",
+"item": "株"
+},
+"妮": {
+"source": "syllable",
+"item": "ni1"
+},
+"品": {
+"source": "hsk",
+"item": "品"
+},
+"给": {
+"source": "hsk",
+"item": "给"
+},
+"员": {
+"source": "hsk",
+"item": "员"
+},
+"只": {
+"source": "hsk",
+"item": "只"
+},
+"位": {
+"source": "hsk",
+"item": "位"
+},
+"男": {
+"source": "hsk",
+"item": "男"
+},
+"无": {
+"source": "hsk",
+"item": "无"
+},
+"实": {
+"source": "hsk",
+"item": "实"
+},
+"体": {
+"source": "hsk",
+"item": "体"
+},
+"做": {
+"source": "hsk",
+"item": "做"
+},
+"林": {
+"source": "hsk",
+"item": "淋"
+},
+"达": {
+"source": "hsk",
+"item": "达"
+},
+"那": {
+"source": "syllable",
+"item": "na4"
+},
+"牌": {
+"source": "hsk",
+"item": "牌"
+},
+"必": {
+"source": "hsk",
+"item": "必"
+},
+"贵": {
+"source": "hsk",
+"item": "贵"
+},
+"获": {
+"source": "hsk",
+"item": "获"
+},
+"举": {
+"source": "syllable",
+"item": "ju3"
+},
+"律": {
+"source": "hsk",
+"item": "绿"
+},
+"纪": {
+"source": "hsk",
+"item": "既"
+},
+"突": {
+"source": "hsk",
+"item": "秃"
+},
+"敌": {
+"source": "hsk",
+"item": "敌"
+},
+"停": {
+"source": "hsk",
+"item": "停"
+},
+"篮": {
+"source": "hsk",
+"item": "蓝"
+},
+"研": {
+"source": "hsk",
+"item": "言"
+},
+"塔": {
+"source": "hsk",
+"item": "塔"
+},
+"念": {
+"source": "hsk",
+"item": "念"
+},
+"剧": {
+"source": "hsk",
+"item": "剧"
+},
+"防": {
+"source": "hsk",
+"item": "防"
+},
+"努": {
+"source": "syllable",
+"item": "nu3"
+},
+"效": {
+"source": "hsk",
+"item": "笑"
+},
+"其": {
+"source": "hsk",
+"item": "其"
+},
+"约": {
+"source": "hsk",
+"item": "约"
+},
+"诉": {
+"source": "commons",
+"title": "Zh-sù.ogg",
+"name": "su4"
+},
+"卖": {
+"source": "hsk",
+"item": "卖"
+},
+"买": {
+"source": "hsk",
+"item": "买"
+},
+"显": {
+"source": "hsk",
+"item": "显"
+},
+"靠": {
+"source": "hsk",
+"item": "靠"
+},
+"付": {
+"source": "hsk",
+"item": "付"
+},
+"叫": {
+"source": "hsk",
+"item": "叫"
+},
+"味": {
+"source": "hsk",
+"item": "味"
+},
+"类": {
+"source": "hsk",
+"item": "类"
+},
+"换": {
+"source": "hsk",
+"item": "换"
+},
+"忘": {
+"source": "hsk",
+"item": "忘"
+},
+"唱": {
+"source": "hsk",
+"item": "唱"
+},
+"粗": {
+"source": "hsk",
+"item": "粗"
+},
+"细": {
+"source": "hsk",
+"item": "细"
+},
+"待": {
+"source": "hsk",
+"item": "待"
+},
+"创": {
+"source": "hsk",
+"item": "创"
+},
+"退": {
+"source": "hsk",
+"item": "退"
+},
+"尽": {
+"source": "hsk",
+"item": "尽"
+},
+"转": {
+"source": "syllable",
+"item": "zhuan3"
+},
+"压": {
+"source": "hsk",
+"item": "压"
+},
+"连": {
+"source": "hsk",
+"item": "连"
+},
+"治": {
+"source": "hsk",
+"item": "治"
+},
+"落": {
+"source": "hsk",
+"item": "落"
+},
+"始": {
+"source": "hsk",
+"item": "始"
+},
+"镇": {
+"source": "hsk",
+"item": "镇"
+},
+"气": {
+"source": "hsk",
+"item": "气"
+},
+"断": {
+"source": "hsk",
+"item": "断"
+},
+"凰": {
+"source": "hsk",
+"item": "黄"
+},
+"凤": {
+"source": "syllable",
+"item": "feng4"
+},
+"凸": {
+"source": "hsk",
+"item": "凸"
+},
+"凹": {
+"source": "hsk",
+"item": "凹"
+},
+"还": {
+"source": "hsk",
+"item": "还"
+},
+"太": {
+"source": "syllable",
+"item": "tai4"
+},
+"起": {
+"source": "hsk",
+"item": "起"
+},
+"方": {
+"source": "hsk",
+"item": "方"
+},
+"定": {
+"source": "hsk",
+"item": "定"
+},
+"情": {
+"source": "hsk",
+"item": "晴"
+},
+"法": {
+"source": "hsk",
+"item": "法"
+},
+"用": {
+"source": "hsk",
+"item": "用"
+},
+"话": {
+"source": "hsk",
+"item": "划"
+},
+"理": {
+"source": "hsk",
+"item": "理"
+},
+"欢": {
+"source": "syllable",
+"item": "huan1"
+},
+"力": {
+"source": "hsk",
+"item": "力"
+},
+"可": {
+"source": "hsk",
+"item": "可"
+},
+"球": {
+"source": "hsk",
+"item": "球"
+},
+"文": {
+"source": "hsk",
+"item": "文"
+},
+"关": {
+"source": "hsk",
+"item": "关"
+},
+"开": {
+"source": "hsk",
+"item": "开"
+},
+"常": {
+"source": "hsk",
+"item": "常"
+},
+"工": {
+"source": "hsk",
+"item": "工"
+},
+"经": {
+"source": "hsk",
+"item": "经"
+},
+"进": {
+"source": "hsk",
+"item": "进"
+},
+"作": {
+"source": "hsk",
+"item": "作"
+},
+"到": {
+"source": "hsk",
+"item": "到"
+},
+"要": {
+"source": "hsk",
+"item": "要"
+},
+"集": {
+"source": "hsk",
+"item": "集"
+},
+"野": {
+"source": "hsk",
+"item": "野"
+},
+"愤": {
+"source": "hsk",
+"item": "份"
+},
+"震": {
+"source": "hsk",
+"item": "震"
+},
+"琴": {
+"source": "hsk",
+"item": "琴"
+},
+"趣": {
+"source": "hsk",
+"item": "去"
+},
+"蝶": {
+"source": "hsk",
+"item": "叠"
+},
+"蝴": {
+"source": "hsk",
+"item": "壶"
+},
+"惜": {
+"source": "hsk",
+"item": "稀"
+},
+"珍": {
+"source": "syllable",
+"item": "zhen1"
+},
+"搬": {
+"source": "hsk",
+"item": "搬"
+},
+"杯": {
+"source": "hsk",
+"item": "杯"
+},
+"送": {
+"source": "hsk",
+"item": "送"
+},
+"铁": {
+"source": "hsk",
+"item": "铁"
+},
+"钢": {
+"source": "hsk",
+"item": "钢"
+},
+"斜": {
+"source": "hsk",
+"item": "斜"
+},
+"暂": {
+"source": "commons",
+"title": "Zh-zàn.ogg",
+"name": "zan4"
+},
+"替": {
+"source": "hsk",
+"item": "替"
+},
+"袋": {
+"source": "hsk",
+"item": "袋"
+},
+"骗": {
+"source": "hsk",
+"item": "骗"
+},
+"吹": {
+"source": "hsk",
+"item": "吹"
+},
+"敢": {
+"source": "hsk",
+"item": "敢"
+},
+"勇": {
+"source": "hsk",
+"item": "涌"
+},
+"涝": {
+"source": "hsk",
+"item": "涝"
+},
+"旱": {
+"source": "hsk",
+"item": "旱"
+},
+"扇": {
+"source": "hsk",
+"item": "善"
+},
+"牢": {
+"source": "hsk",
+"item": "牢"
+},
+"伸": {
+"source": "hsk",
+"item": "伸"
+},
+"欲": {
+"source": "hsk",
+"item": "欲"
+},
+"贺": {
+"source": "syllable",
+"item": "he4"
+},
+"盆": {
+"source": "hsk",
+"item": "盆"
+},
+"坚": {
+"source": "hsk",
+"item": "间"
+},
+"疗": {
+"source": "hsk",
+"item": "聊"
+},
+"民": {
+"source": "syllable",
+"item": "min2"
+},
+"夸": {
+"source": "hsk",
+"item": "夸"
+},
+"挡": {
+"source": "hsk",
+"item": "挡"
+},
+"闪": {
+"source": "hsk",
+"item": "闪"
+},
+"勺": {
+"source": "syllable",
+"item": "shao2"
+},
+"页": {
+"source": "hsk",
+"item": "页"
+},
+"询": {
+"source": "hsk",
+"item": "寻"
+},
+"蔬": {
+"source": "hsk",
+"item": "梳"
+},
+"蛙": {
+"source": "hsk",
+"item": "挖"
+},
+"备": {
+"source": "hsk",
+"item": "背"
+},
+"顿": {
+"source": "hsk",
+"item": "顿"
+},
+"射": {
+"source": "hsk",
+"item": "射"
+},
+"禁": {
+"source": "hsk",
+"item": "禁"
+},
+"娘": {
+"source": "hsk",
+"item": "娘"
+},
+"按": {
+"source": "hsk",
+"item": "按"
+},
+"验": {
+"source": "hsk",
+"item": "咽"
+},
+"洋": {
+"source": "hsk",
+"item": "扬"
+},
+"鲜": {
+"source": "hsk",
+"item": "鲜"
+},
+"某": {
+"source": "hsk",
+"item": "某"
+},
+"抢": {
+"source": "hsk",
+"item": "抢"
+},
+"规": {
+"source": "hsk",
+"item": "龟"
+},
+"两": {
+"source": "hsk",
+"item": "两"
+},
+"列": {
+"source": "hsk",
+"item": "列"
+},
+"挂": {
+"source": "hsk",
+"item": "挂"
+},
+"港": {
+"source": "hsk",
+"item": "港"
+},
+"篇": {
+"source": "hsk",
+"item": "篇"
+},
+"额": {
+"source": "hsk",
+"item": "额"
+},
+"测": {
+"source": "hsk",
+"item": "测"
+},
+"亡": {
+"source": "hsk",
+"item": "亡"
+},
+"介": {
+"source": "hsk",
+"item": "借"
+},
+"窄": {
+"source": "hsk",
+"item": "窄"
+},
+"宽": {
+"source": "hsk",
+"item": "宽"
+},
+"孔": {
+"source": "hsk",
+"item": "孔"
+},
+"浮": {
+"source": "hsk",
+"item": "浮"
+},
+"沉": {
+"source": "hsk",
+"item": "沉"
+},
+"幻": {
+"source": "hsk",
+"item": "患"
+},
+"戏": {
+"source": "hsk",
+"item": "戏"
+},
+"像": {
+"source": "hsk",
+"item": "像"
+},
+"丢": {
+"source": "hsk",
+"item": "丢"
+},
+"埋": {
+"source": "hsk",
+"item": "埋"
+},
+"挖": {
+"source": "hsk",
+"item": "挖"
+},
+"讨": {
+"source": "hsk",
+"item": "讨"
+},
+"钟": {
+"source": "hsk",
+"item": "钟"
+},
+"屋": {
+"source": "hsk",
+"item": "屋"
+},
+"厅": {
+"source": "hsk",
+"item": "厅"
+},
+"固": {
+"source": "hsk",
+"item": "雇"
+},
+"液": {
+"source": "hsk",
+"item": "液"
+},
+"仪": {
+"source": "hsk",
+"item": "姨"
+},
+"闷": {
+"source": "syllable",
+"item": "men1"
+},
+"递": {
+"source": "hsk",
+"item": "递"
+},
+"针": {
+"source": "hsk",
+"item": "针"
+},
+"妙": {
+"source": "hsk",
+"item": "妙"
+},
+"级": {
+"source": "hsk",
+"item": "级"
+},
+"夺": {
+"source": "commons",
+"title": "Zh-duó.ogg",
+"name": "duo2"
+},
+"凉": {
+"source": "hsk",
+"item": "凉"
+},
+"安": {
+"source": "hsk",
+"item": "安"
+},
+"也": {
+"source": "hsk",
+"item": "也"
+},
+"总": {
+"source": "hsk",
+"item": "总"
+},
+"路": {
+"source": "hsk",
+"item": "路"
+},
+"田": {
+"source": "hsk",
+"item": "田"
+},
+"贫": {
+"source": "hsk",
+"item": "贫"
+},
+"肥": {
+"source": "hsk",
+"item": "肥"
+},
+"默": {
+"source": "hsk",
+"item": "末"
+},
+"闹": {
+"source": "commons",
+"title": "Zh-nào.ogg",
+"name": "nao4"
+},
+"稍": {
+"source": "hsk",
+"item": "稍"
+},
+"巾": {
+"source": "hsk",
+"item": "斤"
+},
+"旦": {
+"source": "hsk",
+"item": "淡"
+},
+"炎": {
+"source": "hsk",
+"item": "言"
+},
+"爆": {
+"source": "hsk",
+"item": "爆"
+},
+"旁": {
+"source": "hsk",
+"item": "旁"
+},
+"联": {
+"source": "hsk",
+"item": "联"
+},
+"险": {
+"source": "hsk",
+"item": "险"
+},
+"墓": {
+"source": "hsk",
+"item": "墓"
+},
+"钝": {
+"source": "hsk",
+"item": "顿"
+},
+"锐": {
+"source": "syllable",
+"item": "rui4"
+},
+"泳": {
+"source": "hsk",
+"item": "涌"
+},
+"裙": {
+"source": "commons",
+"title": "Zh-qún.ogg",
+"name": "qun2"
+},
+"绳": {
+"source": "syllable",
+"item": "sheng2"
+},
+"切": {
+"source": "hsk",
+"item": "切"
+},
+"患": {
+"source": "hsk",
+"item": "患"
+},
+"毯": {
+"source": "syllable",
+"item": "tan3"
+},
+"超": {
+"source": "hsk",
+"item": "超"
+},
+"柜": {
+"source": "hsk",
+"item": "跪"
+},
+"忽": {
+"source": "hsk",
+"item": "呼"
+},
+"屁": {
+"source": "hsk",
+"item": "屁"
+},
+"欠": {
+"source": "hsk",
+"item": "欠"
+},
+"境": {
+"source": "hsk",
+"item": "境"
+},
+"鹅": {
+"source": "hsk",
+"item": "鹅"
+},
+"烤": {
+"source": "hsk",
+"item": "烤"
+},
+"府": {
+"source": "hsk",
+"item": "俯"
+},
+"愿": {
+"source": "hsk",
+"item": "愿"
+},
+"否": {
+"source": "hsk",
+"item": "否"
+},
+"岛": {
+"source": "hsk",
+"item": "岛"
+},
+"泉": {
+"source": "hsk",
+"item": "泉"
+},
+"预": {
+"source": "hsk",
+"item": "遇"
+},
+"烦": {
+"source": "hsk",
+"item": "烦"
+},
+"移": {
+"source": "hsk",
+"item": "移"
+},
+"愁": {
+"source": "hsk",
+"item": "愁"
+},
+"掉": {
+"source": "hsk",
+"item": "掉"
+},
+"款": {
+"source": "hsk",
+"item": "款"
+},
+"失": {
+"source": "hsk",
+"item": "失"
+},
+"得": {
+"source": "syllable",
+"item": "de2"
+},
+"另": {
+"source": "hsk",
+"item": "另"
+},
+"劣": {
+"source": "hsk",
+"item": "劣"
+},
+"优": {
+"source": "hsk",
+"item": "优"
+},
+"历": {
+"source": "hsk",
+"item": "粒"
+},
+"记": {
+"source": "hsk",
+"item": "记"
+},
+"故": {
+"source": "hsk",
+"item": "故"
+},
+"完": {
+"source": "hsk",
+"item": "完"
+},
+"货": {
+"source": "hsk",
+"item": "货"
+},
+"闻": {
+"source": "hsk",
+"item": "闻"
+},
+"课": {
+"source": "hsk",
+"item": "课"
+},
+"想": {
+"source": "hsk",
+"item": "想"
+},
+"皇": {
+"source": "hsk",
+"item": "黄"
+},
+"丝": {
+"source": "hsk",
+"item": "丝"
+},
+"谈": {
+"source": "hsk",
+"item": "谈"
+},
+"内": {
+"source": "hsk",
+"item": "内"
+},
+"昨": {
+"source": "syllable",
+"item": "zuo2"
+},
+"数": {
+"source": "syllable",
+"item": "shu4"
+},
+"校": {
+"source": "hsk",
+"item": "笑"
+},
+"先": {
+"source": "hsk",
+"item": "先"
+},
+"汽": {
+"source": "hsk",
+"item": "汽"
+},
+"技": {
+"source": "hsk",
+"item": "既"
+},
+"季": {
+"source": "hsk",
+"item": "季"
+},
+"智": {
+"source": "hsk",
+"item": "治"
+},
+"响": {
+"source": "hsk",
+"item": "响"
+},
+"浪": {
+"source": "hsk",
+"item": "浪"
+},
+"爬": {
+"source": "hsk",
+"item": "爬"
+},
+"耐": {
+"source": "hsk",
+"item": "耐"
+},
+"店": {
+"source": "hsk",
+"item": "店"
+},
+"志": {
+"source": "hsk",
+"item": "志"
+},
+"诚": {
+"source": "hsk",
+"item": "盛"
+},
+"帽": {
+"source": "commons",
+"title": "Zh-mào.ogg",
+"name": "mao4"
+},
+"值": {
+"source": "hsk",
+"item": "值"
+},
+"轮": {
+"source": "syllable",
+"item": "lun2"
+},
+"睛": {
+"source": "hsk",
+"item": "惊"
+},
+"份": {
+"source": "hsk",
+"item": "份"
+},
+"弱": {
+"source": "hsk",
+"item": "弱"
+},
+"强": {
+"source": "hsk",
+"item": "强"
+},
+"租": {
+"source": "hsk",
+"item": "租"
+},
+"跳": {
+"source": "syllable",
+"item": "tiao4"
+},
+"借": {
+"source": "hsk",
+"item": "借"
+},
+"急": {
+"source": "hsk",
+"item": "急"
+},
+"酒": {
+"source": "hsk",
+"item": "酒"
+},
+"楼": {
+"source": "hsk",
+"item": "楼"
+},
+"谅": {
+"source": "hsk",
+"item": "辆"
+},
+"丛": {
+"source": "hsk",
+"item": "丛"
+},
+"卧": {
+"source": "hsk",
+"item": "卧"
+},
+"愚": {
+"source": "hsk",
+"item": "于"
+},
+"烧": {
+"source": "hsk",
+"item": "烧"
+},
+"彩": {
+"source": "hsk",
+"item": "踩"
+},
+"令": {
+"source": "hsk",
+"item": "令"
+},
+"玉": {
+"source": "hsk",
+"item": "玉"
+},
+"很": {
+"source": "hsk",
+"item": "很"
+},
+"秃": {
+"source": "hsk",
+"item": "秃"
+},
+"尖": {
+"source": "hsk",
+"item": "尖"
+},
+"群": {
+"source": "hsk",
+"item": "群"
+},
+"独": {
+"source": "hsk",
+"item": "独"
+},
+"醉": {
+"source": "hsk",
+"item": "醉"
+},
+"胃": {
+"source": "hsk",
+"item": "胃"
+},
+"宁": {
+"source": "syllable",
+"item": "ning2"
+},
+"窗": {
+"source": "hsk",
+"item": "窗"
+},
+"村": {
+"source": "syllable",
+"item": "cun1"
+},
+"贬": {
+"source": "hsk",
+"item": "扁"
+},
+"褒": {
+"source": "hsk",
+"item": "剥"
+},
+"坏": {
+"source": "syllable",
+"item": "huai4"
+},
+"厌": {
+"source": "hsk",
+"item": "咽"
+},
+"灾": {
+"source": "hsk",
+"item": "灾"
+},
+"迟": {
+"source": "hsk",
+"item": "迟"
+},
+"妇": {
+"source": "hsk",
+"item": "腹"
+},
+"指": {
+"source": "hsk",
+"item": "指"
+},
+"今": {
+"source": "hsk",
+"item": "斤"
+},
+"古": {
+"source": "hsk",
+"item": "古"
+},
+"怪": {
+"source": "hsk",
+"item": "怪"
+},
+"奇": {
+"source": "hsk",
+"item": "齐"
+},
+"血": {
+"source": "syllable",
+"item": "xue4"
+},
+"洁": {
+"source": "hsk",
+"item": "劫"
+},
+"吵": {
+"source": "hsk",
+"item": "吵"
+},
+"姓": {
+"source": "hsk",
+"item": "姓"
+},
+"近": {
+"source": "hsk",
+"item": "近"
+},
+"远": {
+"source": "hsk",
+"item": "远"
+},
+"暗": {
+"source": "hsk",
+"item": "暗"
+},
+"明": {
+"source": "hsk",
+"item": "名"
+},
+"怕": {
+"source": "syllable",
+"item": "pa4"
+},
+"汁": {
+"source": "hsk",
+"item": "汁"
+},
+"咱": {
+"source": "hsk",
+"item": "咱"
+},
+"幼": {
+"source": "hsk",
+"item": "幼"
+},
+"慢": {
+"source": "hsk",
+"item": "慢"
+},
+"快": {
+"source": "hsk",
+"item": "快"
+},
+"走": {
+"source": "hsk",
+"item": "走"
+},
+"跑": {
+"source": "hsk",
+"item": "跑"
+},
+"剪": {
+"source": "hsk",
+"item": "剪"
+},
+"乘": {
+"source": "hsk",
+"item": "乘"
+},
+"减": {
+"source": "hsk",
+"item": "减"
+},
+"加": {
+"source": "hsk",
+"item": "加"
+},
+"熟": {
+"source": "hsk",
+"item": "熟"
+},
+"陌": {
+"source": "hsk",
+"item": "末"
+},
+"凶": {
+"source": "hsk",
+"item": "凶"
+},
+"吉": {
+"source": "hsk",
+"item": "极"
+},
+"忆": {
+"source": "hsk",
+"item": "忆"
+},
+"目": {
+"source": "hsk",
+"item": "目"
+},
+"它": {
+"source": "hsk",
+"item": "它"
+},
+"寒": {
+"source": "hsk",
+"item": "寒"
+},
+"盒": {
+"source": "hsk",
+"item": "盒"
+},
+"旺": {
+"source": "hsk",
+"item": "忘"
+},
+"虫": {
+"source": "syllable",
+"item": "chong2"
+},
+"鸟": {
+"source": "hsk",
+"item": "鸟"
+},
+"犬": {
+"source": "hsk",
+"item": "犬"
+},
+"鱼": {
+"source": "hsk",
+"item": "鱼"
+},
+"牙": {
+"source": "hsk",
+"item": "牙"
+},
+"央": {
+"source": "syllable",
+"item": "yang1"
+},
+"童": {
+"source": "hsk",
+"item": "铜"
+},
+"脏": {
+"source": "hsk",
+"item": "脏"
+},
+"净": {
+"source": "hsk",
+"item": "净"
+},
+"恋": {
+"source": "hsk",
+"item": "恋"
+},
+"伞": {
+"source": "hsk",
+"item": "伞"
+},
+"题": {
+"source": "hsk",
+"item": "题"
+},
+"因": {
+"source": "hsk",
+"item": "因"
+},
+"吐": {
+"source": "hsk",
+"item": "吐"
+},
+"吞": {
+"source": "hsk",
+"item": "吞"
+},
+"娶": {
+"source": "hsk",
+"item": "娶"
+},
+"嫁": {
+"source": "hsk",
+"item": "嫁"
+},
+"扫": {
+"source": "hsk",
+"item": "扫"
+},
+"包": {
+"source": "hsk",
+"item": "包"
+},
+"龄": {
+"source": "hsk",
+"item": "灵"
+},
+"岁": {
+"source": "hsk",
+"item": "岁"
+},
+"赢": {
+"source": "hsk",
+"item": "赢"
+},
+"输": {
+"source": "hsk",
+"item": "输"
+},
+"恩": {
+"source": "hsk",
+"item": "恩"
+},
+"千": {
+"source": "hsk",
+"item": "千"
+},
+"百": {
+"source": "hsk",
+"item": "百"
+},
+"十": {
+"source": "hsk",
+"item": "十"
+},
+"九": {
+"source": "hsk",
+"item": "九"
+},
+"八": {
+"source": "hsk",
+"item": "八"
+},
+"七": {
+"source": "hsk",
+"item": "七"
+},
+"六": {
+"source": "hsk",
+"item": "六"
+},
+"五": {
+"source": "hsk",
+"item": "五"
+},
+"四": {
+"source": "hsk",
+"item": "四"
+},
+"弯": {
+"source": "hsk",
+"item": "弯"
+},
+"直": {
+"source": "hsk",
+"item": "直"
+},
+"煤": {
+"source": "hsk",
+"item": "煤"
+},
+"倦": {
+"source": "syllable",
+"item": "juan4"
+},
+"夕": {
+"source": "hsk",
+"item": "稀"
+},
+"朝": {
+"source": "hsk",
+"item": "招"
+},
+"各": {
+"source": "hsk",
+"item": "各"
+},
+"低": {
+"source": "hsk",
+"item": "低"
+},
+"需": {
+"source": "hsk",
+"item": "需"
+},
+"石": {
+"source": "hsk",
+"item": "十"
+},
+"张": {
+"source": "hsk",
+"item": "张"
+},
+"万": {
+"source": "hsk",
+"item": "万"
+},
+"夜": {
+"source": "hsk",
+"item": "夜"
+},
+"终": {
+"source": "hsk",
+"item": "终"
+},
+"购": {
+"source": "hsk",
+"item": "购"
+},
+"改": {
+"source": "hsk",
+"item": "改"
+},
+"冰": {
+"source": "hsk",
+"item": "冰"
+},
+"艺": {
+"source": "hsk",
+"item": "亿"
+},
+"几": {
+"source": "hsk",
+"item": "几"
+},
+"华": {
+"source": "commons",
+"title": "Zh-huá.ogg",
+"name": "hua2"
+},
+"晚": {
+"source": "hsk",
+"item": "晚"
+},
+"早": {
+"source": "hsk",
+"item": "早"
+},
+"住": {
+"source": "hsk",
+"item": "住"
+},
+"饭": {
+"source": "hsk",
+"item": "饭"
+},
+"父": {
+"source": "hsk",
+"item": "腹"
+},
+"母": {
+"source": "hsk",
+"item": "母"
+},
+"划": {
+"source": "hsk",
+"item": "划"
+},
+"准": {
+"source": "hsk",
+"item": "准"
+},
+"步": {
+"source": "hsk",
+"item": "步"
+},
+"哪": {
+"source": "hsk",
+"item": "哪"
+},
+"怎": {
+"source": "hsk",
+"item": "怎"
+},
+"谁": {
+"source": "hsk",
+"item": "谁"
+},
+"便": {
+"source": "syllable",
+"item": "pian2"
+},
+"跟": {
+"source": "hsk",
+"item": "跟"
+},
+"根": {
+"source": "hsk",
+"item": "根"
+},
+"军": {
+"source": "hsk",
+"item": "军"
+},
+"飘": {
+"source": "hsk",
+"item": "飘"
+},
+"变": {
+"source": "hsk",
+"item": "变"
+},
+"班": {
+"source": "hsk",
+"item": "班"
+},
+"什": {
+"source": "hsk",
+"item": "神"
+},
+"如": {
+"source": "hsk",
+"item": "如"
+},
+"命": {
+"source": "hsk",
+"item": "命"
+},
+"院": {
+"source": "hsk",
+"item": "院"
+},
+"馆": {
+"source": "hsk",
+"item": "馆"
+},
+"助": {
+"source": "hsk",
+"item": "助"
+},
+"条": {
+"source": "hsk",
+"item": "条"
+},
+"围": {
+"source": "hsk",
+"item": "围"
+},
+"周": {
+"source": "hsk",
+"item": "周"
+},
+"识": {
+"source": "hsk",
+"item": "识"
+},
+"认": {
+"source": "hsk",
+"item": "认"
+},
+"坐": {
+"source": "hsk",
+"item": "坐"
+},
+"站": {
+"source": "hsk",
+"item": "站"
+},
+"卡": {
+"source": "hsk",
+"item": "卡"
+},
+"广": {
+"source": "hsk",
+"item": "广"
+},
+"败": {
+"source": "hsk",
+"item": "败"
+},
+"原": {
+"source": "hsk",
+"item": "原"
+},
+"寿": {
+"source": "hsk",
+"item": "售"
+},
+"兽": {
+"source": "hsk",
+"item": "售"
+},
+"晴": {
+"source": "hsk",
+"item": "晴"
+},
+"色": {
+"source": "hsk",
+"item": "色"
+},
+"颜": {
+"source": "hsk",
+"item": "言"
+},
+"界": {
+"source": "hsk",
+"item": "界"
+},
+"世": {
+"source": "hsk",
+"item": "世"
+},
+"道": {
+"source": "hsk",
+"item": "道"
+},
+"知": {
+"source": "hsk",
+"item": "知"
+},
+"第": {
+"source": "hsk",
+"item": "第"
+},
+"躲": {
+"source": "hsk",
+"item": "躲"
+},
+"氧": {
+"source": "hsk",
+"item": "氧"
+},
+"查": {
+"source": "hsk",
+"item": "查"
+},
+"厕": {
+"source": "hsk",
+"item": "测"
+},
+"成": {
+"source": "hsk",
+"item": "成"
+},
+"着": {
+"source": "hsk",
+"item": "着"
+},
+"了": {
+"source": "hsk",
+"item": "了"
+},
+"过": {
+"source": "hsk",
+"item": "过"
+},
+"提": {
+"source": "hsk",
+"item": "提"
+},
+"背": {
+"source": "hsk",
+"item": "背"
+},
+"服": {
+"source": "hsk",
+"item": "服"
+},
+"墙": {
+"source": "hsk",
+"item": "墙"
+},
+"擦": {
+"source": "hsk",
+"item": "擦"
+},
+"间": {
+"source": "hsk",
+"item": "间"
+},
+"时": {
+"source": "hsk",
+"item": "时"
+},
+"队": {
+"source": "hsk",
+"item": "队"
+},
+"报": {
+"source": "hsk",
+"item": "报"
+},
+"硬": {
+"source": "hsk",
+"item": "硬"
+},
+"软": {
+"source": "hsk",
+"item": "软"
+},
+"别": {
+"source": "hsk",
+"item": "别"
+},
+"没": {
+"source": "hsk",
+"item": "没"
+},
+"鸭": {
+"source": "hsk",
+"item": "呀"
+},
+"儿": {
+"source": "commons",
+"title": "Zh-ér.ogg",
+"name": "er2"
+},
+"架": {
+"source": "hsk",
+"item": "架"
+},
+"私": {
+"source": "hsk",
+"item": "私"
+},
+"公": {
+"source": "hsk",
+"item": "公"
+},
+"修": {
+"source": "hsk",
+"item": "修"
+},
+"意": {
+"source": "hsk",
+"item": "亿"
+},
+"灯": {
+"source": "hsk",
+"item": "灯"
+},
+"叶": {
+"source": "hsk",
+"item": "夜"
+},
+"树": {
+"source": "hsk",
+"item": "树"
+},
+"重": {
+"source": "hsk",
+"item": "重"
+},
+"轻": {
+"source": "hsk",
+"item": "轻"
+},
+"土": {
+"source": "hsk",
+"item": "土"
+},
+"木": {
+"source": "hsk",
+"item": "木"
+},
+"图": {
+"source": "hsk",
+"item": "图"
+},
+"车": {
+"source": "hsk",
+"item": "车"
+},
+"摔": {
+"source": "hsk",
+"item": "摔"
+},
+"当": {
+"source": "hsk",
+"item": "当"
+},
+"合": {
+"source": "hsk",
+"item": "合"
+},
+"被": {
+"source": "hsk",
+"item": "被"
+},
+"把": {
+"source": "hsk",
+"item": "把"
+},
+"现": {
+"source": "hsk",
+"item": "现"
+},
+"和": {
+"source": "hsk",
+"item": "和"
+},
+"行": {
+"source": "hsk",
+"item": "行"
+},
+"就": {
+"source": "hsk",
+"item": "就"
+},
+"都": {
+"source": "hsk",
+"item": "都"
+},
+"共": {
+"source": "hsk",
+"item": "共"
+},
+"眉": {
+"source": "hsk",
+"item": "煤"
+},
+"已": {
+"source": "hsk",
+"item": "已"
+},
+"遍": {
+"source": "hsk",
+"item": "遍"
+},
+"己": {
+"source": "syllable",
+"item": "ji3"
+},
+"吗": {
+"source": "hsk",
+"item": "吗"
+},
+"最": {
+"source": "hsk",
+"item": "最"
+},
+"然": {
+"source": "commons",
+"title": "Zh-rán.ogg",
+"name": "ran2"
+},
+"头": {
+"source": "hsk",
+"item": "头"
+},
+"本": {
+"source": "hsk",
+"item": "本"
+},
+"书": {
+"source": "hsk",
+"item": "书"
+},
+"择": {
+"source": "hsk",
+"item": "则"
+},
+"讲": {
+"source": "hsk",
+"item": "讲"
+},
+"帅": {
+"source": "hsk",
+"item": "帅"
+},
+"景": {
+"source": "hsk",
+"item": "景"
+},
+"整": {
+"source": "hsk",
+"item": "整"
+},
+"罪": {
+"source": "hsk",
+"item": "罪"
+},
+"救": {
+"source": "hsk",
+"item": "救"
+},
+"错": {
+"source": "hsk",
+"item": "错"
+},
+"对": {
+"source": "hsk",
+"item": "对"
+},
+"演": {
+"source": "hsk",
+"item": "演"
+},
+"算": {
+"source": "hsk",
+"item": "算"
+},
+"插": {
+"source": "hsk",
+"item": "插"
+},
+"格": {
+"source": "hsk",
+"item": "格"
+},
+"拆": {
+"source": "hsk",
+"item": "拆"
+},
+"建": {
+"source": "hsk",
+"item": "建"
+},
+"取": {
+"source": "hsk",
+"item": "取"
+},
+"收": {
+"source": "hsk",
+"item": "收"
+},
+"战": {
+"source": "hsk",
+"item": "战"
+},
+"镜": {
+"source": "hsk",
+"item": "敬"
+},
+"照": {
+"source": "hsk",
+"item": "照"
+},
+"料": {
+"source": "hsk",
+"item": "料"
+},
+"警": {
+"source": "hsk",
+"item": "景"
+},
+"犯": {
+"source": "hsk",
+"item": "泛"
+},
+"客": {
+"source": "hsk",
+"item": "客"
+},
+"离": {
+"source": "hsk",
+"item": "离"
+},
+"费": {
+"source": "hsk",
+"item": "费"
+},
+"造": {
+"source": "hsk",
+"item": "造"
+},
+"等": {
+"source": "hsk",
+"item": "等"
+},
+"声": {
+"source": "hsk",
+"item": "声"
+},
+"噪": {
+"source": "hsk",
+"item": "造"
+},
+"淡": {
+"source": "hsk",
+"item": "淡"
+},
+"浓": {
+"source": "hsk",
+"item": "浓"
+},
+"简": {
+"source": "hsk",
+"item": "拣"
+},
+"易": {
+"source": "hsk",
+"item": "易"
+},
+"难": {
+"source": "hsk",
+"item": "难"
+},
+"利": {
+"source": "hsk",
+"item": "利"
+},
+"单": {
+"source": "hsk",
+"item": "单"
+},
+"双": {
+"source": "hsk",
+"item": "双"
+},
+"薄": {
+"source": "hsk",
+"item": "薄"
+},
+"厚": {
+"source": "hsk",
+"item": "厚"
+},
+"商": {
+"source": "hsk",
+"item": "商"
+},
+"感": {
+"source": "hsk",
+"item": "感"
+},
+"同": {
+"source": "hsk",
+"item": "同"
+},
+"异": {
+"source": "hsk",
+"item": "异"
+},
+"袜": {
+"source": "syllable",
+"item": "wa4"
+},
+"鞋": {
+"source": "hsk",
+"item": "鞋"
+},
+"餐": {
+"source": "hsk",
+"item": "餐"
+},
+"饮": {
+"source": "hsk",
+"item": "饮"
+},
+"船": {
+"source": "hsk",
+"item": "船"
+},
+"床": {
+"source": "hsk",
+"item": "床"
+},
+"事": {
+"source": "hsk",
+"item": "事"
+},
+"脱": {
+"source": "hsk",
+"item": "脱"
+},
+"穿": {
+"source": "hsk",
+"item": "穿"
+},
+"毛": {
+"source": "hsk",
+"item": "毛"
+},
+"句": {
+"source": "hsk",
+"item": "句"
+},
+"旅": {
+"source": "hsk",
+"item": "旅"
+},
+"科": {
+"source": "hsk",
+"item": "科"
+},
+"静": {
+"source": "hsk",
+"item": "静"
+},
+"选": {
+"source": "hsk",
+"item": "选"
+},
+"紧": {
+"source": "hsk",
+"item": "紧"
+},
+"松": {
+"source": "hsk",
+"item": "松"
+},
+"职": {
+"source": "hsk",
+"item": "值"
+},
+"药": {
+"source": "hsk",
+"item": "要"
+},
+"帮": {
+"source": "hsk",
+"item": "帮"
+},
+"端": {
+"source": "hsk",
+"item": "端"
+},
+"旧": {
+"source": "hsk",
+"item": "旧"
+},
+"新": {
+"source": "hsk",
+"item": "新"
+},
+"画": {
+"source": "hsk",
+"item": "画"
+},
+"啤": {
+"source": "hsk",
+"item": "皮"
+},
+"破": {
+"source": "hsk",
+"item": "破"
+},
+"词": {
+"source": "hsk",
+"item": "词"
+},
+"惯": {
+"source": "hsk",
+"item": "惯"
+},
+"肤": {
+"source": "syllable",
+"item": "fu1"
+},
+"皮": {
+"source": "hsk",
+"item": "皮"
+},
+"洗": {
+"source": "hsk",
+"item": "洗"
+},
+"澡": {
+"source": "hsk",
+"item": "早"
+},
+"誉": {
+"source": "hsk",
+"item": "遇"
+},
+"巨": {
+"source": "hsk",
+"item": "句"
+},
+"微": {
+"source": "syllable",
+"item": "wei1"
+},
+"追": {
+"source": "hsk",
+"item": "追"
+},
+"找": {
+"source": "hsk",
+"item": "找"
+},
+"寻": {
+"source": "hsk",
+"item": "寻"
+},
+"赞": {
+"source": "commons",
+"title": "Zh-zàn.ogg",
+"name": "zan4"
+},
+"留": {
+"source": "hsk",
+"item": "留"
+},
+"恨": {
+"source": "hsk",
+"item": "恨"
+},
+"能": {
+"source": "hsk",
+"item": "能"
+},
+"分": {
+"source": "hsk",
+"item": "分"
+},
+"流": {
+"source": "hsk",
+"item": "流"
+},
+"裤": {
+"source": "hsk",
+"item": "库"
+},
+"权": {
+"source": "hsk",
+"item": "全"
+},
+"浅": {
+"source": "hsk",
+"item": "浅"
+},
+"深": {
+"source": "hsk",
+"item": "深"
+},
+"领": {
+"source": "hsk",
+"item": "领"
+},
+"袖": {
+"source": "hsk",
+"item": "嗅"
+},
+"奖": {
+"source": "hsk",
+"item": "奖"
+},
+"礼": {
+"source": "hsk",
+"item": "礼"
+},
+"呼": {
+"source": "hsk",
+"item": "呼"
+},
+"众": {
+"source": "hsk",
+"item": "众"
+},
+"衫": {
+"source": "hsk",
+"item": "山"
+},
+"衬": {
+"source": "hsk",
+"item": "趁"
+},
+"懒": {
+"source": "hsk",
+"item": "懒"
+},
+"勤": {
+"source": "hsk",
+"item": "勤"
+},
+"们": {
+"source": "hsk",
+"item": "们"
+},
+"补": {
+"source": "hsk",
+"item": "补"
+},
+"蜜": {
+"source": "hsk",
+"item": "蜜"
+},
+"蜂": {
+"source": "hsk",
+"item": "蜂"
+},
+"答": {
+"source": "hsk",
+"item": "答"
+},
+"问": {
+"source": "hsk",
+"item": "问"
+},
+"缺": {
+"source": "hsk",
+"item": "缺"
+},
+"满": {
+"source": "hsk",
+"item": "满"
+},
+"食": {
+"source": "hsk",
+"item": "食"
+},
+"物": {
+"source": "hsk",
+"item": "物"
+},
+"植": {
+"source": "hsk",
+"item": "植"
+},
+"动": {
+"source": "hsk",
+"item": "动"
+},
+"臭": {
+"source": "hsk",
+"item": "臭"
+},
+"香": {
+"source": "hsk",
+"item": "香"
+},
+"婚": {
+"source": "hsk",
+"item": "昏"
+},
+"抱": {
+"source": "hsk",
+"item": "抱"
+},
+"诗": {
+"source": "hsk",
+"item": "诗"
+},
+"胜": {
+"source": "hsk",
+"item": "胜"
+},
+"角": {
+"source": "hsk",
+"item": "角"
+},
+"您": {
+"source": "hsk",
+"item": "您"
+},
+"密": {
+"source": "hsk",
+"item": "密"
+},
+"秘": {
+"source": "hsk",
+"item": "密"
+},
+"元": {
+"source": "hsk",
+"item": "元"
+},
+"币": {
+"source": "hsk",
+"item": "币"
+},
+"屎": {
+"source": "hsk",
+"item": "屎"
+},
+"尿": {
+"source": "hsk",
+"item": "尿"
+},
+"泪": {
+"source": "hsk",
+"item": "累"
+},
+"汗": {
+"source": "hsk",
+"item": "汗"
+},
+"抬": {
+"source": "hsk",
+"item": "抬"
+},
+"胶": {
+"source": "hsk",
+"item": "胶"
+},
+"点": {
+"source": "hsk",
+"item": "点"
+},
+"资": {
+"source": "syllable",
+"item": "zi1"
+},
+"银": {
+"source": "hsk",
+"item": "银"
+},
+"金": {
+"source": "hsk",
+"item": "金"
+},
+"又": {
+"source": "hsk",
+"item": "又"
+},
+"再": {
+"source": "hsk",
+"item": "再"
+},
+"政": {
+"source": "hsk",
+"item": "证"
+},
+"回": {
+"source": "hsk",
+"item": "回"
+},
+"打": {
+"source": "hsk",
+"item": "打"
+},
+"牲": {
+"source": "hsk",
+"item": "声"
+},
+"牺": {
+"source": "hsk",
+"item": "稀"
+},
+"活": {
+"source": "hsk",
+"item": "活"
+},
+"复": {
+"source": "hsk",
+"item": "复"
+},
+"假": {
+"source": "hsk",
+"item": "假"
+},
+"真": {
+"source": "hsk",
+"item": "真"
+},
+"亮": {
+"source": "hsk",
+"item": "辆"
+},
+"漂": {
+"source": "hsk",
+"item": "票"
+},
+"机": {
+"source": "hsk",
+"item": "机"
+},
+"名": {
+"source": "hsk",
+"item": "名"
+},
+"湿": {
+"source": "hsk",
+"item": "湿"
+},
+"干": {
+"source": "hsk",
+"item": "甘"
+},
+"视": {
+"source": "hsk",
+"item": "视"
+},
+"影": {
+"source": "syllable",
+"item": "ying3"
+},
+"京": {
+"source": "hsk",
+"item": "惊"
+},
+"醒": {
+"source": "hsk",
+"item": "醒"
+},
+"睡": {
+"source": "hsk",
+"item": "睡"
+},
+"零": {
+"source": "hsk",
+"item": "零"
+},
+"医": {
+"source": "hsk",
+"item": "医"
+},
+"菜": {
+"source": "syllable",
+"item": "cai4"
+},
+"饿": {
+"source": "hsk",
+"item": "饿"
+},
+"饱": {
+"source": "hsk",
+"item": "饱"
+},
+"羹": {
+"source": "hsk",
+"item": "耕"
+},
+"粥": {
+"source": "hsk",
+"item": "粥"
+},
+"杀": {
+"source": "hsk",
+"item": "杀"
+},
+"派": {
+"source": "hsk",
+"item": "派"
+},
+"凡": {
+"source": "hsk",
+"item": "凡"
+},
+"吧": {
+"source": "hsk",
+"item": "吧"
+},
+"次": {
+"source": "hsk",
+"item": "次"
+},
+"主": {
+"source": "hsk",
+"item": "主"
+},
+"票": {
+"source": "hsk",
+"item": "票"
+},
+"邮": {
+"source": "hsk",
+"item": "油"
+},
+"虾": {
+"source": "hsk",
+"item": "虾"
+},
+"肉": {
+"source": "hsk",
+"item": "肉"
+},
+"蒜": {
+"source": "hsk",
+"item": "蒜"
+},
+"姜": {
+"source": "hsk",
+"item": "姜"
+},
+"葱": {
+"source": "hsk",
+"item": "葱"
+},
+"歉": {
+"source": "hsk",
+"item": "欠"
+},
+"谢": {
+"source": "hsk",
+"item": "泻"
+},
+"反": {
+"source": "hsk",
+"item": "反"
+},
+"正": {
+"source": "hsk",
+"item": "正"
+},
+"啡": {
+"source": "hsk",
+"item": "飞"
+},
+"咖": {
+"source": "syllable",
+"item": "ka1"
+},
+"茶": {
+"source": "hsk",
+"item": "茶"
+},
+"祸": {
+"source": "hsk",
+"item": "祸"
+},
+"福": {
+"source": "hsk",
+"item": "福"
+},
+"思": {
+"source": "hsk",
+"item": "思"
+},
+"税": {
+"source": "hsk",
+"item": "税"
+},
+"会": {
+"source": "hsk",
+"item": "会"
+},
+"庙": {
+"source": "hsk",
+"item": "庙"
+},
+"圆": {
+"source": "hsk",
+"item": "圆"
+},
+"团": {
+"source": "hsk",
+"item": "团"
+},
+"炮": {
+"source": "commons",
+"title": "Zh-pào.ogg",
+"name": "pao4"
+},
+"鞭": {
+"source": "hsk",
+"item": "编"
+},
+"瑰": {
+"source": "hsk",
+"item": "龟"
+},
+"玫": {
+"source": "hsk",
+"item": "煤"
+},
+"韩": {
+"source": "hsk",
+"item": "寒"
+},
+"运": {
+"source": "hsk",
+"item": "运"
+},
+"奥": {
+"source": "syllable",
+"item": "ao4"
+},
+"富": {
+"source": "hsk",
+"item": "富"
+},
+"穷": {
+"source": "hsk",
+"item": "穷"
+},
+"表": {
+"source": "hsk",
+"item": "表"
+},
+"座": {
+"source": "hsk",
+"item": "座"
+},
+"请": {
+"source": "hsk",
+"item": "请"
+},
+"榄": {
+"source": "hsk",
+"item": "懒"
+},
+"橄": {
+"source": "hsk",
+"item": "感"
+},
+"胸": {
+"source": "hsk",
+"item": "胸"
+},
+"肩": {
+"source": "hsk",
+"item": "肩"
+},
+"网": {
+"source": "hsk",
+"item": "网"
+},
+"闲": {
+"source": "hsk",
+"item": "闲"
+},
+"忙": {
+"source": "hsk",
+"item": "忙"
+},
+"米": {
+"source": "hsk",
+"item": "米"
+},
+"面": {
+"source": "hsk",
+"item": "面"
+},
+"残": {
+"source": "hsk",
+"item": "残"
+},
+"病": {
+"source": "hsk",
+"item": "病"
+},
+"糕": {
+"source": "hsk",
+"item": "高"
+},
+"蛋": {
+"source": "hsk",
+"item": "蛋"
+},
+"脑": {
+"source": "syllable",
+"item": "nao3"
+},
+"电": {
+"source": "hsk",
+"item": "电"
+},
+"康": {
+"source": "hsk",
+"item": "糠"
+},
+"健": {
+"source": "hsk",
+"item": "箭"
+},
+"魂": {
+"source": "syllable",
+"item": "hun2"
+},
+"瓶": {
+"source": "hsk",
+"item": "瓶"
+},
+"乡": {
+"source": "hsk",
+"item": "乡"
+},
+"区": {
+"source": "hsk",
+"item": "区"
+},
+"市": {
+"source": "hsk",
+"item": "市"
+},
+"省": {
+"source": "syllable",
+"item": "sheng3"
+},
+"旗": {
+"source": "hsk",
+"item": "齐"
+},
+"身": {
+"source": "hsk",
+"item": "身"
+},
+"子": {
+"source": "hsk",
+"item": "子"
+},
+"妹": {
+"source": "syllable",
+"item": "mei4"
+},
+"弟": {
+"source": "hsk",
+"item": "地"
+},
+"姐": {
+"source": "hsk",
+"item": "解"
+},
+"哥": {
+"source": "hsk",
+"item": "歌"
+},
+"爸": {
+"source": "hsk",
+"item": "罢"
+},
+"妈": {
+"source": "syllable",
+"item": "ma1"
+},
+"姥": {
+"source": "hsk",
+"item": "老"
+},
+"爷": {
+"source": "syllable",
+"item": "ye2"
+},
+"姨": {
+"source": "hsk",
+"item": "姨"
+},
+"叔": {
+"source": "hsk",
+"item": "梳"
+},
+"痒": {
+"source": "hsk",
+"item": "痒"
+},
+"痛": {
+"source": "hsk",
+"item": "痛"
+},
+"舞": {
+"source": "hsk",
+"item": "舞"
+},
+"歌": {
+"source": "hsk",
+"item": "歌"
+},
+"庆": {
+"source": "syllable",
+"item": "qing4"
+},
+"节": {
+"source": "hsk",
+"item": "节"
+},
+"堂": {
+"source": "hsk",
+"item": "糖"
+},
+"教": {
+"source": "hsk",
+"item": "叫"
+},
+"诞": {
+"source": "hsk",
+"item": "淡"
+},
+"圣": {
+"source": "hsk",
+"item": "剩"
+},
+"灰": {
+"source": "hsk",
+"item": "灰"
+},
+"棕": {
+"source": "syllable",
+"item": "zong1"
+},
+"紫": {
+"source": "hsk",
+"item": "紫"
+},
+"粉": {
+"source": "hsk",
+"item": "粉"
+},
+"绿": {
+"source": "hsk",
+"item": "绿"
+},
+"蓝": {
+"source": "hsk",
+"item": "蓝"
+},
+"黄": {
+"source": "hsk",
+"item": "黄"
+},
+"红": {
+"source": "hsk",
+"item": "红"
+},
+"白": {
+"source": "hsk",
+"item": "白"
+},
+"黑": {
+"source": "hsk",
+"item": "黑"
+},
+"盗": {
+"source": "hsk",
+"item": "盗"
+},
+"偷": {
+"source": "hsk",
+"item": "偷"
+},
+"妻": {
+"source": "hsk",
+"item": "七"
+},
+"夫": {
+"source": "syllable",
+"item": "fu1"
+},
+"外": {
+"source": "hsk",
+"item": "外"
+},
+"里": {
+"source": "hsk",
+"item": "里"
+},
+"信": {
+"source": "hsk",
+"item": "信"
+},
+"缘": {
+"source": "hsk",
+"item": "元"
+},
+"禅": {
+"source": "hsk",
+"item": "缠"
+},
+"佛": {
+"source": "syllable",
+"item": "fo2"
+},
+"恶": {
+"source": "hsk",
+"item": "恶"
+},
+"善": {
+"source": "hsk",
+"item": "善"
+},
+"美": {
+"source": "hsk",
+"item": "美"
+},
+"丑": {
+"source": "hsk",
+"item": "丑"
+},
+"死": {
+"source": "hsk",
+"item": "死"
+},
+"猪": {
+"source": "hsk",
+"item": "猪"
+},
+"鸡": {
+"source": "hsk",
+"item": "鸡"
+},
+"猴": {
+"source": "syllable",
+"item": "hou2"
+},
+"羊": {
+"source": "hsk",
+"item": "羊"
+},
+"马": {
+"source": "hsk",
+"item": "马"
+},
+"蛇": {
+"source": "hsk",
+"item": "蛇"
+},
+"龙": {
+"source": "hsk",
+"item": "龙"
+},
+"兔": {
+"source": "hsk",
+"item": "吐"
+},
+"虎": {
+"source": "syllable",
+"item": "hu3"
+},
+"牛": {
+"source": "hsk",
+"item": "牛"
+},
+"鼠": {
+"source": "hsk",
+"item": "属"
+},
+"砚": {
+"source": "hsk",
+"item": "咽"
+},
+"纸": {
+"source": "hsk",
+"item": "纸"
+},
+"墨": {
+"source": "hsk",
+"item": "墨"
+},
+"笔": {
+"source": "hsk",
+"item": "笔"
+},
+"哭": {
+"source": "hsk",
+"item": "哭"
+},
+"悲": {
+"source": "hsk",
+"item": "碑"
+},
+"烟": {
+"source": "hsk",
+"item": "烟"
+},
+"笑": {
+"source": "hsk",
+"item": "笑"
+},
+"乐": {
+"source": "hsk",
+"item": "乐"
+},
+"醋": {
+"source": "hsk",
+"item": "醋"
+},
+"锅": {
+"source": "hsk",
+"item": "锅"
+},
+"脚": {
+"source": "hsk",
+"item": "脚"
+},
+"腿": {
+"source": "hsk",
+"item": "腿"
+},
+"短": {
+"source": "hsk",
+"item": "短"
+},
+"长": {
+"source": "hsk",
+"item": "尝"
+},
+"瘦": {
+"source": "hsk",
+"item": "瘦"
+},
+"胖": {
+"source": "hsk",
+"item": "胖"
+},
+"矮": {
+"source": "hsk",
+"item": "矮"
+},
+"高": {
+"source": "hsk",
+"item": "高"
+},
+"少": {
+"source": "hsk",
+"item": "少"
+},
+"多": {
+"source": "hsk",
+"item": "多"
+},
+"碟": {
+"source": "hsk",
+"item": "叠"
+},
+"筷": {
+"source": "hsk",
+"item": "快"
+},
+"盘": {
+"source": "hsk",
+"item": "盘"
+},
+"碗": {
+"source": "hsk",
+"item": "碗"
+},
+"妒": {
+"source": "hsk",
+"item": "镀"
+},
+"哀": {
+"source": "syllable",
+"item": "ai1"
+},
+"怒": {
+"source": "hsk",
+"item": "怒"
+},
+"喜": {
+"source": "hsk",
+"item": "喜"
+},
+"辣": {
+"source": "commons",
+"title": "Zh-là.ogg",
+"name": "la4"
+},
+"苦": {
+"source": "hsk",
+"item": "苦"
+},
+"酸": {
+"source": "hsk",
+"item": "酸"
+},
+"玩": {
+"source": "hsk",
+"item": "完"
+},
+"椅": {
+"source": "hsk",
+"item": "乙"
+},
+"桌": {
+"source": "hsk",
+"item": "捉"
+},
+"海": {
+"source": "hsk",
+"item": "海"
+},
+"湖": {
+"source": "hsk",
+"item": "湖"
+},
+"河": {
+"source": "hsk",
+"item": "河"
+},
+"江": {
+"source": "hsk",
+"item": "江"
+},
+"油": {
+"source": "hsk",
+"item": "油"
+},
+"酱": {
+"source": "hsk",
+"item": "酱"
+},
+"咸": {
+"source": "hsk",
+"item": "咸"
+},
+"盐": {
+"source": "hsk",
+"item": "盐"
+},
+"甜": {
+"source": "hsk",
+"item": "甜"
+},
+"糖": {
+"source": "hsk",
+"item": "糖"
+},
+"北": {
+"source": "hsk",
+"item": "北"
+},
+"南": {
+"source": "hsk",
+"item": "南"
+},
+"西": {
+"source": "hsk",
+"item": "西"
+},
+"东": {
+"source": "hsk",
+"item": "东"
+},
+"花": {
+"source": "hsk",
+"item": "花"
+},
+"草": {
+"source": "hsk",
+"item": "草"
+},
+"风": {
+"source": "hsk",
+"item": "风"
+},
+"枪": {
+"source": "hsk",
+"item": "枪"
+},
+"刀": {
+"source": "hsk",
+"item": "刀"
+},
+"武": {
+"source": "hsk",
+"item": "舞"
+},
+"神": {
+"source": "hsk",
+"item": "神"
+},
+"孝": {
+"source": "hsk",
+"item": "笑"
+},
+"忠": {
+"source": "hsk",
+"item": "钟"
+},
+"冷": {
+"source": "hsk",
+"item": "冷"
+},
+"热": {
+"source": "hsk",
+"item": "热"
+},
+"狗": {
+"source": "hsk",
+"item": "狗"
+},
+"猫": {
+"source": "hsk",
+"item": "猫"
+},
+"她": {
+"source": "hsk",
+"item": "她"
+},
+"他": {
+"source": "hsk",
+"item": "他"
+},
+"阴": {
+"source": "hsk",
+"item": "阴"
+},
+"阳": {
+"source": "hsk",
+"item": "阳"
+},
+"后": {
+"source": "hsk",
+"item": "后"
+},
+"右": {
+"source": "hsk",
+"item": "右"
+},
+"左": {
+"source": "hsk",
+"item": "左"
+},
+"前": {
+"source": "hsk",
+"item": "前"
+},
+"雾": {
+"source": "hsk",
+"item": "雾"
+},
+"雪": {
+"source": "hsk",
+"item": "雪"
+},
+"嘴": {
+"source": "hsk",
+"item": "嘴"
+},
+"耳": {
+"source": "syllable",
+"item": "er3"
+},
+"鼻": {
+"source": "syllable",
+"item": "bi2"
+},
+"冬": {
+"source": "hsk",
+"item": "冬"
+},
+"秋": {
+"source": "hsk",
+"item": "秋"
+},
+"星": {
+"source": "hsk",
+"item": "星"
+},
+"语": {
+"source": "hsk",
+"item": "与"
+},
+"云": {
+"source": "hsk",
+"item": "云"
+},
+"梦": {
+"source": "hsk",
+"item": "梦"
+},
+"不": {
+"source": "hsk",
+"item": "不"
+},
+"饺": {
+"source": "hsk",
+"item": "搅"
+},
+"焰": {
+"source": "hsk",
+"item": "咽"
+},
+"钱": {
+"source": "hsk",
+"item": "钱"
+},
+"女": {
+"source": "hsk",
+"item": "女"
+},
+"眼": {
+"source": "hsk",
+"item": "眼"
+},
+"年": {
+"source": "hsk",
+"item": "年"
+},
+"手": {
+"source": "hsk",
+"item": "手"
+},
+"心": {
+"source": "hsk",
+"item": "心"
+},
+"这": {
+"source": "hsk",
+"item": "这"
+}
+},
+"words": {
+"你好": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-你好.wav"
+},
+"你们": {
+"source": "hsk",
+"item": "你们"
+},
+"很好": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-很好.wav"
+},
+"我们": {
+"source": "hsk",
+"item": "我们"
+},
+"我的": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-我的.wav"
+},
+"中国人": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-中国人.wav"
+},
+"家人": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-家人.wav"
+},
+"中国": {
+"source": "commons",
+"title": "LL-Q9192 (cmn)-Luilui6666-中国.wav"
+},
+"中文": {
+"source": "hsk",
+"item": "中文"
+},
+"学习": {
+"source": "hsk",
+"item": "学习"
+},
+"学生": {
+"source": "hsk",
+"item": "学生"
+}
+}
+}
