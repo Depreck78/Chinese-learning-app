@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "prod",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["wrangler", "dev", "--config", "dist/server/wrangler.json", "--persist-to", ".wrangler/state", "--port", "8791"],
+      "port": 8791
+    }
+  ]
+}
