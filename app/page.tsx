@@ -539,6 +539,8 @@ export default function Home() {
   const [reviewDeckId, setReviewDeckId] = useState('all');
   const [reviewIndex, setReviewIndex] = useState(0);
   const [reviewAnswerShown, setReviewAnswerShown] = useState(false);
+  const [reviewTracing, setReviewTracing] = useState(false);
+  const reviewTracePanel = useRef<HTMLDivElement>(null);
   const [videoPlaying, setVideoPlaying] = useState(false);
   const item = CHARACTERS[current];
 
@@ -668,6 +670,12 @@ export default function Home() {
     setReviewAnswerShown(false);
   }
 
+  function toggleReviewTracing() {
+    const next = !reviewTracing;
+    setReviewTracing(next);
+    if (next) window.requestAnimationFrame(() => reviewTracePanel.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
+  }
+
   function changeReviewGrouping(grouping: ReviewGrouping) {
     setReviewGrouping(grouping);
     setReviewDeckId('all');
@@ -788,9 +796,13 @@ export default function Home() {
                 </nav>
                 <section className="review-workspace">
                   <div className="review-ledger"><span>{reviewGrouping === 'category' ? 'CATEGORY DECK' : 'LESSON DECK'}</span><strong>{reviewCharacters.length.toLocaleString()}</strong><small>{activeReviewDeck.label}</small><p>{activeReviewDeck.description}</p></div>
+                  <div className="review-main">
                   <div className="review-card">
                     <header><span className="label">{activeReviewDeck.label}</span><strong>{reviewIndex % reviewCharacters.length + 1} / {reviewCharacters.length}</strong></header>
-                    <button className="review-sound" onClick={() => speak(reviewEntry.character)} aria-label={`Hear ${reviewEntry.character} pronounced`}><Volume2 size={21} />Hear pronunciation</button>
+                    <div className="review-tools">
+                      <button className="review-trace-toggle" onClick={toggleReviewTracing} aria-pressed={reviewTracing}><PencilLine size={19} />{reviewTracing ? 'Hide tracing' : 'Trace to practice'}</button>
+                      <button className="review-sound" onClick={() => speak(reviewEntry.character)} aria-label={`Hear ${reviewEntry.character} pronounced`}><Volume2 size={21} />Hear pronunciation</button>
+                    </div>
                     <div className="review-character">{reviewEntry.character}</div>
                     {reviewAnswerShown ? (
                       <div className="review-answer" aria-live="polite"><strong>{reviewEntry.pinyin}</strong><p>{reviewEntry.definition}</p><button onClick={() => choose(reviewEntry, 'review')}>Open full lesson<ArrowRight size={16} /></button></div>
@@ -802,6 +814,8 @@ export default function Home() {
                       <button className="reveal-button" onClick={() => setReviewAnswerShown((shown) => !shown)}>{reviewAnswerShown ? 'Hide answer' : 'Show answer'}</button>
                       <button onClick={() => moveReview(1)}>Next<ArrowRight size={18} /></button>
                     </footer>
+                  </div>
+                  {reviewTracing && <div ref={reviewTracePanel} className="review-trace"><WritingPad key={reviewEntry.character} character={reviewEntry.character} /></div>}
                   </div>
                 </section>
               </>
