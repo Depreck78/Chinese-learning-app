@@ -1,0 +1,4 @@
+Avatar images: Noto Emoji animal faces by Google (https://github.com/googlefonts/noto-emoji),
+licensed under the Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0).
+Files are the unmodified 2D/svg/emoji_u<codepoint>.svg images, renamed:
+cat 1f431, tiger 1f42f, rabbit 1f430, dragon 1f432, panda 1f43c, horse 1f434.

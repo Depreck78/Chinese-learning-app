@@ -1,0 +1,14 @@
+Mandarin pronunciation recordings
+
+Most characters and the example words 你们, 我们, 中文, 学习, 学生:
+  Yue Tan, from audio-cmn (https://github.com/hugolpz/audio-cmn), CC BY-SA.
+  Files: hsk-*.mp3
+Some characters (pinyin syllables):
+  Yue Tan, Wikimedia Commons "Zh-*.ogg" files, CC BY-SA 3.0 US. Files: zh-*.mp3
+  Chen Wang, from audio-cmn, CC BY-SA. Files: syl-*.mp3
+Example words 你好, 很好, 我的, 中国, 中国人, 家人:
+  Luilui6666 via Lingua Libre, Wikimedia Commons, CC BY-SA 4.0. Files: ll-*.mp3
+
+audio-cmn curation by Hugo Lopez; recording software by Nicolas Vion.
+Files are renamed (by code point or numbered pinyin) and Commons files are converted to MP3.
+Characters that share a pronunciation share one recording.

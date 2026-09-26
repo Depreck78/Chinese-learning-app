@@ -37,6 +37,8 @@ yarn-error.log*
 .npmrc
 
 # deployment and generated files
+/public/strokes/
+/.cache/
 .vercel
 next-env.d.ts
 /dist/

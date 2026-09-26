@@ -1,0 +1,16 @@
+{
+  "name": "Hanzi Desk — Learn Chinese Characters",
+  "short_name": "Hanzi Desk",
+  "description": "Practice simplified Chinese characters with pinyin, pronunciation, handwriting, and a built-in dictionary.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5efe2",
+  "theme_color": "#191713",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
