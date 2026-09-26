@@ -18,6 +18,7 @@ import { Empty } from '@/components/ui/empty';
 import { Progress, ProgressLabel, ProgressValue } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CHARACTERS, type CharacterEntry } from './characters';
+import { DictionaryFilterBar } from './dictionary-filter-bar';
 import { DICTIONARY_FILTERS, matchesFilter, type DictionaryFilterId } from './dictionary-filters';
 import { AccountPanel } from './account-panel';
 import { AvatarBadge } from './avatar-badge';
@@ -487,17 +488,7 @@ export default function Home() {
               <label className="dictionary-search"><Search size={20} /><span className="sr-only">Search the full dictionary</span><input value={dictionaryQuery} onChange={event => setDictionaryQuery(event.target.value)} placeholder="Search all characters, pinyin, or English" /></label>
               <p aria-live="polite"><strong>{dictionaryResults.length.toLocaleString()}</strong> {dictionaryResults.length === 1 ? 'character' : 'characters'}</p>
             </div>
-            <nav className="dictionary-filters" aria-label="Filter dictionary by category">
-              <span className="label">FILTER BY</span>
-              <div className="filter-strip">
-                {DICTIONARY_FILTERS.map((filter) => (
-                  <button key={filter.id} aria-pressed={dictionaryFilter === filter.id} onClick={() => setDictionaryFilter(filter.id)}>
-                    <span>{filter.label}</span>
-                    <small>{dictionaryFilterCounts[filter.id].toLocaleString()}</small>
-                  </button>
-                ))}
-              </div>
-            </nav>
+            <DictionaryFilterBar active={dictionaryFilter} counts={dictionaryFilterCounts} onSelect={setDictionaryFilter} />
             <div className="dictionary-index">
               <div className="dictionary-columns" aria-hidden="true">
                 <div className="dictionary-column-heading"><span>Character</span><span>Pinyin</span><span>English</span><span /></div>
