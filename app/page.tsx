@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, Check, ClipboardCheck, Clock3, Gauge, Menu, PencilLine, Play, Search, Star, UserRound, Volume2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, Check, ClipboardCheck, Clock3, Gauge, House, Menu, PencilLine, Play, Search, Star, Tv, UserRound, Volume2, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Sidebar,
@@ -19,6 +19,8 @@ import { Progress, ProgressLabel, ProgressValue } from '@/components/ui/progress
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { CHARACTERS, type CharacterEntry } from './characters';
 import { DictionaryFilterBar } from './dictionary-filter-bar';
+import { FunLearningPage } from './fun-learning-page';
+import { HomePage } from './home-page';
 import { PlanCalendar } from './plan-calendar';
 import { DICTIONARY_FILTERS, matchesFilter, type DictionaryFilterId } from './dictionary-filters';
 import { AccountPanel } from './account-panel';
@@ -51,7 +53,7 @@ function toneNumber(pinyin: string) {
   return 0;
 }
 
-type NavView = 'dictionary' | 'study-plan' | 'review' | 'account';
+type NavView = 'home' | 'dictionary' | 'study-plan' | 'review' | 'fun' | 'account';
 type AppView = NavView | 'character' | 'lesson';
 
 type CurriculumTheme = {
@@ -179,6 +181,12 @@ function AppNavigation({ activeView, onNavigate, avatar }: { activeView: NavView
           <SidebarGroupContent>
             <SidebarMenu className="page-menu">
               <SidebarMenuItem>
+                <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'home'} onClick={() => onNavigate('home')}>
+                  <House />
+                  <span><b>Home</b><small>Your streak and progress</small></span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
                 <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'dictionary'} onClick={() => onNavigate('dictionary')}>
                   <BookOpen />
                   <span><b>Dictionary</b><small>Browse every character</small></span>
@@ -194,6 +202,12 @@ function AppNavigation({ activeView, onNavigate, avatar }: { activeView: NavView
                 <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'review'} onClick={() => onNavigate('review')}>
                   <ClipboardCheck />
                   <span><b>Review</b><small>Practice learned words</small></span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'fun'} onClick={() => onNavigate('fun')}>
+                  <Tv />
+                  <span><b>Fun Learning</b><small>Shows, anime and films</small></span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               {/* On phones Account sits in the menu; on larger screens it is pinned to the bottom of the rail. */}
@@ -306,10 +320,12 @@ function StudyPlanPanel({
   );
 }
 
+const NAV_LABELS: Record<NavView, string> = { home: 'Home', dictionary: 'Dictionary', 'study-plan': 'Study Plan', review: 'Review', fun: 'Fun Learning', account: 'Account' };
+
 const TRACE_GOAL_TEXT = 'ten times (or writing it on paper)';
 
 export default function Home() {
-  const [view, setView] = useState<AppView>('dictionary');
+  const [view, setView] = useState<AppView>('home');
   const [characterOrigin, setCharacterOrigin] = useState<NavView>('dictionary');
   const [current, setCurrent] = useState(0);
   const [query, setQuery] = useState('');
@@ -371,6 +387,8 @@ export default function Home() {
 
   const completedSet = useMemo(() => new Set(completed), [completed]);
   const learnedCharacters = useMemo(() => CHARACTERS.filter((entry) => completedSet.has(entry.character)), [completedSet]);
+  // Oldest first, in the order they were learned.
+  const learnedInOrder = useMemo(() => completed.map((character) => CHARACTER_BY_ID.get(character)).filter((entry): entry is CharacterEntry => Boolean(entry)), [completed]);
   const todaysLessons = useMemo(() => ({
     normal: lessonsForDay('normal', lessonsDone),
     intensive: lessonsForDay('intensive', lessonsDone),
@@ -479,7 +497,7 @@ export default function Home() {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <button className="brand" onClick={() => setView('dictionary')} aria-label="Hanzi Desk dictionary"><span className="brand-mark">字</span><span><strong>HANZI DESK</strong><small>CHARACTER WORKSHOP</small></span></button>
+        <button className="brand" onClick={() => setView('home')} aria-label="Hanzi Desk home"><span className="brand-mark">字</span><span><strong>HANZI DESK</strong><small>CHARACTER WORKSHOP</small></span></button>
         <div className="search-wrap"><Search size={19} /><input value={query} onChange={e => { setQuery(e.target.value); setSearchOpen(true); }} onFocus={() => setSearchOpen(true)} placeholder="Search character, pinyin, or meaning" aria-label="Search the Chinese dictionary" /><kbd>⌘ K</kbd>
           {searchOpen && <div className="search-results"><div className="results-label"><span>{query ? `${results.length} MATCHES` : 'BEGINNER CHARACTERS'}</span><button onClick={() => setSearchOpen(false)} aria-label="Close search"><X size={16} /></button></div>
             {results.length ? results.map(entry => <button key={entry.character} className="result-row" onClick={() => choose(entry)}><b>{entry.character}</b><span><strong>{entry.pinyin}</strong>{entry.definition}</span><ArrowRight size={16} /></button>) : <p className="empty-search">No character found. Try “water”, “nǐ”, or “你”.</p>}
@@ -491,6 +509,23 @@ export default function Home() {
       <SidebarProvider className={`workspace ${menuOpen ? 'menu-open' : ''}`} style={{ '--sidebar-width': '250px' } as React.CSSProperties}>
         <AppNavigation activeView={activeNavView} avatar={account.session?.avatar ?? null} onNavigate={(nextView) => { setView(nextView); setMenuOpen(false); if (nextView === 'review') setReviewAnswerShown(false); }} />
         {menuOpen && <button className="menu-backdrop" onClick={() => setMenuOpen(false)} aria-label="Close menu" tabIndex={-1} />}
+
+        {view === 'home' && (
+          <HomePage
+            progress={progress}
+            learned={learnedInOrder}
+            savedCount={saved.length}
+            mode={studyMode}
+            lessons={todaysLessons[studyMode]}
+            resuming={Boolean(activeLesson && activeLesson.lessons.join() === todaysLessons[studyMode].map((lesson) => lesson.number).join())}
+            username={account.session?.username ?? null}
+            onStartLesson={() => startLesson(studyMode)}
+            onNavigate={setView}
+            onOpenCharacter={(entry) => choose(entry, 'home')}
+          />
+        )}
+
+        {view === 'fun' && <FunLearningPage online={online} />}
 
         {view === 'dictionary' && (
           <section className="page-main dictionary-page">
@@ -595,7 +630,7 @@ export default function Home() {
 
         {view === 'character' && (
           <div className="lesson-main">
-            <button className="back-to-dictionary" onClick={() => setView(characterOrigin)}><ArrowLeft size={17} />{characterOrigin === 'dictionary' ? 'Dictionary' : characterOrigin === 'study-plan' ? 'Study Plan' : 'Review'}</button>
+            <button className="back-to-dictionary" onClick={() => setView(characterOrigin)}><ArrowLeft size={17} />{NAV_LABELS[characterOrigin]}</button>
             <section className="character-header"><div className="character-identity"><span className="label">CURRENT CHARACTER</span><div className="identity-line"><h1>{item.character}</h1><div><button className="pronounce" onClick={() => speak()} aria-label={`Hear ${item.character} pronounced`}><Volume2 size={21} /></button><p className="pinyin">{item.pinyin}</p><p className="definition">{item.definition}</p></div></div></div>
               <div className="character-actions"><button className={`save-button ${isSaved ? 'saved' : ''}`} onClick={toggleSaved} aria-pressed={isSaved} aria-label={isSaved ? 'Saved' : 'Save'} title={isSaved ? 'Saved' : 'Save'}><Star size={18} fill={isSaved ? 'currentColor' : 'none'} /><span className="button-label">{isSaved ? 'Saved' : 'Save'}</span></button><button className={`complete-button ${isComplete ? 'done' : ''}`} onClick={toggleComplete} aria-pressed={isComplete} aria-label={isComplete ? 'Practiced' : 'Mark practiced'} title={isComplete ? 'Practiced' : 'Mark practiced'}><Check size={18} strokeWidth={isComplete ? 3 : 2} /><span className="button-label">{isComplete ? 'Practiced' : 'Mark practiced'}</span></button></div>
             </section>
