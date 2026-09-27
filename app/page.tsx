@@ -651,8 +651,8 @@ export default function Home() {
               <div className="character-actions"><button className={`save-button ${isSaved ? 'saved' : ''}`} onClick={toggleSaved} aria-pressed={isSaved} aria-label={isSaved ? 'Saved' : 'Save'} title={isSaved ? 'Saved' : 'Save'}><Star size={18} fill={isSaved ? 'currentColor' : 'none'} /><span className="button-label">{isSaved ? 'Saved' : 'Save'}</span></button><button className={`complete-button ${isComplete ? 'done' : ''}`} onClick={toggleComplete} aria-pressed={isComplete} aria-label={isComplete ? 'Practiced' : 'Mark practiced'} title={isComplete ? 'Practiced' : 'Mark practiced'}><Check size={18} strokeWidth={isComplete ? 3 : 2} /><span className="button-label">{isComplete ? 'Practiced' : 'Mark practiced'}</span></button></div>
             </section>
 
-            <div className="study-grid"><WritingPad key={item.character} character={item.character} />
-              <VideoPanel key={item.character} character={item.character} videoId={item.videoId} online={online} />
+            <div className="study-grid"><WritingPad key={`pad-${item.character}`} character={item.character} />
+              <VideoPanel key={`video-${item.character}`} character={item.character} videoId={item.videoId} online={online} />
             </div>
 
             <section className="language-strip"><div className="tone-block"><span className="label">PRONUNCIATION</span><div className="tone-line"><button onClick={() => speak()} aria-label={`Hear ${item.pinyin}`}><Volume2 size={19} /></button><b>{item.pinyin}</b><span>Tone {tone || '—'} · {tones[tone]}</span></div><small className="audio-credit">Recordings by native speakers Yue Tan, Chen Wang and Luilui6666, from <a href="https://github.com/hugolpz/audio-cmn" target="_blank" rel="noreferrer">audio-cmn</a> and <a href="https://lingualibre.org" target="_blank" rel="noreferrer">Lingua Libre</a> (CC BY-SA).</small></div>

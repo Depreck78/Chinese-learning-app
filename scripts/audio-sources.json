@@ -311,7 +311,7 @@
 },
 "嘘": {
 "source": "hsk",
-"item": "施"
+"item": "需"
 },
 "雏": {
 "source": "hsk",
@@ -3128,7 +3128,7 @@
 },
 "率": {
 "source": "hsk",
-"item": "率"
+"item": "绿"
 },
 "暴": {
 "source": "hsk",
@@ -3760,7 +3760,7 @@
 },
 "撮": {
 "source": "hsk",
-"item": "左"
+"item": "搓"
 },
 "帜": {
 "source": "hsk",
@@ -4291,7 +4291,7 @@
 },
 "藉": {
 "source": "hsk",
-"item": "极"
+"item": "借"
 },
 "彷": {
 "source": "hsk",
@@ -4475,7 +4475,7 @@
 },
 "吁": {
 "source": "hsk",
-"item": "需"
+"item": "遇"
 },
 "刘": {
 "source": "hsk",
@@ -6856,7 +6856,7 @@
 },
 "盛": {
 "source": "hsk",
-"item": "盛"
+"item": "胜"
 },
 "初": {
 "source": "hsk",
@@ -7789,9 +7789,8 @@
 "item": "尊"
 },
 "匙": {
-"source": "commons",
-"title": "Zh-shi.ogg",
-"name": "shi5"
+"source": "hsk",
+"item": "迟"
 },
 "训": {
 "source": "hsk",
@@ -11207,7 +11206,7 @@
 },
 "朝": {
 "source": "hsk",
-"item": "招"
+"item": "潮"
 },
 "各": {
 "source": "hsk",
@@ -11315,8 +11314,8 @@
 "item": "谁"
 },
 "便": {
-"source": "syllable",
-"item": "pian2"
+"source": "hsk",
+"item": "变"
 },
 "跟": {
 "source": "hsk",
