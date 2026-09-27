@@ -30,7 +30,10 @@ const NAVIGATION_TIMEOUT_MS = 4000;
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(SHELL_CACHE);
-    await cache.addAll(SHELL_URLS);
+    // Only the page itself must download for the update to install; on a slow connection one
+    // icon failing would otherwise leave the phone on the old version.
+    await cache.add('/');
+    await Promise.allSettled(SHELL_URLS.filter((url) => url !== '/').map((url) => cache.add(url)));
     // Also cache the scripts and styles the page references so the first offline launch works.
     const html = await (await cache.match('/')).text();
     const assets = [...html.matchAll(/(?:src|href)="(\/_next\/[^"]+)"/g)].map((match) => match[1]);
@@ -64,30 +67,33 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
 
   if (request.mode === 'navigate' && url.origin === self.location.origin) {
-    event.respondWith(networkFirstPage(request));
+    event.respondWith(networkFirstPage(event));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/_next/static/')) {
     event.respondWith(cacheFirst(request, SHELL_CACHE));
   } else if (url.origin === self.location.origin && SHELL_URLS.includes(url.pathname)) {
-    event.respondWith(staleWhileRevalidate(request, SHELL_CACHE));
+    event.respondWith(staleWhileRevalidate(event, SHELL_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/strokes/')) {
     event.respondWith(cacheFirst(request, STROKE_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/audio/')) {
     event.respondWith(cacheFirst(request, AUDIO_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/sentence-audio/')) {
-    event.respondWith(url.pathname.endsWith('.json') ? staleWhileRevalidate(request, SENTENCE_AUDIO_CACHE) : cacheFirst(request, SENTENCE_AUDIO_CACHE));
+    event.respondWith(url.pathname.endsWith('.json') ? staleWhileRevalidate(event, SENTENCE_AUDIO_CACHE) : cacheFirst(request, SENTENCE_AUDIO_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/sentences/')) {
     // Rebuilt sentence files keep their names, so refresh them in the background.
-    event.respondWith(staleWhileRevalidate(request, SENTENCE_CACHE));
+    event.respondWith(staleWhileRevalidate(event, SENTENCE_CACHE));
   }
 });
 
-async function networkFirstPage(request) {
+// Background downloads are kept alive with waitUntil: otherwise a phone stops the worker as soon
+// as the saved copy is shown, the new version is never saved, and the app keeps opening old copies.
+async function networkFirstPage(event) {
   const cache = await caches.open(SHELL_CACHE);
-  const network = fetch(request).then(async (response) => {
+  const network = fetch(event.request).then(async (response) => {
     // The whole app lives on one page, so every navigation shares the cached '/' shell.
     if (response.ok) await cache.put('/', response.clone());
     return response;
   });
+  event.waitUntil(network.catch(() => undefined));
   try {
     return await Promise.race([
       network,
@@ -108,7 +114,8 @@ async function cacheFirst(request, cacheName) {
   return response;
 }
 
-async function staleWhileRevalidate(request, cacheName) {
+async function staleWhileRevalidate(event, cacheName) {
+  const { request } = event;
   const cache = await caches.open(cacheName);
   const cached = await cache.match(request);
   const network = fetch(request)
@@ -117,5 +124,6 @@ async function staleWhileRevalidate(request, cacheName) {
       return response;
     })
     .catch(() => undefined);
+  event.waitUntil(network);
   return cached ?? (await network) ?? Response.error();
 }

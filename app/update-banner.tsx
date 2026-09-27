@@ -32,11 +32,14 @@ export function UpdateBanner() {
     const onVisible = () => { if (document.visibilityState === 'visible') void check(); };
     document.addEventListener('visibilitychange', onVisible);
     window.addEventListener('online', onVisible);
+    // Reopening a page kept in memory (back-forward cache) fires neither load nor visibilitychange.
+    window.addEventListener('pageshow', onVisible);
     return () => {
       window.clearTimeout(first);
       window.clearInterval(interval);
       document.removeEventListener('visibilitychange', onVisible);
       window.removeEventListener('online', onVisible);
+      window.removeEventListener('pageshow', onVisible);
     };
   }, []);
 
