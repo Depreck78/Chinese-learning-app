@@ -1,5 +1,6 @@
 // Builds app/lessons.json from scripts/lessons.md, the hand-written study plan.
-// Run after editing lessons.md: `node scripts/build-lessons.mjs`.
+// Run after editing lessons.md: `node scripts/build-lessons.mjs`, then rebuild the multiple-choice
+// options for the reading gaps with scripts/build-reading-choices.py.
 //
 // lessons.md has one section per daily lesson (30 characters):
 //   ## Lesson 12

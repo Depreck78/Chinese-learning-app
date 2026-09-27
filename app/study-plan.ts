@@ -44,31 +44,3 @@ const CHARACTER_BY_ID = new Map(CHARACTERS.map((entry) => [entry.character, entr
 export function lessonCharacters(lessons: Lesson[]): CharacterEntry[] {
   return lessons.flatMap((lesson) => Array.from(lesson.characters)).map((character) => CHARACTER_BY_ID.get(character)).filter((entry): entry is CharacterEntry => Boolean(entry));
 }
-
-const TONE_MARKS = ['āēīōūǖ', 'áéíóúǘ', 'ǎěǐǒǔǚ', 'àèìòùǜ'];
-
-/** Normalises a single pinyin syllable so "nǐ", "ni3" and "NI3" compare equal; no tone means neutral. */
-export function normalizePinyin(value: string) {
-  let tone = 0;
-  let letters = '';
-  for (const character of value.trim().toLowerCase().normalize('NFC')) {
-    const toneIndex = TONE_MARKS.findIndex((marks) => marks.includes(character));
-    if (toneIndex >= 0) {
-      tone = toneIndex + 1;
-      letters += 'aeiouü'[TONE_MARKS[toneIndex].indexOf(character)];
-    } else if (/[1-5]/.test(character)) {
-      tone = Number(character);
-    } else if (/[a-zü]/.test(character)) {
-      letters += character;
-    }
-  }
-  return `${letters.replace(/v/g, 'ü')}${tone || 5}`;
-}
-
-// Everyday alternatives to the dictionary reading that should also count as right.
-const ALSO_ACCEPTED: Record<string, string[]> = { 谁: ['shéi', 'shuí'] };
-
-export function pinyinMatches(character: string, answer: string, expected: string) {
-  const given = normalizePinyin(answer);
-  return [expected, ...(ALSO_ACCEPTED[character] ?? [])].some((reading) => normalizePinyin(reading) === given);
-}

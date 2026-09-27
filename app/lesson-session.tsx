@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, Check, Mic, Star, Volume2, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { lessonCharacters, pinyinMatches, TRACES_TO_COMPLETE, type ActiveLesson, type Lesson } from './study-plan';
+import readingChoices from './reading-choices.json';
+import { lessonCharacters, TRACES_TO_COMPLETE, type ActiveLesson, type Lesson } from './study-plan';
 import { ExampleSentences } from './example-sentences';
 import { pronounce } from './pronunciation';
 import { VideoPanel } from './video-panel';
@@ -94,43 +95,42 @@ export function LessonSession({ lessons, dayNumber, progress, onProgress, comple
 }
 
 type Blank = { id: string; character: string; pinyin: string; number: number };
-type Answer = { character: string; pinyin: string };
+/** Three options per gap, the answer among them: [character, pinyin] (scripts/build-reading-choices.py). */
+const CHOICES: Record<string, string[][]> = readingChoices;
 
 function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Lesson[]; dayNumber: number; onBack: () => void; onFinish: () => void }) {
   const blanks = useMemo(() => {
     const found = new Map<string, Blank>();
-    lessons.forEach((lesson, lessonIndex) => lesson.paragraphs.forEach(([text, pinyin, positions], paragraphIndex) => {
+    lessons.forEach((lesson) => lesson.paragraphs.forEach(([text, pinyin, positions], paragraphIndex) => {
       const characters = Array.from(text);
       const readings = pinyin.split(' ');
       for (const position of positions) {
-        const id = `${lessonIndex}-${paragraphIndex}-${position}`;
+        const id = `${lesson.number}-${paragraphIndex}-${position}`;
         found.set(id, { id, character: characters[position], pinyin: readings[position], number: found.size + 1 });
       }
     }));
     return found;
   }, [lessons]);
-  const [answers, setAnswers] = useState<Record<string, Answer>>({});
-  const [checked, setChecked] = useState(false);
+  const [solved, setSolved] = useState<Set<string>>(new Set());
+  const [missed, setMissed] = useState<Record<string, string[]>>({});
+  const [currentId, setCurrentId] = useState<string | null>(null);
   const [reading, setReading] = useState(false);
 
-  const characterRight = (blank: Blank) => (answers[blank.id]?.character ?? '').trim() === blank.character;
-  const pinyinRight = (blank: Blank) => pinyinMatches(blank.character, answers[blank.id]?.pinyin ?? '', blank.pinyin);
-  const rightCount = [...blanks.values()].filter((blank) => characterRight(blank) && pinyinRight(blank)).length;
-  const allRight = rightCount === blanks.size;
+  const unsolved = [...blanks.values()].filter((blank) => !solved.has(blank.id));
+  // The gap being answered: the one tapped, or else the first gap still empty.
+  const current = (currentId && !solved.has(currentId) ? blanks.get(currentId) : undefined) ?? unsolved[0];
+  const options = current ? CHOICES[current.id] ?? [[current.character, current.pinyin]] : [];
 
-  function update(id: string, field: keyof Answer, value: string) {
-    setAnswers((current) => ({ ...current, [id]: { ...(current[id] ?? { character: '', pinyin: '' }), [field]: value } }));
-  }
-
-  function check() {
-    setChecked(true);
-    if (allRight) setReading(true);
-  }
-
-  function revealAnswers() {
-    setAnswers(Object.fromEntries([...blanks.values()].map((blank) => [blank.id, { character: blank.character, pinyin: blank.pinyin }])));
-    setChecked(true);
-    setReading(true);
+  function choose(blank: Blank, option: string) {
+    if (option !== blank.character) {
+      setMissed((tries) => ({ ...tries, [blank.id]: [...(tries[blank.id] ?? []), option] }));
+      return;
+    }
+    pronounce(option);
+    const next = new Set(solved).add(blank.id);
+    setSolved(next);
+    setCurrentId([...blanks.values()].find((other) => !next.has(other.id) && other.number > blank.number)?.id ?? null);
+    if (next.size === blanks.size) setReading(true);
   }
 
   return (
@@ -140,7 +140,7 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
         <h1 id="reading-title">{reading ? 'Read it aloud' : 'Fill in the gaps'}</h1>
         <p>{reading
           ? 'Every gap is filled. Now read the whole text out loud from start to finish. Tap any character to hear it.'
-          : 'Type the missing character and its pinyin in each gap. Pinyin can use tone marks (nǐ) or tone numbers (ni3).'}</p>
+          : 'Pick the character that belongs in each numbered gap. Tap a gap to answer it out of order.'}</p>
       </header>
 
       {lessons.map((lesson, lessonIndex) => (
@@ -151,14 +151,14 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
             return (
               <p className="reading-paragraph" key={paragraphIndex}>
                 {Array.from(text, (character, position) => {
-                  const blank = blanks.get(`${lessonIndex}-${paragraphIndex}-${position}`);
+                  const blank = blanks.get(`${lesson.number}-${paragraphIndex}-${position}`);
                   const reading = readings[position];
-                  if (blank && !(checked && characterRight(blank) && pinyinRight(blank))) {
+                  if (blank && !solved.has(blank.id)) {
                     return (
-                      <span className="reading-blank" key={position}>
-                        <input className={checked ? (pinyinRight(blank) ? 'right' : 'wrong') : ''} value={answers[blank.id]?.pinyin ?? ''} onChange={(event) => update(blank.id, 'pinyin', event.target.value)} aria-label={`Gap ${blank.number}: pinyin`} placeholder="pīnyīn" autoCapitalize="off" autoCorrect="off" autoComplete="off" spellCheck={false} />
-                        <input className={checked ? (characterRight(blank) ? 'right' : 'wrong') : ''} value={answers[blank.id]?.character ?? ''} onChange={(event) => update(blank.id, 'character', event.target.value)} aria-label={`Gap ${blank.number}: character`} placeholder="字" lang="zh-CN" autoComplete="off" />
-                      </span>
+                      <button type="button" key={position} className={`reading-gap ${blank.id === current?.id ? 'current' : ''}`} onClick={() => setCurrentId(blank.id)} aria-label={`Gap ${blank.number}`} aria-pressed={blank.id === current?.id}>
+                        <span className="token-pinyin" />
+                        <span className="gap-box">{blank.number}</span>
+                      </button>
                     );
                   }
                   if (!reading) return <span className="reading-token punctuation" key={position}><span className="token-pinyin" /><span className="token-character">{character}</span></span>;
@@ -177,12 +177,30 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
           <button className="complete-day-button" onClick={onFinish}><Check size={19} />I read it aloud — finish Day {dayNumber}</button>
         </footer>
       ) : (
-        <footer className="reading-footer">
-          <button className="reading-back" onClick={onBack}><ArrowLeft size={17} />Back to characters</button>
-          <p aria-live="polite">{checked ? `${rightCount} of ${blanks.size} gaps correct` : `${blanks.size} gaps to fill`}</p>
-          {checked && !allRight && <button className="reading-reveal" onClick={revealAnswers}>Show answers</button>}
-          <button className="complete-day-button" onClick={check}><Check size={19} />Check answers</button>
-        </footer>
+        <>
+          {current && (
+            <fieldset className="reading-choices">
+              <legend><span className="label">GAP {current.number} OF {blanks.size}</span>Which character goes here?</legend>
+              <div className="choice-grid">
+                {options.map(([option, optionPinyin]) => {
+                  const wrong = missed[current.id]?.includes(option);
+                  return (
+                    <button type="button" key={option} className={`reading-choice ${wrong ? 'wrong' : ''}`} onClick={() => choose(current, option)} disabled={wrong} lang="zh-CN">
+                      <span className="choice-character">{option}</span>
+                      <span className="choice-pinyin">{optionPinyin}</span>
+                      {wrong && <X className="choice-mark" size={16} aria-label="Not this one" />}
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="choice-hint" aria-live="polite">{missed[current.id]?.length ? 'Not quite. Read the words around the gap and try another one.' : '\u00a0'}</p>
+            </fieldset>
+          )}
+          <footer className="reading-footer">
+            <button className="reading-back" onClick={onBack}><ArrowLeft size={17} />Back to characters</button>
+            <p aria-live="polite">{solved.size} of {blanks.size} gaps filled</p>
+          </footer>
+        </>
       )}
     </section>
   );
