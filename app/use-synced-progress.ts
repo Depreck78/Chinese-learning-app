@@ -15,8 +15,10 @@ export type SyncStatus =
   | { state: 'error'; message: string };
 
 const SESSION_KEY = 'hanzi-session';
-const SYNC_DELAY_MS = 2000;
-const SYNC_EVERY_MS = 3 * 60 * 1000;
+// Changes go out at most once a minute (and at once when the app is put away); other devices'
+// changes are fetched every ten minutes. Each sync is a Worker request, so this keeps usage low.
+const SYNC_DELAY_MS = 60 * 1000;
+const SYNC_EVERY_MS = 10 * 60 * 1000;
 
 export function loadSession(): Session | null {
   try {
@@ -78,6 +80,9 @@ export function useSyncedProgress() {
 
   const sync = useCallback(async () => {
     if (!session || running.current || latest.current.userId !== session.userId) return;
+    // This sync carries any change still waiting to go out.
+    if (timer.current !== null) window.clearTimeout(timer.current);
+    timer.current = null;
     if (!navigator.onLine) return setStatus({ state: 'waiting' });
     running.current = true;
     setStatus({ state: 'syncing' });
@@ -108,12 +113,13 @@ export function useSyncedProgress() {
     }
   }, [session, applyProfile]);
 
+  // The first change starts the countdown; later ones ride along instead of pushing it back.
   const scheduleSync = useCallback(() => {
-    if (timer.current !== null) window.clearTimeout(timer.current);
+    if (timer.current !== null) return;
     timer.current = window.setTimeout(() => void sync(), SYNC_DELAY_MS);
   }, [sync]);
 
-  /** Changes progress on this device and syncs it shortly after. */
+  /** Changes progress on this device and syncs it within a minute. */
   const update = useCallback((change: (current: Progress) => Progress) => {
     setOwned((current) => {
       const next = change(current.progress);
@@ -123,11 +129,12 @@ export function useSyncedProgress() {
     scheduleSync();
   }, [scheduleSync]);
 
-  // Sync when signing in, when the app comes back to the foreground or online, and every few minutes.
+  // Sync when signing in, when the app comes back to the foreground or online, every ten minutes,
+  // and when the app is put away with changes still waiting to go out.
   useEffect(() => {
     if (!session) return;
     const first = window.setTimeout(() => void sync(), 0);
-    const onVisible = () => { if (document.visibilityState === 'visible') void sync(); };
+    const onVisible = () => { if (document.visibilityState === 'visible' || timer.current !== null) void sync(); };
     const onOnline = () => void sync();
     const onOffline = () => setStatus({ state: 'waiting' });
     document.addEventListener('visibilitychange', onVisible);

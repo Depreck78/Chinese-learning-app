@@ -32,6 +32,7 @@ import { pronounce } from './pronunciation';
 import { LESSONS, lessonCharacters, lessonsForDay, STUDY_PLANS, type ActiveLesson, type Lesson, type StudyMode } from './study-plan';
 import { SignInGate } from './sign-in-gate';
 import { StatsPanel } from './stats-panel';
+import { UpdateBanner } from './update-banner';
 import { useUsageTracking } from './usage';
 import { useSyncedProgress } from './use-synced-progress';
 import { VideoPanel } from './video-panel';
@@ -681,6 +682,7 @@ export default function Home() {
         )}
       </SidebarProvider>
       {mustSignIn && <SignInGate account={account} online={online} />}
+      <UpdateBanner />
     </main>
   );
 }

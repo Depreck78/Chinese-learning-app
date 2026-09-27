@@ -67,7 +67,7 @@ export function AccountPanel({ account, online, learnedCount }: { account: Accou
         <div className="account-card">
           <div className="account-identity"><AvatarBadge avatar={session.avatar} size={56} /><div><span className="label">SIGNED IN AS</span><strong>{session.username}</strong></div></div>
           <p className={`account-status ${status.state}`} aria-live="polite">{status.state === 'synced' ? <CloudCheck size={18} /> : <CloudOff size={18} />}{statusText}</p>
-          <p className="account-note">{learnedCount.toLocaleString()} learned {learnedCount === 1 ? 'character' : 'characters'} on this device. Changes sync a few seconds after you make them, and whenever the app opens with a connection.</p>
+          <p className="account-note">{learnedCount.toLocaleString()} learned {learnedCount === 1 ? 'character' : 'characters'} on this device. Changes sync within a minute, when you leave the app, and whenever it opens with a connection.</p>
           <section className="account-profile" aria-labelledby="avatar-title">
             <h2 id="avatar-title" className="label">CHOOSE YOUR AVATAR</h2>
             <fieldset className="avatar-choices" disabled={busy || !online}>

@@ -7,9 +7,10 @@ export async function POST(request: Request) {
   try {
     const { userId } = await userFor(request);
     const body = (await readJson(request)) as { progress?: unknown } | null;
-    const stored = await storedProgress(userId);
-    const merged = mergeProgress(readProgress(stored), readProgress(body?.progress));
-    await storeProgress(userId, merged);
+    const stored = readProgress(await storedProgress(userId));
+    const merged = mergeProgress(stored, readProgress(body?.progress));
+    // Most syncs bring nothing new; skipping those writes keeps well inside D1's daily write limit.
+    if (JSON.stringify(merged) !== JSON.stringify(stored)) await storeProgress(userId, merged);
     // The profile rides along so a new username or avatar reaches the other devices too.
     return Response.json({ progress: merged, profile: await profileFor(userId) });
   } catch (error) {

@@ -10,7 +10,7 @@ const TICK_MS = 15_000;
 // Time counts while the app is on screen and was touched in the last two minutes, or while a
 // lesson video is playing (the video frame has focus).
 const IDLE_AFTER_MS = 120_000;
-const SEND_EVERY_MS = 5 * 60_000;
+const SEND_EVERY_MS = 10 * 60_000;
 const DAYS_TO_SEND = 14;
 
 type DayUsage = { seconds: number; learned: number };

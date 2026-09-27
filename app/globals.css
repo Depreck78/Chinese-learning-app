@@ -697,3 +697,11 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
 .sign-in-gate header p { margin:0; color:var(--ink-soft); }
 .sign-in-gate-form { display:grid; gap:14px; padding:20px 22px 22px; }
 .sign-in-gate:focus { outline:none; }
+
+/* New version available (app/update-banner.tsx) */
+.update-banner { position:fixed; left:50%; bottom:calc(16px + env(safe-area-inset-bottom)); z-index:60; display:flex; align-items:center; gap:10px; width:min(560px,calc(100% - 32px)); padding:10px 10px 10px 16px; transform:translateX(-50%); border:1px solid var(--ink); color:white; background:var(--ink); box-shadow:0 12px 36px rgba(0,0,0,.3); }
+.update-banner p { flex:1; margin:0; font-size:15px; }
+.update-banner button { display:flex; align-items:center; justify-content:center; gap:6px; min-height:40px; border:0; cursor:pointer; font-weight:700; }
+.update-now { padding:0 14px; color:var(--ink); background:var(--cream); }
+.update-now:disabled { opacity:.7; cursor:default; }
+.update-later { width:40px; color:white; background:transparent; }

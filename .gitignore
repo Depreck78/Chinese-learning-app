@@ -49,3 +49,6 @@ next-env.d.ts
 
 # Python bytecode (scripts/build-sentence-audio.py)
 __pycache__/
+
+# Written by vite.config.ts on every build
+/public/version.json

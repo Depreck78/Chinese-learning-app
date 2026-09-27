@@ -1,4 +1,5 @@
 import { sites } from '@openai/sites-vite-plugin';
+import { writeFileSync } from 'node:fs';
 import tailwindcss from '@tailwindcss/postcss';
 import vinext from 'vinext';
 import { defineConfig } from 'vite';
@@ -18,6 +19,10 @@ const HANZI_DESK_DATABASE = {
   database_name: 'hanzi-desk',
   database_id: 'f196d1dd-520d-4985-a64c-4cbb8e5a333b',
 };
+
+// A new id for every build. The app compares its own id with /version.json to offer an update
+// as soon as a newer version is deployed (app/update-banner.tsx).
+const BUILD_ID = Date.now().toString(36);
 
 const localBindingConfig = {
   main: 'vinext/server/fetch-handler',
@@ -44,7 +49,9 @@ const localBindingConfig = {
     : [],
 };
 
-export default defineConfig(async () => {
+export default defineConfig(async ({ command }) => {
+  if (command === 'build') writeFileSync('public/version.json', `${JSON.stringify({ build: BUILD_ID })}\n`);
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= 'false';
@@ -55,6 +62,7 @@ export default defineConfig(async () => {
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
   return {
+    define: { __BUILD_ID__: JSON.stringify(command === 'build' ? BUILD_ID : 'dev') },
     css: { postcss: { plugins: [tailwindcss()] } },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
