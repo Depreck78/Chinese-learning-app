@@ -181,11 +181,27 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
   const medianLength = (median: [number, number][]) => median
     .reduce((total, [x, y], index) => index ? total + Math.hypot(x - median[index - 1][0], y - median[index - 1][1]) * 0.09765625 : 0, 0) + 1;
 
+  // Each loop restarts three seconds after the last stroke has actually finished drawing (see
+  // demoStrokeDrawn). Phones, Safari especially, can run the animation well behind schedule, and a
+  // restart timed from the start cut off the last strokes. The timer here is only a fallback for
+  // browsers that never report the animation ending.
   function runStrokeOrderCycle() {
     if (!strokeOrder) return;
+    if (demoTimer.current !== null) window.clearTimeout(demoTimer.current);
     setDemoRun((run) => run + 1);
     const drawingDuration = Math.max((strokeOrder.strokes.length - 1) * 620 + 550, 550);
-    demoTimer.current = window.setTimeout(runStrokeOrderCycle, drawingDuration + 3000);
+    demoTimer.current = window.setTimeout(runStrokeOrderCycle, drawingDuration * 4 + 3000);
+  }
+
+  function demoStrokeDrawn(event: React.AnimationEvent<SVGGElement>) {
+    if (!(event.target instanceof Element)) return;
+    // Safari often doesn't repaint an animation's final frame, so the last strokes of a character
+    // stayed invisible even though they had finished drawing. A plain class change always repaints.
+    // The group is re-keyed every loop, so the class is gone when the next loop starts.
+    event.target.classList.add('is-drawn');
+    if (!demoPlaying || !event.target.hasAttribute('data-last-stroke')) return;
+    if (demoTimer.current !== null) window.clearTimeout(demoTimer.current);
+    demoTimer.current = window.setTimeout(runStrokeOrderCycle, 3000);
   }
 
   function toggleStrokeOrder() {
@@ -226,14 +242,14 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
               <g className="stroke-order-outlines" transform="translate(0 87.890625) scale(.09765625 -.09765625)">
                 {strokeOrder.strokes.map((stroke, index) => <path key={index} d={stroke} />)}
               </g>
-              <g key={demoRun} className={`stroke-order-medians ${demoRun ? 'is-animating' : ''}`}>
+              <g key={demoRun} className={`stroke-order-medians ${demoRun ? 'is-animating' : ''}`} onAnimationEnd={demoStrokeDrawn}>
                 {strokeOrder.medians.map((median, index) => {
                   const [startX, startY] = median[0] ?? [0, 0];
                   const labelX = startX * 0.09765625;
                   const labelY = 87.890625 - startY * 0.09765625;
                   return (
                     <g key={index}>
-                      <polyline points={medianPoints(median)} style={{ animationDelay: `${index * 0.62}s`, '--stroke-length': medianLength(median).toFixed(2) } as React.CSSProperties} />
+                      <polyline points={medianPoints(median)} data-last-stroke={index === strokeOrder.medians.length - 1 ? '' : undefined} style={{ animationDelay: `${index * 0.62}s`, '--stroke-length': medianLength(median).toFixed(2) } as React.CSSProperties} />
                       <circle cx={labelX} cy={labelY} r={index > 8 ? 3.15 : 2.75} />
                       <text x={labelX} y={labelY + 0.2} textAnchor="middle">{index + 1}</text>
                     </g>
