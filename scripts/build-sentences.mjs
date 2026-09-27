@@ -5,18 +5,23 @@
 // Sentences come from Tatoeba (tatoeba.org, CC BY 2.0 FR), downloaded into .cache/tatoeba.
 // For each character the script prefers short sentences made of characters taught early in the
 // study plan, and picks three that use the character in different words (学习 / 大学 / 学生).
-// Where Tatoeba has too few, hand-written sentences from scripts/extra-sentences.md fill in.
+// Where Tatoeba has too few, hand-written sentences from scripts/extra-sentences.md fill in; the ones
+// marked "preferred" replace Tatoeba sentences that a review found wrong or unsuitable.
+// scripts/sentence-fixes.json holds that review: the sentences it kept for each character (pinned,
+// so a rebuild keeps them), the Tatoeba sentences it left out, and its corrected translations.
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import * as OpenCC from 'opencc-js';
+import { normalizeSentence } from './normalize-sentence.mjs';
 import { annotate, isHanzi } from './pinyin.mjs';
 
 const CACHE = '.cache/tatoeba';
 const OUT = 'public/sentences';
 const PER_CHARACTER = 3;
 const TATOEBA = 'https://downloads.tatoeba.org/exports/per_language';
-// Tatoeba sentences with typos, left out.
-const EXCLUDED = new Set(['429456']);
+const fixes = JSON.parse(readFileSync('scripts/sentence-fixes.json', 'utf8'));
+// Tatoeba sentences with typos, mistranslations or unsuitable content, left out.
+const EXCLUDED = new Set(['429456', ...fixes.excluded]);
 
 async function download(file, path) {
   if (existsSync(`${CACHE}/${file}`)) return;
@@ -56,21 +61,23 @@ for (const [id, , original] of rows('cmn_sentences.tsv')) {
   const text = toSimplified(original.trim());
   const hanzi = Array.from(text).filter(isHanzi);
   if (seenText.has(text) || hanzi.length < 4 || hanzi.length > 22 || /[A-Za-z0-9０-９Ａ-Ｚａ-ｚ]/.test(text)) continue;
-  const translation = translations.sort((first, second) => first.length - second.length)[0];
+  const translation = fixes.translations[id] ?? translations.sort((first, second) => first.length - second.length)[0];
   if (translation.length > 100) continue;
   seenText.add(text);
   const difficulty = Math.max(...hanzi.map((character) => taughtAt.get(character) ?? 200));
   candidates.push({ text, translation, source: `tatoeba:${id}`, difficulty });
 }
 
-// Hand-written sentences: one per line, "字 | 中文句子 | English translation".
+// Hand-written sentences: one per line, "字 | 中文句子 | English translation", optionally "| preferred".
 const extras = new Map();
+const preferred = new Map();
 for (const line of readFileSync('scripts/extra-sentences.md', 'utf8').split('\n')) {
   const parts = line.split('|').map((part) => part.trim());
-  if (parts.length !== 3 || !isHanzi(parts[0])) continue;
+  if ((parts.length !== 3 && parts[3] !== 'preferred') || !isHanzi(parts[0])) continue;
   const [character, text, translation] = parts;
-  if (!extras.has(character)) extras.set(character, []);
-  extras.get(character).push({ text, translation, source: 'hanzi-desk' });
+  const target = parts[3] === 'preferred' ? preferred : extras;
+  if (!target.has(character)) target.set(character, []);
+  target.get(character).push({ text, translation, source: 'hanzi-desk' });
 }
 
 const byCharacter = new Map();
@@ -99,11 +106,19 @@ const overlap = (first, second) => {
   return shared / Math.min([...first].filter(isHanzi).length, [...second].filter(isHanzi).length);
 };
 
+const bySource = new Map(candidates.map((candidate) => [candidate.source, candidate]));
+const handWritten = new Map([...preferred, ...extras].flatMap(([character, list]) => list
+  .map((extra) => [`${character} hanzi-desk:${normalizeSentence(extra.text, extra.translation)}`, extra])));
+const unpinned = [];
+
 function choose(character) {
+  const pins = (fixes.pinned[character] ?? []).map((ref) => bySource.get(ref) ?? handWritten.get(`${character} ${ref}`));
+  if (pins.length && pins.every(Boolean)) return pins;
+  if (pins.length) unpinned.push(character);
   const pool = (byCharacter.get(character) ?? [])
     .sort((first, second) => first.difficulty - second.difficulty || first.text.length - second.text.length);
-  const chosen = [];
-  const usedContexts = new Set();
+  const chosen = (preferred.get(character) ?? []).slice(0, PER_CHARACTER);
+  const usedContexts = new Set(chosen.flatMap((picked) => [...contexts(picked.text, character)]));
   // First pass insists on a new context each time; the second relaxes that if needed.
   for (const strict of [true, false]) {
     for (const candidate of pool) {
@@ -128,7 +143,8 @@ for (const lesson of lessons) {
   for (const character of lesson.characters) {
     const chosen = choose(character);
     if (chosen.length < PER_CHARACTER) short.push(`${character}(${chosen.length})`);
-    output[character] = chosen.map(({ text, translation, source }) => {
+    output[character] = chosen.map(({ text: raw, translation, source }) => {
+      const text = normalizeSentence(raw, translation);
       const annotated = annotate(text) ?? [...text].map((part) => [part, '']);
       // [sentence, pinyin per character separated by spaces ('' for punctuation), English, source]
       return [annotated.map(([part]) => part).join(''), annotated.map(([, reading]) => reading).join(' '), translation, source];
@@ -143,4 +159,5 @@ see https://tatoeba.org/sentences/show/<id> for its authors. Traditional charact
 simplified and pinyin was added automatically. Sentences marked "hanzi-desk" were written for this app.
 `);
 console.log(`${total} sentences for ${taughtAt.size} characters in ${OUT}/`);
+if (unpinned.length) console.log(`Reviewed sentences no longer found, picked afresh: ${unpinned.join(' ')}`);
 if (short.length) console.log(`${short.length} characters have fewer than ${PER_CHARACTER}: ${short.join(' ')}`);

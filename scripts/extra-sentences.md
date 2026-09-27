@@ -1,7 +1,8 @@
 # Extra example sentences
 
 Hand-written sentences for characters that Tatoeba has too few examples of.
-Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English translation
+Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English translation. A fourth column
+"preferred" puts the sentence ahead of any Tatoeba sentence for that character.
 
 舰 | 海上有一艘军舰。 | There is a warship on the sea.
 舰 | 这艘舰艇开得很快。 | This naval vessel moves very fast.
@@ -149,7 +150,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 陀 | 小孩子在玩陀螺。 | The child is playing with a spinning top.
 陀 | 他在读一本关于佛陀的书。 | He is reading a book about the Buddha.
 摊 | 街上有很多小摊。 | There are many small stalls on the street.
-娇 | 她是家里最娇的女儿。 | She is the most pampered daughter in the family.
 娇 | 这朵花很娇嫩。 | This flower is very delicate.
 陕 | 陕西在中国的西北。 | Shaanxi is in northwest China.
 陕 | 我去过陕西的西安。 | I have been to Xi'an in Shaanxi.
@@ -192,7 +192,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 拓 | 公司正在开拓新的业务。 | The company is developing new business.
 拓 | 这条路拓宽了很多。 | This road has been widened a lot.
 坑 | 路上有一个大坑。 | There is a big pit in the road.
-湘 | 湖南的简称是"湘"。 | Xiang is the short name for Hunan.
+湘 | 湖南的简称是“湘”。 | Xiang is the short name for Hunan.
 湘 | 我很喜欢吃湘菜。 | I really like Hunan food.
 鞭 | 过年的时候，大家放鞭炮。 | At New Year, everyone sets off firecrackers.
 嚷 | 孩子们在外面大声嚷嚷。 | The children are shouting loudly outside.
@@ -285,7 +285,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 巩 | 多复习可以巩固记忆。 | Reviewing more often strengthens your memory.
 绢 | 她送给我一块丝绢手帕。 | She gave me a silk handkerchief.
 绢 | 古人喜欢在绢上画画。 | People in ancient times liked to paint on silk.
-轩 | 他住的房子叫"听雨轩"。 | The house he lives in is called "Listening to the Rain Pavilion".
+轩 | 他住的房子叫“听雨轩”。 | The house he lives in is called "Listening to the Rain Pavilion".
 轩 | 这件事引起了轩然大波。 | This incident caused a huge uproar.
 轩 | 我的同学叫李轩。 | My classmate is called Li Xuan.
 媳 | 她是我们家的新媳妇。 | She is the newest bride in our family.
@@ -330,7 +330,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 溢 | 水从杯子里溢出来了。 | Water overflowed from the cup.
 窜 | 老鼠在屋里乱窜。 | The mouse is scurrying around the room.
 窜 | 小偷逃窜到了山里。 | The thief fled into the mountains.
-斩 | 他斩钉截铁地说"不"。 | He said "no" firmly and decisively.
+斩 | 他斩钉截铁地说“不”。 | He said "no" firmly and decisively.
 堤 | 河边有一条长长的堤。 | There is a long dike by the river.
 堤 | 我们在堤上散步。 | We walked along the embankment.
 掀 | 他掀开被子，起床了。 | He threw back the covers and got up.
@@ -369,7 +369,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 渗 | 水从地下渗出来了。 | Water is seeping up from the ground.
 铸 | 这口钟是铜铸的。 | This bell is cast in bronze.
 恍 | 他恍然大悟。 | He suddenly understood.
-恍 | 一恍十年过去了。 | Ten years went by in a flash.
 恍 | 她恍恍惚惚地走在路上。 | She walked along the road in a daze.
 贬 | 你不要贬低别人。 | Don't belittle other people.
 骇 | 这个消息令人惊骇。 | This news is shocking.
@@ -379,7 +378,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 坊 | 街坊邻居都很友好。 | The neighbours are all very friendly.
 朽 | 这块木头已经腐朽了。 | This piece of wood has rotted.
 佣 | 这家的佣人很勤快。 | The servant in this household is very hard-working.
-冀 | 河北省简称"冀"。 | Hebei province is called "Ji" for short.
+冀 | 河北省简称“冀”。 | Hebei province is called "Ji" for short.
 冀 | 我们希冀明天会更好。 | We hope tomorrow will be better.
 冀 | 他来自冀州。 | He comes from Jizhou.
 荆 | 路边长满了荆棘。 | The roadside is covered with thorny bushes.
@@ -388,7 +387,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 崔 | 崔老师教我们画画。 | Teacher Cui teaches us to draw.
 雁 | 秋天，大雁往南飞。 | In autumn, wild geese fly south.
 雁 | 天上有一群大雁。 | There is a flock of wild geese in the sky.
-雁 | 大雁排成一个"人"字。 | The wild geese fly in a V shape.
+雁 | 大雁排成一个“人”字。 | The wild geese fly in a V shape.
 诵 | 学生们在教室里朗诵诗歌。 | The students are reciting poems in the classroom.
 醇 | 这杯酒很香醇。 | This wine is rich and mellow.
 禽 | 农场里养了很多家禽。 | The farm raises a lot of poultry.
@@ -420,7 +419,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 栗 | 冬天我喜欢吃糖炒栗子。 | In winter I like eating sugar-roasted chestnuts.
 栗 | 他吓得不寒而栗。 | He shivered with fear.
 寞 | 一个人在家很寂寞。 | Being home alone is very lonely.
-蜀 | 四川古时候叫"蜀"。 | Sichuan was called "Shu" in ancient times.
+蜀 | 四川古时候叫“蜀”。 | Sichuan was called "Shu" in ancient times.
 蜀 | 蜀道很难走。 | The roads into Sichuan are very hard to travel.
 涯 | 他在海外度过了三十年的生涯。 | He spent thirty years of his life abroad.
 泌 | 人紧张的时候会分泌很多汗。 | People sweat a lot when they are nervous.
@@ -483,22 +482,21 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 刃 | 这把刀的刀刃很锋利。 | The blade of this knife is very sharp.
 刃 | 他做这件事游刃有余。 | He handles this with ease.
 遏 | 我们要遏制浪费。 | We need to curb waste.
-拙 | 我的字写得很拙。 | My handwriting is clumsy.
 拙 | 他说话很笨拙。 | He speaks awkwardly.
 桐 | 院子里有一棵梧桐树。 | There is a parasol tree in the courtyard.
 桐 | 秋天，桐树的叶子落了。 | In autumn, the parasol tree's leaves fall.
 桐 | 他在桐城长大。 | He grew up in Tongcheng.
 泻 | 他吃坏了肚子，一直腹泻。 | He ate something bad and has diarrhoea.
 顷 | 顷刻之间，天就黑了。 | In an instant, it got dark.
-顷 | 这片农场有一百顷地。 | This farm has a hundred hectares of land.
+顷 | 这片农场有一百顷地。 | This farm has a hundred qing of land (about 670 hectares).
 顷 | 大雨倾盆，顷刻间路上全是水。 | It poured, and within moments the road was flooded.
 诧 | 他诧异地看着我。 | He looked at me in surprise.
 诧 | 这个消息让大家很惊诧。 | The news astonished everyone.
-诧 | 她诧异地问："你怎么来了？" | She asked in surprise, "What are you doing here?"
+诧 | 她诧异地问：“你怎么来了？” | She asked in surprise, "What are you doing here?"
 沦 | 他沦落到了街头。 | He ended up on the streets.
 沦 | 这座城市曾经沦陷过。 | This city once fell to the enemy.
 沦 | 不要让自己沉沦下去。 | Don't let yourself sink into despair.
-沪 | 上海的简称是"沪"。 | Hu is the short name for Shanghai.
+沪 | 上海的简称是“沪”。 | Hu is the short name for Shanghai.
 沪 | 他坐火车从沪到京。 | He took the train from Shanghai to Beijing.
 沪 | 沪上的生活很忙碌。 | Life in Shanghai is very busy.
 旷 | 草原上很空旷。 | The grassland is wide and open.
@@ -533,7 +531,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 佑 | 愿老天保佑你平安。 | May heaven keep you safe.
 喧 | 城市里很喧闹。 | The city is very noisy.
 喧 | 他们在外面喧哗。 | They are making a racket outside.
-蓉 | 成都也叫"蓉城"。 | Chengdu is also called "Rong City".
+蓉 | 成都也叫“蓉城”。 | Chengdu is also called "Rong City".
 伺 | 她每天伺候生病的奶奶。 | She looks after her sick grandmother every day.
 伺 | 这个客人很难伺候。 | This customer is very hard to please.
 梢 | 树梢上有一只小鸟。 | There is a little bird at the top of the tree.
@@ -558,7 +556,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 揽 | 他把所有的工作都揽在自己身上。 | He took all the work upon himself.
 揽 | 这家店在门口招揽客人。 | This shop tries to draw in customers at the door.
 哺 | 鸟妈妈在哺育小鸟。 | The mother bird is feeding her chicks.
-啪 | 门"啪"的一声关上了。 | The door slammed shut with a bang.
+啪 | 门“啪”的一声关上了。 | The door slammed shut with a bang.
 晌 | 中午我们歇晌。 | We take a rest at midday.
 晌 | 他忙了半晌才停下来。 | He was busy for a good while before stopping.
 晌 | 晌午的太阳很热。 | The midday sun is very hot.
@@ -633,7 +631,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 墅 | 他们在海边有一栋别墅。 | They have a villa by the sea.
 歹 | 那个歹徒被警察抓住了。 | The criminal was caught by the police.
 歹 | 他不是一个坏人，没有歹意。 | He is not a bad person and means no harm.
-坤 | "乾坤"是天和地的意思。 | "Qiankun" means heaven and earth.
+坤 | “乾坤”是天和地的意思。 | "Qiankun" means heaven and earth.
 坤 | 我的同学叫刘坤。 | My classmate is called Liu Kun.
 廓 | 远处山的轮廓很模糊。 | The outline of the distant mountains is blurry.
 廓 | 这个城市有一条外廓的城墙。 | This city has an outer wall.
@@ -664,7 +662,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 胚 | 这些陶胚还没有烧。 | These pottery pieces have not been fired yet.
 呻 | 病人疼得直呻吟。 | The patient was groaning in pain.
 呻 | 他在床上呻吟了一夜。 | He groaned in bed all night.
-绰 | 他的名字有一个绰号。 | His name has a nickname.
 绰 | 这些钱绰绰有余。 | This money is more than enough.
 扼 | 他扼住了小偷的手。 | He grabbed the thief's hand.
 扼 | 这个城市扼守着交通要道。 | This city guards an important route.
@@ -737,7 +734,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 踱 | 他在房间里踱来踱去。 | He paced back and forth in the room.
 踱 | 老人慢慢地踱到门口。 | The old man slowly strolled to the door.
 踱 | 他一边踱步一边想问题。 | He thought about the problem as he paced.
-熔 | 冰在阳光下熔化了。 | The ice melted in the sunlight.
 熔 | 工人们把铁熔成了铁水。 | The workers melted the iron down into liquid.
 熔 | 火山里有熔岩。 | There is lava in the volcano.
 绎 | 游客络绎不绝。 | Tourists came in an endless stream.
@@ -751,7 +747,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 窍 | 学习汉语有什么窍门？ | What's the trick to learning Chinese?
 沧 | 他经历了人生的沧桑。 | He has been through the ups and downs of life.
 沧 | 沧海桑田，变化真大。 | Time changes everything.
-沧 | 他望着沧茫的大海。 | He gazed at the vast, grey sea.
 怠 | 他工作很怠慢。 | He is slack in his work.
 怠 | 对客人不能怠慢。 | You must not neglect your guests.
 拇 | 他竖起了大拇指。 | He gave a thumbs up.
@@ -865,7 +860,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 孜 | 他孜孜不倦地学习。 | He studies tirelessly.
 孜 | 她孜孜以求，终于成功了。 | She kept striving and finally succeeded.
 孜 | 吃羊肉串要放孜然。 | You put cumin on lamb skewers.
-粤 | 广东的简称是"粤"。 | Yue is the short name for Guangdong.
+粤 | 广东的简称是“粤”。 | Yue is the short name for Guangdong.
 隘 | 这条山路很狭隘。 | This mountain path is very narrow.
 隘 | 他的心胸很狭隘。 | He is very narrow-minded.
 畸 | 这种做法很畸形。 | This practice is very abnormal.
@@ -933,9 +928,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 砌 | 工人们在砌墙。 | The workers are laying bricks for a wall.
 砌 | 这座房子是用石头砌的。 | This house is built of stone.
 砌 | 他用砖砌了一个花坛。 | He built a flower bed out of bricks.
-楞 | 他是个楞头青。 | He is a bit of a hothead.
-楞 | 这块木头有很多楞角。 | This piece of wood has lots of edges and corners.
-楞 | 听到这话，他楞住了。 | He was stunned when he heard that.
 哆 | 天太冷了，他冻得直哆嗦。 | It was so cold that he was shivering.
 哆 | 她吓得浑身哆嗦。 | She was trembling all over with fear.
 哆 | 他的手一直在哆嗦。 | His hands keep shaking.
@@ -950,7 +942,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 妾 | 故事里的小妾很聪明。 | The concubine in the story is very clever.
 妾 | 皇帝的妻妾很多。 | The emperor had many wives and concubines.
 葫 | 他挂着一个葫芦。 | He carries a gourd on his belt.
-皖 | 安徽的简称是"皖"。 | Wan is the short name for Anhui.
+皖 | 安徽的简称是“皖”。 | Wan is the short name for Anhui.
 皖 | 皖南的风景很美。 | The scenery in southern Anhui is beautiful.
 皖 | 他是皖北人。 | He is from northern Anhui.
 拽 | 他拽着我的手跑。 | He pulled me along by the hand.
@@ -1008,7 +1000,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 嘀 | 他在旁边嘀咕着什么。 | He is muttering something to the side.
 嘀 | 钟嘀嗒嘀嗒地走着。 | The clock goes tick-tock.
 膳 | 学校的膳食很健康。 | The school's meals are healthy.
-赣 | 江西的简称是"赣"。 | Gan is the short name for Jiangxi.
+赣 | 江西的简称是“赣”。 | Gan is the short name for Jiangxi.
 赣 | 赣江是江西最大的河。 | The Gan River is the biggest river in Jiangxi.
 踌 | 他踌躇了一下，还是答应了。 | He hesitated for a moment but still agreed.
 踌 | 她踌躇满志地开始了新工作。 | She started her new job full of confidence.
@@ -1019,7 +1011,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 桔 | 我买了一些桔子。 | I bought some tangerines.
 桔 | 桔子是酸甜的。 | Tangerines are sweet and sour.
 桔 | 过年的时候，人们摆桔子树。 | At New Year, people display tangerine trees.
-闽 | 福建的简称是"闽"。 | Min is the short name for Fujian.
+闽 | 福建的简称是“闽”。 | Min is the short name for Fujian.
 闽 | 他说闽南话。 | He speaks Hokkien.
 掺 | 他在酒里掺了水。 | He watered down the wine.
 椭 | 鸡蛋是椭圆形的。 | Eggs are oval.
@@ -1058,7 +1050,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 闺 | 这是我女儿的闺房。 | This is my daughter's bedroom.
 蹬 | 他用力蹬自行车。 | He pedals the bike hard.
 蹬 | 小孩在床上蹬被子。 | The child kicks off the covers in bed.
-蹬 | 她蹬上了公共汽车。 | She stepped up onto the bus.
 眺 | 我们站在山上眺望远方。 | We stood on the mountain gazing into the distance.
 眺 | 从窗口可以眺望大海。 | You can see the sea from the window.
 眺 | 他登上高楼眺望城市。 | He climbed the tall building to look out over the city.
@@ -1100,7 +1091,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 抨 | 他在会上抨击了这个计划。 | He criticised the plan at the meeting.
 唠 | 奶奶喜欢和邻居唠家常。 | Grandma likes chatting with the neighbours.
 荧 | 晚上有萤火虫发出荧光。 | At night, fireflies give off a glow.
-荧 | 他盯着电脑荧幕。 | He stared at the computer screen.
 荧 | 这种笔是荧光笔。 | This kind of pen is a highlighter.
 酋 | 这个部落的酋长很老了。 | The chief of this tribe is very old.
 酋 | 阿联酋在中东。 | The UAE is in the Middle East.
@@ -1178,7 +1168,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 犀 | 他的眼光很犀利。 | His eyes are very sharp.
 沽 | 他去市场沽酒。 | He went to the market to buy wine.
 沽 | 他这样做是沽名钓誉。 | He is doing this just to win fame.
-沽 | 天津也叫"沽"。 | Tianjin is also called "Gu".
+沽 | 天津也叫“沽”。 | Tianjin is also called "Gu".
 掐 | 她掐了一下我的胳膊。 | She pinched my arm.
 掐 | 他掐着手指算日子。 | He counted the days on his fingers.
 锚 | 船抛锚了。 | The boat dropped anchor.
@@ -1221,7 +1211,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 锌 | 这种药里有锌。 | This medicine contains zinc.
 锌 | 锌对身体很重要。 | Zinc is important for your health.
 锌 | 屋顶是用锌板做的。 | The roof is made of zinc sheets.
-滇 | 云南的简称是"滇"。 | Dian is the short name for Yunnan.
+滇 | 云南的简称是“滇”。 | Dian is the short name for Yunnan.
 滇 | 滇池在昆明旁边。 | Dian Lake is next to Kunming.
 滇 | 他在滇西旅行。 | He is travelling in western Yunnan.
 褒 | 老师褒奖了他。 | The teacher praised him.
@@ -1295,7 +1285,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 迥 | 两个人的性格迥然不同。 | The two of them have completely different personalities.
 迥 | 城市和农村的生活迥异。 | Life in the city and the countryside are very different.
 迥 | 这里的风景和别处迥然不同。 | The scenery here is quite unlike anywhere else.
-渝 | 重{chóng}庆的简称是"渝"。 | Yu is the short name for Chongqing.
+渝 | 重{chóng}庆的简称是“渝”。 | Yu is the short name for Chongqing.
 渝 | 他们的友谊始终不渝。 | Their friendship has never wavered.
 渝 | 他坐火车去渝北。 | He took the train to Yubei.
 冗 | 这篇文章太冗长了。 | This article is too long-winded.
@@ -1306,7 +1296,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 榨 | 她用机器榨了一杯橙汁。 | She made a glass of orange juice with the juicer.
 矜 | 她是一个很矜持的女孩。 | She is a very reserved girl.
 矜 | 他从不自矜自己的成绩。 | He never boasts about his achievements.
-矜 | 老人很矜贵他的旧书。 | The old man treasures his old books.
 癖 | 他有收集邮票的癖好。 | He has a hobby of collecting stamps.
 炙 | 夏天的太阳很炙热。 | The summer sun is scorching.
 炙 | 这个明星现在炙手可热。 | This star is very popular right now.
@@ -1324,7 +1313,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 跤 | 他走路摔了一跤。 | He fell over while walking.
 阑 | 夜阑人静，大家都睡了。 | Late at night, when all is quiet, everyone is asleep.
 阑 | 他得了阑尾炎。 | He has appendicitis.
-阑 | 我们靠在栏杆上看风景，这个栏杆也叫阑干。 | We leaned on the railing to enjoy the view.
 憨 | 他笑得很憨厚。 | He has a simple, honest smile.
 憨 | 这只熊猫样子很憨。 | This panda looks very goofy.
 憨 | 小孩子憨憨的，很可爱。 | The little child is innocent and cute.
@@ -1411,7 +1399,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 鸳 | 池塘里有一对鸳鸯。 | There is a pair of mandarin ducks in the pond.
 鸳 | 鸳鸯总是成双成对。 | Mandarin ducks always come in pairs.
 鸳 | 他们是一对鸳鸯。 | They are a devoted couple.
-呸 | 他"呸"了一声，转身走了。 | He said "bah" and turned away.
+呸 | 他“呸”了一声，转身走了。 | He said "bah" and turned away.
 呸 | 呸！我才不信呢！ | Pah! I don't believe it!
 呸 | 她不高兴地呸了一口。 | She spat in annoyance.
 坷 | 这条山路很坎坷。 | This mountain road is very rough.
@@ -1480,7 +1468,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 偌 | 偌大的房子只住着一个人。 | Only one person lives in such a big house.
 偌 | 偌大的城市，我一个人也不认识。 | In such a big city, I don't know a single person.
 偌 | 偌大的教室里没有人。 | There is nobody in the huge classroom.
-黔 | 贵州的简称是"黔"。 | Qian is the short name for Guizhou.
+黔 | 贵州的简称是“黔”。 | Qian is the short name for Guizhou.
 黔 | 他来自黔东南。 | He comes from southeastern Guizhou.
 黔 | 黔驴技穷。 | He has run out of tricks.
 烽 | 古时候，人们用烽火报信。 | In ancient times, people used beacon fires to send signals.
@@ -1668,8 +1656,6 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 麾 | 将军麾下有很多士兵。 | The general has many soldiers under his command.
 麾 | 他投到了将军的麾下。 | He joined the general's command.
 麾 | 他在老板麾下工作了十年。 | He worked under the boss for ten years.
-沱 | 外面下着大雨，滂沱大雨。 | It's pouring outside.
-沱 | 她哭得泪如滂沱。 | She wept floods of tears.
 沱 | 沱江是四川的一条河。 | The Tuo River is a river in Sichuan.
 臊 | 他被说得很害臊。 | He was embarrassed by what was said.
 憩 | 我们在树下小憩了一会儿。 | We rested for a while under the tree.
@@ -1761,7 +1747,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 荞 | 荞麦面很健康。 | Buckwheat noodles are healthy.
 荞 | 这里的农民种荞麦。 | The farmers here grow buckwheat.
 荞 | 我喝了一杯荞麦茶。 | I drank a cup of buckwheat tea.
-嘣 | 气球"嘣"的一声破了。 | The balloon burst with a bang.
+嘣 | 气球“嘣”的一声破了。 | The balloon burst with a bang.
 嘣 | 我的心嘣嘣直跳。 | My heart is thumping.
 嘣 | 他嘣出一句话来。 | He blurted out a sentence.
 粽 | 端午节要吃粽子。 | People eat zongzi during the Dragon Boat Festival.
@@ -1774,7 +1760,7 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 焖 | 这道菜要焖二十分钟。 | This dish needs to simmer for twenty minutes.
 茴 | 这个饺子里有茴香。 | These dumplings have fennel in them.
 茴 | 做菜的时候放一点茴香。 | Add a little fennel when cooking.
-茴 | 孔乙己知道"茴"字有四种写法。 | Kong Yiji knew four ways to write the character "hui".
+茴 | 孔乙己知道“茴”字有四种写法。 | Kong Yiji knew four ways to write the character "hui".
 囹 | 他身陷囹圄。 | He is behind bars.
 囹 | 他在囹圄中过了十年。 | He spent ten years in prison.
 囹 | 他终于走出了囹圄。 | He was finally released from prison.
@@ -1818,12 +1804,1262 @@ Used by scripts/build-sentences.mjs. One per line: 字 | 中文句子 | English 
 淫 | 这个网站上有很多淫秽内容，被关掉了。 | This website had a lot of obscene content and was shut down.
 缅 | 缅甸在中国的西南边。 | Myanmar is to the southwest of China.
 姬 | 虞姬是项羽的妻子。 | Consort Yu was Xiang Yu's wife.
-腥 | 这条鱼有点腥。 | This fish smells a bit fishy.
 裔 | 他是华裔美国人。 | He is a Chinese American.
 坤 | 这件事扭转了乾坤。 | This turned the whole situation around.
-拇 | 他竖起大拇指说："好！" | He gave a thumbs-up and said, "Great!"
-屎 | 小狗在路上拉了屎。 | The puppy pooped on the road.
-疙 | 他的脸上长了一个小疙瘩。 | He has a little pimple on his face.
+拇 | 他竖起大拇指说：“好！” | He gave a thumbs-up and said, "Great!"
 瘩 | 这根绳子上有很多疙瘩。 | This rope has lots of knots in it.
 釜 | 这口铁釜很重。 | This iron pot is very heavy.
 瞑 | 天色已经瞑暗了。 | Dusk has already fallen.
+
+## Replacements from the sentence review
+
+Written to replace Tatoeba sentences that were wrong, unnatural, offensive, or only used the character in a
+foreign name. Marked "preferred" so the build uses them before any Tatoeba sentence.
+
+对 | 对，我是学生。 | Yes, I'm a student. | preferred
+不 | 对不起，我来晚了。 | Sorry, I'm late. | preferred
+起 | 对不起，我不知道。 | Sorry, I didn't know. | preferred
+再 | 请再说一遍。 | Please say that again. | preferred
+在 | 我在家。 | I'm at home. | preferred
+很 | 今天很冷。 | It's very cold today. | preferred
+那 | 那本书是我的。 | That book is mine. | preferred
+什 | 你叫什么名字？ | What's your name? | preferred
+什 | 你在做什么？ | What are you doing? | preferred
+么 | 你怎么了？ | What's wrong with you? | preferred
+了 | 我吃饭了。 | I've eaten. | preferred
+了 | 他走了。 | He's gone. | preferred
+会 | 我会说一点儿中文。 | I can speak a little Chinese. | preferred
+零 | 我的房间号是三零二。 | My room number is 302. | preferred
+两 | 我有两只猫。 | I have two cats. | preferred
+百 | 一百块钱够吗？ | Is a hundred yuan enough? | preferred
+多 | 这里人很多。 | There are a lot of people here. | preferred
+只 | 我只有一个妹妹。 | I only have one younger sister. | preferred
+加 | 你想加点儿糖吗？ | Would you like some sugar? | preferred
+明 | 他很聪明。 | He's very clever. | preferred
+星 | 天上有很多星星。 | There are lots of stars in the sky. | preferred
+夏 | 我最喜欢夏天。 | Summer is my favourite season. | preferred
+先 | 你先走吧。 | You go first. | preferred
+子 | 这是我的儿子。 | This is my son. | preferred
+子 | 桌子上有一本书。 | There's a book on the table. | preferred
+父 | 我的父亲是老师。 | My father is a teacher. | preferred
+弟 | 我弟弟今年十岁。 | My younger brother is ten this year. | preferred
+妹 | 我妹妹喜欢唱歌。 | My younger sister likes singing. | preferred
+朋 | 他是我最好的朋友。 | He's my best friend. | preferred
+夫 | 她的丈夫是医生。 | Her husband is a doctor. | preferred
+爷 | 爷爷每天早上去公园。 | Grandpa goes to the park every morning. | preferred
+老 | 这位老人是我的爷爷。 | This old man is my grandfather. | preferred
+习 | 我每天学习中文。 | I study Chinese every day. | preferred
+写 | 请写你的名字。 | Please write your name. | preferred
+字 | 这个字怎么读？ | How do you read this character? | preferred
+文 | 他的中文很好。 | His Chinese is very good. | preferred
+名 | 你的名字很好听。 | Your name sounds lovely. | preferred
+名 | 请写下你的名字。 | Please write down your name. | preferred
+思 | 不好意思，我来晚了。 | Sorry I'm late. | preferred
+思 | 这是什么意思？ | What does this mean? | preferred
+外 | 你会说外语吗？ | Can you speak a foreign language? | preferred
+西 | 太阳从西边落下。 | The sun sets in the west. | preferred
+南 | 我住在中国南方。 | I live in the south of China. | preferred
+北 | 北京是中国的首都。 | Beijing is the capital of China. | preferred
+北 | 我明天去北京。 | I'm going to Beijing tomorrow. | preferred
+省 | 广东省在中国南部。 | Guangdong Province is in the south of China. | preferred
+校 | 我们学校的校服是蓝色的。 | Our school uniform is blue. | preferred
+跑 | 他跑得很快。 | He runs very fast. | preferred
+进 | 请进！ | Come in, please! | preferred
+给 | 我明天给你打电话。 | I'll call you tomorrow. | preferred
+用 | 这个很有用。 | This is very useful. | preferred
+作 | 我的工作很忙。 | My job keeps me very busy. | preferred
+玩 | 这个游戏很好玩。 | This game is a lot of fun. | preferred
+买 | 我想买这本书。 | I want to buy this book. | preferred
+穿 | 今天很冷，多穿点衣服。 | It's cold today, so wear more clothes. | preferred
+吃 | 你想吃什么？ | What would you like to eat? | preferred
+蛋 | 我早上吃了两个鸡蛋。 | I ate two eggs this morning. | preferred
+甜 | 这个蛋糕太甜了。 | This cake is too sweet. | preferred
+筷 | 我会用筷子。 | I can use chopsticks. | preferred
+锅 | 锅里还有饭。 | There's still some rice in the pot. | preferred
+油 | 我不喜欢太油的菜。 | I don't like food that's too oily. | preferred
+体 | 体育课很有意思。 | PE class is interesting. | preferred
+眼 | 她有一双大眼睛。 | She has big eyes. | preferred
+耳 | 我的耳朵有点疼。 | My ear hurts a bit. | preferred
+腿 | 我走了一天，腿很累。 | I walked all day and my legs are tired. | preferred
+脑 | 我的电脑坏了。 | My computer is broken. | preferred
+胸 | 他觉得胸口很闷。 | His chest feels tight. | preferred
+胸 | 她把手放在胸前。 | She put her hand on her chest. | preferred
+肩 | 他拍了拍我的肩。 | He patted me on the shoulder. | preferred
+康 | 祝你身体健康！ | I wish you good health! | preferred
+床 | 我每天七点起床。 | I get up at seven every day. | preferred
+灯 | 请把灯打开。 | Please turn on the light. | preferred
+服 | 这件衣服很漂亮。 | This piece of clothing is very pretty. | preferred
+网 | 这个网站很有用。 | This website is very useful. | preferred
+山 | 山上有很多树。 | There are lots of trees on the mountain. | preferred
+川 | 四川菜很辣。 | Sichuan food is very spicy. | preferred
+川 | 我去过四川。 | I've been to Sichuan. | preferred
+河 | 我们在河边散步。 | We're taking a walk by the river. | preferred
+江 | 长江是中国最长的河。 | The Yangtze is the longest river in China. | preferred
+海 | 我喜欢在海边玩。 | I like playing by the sea. | preferred
+雨 | 外面在下雨。 | It's raining outside. | preferred
+雨 | 昨天下了很大的雨。 | It rained heavily yesterday. | preferred
+风 | 春天的风很舒服。 | The spring breeze is pleasant. | preferred
+冷 | 冬天这里很冷。 | It's very cold here in winter. | preferred
+阴 | 阴天的时候我不想出门。 | I don't feel like going out on cloudy days. | preferred
+阳 | 今天阳光很好。 | It's lovely and sunny today. | preferred
+土 | 小狗身上都是土。 | The puppy is covered in dirt. | preferred
+木 | 这把椅子是木头做的。 | This chair is made of wood. | preferred
+虫 | 树上有很多虫子。 | There are lots of insects in the tree. | preferred
+虫 | 这只小虫子会飞。 | This little bug can fly. | preferred
+狗 | 我家的狗很可爱。 | Our dog is very cute. | preferred
+猪 | 小猪在睡觉。 | The piglet is sleeping. | preferred
+兔 | 兔子喜欢吃胡萝卜。 | Rabbits like eating carrots. | preferred
+虎 | 老虎是很危险的动物。 | Tigers are very dangerous animals. | preferred
+龙 | 中国人喜欢龙。 | Chinese people love dragons. | preferred
+龙 | 龙是中国文化的象征。 | The dragon is a symbol of Chinese culture. | preferred
+猴 | 猴子喜欢吃香蕉。 | Monkeys like eating bananas. | preferred
+猴 | 动物园里有很多猴子。 | There are lots of monkeys at the zoo. | preferred
+叶 | 秋天的叶子很漂亮。 | Leaves are beautiful in autumn. | preferred
+小 | 我的房间很小。 | My room is very small. | preferred
+短 | 这条裤子太短了。 | These trousers are too short. | preferred
+胖 | 我最近胖了两公斤。 | I've put on two kilos recently. | preferred
+真 | 今天真热。 | It's really hot today. | preferred
+真 | 你真好！ | You're so kind! | preferred
+丑 | 这件衣服有点丑。 | This piece of clothing is a bit ugly. | preferred
+丑 | 丑小鸭变成了白天鹅。 | The ugly duckling turned into a white swan. | preferred
+快 | 快三点了。 | It's almost three o'clock. | preferred
+轻 | 我轻轻地对她说：“不要怕，我在这儿。” | I whispered to her, "Don't be afraid, I'm here." | preferred
+灰 | 今天的天空是灰色的。 | The sky is grey today. | preferred
+粉 | 她喜欢粉色。 | She likes pink. | preferred
+哀 | 听到这个消息，他很哀伤。 | He was very sad to hear the news. | preferred
+情 | 他们的感情很好。 | They're very close. | preferred
+恶 | 他没有恶意。 | He meant no harm. | preferred
+公 | 我老公在公司上班。 | My husband works at a company. | preferred
+公 | 公园里有很多人。 | There are lots of people in the park. | preferred
+税 | 我们每年都要交税。 | We have to pay taxes every year. | preferred
+府 | 政府明天开会。 | The government is holding a meeting tomorrow. | preferred
+行 | 我们步行去学校。 | We walk to school. | preferred
+以 | 你可以坐这儿。 | You can sit here. | preferred
+可 | 我可以进来吗？ | May I come in? | preferred
+于 | 这是一本关于中国的书。 | This is a book about China. | preferred
+种 | 你喜欢哪种水果？ | What kind of fruit do you like? | preferred
+成 | 他成了一名医生。 | He became a doctor. | preferred
+成 | 我们成功了！ | We did it! | preferred
+方 | 你住在什么地方？ | Where do you live? | preferred
+同 | 我们是同学。 | We're classmates. | preferred
+同 | 我同意你的看法。 | I agree with you. | preferred
+定 | 他一定会来的。 | He'll definitely come. | preferred
+部 | 你有几部手机？ | How many mobile phones do you have? | preferred
+其 | 其他人都走了。 | Everyone else has left. | preferred
+但 | 我想去，但是没有时间。 | I want to go, but I don't have time. | preferred
+因 | 因为下雨，我们没去公园。 | We didn't go to the park because it rained. | preferred
+从 | 你从哪里来？ | Where are you from? | preferred
+者 | 他是一位有名的学者。 | He is a famous scholar. | preferred
+意 | 你是什么意思？ | What do you mean? | preferred
+力 | 他学习很努力。 | He studies very hard. | preferred
+民 | 中国有五十六个民族。 | China has fifty-six ethnic groups. | preferred
+使 | 这个消息使我很高兴。 | This news made me very happy. | preferred
+性 | 他的性格很好。 | He has a lovely personality. | preferred
+业 | 他大学毕业了。 | He has graduated from university. | preferred
+由 | 自由很重要。 | Freedom is important. | preferred
+被 | 我的自行车被偷了。 | My bike was stolen. | preferred
+或 | 你可以今天或者明天来。 | You can come today or tomorrow. | preferred
+己 | 我自己做饭。 | I cook for myself. | preferred
+斯 | 俄罗斯很大。 | Russia is very big. | preferred
+合 | 这件衣服很合适。 | This piece of clothing fits well. | preferred
+特 | 今天特别冷。 | It's especially cold today. | preferred
+内 | 请在一小时内回来。 | Please come back within an hour. | preferred
+化 | 我对中国文化很感兴趣。 | I'm very interested in Chinese culture. | preferred
+世 | 世界很大。 | The world is big. | preferred
+任 | 这是我的责任。 | This is my responsibility. | preferred
+立 | 请立刻回家。 | Please go home right away. | preferred
+及 | 他及时赶到了。 | He arrived just in time. | preferred
+解 | 我能理解你的感受。 | I can understand how you feel. | preferred
+义 | 他是一个很讲义气的人。 | He's very loyal to his friends. | preferred
+条 | 我喜欢吃面条。 | I like eating noodles. | preferred
+平 | 我们都希望世界和平。 | We all hope for world peace. | preferred
+活 | 我很喜欢这里的生活。 | I really like life here. | preferred
+别 | 别担心。 | Don't worry. | preferred
+变 | 天气变冷了。 | The weather has turned cold. | preferred
+神 | 他今天很有精神。 | He's full of energy today. | preferred
+安 | 晚安！ | Good night! | preferred
+才 | 他八点才起床。 | He didn't get up until eight. | preferred
+量 | 这个菜的量很大。 | This dish is a big portion. | preferred
+感 | 我感冒了。 | I've caught a cold. | preferred
+建 | 这座楼是去年建的。 | This building was built last year. | preferred
+管 | 这件事你别管。 | Stay out of this. | preferred
+直 | 一直往前走。 | Go straight ahead. | preferred
+资 | 这些资料很有用。 | This information is very useful. | preferred
+金 | 她有一条金项链。 | She has a gold necklace. | preferred
+克 | 我喜欢吃巧克力。 | I like eating chocolate. | preferred
+便 | 你随便坐。 | Sit wherever you like. | preferred
+决 | 这个问题很难解决。 | This problem is hard to solve. | preferred
+基 | 学好中文，基础很重要。 | A good foundation is important for learning Chinese well. | preferred
+却 | 我等了他很久，他却没来。 | I waited a long time for him, but he didn't come. | preferred
+界 | 世界上有很多国家。 | There are many countries in the world. | preferred
+光 | 我把饭都吃光了。 | I ate up all the food. | preferred
+即 | 我们即将出发。 | We're about to set off. | preferred
+即 | 收到信后，他立即回了电话。 | He called back as soon as he got the letter. | preferred
+且 | 这家饭馆很便宜，而且很好吃。 | This restaurant is cheap, and the food is good too. | preferred
+象 | 这里的景象很美。 | The scenery here is beautiful. | preferred
+象 | 他给我留下了很好的印象。 | He made a good impression on me. | preferred
+设 | 这个房间设计得很好。 | This room is well designed. | preferred
+式 | 这是中式早餐。 | This is a Chinese breakfast. | preferred
+色 | 她喜欢红色。 | She likes red. | preferred
+据 | 根据天气预报，明天会下雨。 | According to the weather forecast, it will rain tomorrow. | preferred
+程 | 这个过程很长。 | This process takes a long time. | preferred
+交 | 我想交一些中国朋友。 | I want to make some Chinese friends. | preferred
+拉 | 推门还是拉门？ | Do I push or pull the door? | preferred
+术 | 我喜欢艺术。 | I like art. | preferred
+共 | 我们有很多共同点。 | We have a lot in common. | preferred
+确 | 他的回答是正确的。 | His answer is correct. | preferred
+切 | 请把面包切成两半。 | Please cut the bread in half. | preferred
+导 | 他是我们的导游。 | He's our tour guide. | preferred
+飞 | 他跑得飞快。 | He runs incredibly fast. | preferred
+飞 | 我坐飞机去上海。 | I'm flying to Shanghai. | preferred
+改 | 他的中文有了很大的改善。 | His Chinese has improved a lot. | preferred
+收 | 你收到我的信了吗？ | Did you get my letter? | preferred
+干 | 衣服干了。 | The clothes are dry. | preferred
+造 | 这辆车是中国制造的。 | This car was made in China. | preferred
+联 | 联合国在纽约。 | The United Nations is in New York. | preferred
+济 | 他在学习经济学。 | He's studying economics. | preferred
+士 | 护士在医院工作。 | Nurses work in hospitals. | preferred
+士 | 女士们，先生们，晚上好！ | Good evening, ladies and gentlemen! | preferred
+令 | 这个消息令人高兴。 | This is happy news. | preferred
+始 | 他自始至终都没说话。 | He didn't say a word from start to finish. | preferred
+存 | 我把钱存在银行里。 | I keep my money in the bank. | preferred
+台 | 这台电脑很新。 | This computer is new. | preferred
+罗 | 罗马不是一天建成的。 | Rome wasn't built in a day. | preferred
+击 | 我们要反击！ | We must fight back! | preferred
+流 | 河水流得很快。 | The river flows fast. | preferred
+备 | 你准备好了吗？ | Are you ready? | preferred
+团 | 他参加了一个旅行团。 | He joined a tour group. | preferred
+需 | 你需要帮忙吗？ | Do you need help? | preferred
+需 | 我们需要多少钱？ | How much money do we need? | preferred
+党 | 他加入了一个政党。 | He joined a political party. | preferred
+华 | 中华文化历史悠久。 | Chinese culture has a long history. | preferred
+亚 | 亚洲很大。 | Asia is very big. | preferred
+亚 | 中国在亚洲。 | China is in Asia. | preferred
+技 | 他的技术很好。 | He's very skilled. | preferred
+际 | 这是一家国际公司。 | This is an international company. | preferred
+究 | 他终究还是来了。 | He came after all. | preferred
+断 | 他不断地努力学习。 | He keeps working hard at his studies. | preferred
+满 | 杯子里的水满了。 | The glass is full of water. | preferred
+企 | 他在一家大企业工作。 | He works at a big company. | preferred
+企 | 我的梦想是成为企业家。 | My dream is to become an entrepreneur. | preferred
+史 | 中国有五千年的历史。 | China has five thousand years of history. | preferred
+委 | 我感到很委屈。 | I feel wronged. | preferred
+乎 | 他胖乎乎的。 | He's chubby. | preferred
+曾 | 我曾经去过中国。 | I've been to China before. | preferred
+农 | 农民在田里工作。 | The farmers are working in the fields. | preferred
+广 | 广东菜很好吃。 | Cantonese food is delicious. | preferred
+吧 | 我们一起去吧。 | Let's go together. | preferred
+阿 | 阿姨，您好！ | Hello, auntie! | preferred
+阿 | 我的阿姨住在上海。 | My aunt lives in Shanghai. | preferred
+阿 | 他的小名叫阿明。 | His nickname is Ah Ming. | preferred
+谈 | 我们谈谈吧。 | Let's talk. | preferred
+图 | 这张图很清楚。 | This picture is very clear. | preferred
+历 | 他的经历很丰富。 | He has a wealth of experience. | preferred
+局 | 警察局在哪儿？ | Where's the police station? | preferred
+突 | 突然下起了雨。 | It suddenly started raining. | preferred
+仅 | 这仅仅是开始。 | This is only the beginning. | preferred
+落 | 太阳落山了。 | The sun has set. | preferred
+青 | 青菜对身体好。 | Green vegetables are good for you. | preferred
+虽 | 虽然很累，但是我很开心。 | Although I'm tired, I'm very happy. | preferred
+推 | 请推一下门。 | Please push the door. | preferred
+推 | 他推荐了一本好书。 | He recommended a good book. | preferred
+参 | 我参观了博物馆。 | I visited the museum. | preferred
+希 | 我希望你快乐。 | I hope you're happy. | preferred
+希 | 希望明天不下雨。 | I hope it doesn't rain tomorrow. | preferred
+构 | 这个句子的结构很简单。 | The structure of this sentence is simple. | preferred
+构 | 这个机构很有名。 | This institution is well known. | preferred
+维 | 维生素C对身体很好。 | Vitamin C is good for you. | preferred
+维 | 我们要维护公共秩序。 | We must maintain public order. | preferred
+维 | 他的思维很快。 | He thinks quickly. | preferred
+革 | 这家公司需要改革。 | This company needs reform. | preferred
+敌 | 他没有敌人。 | He has no enemies. | preferred
+致 | 这场大雨导致了洪水。 | The heavy rain caused flooding. | preferred
+律 | 每个人都要遵守法律。 | Everyone must obey the law. | preferred
+态 | 他的态度很好。 | He has a good attitude. | preferred
+责 | 这是谁的责任？ | Whose responsibility is this? | preferred
+志 | 他是一个有志气的年轻人。 | He's an ambitious young man. | preferred
+志 | 我在看一本杂志。 | I'm reading a magazine. | preferred
+族 | 我们家是一个大家族。 | Ours is a big extended family. | preferred
+族 | 中国有很多少数民族。 | China has many ethnic minorities. | preferred
+族 | 这个家族很有名。 | This family is famous. | preferred
+供 | 学校为学生提供午饭。 | The school provides lunch for students. | preferred
+留 | 请留下你的电话号码。 | Please leave your phone number. | preferred
+终 | 我终于找到了我的钥匙。 | I finally found my keys. | preferred
+紧 | 别紧张。 | Don't be nervous. | preferred
+察 | 他在观察小鸟。 | He's watching the birds. | preferred
+京 | 南京是一个古老的城市。 | Nanjing is an ancient city. | preferred
+段 | 这段时间我很忙。 | I've been very busy lately. | preferred
+项 | 这个项目很重要。 | This project is very important. | preferred
+按 | 请按这个按钮。 | Please press this button. | preferred
+织 | 妈妈在织毛衣。 | Mum is knitting a sweater. | preferred
+害 | 别害羞。 | Don't be shy. | preferred
+斗 | 两只小狗在打斗。 | Two puppies are play-fighting. | preferred
+杀 | 在市场买东西可以杀价。 | You can haggle over prices at the market. | preferred
+杀 | 电脑需要杀毒软件。 | Computers need antivirus software. | preferred
+杀 | 这种药可以杀菌。 | This medicine kills germs. | preferred
+苏 | 苏州很美。 | Suzhou is beautiful. | preferred
+密 | 这是我们的秘密。 | This is our secret. | preferred
+低 | 今天的温度很低。 | The temperature is low today. | preferred
+细 | 他做事很细心。 | He's very careful in what he does. | preferred
+属 | 他属狗。 | He was born in the Year of the Dog. | preferred
+限 | 时间有限。 | Time is limited. | preferred
+威 | 他在班上很有威信。 | He's well respected in his class. | preferred
+毛 | 这只猫的毛很软。 | This cat's fur is very soft. | preferred
+毛 | 一块钱等于十毛。 | One yuan equals ten mao. | preferred
+率 | 这个国家的出生率很低。 | This country's birth rate is very low. | preferred
+甚 | 他甚至不知道我的名字。 | He doesn't even know my name. | preferred
+甚 | 这件事甚至连他妈妈都不知道。 | Not even his mum knows about this. | preferred
+般 | 他的中文很一般。 | His Chinese is so-so. | preferred
+普 | 这是很普通的东西。 | This is a very ordinary thing. | preferred
+弹 | 她会弹钢琴。 | She can play the piano. | preferred
+兰 | 荷兰有很多风车。 | The Netherlands has lots of windmills. | preferred
+兰 | 我喜欢兰花。 | I like orchids. | preferred
+若 | 若有问题，请告诉我。 | If there are any problems, please let me know. | preferred
+尼 | 我去过尼泊尔。 | I've been to Nepal. | preferred
+尼 | 尼罗河很长。 | The Nile is very long. | preferred
+伤 | 他的话伤了我的心。 | His words hurt my feelings. | preferred
+险 | 这条路很危险。 | This road is dangerous. | preferred
+陆 | 飞机安全着陆了。 | The plane landed safely. | preferred
+劳 | 劳动节快乐！ | Happy Labour Day! | preferred
+福 | 祝你幸福！ | I wish you happiness! | preferred
+福 | 福建在中国东南部。 | Fujian is in southeast China. | preferred
+纳 | 这个房间能容纳五十人。 | This room holds fifty people. | preferred
+纳 | 他采纳了我的建议。 | He took my advice. | preferred
+雷 | 雷声很大。 | The thunder is very loud. | preferred
+获 | 他获得了第一名。 | He won first place. | preferred
+获 | 她获得了奖学金。 | She received a scholarship. | preferred
+射 | 他射门得分了。 | He shot and scored. | preferred
+范 | 他是我们的模范。 | He's our role model. | preferred
+句 | 请用这个词造句。 | Please make a sentence with this word. | preferred
+异 | 这两个字有什么差异？ | What's the difference between these two characters? | preferred
+策 | 政府出台了新政策。 | The government has introduced a new policy. | preferred
+简 | 这个问题很简单。 | This question is very simple. | preferred
+卡 | 我用信用卡付钱。 | I'll pay by credit card. | preferred
+罪 | 他犯了罪。 | He committed a crime. | preferred
+州 | 杭州很漂亮。 | Hangzhou is beautiful. | preferred
+州 | 美国有五十个州。 | The USA has fifty states. | preferred
+退 | 他退休了。 | He has retired. | preferred
+灵 | 这个办法很灵。 | This method works like a charm. | preferred
+灵 | 她的手很灵巧。 | She's very dexterous. | preferred
+配 | 这件衣服很配你。 | This outfit really suits you. | preferred
+征 | 长城是中国的象征。 | The Great Wall is a symbol of China. | preferred
+挥 | 他在指挥交通。 | He's directing traffic. | preferred
+刘 | 刘老师教我们中文。 | Teacher Liu teaches us Chinese. | preferred
+超 | 我去超市买水果。 | I'm going to the supermarket to buy fruit. | preferred
+皇 | 他参观了皇宫。 | He visited the imperial palace. | preferred
+怀 | 我很怀念小时候。 | I really miss my childhood. | preferred
+执 | 他很固执。 | He's very stubborn. | preferred
+抗 | 多吃水果可以增强抵抗力。 | Eating more fruit can strengthen your immune system. | preferred
+佛 | 他信佛。 | He's a Buddhist. | preferred
+佛 | 这座佛像很古老。 | This Buddha statue is very old. | preferred
+岁 | 我妹妹今年五岁。 | My younger sister is five this year. | preferred
+香 | 这朵花很香。 | This flower smells lovely. | preferred
+香 | 香港在中国南部。 | Hong Kong is in the south of China. | preferred
+著 | 鲁迅是中国著名的作家。 | Lu Xun is a famous Chinese writer. | preferred
+著 | 这本书的作者是一位著名学者。 | The author of this book is a famous scholar. | preferred
+田 | 农民在田里种水稻。 | The farmers grow rice in the fields. | preferred
+田 | 田野里有很多花。 | There are lots of flowers in the fields. | preferred
+控 | 你要控制自己的情绪。 | You need to control your emotions. | preferred
+份 | 你带身份证了吗？ | Did you bring your ID card? | preferred
+背 | 他背着一个大包。 | He's carrying a big bag on his back. | preferred
+阵 | 下了一阵雨。 | There was a brief shower of rain. | preferred
+阵 | 外面刮了一阵大风。 | A strong gust of wind blew outside. | preferred
+敢 | 我不敢一个人去。 | I don't dare go alone. | preferred
+托 | 我坐摩托车去上班。 | I go to work by motorbike. | preferred
+托 | 我托朋友买了一本书。 | I asked a friend to buy a book for me. | preferred
+托 | 拜托你帮我一下。 | Could you please give me a hand? | preferred
+央 | 河的中央有一个小岛。 | There's a small island in the middle of the river. | preferred
+户 | 我喜欢户外运动。 | I like outdoor sports. | preferred
+户 | 每户人家都有一台电视。 | Every household has a TV. | preferred
+洋 | 海洋里有很多鱼。 | There are lots of fish in the ocean. | preferred
+洋 | 切洋葱会让人流眼泪。 | Cutting onions makes you cry. | preferred
+洋 | 太平洋很大。 | The Pacific Ocean is huge. | preferred
+胡 | 我喜欢吃胡萝卜。 | I like eating carrots. | preferred
+版 | 这本书出了第二版。 | This book has come out in a second edition. | preferred
+景 | 这里的风景很美。 | The scenery here is beautiful. | preferred
+货 | 这家店的货很便宜。 | The goods in this shop are cheap. | preferred
+互 | 我们互相学习。 | We learn from each other. | preferred
+伯 | 伯伯今天来我家。 | My uncle is coming to our house today. | preferred
+伯 | 我伯父是医生。 | My uncle is a doctor. | preferred
+介 | 我来介绍一下，这是我的朋友。 | Let me introduce you: this is my friend. | preferred
+丽 | 丽江是一个美丽的地方。 | Lijiang is a beautiful place. | preferred
+丽 | 她穿着一件华丽的衣服。 | She's wearing a gorgeous dress. | preferred
+良 | 他是一个善良的人。 | He's a kind person. | preferred
+升 | 太阳升起来了。 | The sun has risen. | preferred
+监 | 这里有监控摄像头。 | There's a surveillance camera here. | preferred
+临 | 欢迎光临！ | Welcome! | preferred
+露 | 早上草地上有露水。 | There's dew on the grass in the morning. | preferred
+永 | 我们永远是朋友。 | We'll always be friends. | preferred
+味 | 这个菜的味道很好。 | This dish tastes great. | preferred
+架 | 书架上有很多书。 | There are lots of books on the bookshelf. | preferred
+架 | 他们为了一点小事吵架了。 | They argued over something trivial. | preferred
+沙 | 海边有很多沙子。 | There's lots of sand at the beach. | preferred
+沙 | 我喜欢吃沙拉。 | I like eating salad. | preferred
+掉 | 我的钱包掉了。 | I've lost my wallet. | preferred
+舰 | 航空母舰是很大的军舰。 | An aircraft carrier is a very big warship. | preferred
+杂 | 这本杂志很有意思。 | This magazine is interesting. | preferred
+湾 | 船停在海湾里。 | The boat is moored in the bay. | preferred
+湾 | 台湾的水果很好吃。 | Taiwanese fruit is delicious. | preferred
+吉 | 祝你吉祥如意！ | May all go well for you! | preferred
+肯 | 他肯帮我。 | He's willing to help me. | preferred
+肯 | 我肯定他会来。 | I'm sure he'll come. | preferred
+屋 | 屋子里很暖和。 | It's warm in the room. | preferred
+困 | 我遇到了一些困难。 | I've run into some difficulties. | preferred
+剑 | 剑桥大学很有名。 | Cambridge University is famous. | preferred
+封 | 请把信封好。 | Please seal the letter. | preferred
+楼 | 我住在五楼。 | I live on the fifth floor. | preferred
+县 | 我老家在一个小县城。 | My hometown is a small county town. | preferred
+县 | 这个县有很多农民。 | There are lots of farmers in this county. | preferred
+县 | 县长明天来学校。 | The county head is coming to the school tomorrow. | preferred
+尚 | 她穿得很时尚。 | She dresses very fashionably. | preferred
+娘 | 姑娘，你叫什么名字？ | Miss, what's your name? | preferred
+娘 | 她是一个可爱的小姑娘。 | She's a lovely little girl. | preferred
+智 | 他很有智慧。 | He's very wise. | preferred
+恩 | 我们要懂得感恩。 | We should know how to be grateful. | preferred
+恩 | 他对我有恩。 | I owe him a debt of gratitude. | preferred
+恩 | 谢谢您的恩情。 | Thank you for your kindness. | preferred
+掌 | 大家鼓掌欢迎他。 | Everyone applauded to welcome him. | preferred
+剧 | 我喜欢看电视剧。 | I like watching TV dramas. | preferred
+炮 | 放鞭炮是中国的新年传统。 | Setting off firecrackers is a Chinese New Year tradition. | preferred
+炮 | 他们放了很多鞭炮。 | They set off lots of firecrackers. | preferred
+炮 | 士兵们在开炮。 | The soldiers are firing the cannons. | preferred
+予 | 老师给予了我很多帮助。 | The teacher gave me a lot of help. | preferred
+板 | 地板很干净。 | The floor is very clean. | preferred
+妇 | 三月八日是妇女节。 | March 8th is Women's Day. | preferred
+归 | 请把书归还图书馆。 | Please return the books to the library. | preferred
+睛 | 他的眼睛很大。 | He has big eyes. | preferred
+额 | 我的额头很热。 | My forehead feels hot. | preferred
+督 | 他是基督徒。 | He's a Christian. | preferred
+督 | 老师在监督我们考试。 | The teacher is supervising our exam. | preferred
+泽 | 毛泽东出生在湖南。 | Mao Zedong was born in Hunan. | preferred
+泽 | 这里有很多沼泽。 | There are lots of swamps here. | preferred
+材 | 这本教材很好用。 | This textbook is easy to use. | preferred
+逐 | 天气逐渐变暖了。 | The weather is gradually getting warmer. | preferred
+莫 | 莫斯科是俄罗斯的首都。 | Moscow is the capital of Russia. | preferred
+莫 | 他莫名其妙地生气了。 | He got angry for no apparent reason. | preferred
+亡 | 这场事故造成了人员伤亡。 | The accident caused casualties. | preferred
+鲜 | 这些水果很新鲜。 | This fruit is very fresh. | preferred
+圣 | 圣诞节快乐！ | Merry Christmas! | preferred
+博 | 他去了博物馆。 | He went to the museum. | preferred
+勒 | 他勒紧了腰带。 | He tightened his belt. | preferred
+勒 | 他们想勒索钱财。 | They tried to extort money. | preferred
+勒 | 马被缰绳勒住了。 | The horse was reined in. | preferred
+诺 | 他说话算数，从不违背诺言。 | He keeps his word and never breaks a promise. | preferred
+伦 | 伦敦是英国的首都。 | London is the capital of the UK. | preferred
+伦 | 他们讨论了伦理问题。 | They discussed ethical issues. | preferred
+奥 | 奥运会每四年举办一次。 | The Olympics are held every four years. | preferred
+唐 | 唐朝是中国历史上的一个朝代。 | The Tang was a dynasty in Chinese history. | preferred
+俄 | 我的朋友是俄罗斯人。 | My friend is Russian. | preferred
+炸 | 我喜欢吃炸鸡。 | I like fried chicken. | preferred
+洛 | 洛阳是一座古城。 | Luoyang is an ancient city. | preferred
+洛 | 我去过洛杉矶。 | I've been to Los Angeles. | preferred
+堂 | 他们在教堂结婚了。 | They got married in a church. | preferred
+宫 | 故宫在北京。 | The Forbidden City is in Beijing. | preferred
+宫 | 这座宫殿很漂亮。 | This palace is beautiful. | preferred
+君 | 君子动口不动手。 | A gentleman uses words, not fists. | preferred
+君 | 他是一位明君。 | He was a wise ruler. | preferred
+谋 | 他们在谋划一次旅行。 | They're planning a trip. | preferred
+宋 | 宋体是一种常见的字体。 | Songti is a common typeface. | preferred
+姑 | 她是我的姑姑。 | She's my aunt. | preferred
+孙 | 他有两个孙子。 | He has two grandsons. | preferred
+束 | 会议结束了。 | The meeting is over. | preferred
+跳 | 他跳得很高。 | He jumps very high. | preferred
+玉 | 她戴着一个玉手镯。 | She's wearing a jade bracelet. | preferred
+练 | 我每天练习写汉字。 | I practise writing Chinese characters every day. | preferred
+凡 | 他是一个平凡的人。 | He's an ordinary person. | preferred
+凡 | 凡是学生都要参加。 | All students must take part. | preferred
+础 | 打好基础很重要。 | It's important to build a solid foundation. | preferred
+宁 | 我宁可走路也不坐车。 | I'd rather walk than take the bus. | preferred
+宁 | 这里很安宁。 | It's very peaceful here. | preferred
+诸 | 诸位，请安静。 | Everyone, please be quiet. | preferred
+庄 | 农民在地里种庄稼。 | The farmers are growing crops in the fields. | preferred
+丝 | 这件衣服是丝绸的。 | This piece of clothing is made of silk. | preferred
+翻 | 请把这句话翻译成英文。 | Please translate this sentence into English. | preferred
+暴 | 他的脾气很暴躁。 | He has a very bad temper. | preferred
+塔 | 埃菲尔铁塔在巴黎。 | The Eiffel Tower is in Paris. | preferred
+塔 | 在塔上可以看到整个城市。 | You can see the whole city from the tower. | preferred
+隐 | 我们要尊重别人的隐私。 | We should respect other people's privacy. | preferred
+访 | 欢迎来访！ | Thank you for visiting! | preferred
+蒙 | 内蒙古有大草原。 | Inner Mongolia has vast grasslands. | preferred
+蒙 | 蒙古人喜欢骑马。 | Mongolians love riding horses. | preferred
+软 | 这个面包很软。 | This bread is very soft. | preferred
+软 | 我需要下载一个新软件。 | I need to download some new software. | preferred
+扩 | 这条路要扩建了。 | This road is going to be widened. | preferred
+弄 | 我把手机弄丢了。 | I've lost my phone. | preferred
+雄 | 这只狮子是雄的。 | This lion is male. | preferred
+雄 | 长城很雄伟。 | The Great Wall is magnificent. | preferred
+稳 | 放稳一点，别掉了。 | Put it down steadily so it doesn't fall. | preferred
+刺 | 玫瑰有刺。 | Roses have thorns. | preferred
+拥 | 这里太拥挤了。 | It's too crowded here. | preferred
+拥 | 他拥有三辆车。 | He owns three cars. | preferred
+徒 | 他是我的徒弟。 | He's my apprentice. | preferred
+姆 | 她是一个保姆。 | She's a nanny. | preferred
+姆 | 保姆每天来照顾孩子。 | The nanny comes every day to look after the children. | preferred
+齐 | 大家排整齐。 | Everyone line up neatly. | preferred
+曲 | 这条路很弯曲。 | This road is very winding. | preferred
+冰 | 冰箱里有牛奶。 | There's milk in the fridge. | preferred
+虚 | 他很谦虚。 | He's very modest. | preferred
+析 | 他分析得很清楚。 | His analysis is very clear. | preferred
+购 | 我在网上购物。 | I shop online. | preferred
+替 | 你能替我去吗？ | Can you go in my place? | preferred
+塞 | 路上堵塞了。 | The road is blocked. | preferred
+塞 | 他把书塞进了包里。 | He stuffed the book into his bag. | preferred
+努 | 我们要努力学习。 | We must study hard. | preferred
+侵 | 请不要侵犯别人的隐私。 | Please don't invade other people's privacy. | preferred
+刑 | 这是一种古代的刑罚。 | This was a punishment in ancient times. | preferred
+兄 | 他们是兄弟俩。 | They're brothers. | preferred
+迅 | 鲁迅是一位作家。 | Lu Xun was a writer. | preferred
+套 | 这套书有十本。 | This set of books has ten volumes. | preferred
+唯 | 他是我唯一的朋友。 | He's my only friend. | preferred
+唯 | 唯一的办法是早点出发。 | The only way is to set off early. | preferred
+谷 | 秋天稻谷成熟了。 | In autumn the rice is ripe. | preferred
+库 | 他把车停在车库里。 | He parked the car in the garage. | preferred
+库 | 仓库里有很多东西。 | There are lots of things in the warehouse. | preferred
+尤 | 我尤其喜欢吃饺子。 | I especially like eating dumplings. | preferred
+尤 | 他尤其擅长数学。 | He's especially good at maths. | preferred
+伟 | 这是一个伟大的发明。 | This is a great invention. | preferred
+伟 | 长城是一个伟大的工程。 | The Great Wall is a great feat of engineering. | preferred
+麻 | 这件事很麻烦。 | This is a real hassle. | preferred
+麻 | 我的腿麻了。 | My leg has gone numb. | preferred
+缓 | 请缓慢地说。 | Please speak slowly. | preferred
+哲 | 这句话很有哲理。 | This saying is very philosophical. | preferred
+络 | 我们以后常联络吧。 | Let's keep in touch. | preferred
+朱 | 他姓朱。 | His surname is Zhu. | preferred
+朱 | 朱红色很漂亮。 | Vermilion is a lovely colour. | preferred
+埃 | 埃及有金字塔。 | Egypt has pyramids. | preferred
+埃 | 空气里有很多尘埃。 | There's a lot of dust in the air. | preferred
+植 | 我在阳台上种了一些植物。 | I've grown some plants on the balcony. | preferred
+纯 | 他的想法很单纯。 | His ideas are very naïve. | preferred
+杰 | 他是一个杰出的科学家。 | He's an outstanding scientist. | preferred
+筑 | 这座建筑很高。 | This building is very tall. | preferred
+折 | 我把纸折成两半。 | I folded the paper in half. | preferred
+贝 | 宝贝，你真可爱！ | Sweetie, you're so cute! | preferred
+贝 | 海边有很多贝壳。 | There are lots of shells on the beach. | preferred
+贝 | 贝多芬是一位伟大的音乐家。 | Beethoven was a great musician. | preferred
+尊 | 我们要尊重老人。 | We should respect the elderly. | preferred
+吴 | 他姓吴。 | His surname is Wu. | preferred
+吴 | 吴老师是我们的班主任。 | Teacher Wu is our homeroom teacher. | preferred
+混 | 他把盐和糖混在一起了。 | He mixed the salt and sugar together. | preferred
+臣 | 他是皇帝的大臣。 | He was the emperor's minister. | preferred
+臣 | 大臣们在开会。 | The ministers are having a meeting. | preferred
+雅 | 他说话很文雅。 | He speaks very elegantly. | preferred
+雅 | 喜马拉雅山很高。 | The Himalayas are very high. | preferred
+圆 | 中秋节的月亮很圆。 | The moon is very round at the Mid-Autumn Festival. | preferred
+圆 | 我们围成一个圆圈。 | We formed a circle. | preferred
+姓 | 我姓王。 | My surname is Wang. | preferred
+残 | 他身体有残疾。 | He has a disability. | preferred
+残 | 桌子上还有一些剩菜残饭。 | There are still some leftovers on the table. | preferred
+培 | 老师在培养我们的兴趣。 | The teacher is nurturing our interests. | preferred
+诚 | 他是一个诚实的人。 | He's an honest person. | preferred
+宇 | 宇宙有多大？ | How big is the universe? | preferred
+宇 | 他想当宇航员。 | He wants to be an astronaut. | preferred
+猛 | 他猛地站了起来。 | He suddenly stood up. | preferred
+摆 | 请把椅子摆好。 | Please arrange the chairs neatly. | preferred
+梅 | 梅花在冬天开。 | Plum blossoms bloom in winter. | preferred
+梅 | 我喜欢吃话梅。 | I like eating preserved plums. | preferred
+毁 | 大火毁了这座房子。 | The fire destroyed this house. | preferred
+摩 | 他骑摩托车去学校。 | He rides a motorbike to school. | preferred
+盟 | 这两个国家是盟友。 | These two countries are allies. | preferred
+拍 | 大家一起拍照吧！ | Let's all take a photo together! | preferred
+丁 | 我喜欢吃布丁。 | I like eating pudding. | preferred
+硬 | 这块面包太硬了。 | This bread is too hard. | preferred
+麦 | 小麦是一种粮食。 | Wheat is a grain. | preferred
+麦 | 他对着麦克风唱歌。 | He sang into the microphone. | preferred
+耶 | 耶稣出生在伯利恒。 | Jesus was born in Bethlehem. | preferred
+耶 | 耶鲁大学在美国。 | Yale University is in the USA. | preferred
+抽 | 他从抽屉里拿出一本书。 | He took a book out of the drawer. | preferred
+魔 | 魔方很难玩。 | Rubik's Cubes are hard to solve. | preferred
+喊 | 妈妈喊我回家吃饭。 | Mum called me home for dinner. | preferred
+币 | 人民币是中国的货币。 | The renminbi is China's currency. | preferred
+币 | 我想换一些外币。 | I'd like to exchange some foreign currency. | preferred
+丰 | 今年是丰收年。 | This year has had a bumper harvest. | preferred
+丰 | 这里的物产很丰富。 | This place is rich in natural produce. | preferred
+瓦 | 屋顶上的瓦很旧了。 | The roof tiles are very old. | preferred
+瓦 | 这个灯泡是六十瓦的。 | This light bulb is sixty watts. | preferred
+译 | 这本书被翻译成了很多语言。 | This book has been translated into many languages. | preferred
+距 | 学校离我家的距离不远。 | The school isn't far from my home. | preferred
+勇 | 他是一个勇敢的孩子。 | He's a brave child. | preferred
+墙 | 墙上挂着一幅画。 | There's a picture hanging on the wall. | preferred
+召 | 老师召集大家开会。 | The teacher called everyone together for a meeting. | preferred
+侠 | 蝙蝠侠是一个超级英雄。 | Batman is a superhero. | preferred
+侧 | 请走人行道的右侧。 | Please walk on the right side of the pavement. | preferred
+曼 | 曼谷是泰国的首都。 | Bangkok is the capital of Thailand. | preferred
+曼 | 我去过曼彻斯特。 | I've been to Manchester. | preferred
+享 | 我们一起享用晚餐吧。 | Let's enjoy dinner together. | preferred
+障 | 这里有一个路障。 | There's a roadblock here. | preferred
+障 | 他的听力有障碍。 | He has a hearing impairment. | preferred
+涉 | 这件事涉及很多人。 | This matter involves a lot of people. | preferred
+爆 | 他喜欢吃爆米花。 | He likes eating popcorn. | preferred
+玛 | 玛瑙很漂亮。 | Agate is beautiful. | preferred
+玛 | 我的朋友叫玛丽亚。 | My friend's name is Maria. | preferred
+镜 | 我戴上了太阳镜。 | I put on my sunglasses. | preferred
+仙 | 她美得像仙女一样。 | She's as beautiful as a fairy. | preferred
+彼 | 我们彼此了解。 | We understand each other. | preferred
+彼 | 他们彼此帮助。 | They help each other. | preferred
+症 | 感冒的症状是发烧和咳嗽。 | The symptoms of a cold are a fever and a cough. | preferred
+症 | 我有恐高症。 | I'm afraid of heights. | preferred
+倾 | 他倾听了我的意见。 | He listened to my opinion. | preferred
+轰 | 雷声轰轰地响。 | The thunder rumbled. | preferred
+咱 | 咱俩一起去吧。 | Let's go together, you and me. | preferred
+撤 | 他撤回了自己的申请。 | He withdrew his application. | preferred
+撤 | 警察让大家撤离大楼。 | The police told everyone to evacuate the building. | preferred
+缘 | 我们很有缘。 | It feels like we were destined to meet. | preferred
+播 | 他是一个播音员。 | He's a newsreader. | preferred
+朗 | 她在朗读课文。 | She's reading the text aloud. | preferred
+杜 | 杜甫是唐朝的诗人。 | Du Fu was a Tang dynasty poet. | preferred
+丹 | 牡丹是中国的名花。 | The peony is a famous Chinese flower. | preferred
+丹 | 丹麦在欧洲北部。 | Denmark is in northern Europe. | preferred
+驻 | 他驻足观看。 | He stopped to watch. | preferred
+孔 | 墙上有一个小孔。 | There's a small hole in the wall. | preferred
+孔 | 孔雀很漂亮。 | Peacocks are beautiful. | preferred
+宜 | 这里的气候很宜人。 | The climate here is very pleasant. | preferred
+艾 | 艾草可以做药。 | Mugwort can be used as medicine. | preferred
+艾 | 端午节人们在门上挂艾草。 | At the Dragon Boat Festival people hang mugwort on their doors. | preferred
+旦 | 一旦下雨，比赛就取消。 | If it rains, the game will be cancelled. | preferred
+愈 | 他的病已经痊愈了。 | He has fully recovered from his illness. | preferred
+潮 | 现在是涨潮的时候。 | The tide is coming in now. | preferred
+缩 | 毛衣洗了以后缩小了。 | The sweater shrank after washing. | preferred
+挑 | 她挑了一件红色的衣服。 | She picked a red outfit. | preferred
+袋 | 我的脑袋有点疼。 | My head hurts a bit. | preferred
+珍 | 我们要珍惜时间。 | We should value our time. | preferred
+珍 | 大熊猫是珍贵的动物。 | Giant pandas are precious animals. | preferred
+珍 | 珍珠很漂亮。 | Pearls are beautiful. | preferred
+裂 | 地震后墙上有了裂缝。 | After the earthquake there were cracks in the wall. | preferred
+启 | 我们明天早上启程。 | We'll set off tomorrow morning. | preferred
+忠 | 狗对主人很忠诚。 | Dogs are very loyal to their owners. | preferred
+泛 | 这个词的用法很广泛。 | This word is used very widely. | preferred
+横 | 这座桥横跨长江。 | This bridge spans the Yangtze. | preferred
+瑞 | 瑞雪兆丰年。 | A timely snow promises a good harvest. | preferred
+舍 | 我住在学校的宿舍里。 | I live in the school dormitory. | preferred
+婆 | 我老婆做饭很好吃。 | My wife is a great cook. | preferred
+晓 | 这件事大家都知晓。 | Everyone knows about this. | preferred
+劲 | 他今天干活很有劲。 | He's working with lots of energy today. | preferred
+仁 | 他是一个仁慈的人。 | He's a kind-hearted person. | preferred
+摸 | 别摸那只狗。 | Don't touch that dog. | preferred
+隆 | 生意兴隆！ | May your business prosper! | preferred
+诊 | 这家诊所离我家很近。 | This clinic is close to my home. | preferred
+奴 | 古代有很多奴隶。 | There were many slaves in ancient times. | preferred
+抢 | 大家都在抢着买票。 | Everyone is rushing to buy tickets. | preferred
+绪 | 他的情绪很稳定。 | He's very emotionally stable. | preferred
+幻 | 这只是一个幻想。 | This is just a fantasy. | preferred
+菲 | 这件衣服价格不菲。 | This piece of clothing isn't cheap. | preferred
+菲 | 菲律宾有很多岛。 | The Philippines has lots of islands. | preferred
+碎 | 她把信撕成了碎片。 | She tore the letter into pieces. | preferred
+宙 | 宇宙中有无数颗星星。 | There are countless stars in the universe. | preferred
+叔 | 叔叔送给我一本书。 | My uncle gave me a book. | preferred
+叔 | 张叔叔是我爸爸的朋友。 | Uncle Zhang is my dad's friend. | preferred
+岩 | 这块岩石很大。 | This rock is very big. | preferred
+荡 | 孩子们在公园里荡秋千。 | The children are playing on the swings in the park. | preferred
+综 | 他综合了大家的意见。 | He brought everyone's opinions together. | preferred
+爬 | 小孩子在地上爬。 | The little child is crawling on the floor. | preferred
+荷 | 池塘里有很多荷花。 | There are lots of lotus flowers in the pond. | preferred
+悉 | 我对这里很熟悉。 | I know this place well. | preferred
+悉 | 我们悉心照顾病人。 | We look after the patients with great care. | preferred
+蒂 | 我对他有芥蒂。 | I hold a grudge against him. | preferred
+蒂 | 他们之间没有芥蒂。 | There's no ill feeling between them. | preferred
+井 | 村子里有一口老井。 | There's an old well in the village. | preferred
+薄 | 这本书很薄。 | This book is very thin. | preferred
+敏 | 他的反应很敏捷。 | He reacts very quickly. | preferred
+敏 | 我对花生过敏。 | I'm allergic to peanuts. | preferred
+碍 | 这棵树碍事了。 | This tree is in the way. | preferred
+迪 | 这件事给了我很大的启迪。 | This taught me a lot. | preferred
+迪 | 迪拜很热。 | Dubai is very hot. | preferred
+霍 | 他花钱很挥霍。 | He spends money extravagantly. | preferred
+霍 | 霍金是著名的科学家。 | Hawking was a famous scientist. | preferred
+撒 | 他往汤里撒了点盐。 | He sprinkled some salt into the soup. | preferred
+撒 | 不要撒谎。 | Don't lie. | preferred
+凯 | 凯旋门在巴黎。 | The Arc de Triomphe is in Paris. | preferred
+凯 | 他们凯旋而归。 | They returned in triumph. | preferred
+颗 | 天上有一颗很亮的星星。 | There's a very bright star in the sky. | preferred
+液 | 请把洗手液递给我。 | Please pass me the hand soap. | preferred
+番 | 他三番五次地迟到。 | He's late again and again. | preferred
+郎 | 新郎和新娘在拍照。 | The bride and groom are having their photos taken. | preferred
+郎 | 牛郎和织女的故事很有名。 | The story of the Cowherd and the Weaver Girl is famous. | preferred
+郎 | 古时候的医生叫郎中。 | In ancient times a doctor was called a "langzhong". | preferred
+恋 | 他们在谈恋爱。 | They're going out with each other. | preferred
+伍 | 他是一名退伍军人。 | He's an ex-serviceman. | preferred
+峰 | 我们爬到了山峰顶上。 | We climbed to the top of the peak. | preferred
+尺 | 他比我高一尺。 | He's a foot taller than me. | preferred
+黎 | 我想去巴黎旅游。 | I want to travel to Paris. | preferred
+扰 | 这里太吵了，扰得我睡不着。 | It's too noisy here; it's keeping me awake. | preferred
+宪 | 宪法是国家的根本大法。 | The constitution is the country's fundamental law. | preferred
+慈 | 奶奶是一个慈祥的老人。 | Grandma is a kind old lady. | preferred
+乔 | 他乔装成了一个老人。 | He disguised himself as an old man. | preferred
+乔 | 乔木比灌木高。 | Trees are taller than shrubs. | preferred
+汗 | 他跑得满头大汗。 | He ran until he was dripping with sweat. | preferred
+拖 | 别拖了，快点做作业。 | Stop putting it off and do your homework. | preferred
+墨 | 墨西哥在美国南边。 | Mexico is south of the USA. | preferred
+胁 | 这对我们是一个很大的威胁。 | This is a big threat to us. | preferred
+腊 | 腊月是农历十二月。 | "La yue" is the twelfth month of the lunar calendar. | preferred
+腊 | 我喜欢吃腊肉。 | I like eating cured pork. | preferred
+骗 | 他骗了我很多钱。 | He cheated me out of a lot of money. | preferred
+慧 | 她是一个聪慧的女孩。 | She's a bright girl. | preferred
+慧 | 他的智慧让大家佩服。 | Everyone admires his wisdom. | preferred
+媒 | 他是一名媒体记者。 | He's a media reporter. | preferred
+媒 | 新闻媒体报道了这件事。 | The news media reported on this. | preferred
+佩 | 我很佩服他的勇气。 | I really admire his courage. | preferred
+愤 | 他愤怒地离开了。 | He left angrily. | preferred
+愤 | 大家都很气愤。 | Everyone is very angry. | preferred
+驱 | 我们用火驱赶野兽。 | We used fire to drive away the wild animals. | preferred
+豪 | 他为自己的国家感到自豪。 | He's proud of his country. | preferred
+兼 | 他是老师兼作家。 | He's a teacher and a writer. | preferred
+尸 | 考古学家发现了一具古尸。 | Archaeologists found an ancient corpse. | preferred
+帕 | 她用手帕擦了擦眼泪。 | She wiped her tears with a handkerchief. | preferred
+帕 | 帕米尔高原很高。 | The Pamir Plateau is very high. | preferred
+堡 | 我午饭吃了一个汉堡。 | I had a hamburger for lunch. | preferred
+堡 | 这座古堡有五百年历史。 | This old castle is five hundred years old. | preferred
+欣 | 我很欣慰。 | I'm very gratified. | preferred
+惠 | 这家店的东西又便宜又实惠。 | The things in this shop are cheap and good value. | preferred
+惠 | 我们要互惠互利。 | We should benefit each other. | preferred
+惨 | 他们输得很惨。 | They lost badly. | preferred
+惨 | 这次考试我考得很惨。 | I did terribly in this exam. | preferred
+勃 | 年轻人朝气蓬勃。 | Young people are full of energy. | preferred
+勃 | 这个城市发展得很蓬勃。 | This city is booming. | preferred
+宾 | 他是我们的贵宾。 | He's our guest of honour. | preferred
+仇 | 他们之间有很深的仇恨。 | There's deep hatred between them. | preferred
+邪 | 他看起来有点邪恶。 | He looks a bit evil. | preferred
+拟 | 这是一个虚拟的世界。 | This is a virtual world. | preferred
+贡 | 他对公司贡献很大。 | He has contributed a lot to the company. | preferred
+贡 | 这是古代的贡品。 | This was a tribute offering in ancient times. | preferred
+殿 | 大殿里有很多人。 | There are lots of people in the main hall. | preferred
+殿 | 这是一座很古老的佛殿。 | This is a very old Buddhist hall. | preferred
+伪 | 他很虚伪。 | He's very hypocritical. | preferred
+柳 | 河边有很多柳树。 | There are lots of willow trees by the river. | preferred
+戒 | 她戴着一枚戒指。 | She's wearing a ring. | preferred
+饮 | 你想喝什么饮料？ | What would you like to drink? | preferred
+饮 | 开车不饮酒。 | Don't drink and drive. | preferred
+曹 | 他姓曹。 | His surname is Cao. | preferred
+朵 | 天上有几朵白云。 | There are a few white clouds in the sky. | preferred
+孟 | 孟子是中国古代的思想家。 | Mencius was an ancient Chinese thinker. | preferred
+籍 | 他是中国国籍。 | He's a Chinese national. | preferred
+牲 | 农民养了很多牲畜。 | The farmer keeps lots of livestock. | preferred
+佳 | 祝你中秋佳节快乐！ | Happy Mid-Autumn Festival! | preferred
+娜 | 她的舞姿很婀娜。 | She dances very gracefully. | preferred
+腹 | 他感到腹部疼痛。 | He has a pain in his abdomen. | preferred
+腹 | 空腹吃药对胃不好。 | Taking medicine on an empty stomach is bad for you. | preferred
+垂 | 柳枝垂在水面上。 | The willow branches hang over the water. | preferred
+脉 | 喜马拉雅山脉很长。 | The Himalayan range is very long. | preferred
+柏 | 路边种着柏树。 | Cypress trees are planted along the road. | preferred
+柏 | 柏油路很平。 | The asphalt road is very smooth. | preferred
+狱 | 他在监狱里待了五年。 | He spent five years in prison. | preferred
+狱 | 地狱是一个可怕的地方。 | Hell is a terrible place. | preferred
+兽 | 动物园里有很多野兽。 | There are lots of wild animals at the zoo. | preferred
+帐 | 他们在山上搭了一个帐篷。 | They put up a tent on the mountain. | preferred
+帐 | 床上挂着蚊帐。 | There's a mosquito net over the bed. | preferred
+帐 | 我们在帐篷里睡觉。 | We sleep in the tent. | preferred
+钢 | 这座桥是钢做的。 | This bridge is made of steel. | preferred
+寿 | 祝你健康长寿！ | Wishing you good health and a long life! | preferred
+汤 | 我喜欢喝鸡汤。 | I like chicken soup. | preferred
+奈 | 我也无可奈何。 | There's nothing I can do about it either. | preferred
+廷 | 朝廷是古代皇帝处理政事的地方。 | The imperial court was where emperors governed in ancient times. | preferred
+廷 | 宫廷里有很多规矩。 | There were many rules at the imperial court. | preferred
+董 | 他喜欢收藏古董。 | He likes collecting antiques. | preferred
+慰 | 他的话让我感到很欣慰。 | His words made me feel very gratified. | preferred
+腾 | 飞机腾空而起。 | The plane lifted off into the air. | preferred
+埋 | 这个秘密被埋藏了很多年。 | This secret was buried for many years. | preferred
+泉 | 山上有一股清泉。 | There's a clear spring on the mountain. | preferred
+涌 | 人们涌进了体育场。 | People poured into the stadium. | preferred
+晋 | 山西省简称晋。 | Shanxi Province is known as "Jin" for short. | preferred
+慌 | 他看起来很慌张。 | He looks very flustered. | preferred
+邮 | 我去邮局寄信。 | I'm going to the post office to send a letter. | preferred
+吐 | 他把口香糖吐了出来。 | He spat out his chewing gum. | preferred
+狠 | 他狠狠地踢了一脚球。 | He kicked the ball hard. | preferred
+狠 | 你对他太狠了。 | You're too harsh on him. | preferred
+鉴 | 这件事值得我们借鉴。 | We can learn from this. | preferred
+械 | 他在学习机械工程。 | He's studying mechanical engineering. | preferred
+械 | 这些器械是医院用的。 | This equipment is for the hospital. | preferred
+锋 | 他是球队的前锋。 | He's the team's striker. | preferred
+阔 | 这里的草原很辽阔。 | The grassland here is vast. | preferred
+阔 | 他们家很阔气。 | Their family is very well off. | preferred
+鸣 | 鸟儿在树上鸣叫。 | Birds are singing in the trees. | preferred
+屈 | 他从不向困难屈服。 | He never gives in to difficulties. | preferred
+旨 | 这个活动的宗旨是帮助穷人。 | The aim of this event is to help the poor. | preferred
+袖 | 他是我们的领袖。 | He's our leader. | preferred
+臂 | 他的手臂很有力。 | His arms are very strong. | preferred
+贺 | 我们去给他贺喜吧。 | Let's go and congratulate him. | preferred
+戈 | 戈壁沙漠很大。 | The Gobi Desert is huge. | preferred
+戈 | 古代士兵用戈打仗。 | Soldiers in ancient times fought with dagger-axes. | preferred
+戈 | 我们要化干戈为玉帛。 | We should turn swords into ploughshares. | preferred
+逊 | 他的中文比你逊色一点。 | His Chinese is a little inferior to yours. | preferred
+迈 | 他迈出了第一步。 | He took the first step. | preferred
+吨 | 这辆卡车能装十吨货。 | This lorry can carry ten tonnes of goods. | preferred
+燕 | 燕子飞回来了，春天到了。 | The swallows are back; spring has arrived. | preferred
+狼 | 狼是一种聪明的动物。 | Wolves are clever animals. | preferred
+仗 | 这场仗打得很艰难。 | This battle was hard fought. | preferred
+钻 | 他钻进了被子里。 | He crawled under the covers. | preferred
+晶 | 水晶很漂亮。 | Crystal is beautiful. | preferred
+晶 | 她的眼睛亮晶晶的。 | Her eyes are sparkling. | preferred
+峡 | 长江三峡很有名。 | The Three Gorges of the Yangtze are famous. | preferred
+粹 | 京剧是中国的国粹。 | Peking opera is the quintessence of Chinese culture. | preferred
+粹 | 他纯粹是在开玩笑。 | He was purely joking. | preferred
+扁 | 这个盒子被压扁了。 | This box got squashed. | preferred
+熊 | 熊猫喜欢吃竹子。 | Pandas love eating bamboo. | preferred
+恭 | 恭喜发财！ | Wishing you prosperity! | preferred
+赋 | 他很有音乐天赋。 | He has a gift for music. | preferred
+踏 | 他踏上了去北京的火车。 | He boarded the train to Beijing. | preferred
+夹 | 他用筷子夹菜。 | He picked up the food with chopsticks. | preferred
+肝 | 喝太多酒对肝不好。 | Drinking too much is bad for your liver. | preferred
+恒 | 学习要有恒心。 | You need perseverance to learn. | preferred
+慎 | 开车要小心谨慎。 | You need to be careful when driving. | preferred
+纽 | 请把纽扣扣好。 | Please do up your buttons. | preferred
+纽 | 纽约是一个大城市。 | New York is a big city. | preferred
+磁 | 冰箱上贴着一块磁铁。 | There's a magnet stuck on the fridge. | preferred
+铜 | 他获得了铜牌。 | He won the bronze medal. | preferred
+跨 | 他跨过了小河。 | He stepped across the stream. | preferred
+醉 | 这里的风景让人陶醉。 | The scenery here is intoxicating. | preferred
+肿 | 他的眼睛哭肿了。 | His eyes are swollen from crying. | preferred
+岗 | 他在新的岗位上工作很努力。 | He works hard in his new post. | preferred
+岗 | 他每天准时到岗。 | He gets to his post on time every day. | preferred
+宏 | 长城是一个宏伟的建筑。 | The Great Wall is a magnificent structure. | preferred
+宏 | 他有一个宏大的计划。 | He has a grand plan. | preferred
+癌 | 吸烟可能导致肺癌。 | Smoking can cause lung cancer. | preferred
+肚 | 我吃饱了，肚子很撑。 | I'm full; my stomach is stuffed. | preferred
+耀 | 阳光照耀着大地。 | The sun shines on the earth. | preferred
+扭 | 他扭头就走了。 | He turned his head and walked off. | preferred
+坛 | 我经常在网上论坛发帖。 | I often post on online forums. | preferred
+坛 | 北京有天坛。 | Beijing has the Temple of Heaven. | preferred
+沃 | 黑龙江有大片肥沃的土地。 | Heilongjiang has vast areas of fertile land. | preferred
+沃 | 沃尔玛是一家大超市。 | Walmart is a big supermarket chain. | preferred
+伐 | 我们要加快步伐。 | We need to pick up the pace. | preferred
+伐 | 不要乱砍滥伐森林。 | Don't cut down forests indiscriminately. | preferred
+牺 | 他为了救孩子而牺牲了。 | He gave his life to save the child. | preferred
+墓 | 清明节人们去扫墓。 | People visit their family graves at the Qingming Festival. | preferred
+劫 | 银行被抢劫了。 | The bank was robbed. | preferred
+瓜 | 夏天我喜欢吃西瓜。 | I like eating watermelon in summer. | preferred
+瓜 | 我买了一个大南瓜。 | I bought a big pumpkin. | preferred
+歇 | 我们歇一会儿吧。 | Let's take a short break. | preferred
+雕 | 这座雕像很有名。 | This statue is very famous. | preferred
+娃 | 小娃娃在哭。 | The little baby is crying. | preferred
+唤 | 妈妈在唤我回家。 | Mum is calling me home. | preferred
+莲 | 池塘里开满了莲花。 | The pond is full of lotus flowers. | preferred
+莲 | 我喜欢吃莲藕。 | I like eating lotus root. | preferred
+桃 | 桃花开了。 | The peach blossoms are out. | preferred
+妥 | 这件事办得很妥当。 | This was handled very appropriately. | preferred
+岳 | 泰山是五岳之一。 | Mount Tai is one of the Five Great Mountains. | preferred
+岳 | 岳飞是宋朝的英雄。 | Yue Fei was a hero of the Song dynasty. | preferred
+嘉 | 嘉兴在浙江省。 | Jiaxing is in Zhejiang Province. | preferred
+舱 | 请回到你的船舱。 | Please return to your cabin. | preferred
+俊 | 这个小伙子长得很俊。 | This young man is very good-looking. | preferred
+酷 | 他打扮得很酷。 | He's dressed really cool. | preferred
+乙 | 我是乙班的学生。 | I'm a student in Class B. | preferred
+莉 | 茉莉花很香。 | Jasmine smells lovely. | preferred
+莉 | 我喜欢喝茉莉花茶。 | I like drinking jasmine tea. | preferred
+傅 | 这位师傅做的菜很好吃。 | The dishes this chef makes are delicious. | preferred
+芬 | 花儿散发着芬芳。 | The flowers give off a sweet fragrance. | preferred
+寺 | 少林寺在河南。 | The Shaolin Temple is in Henan. | preferred
+愚 | 这个想法很愚蠢。 | This idea is very stupid. | preferred
+疏 | 我们的关系变得疏远了。 | We've drifted apart. | preferred
+姿 | 他的姿态很谦虚。 | His manner is very modest. | preferred
+溃 | 堤坝溃决了。 | The dyke burst. | preferred
+谨 | 他做事一向很谨慎。 | He's always very careful in what he does. | preferred
+葛 | 我们之间没有瓜葛。 | There's no connection between us. | preferred
+忌 | 医生让我忌口，不能吃辣的。 | The doctor told me to watch my diet, so I can't eat spicy food. | preferred
+鹰 | 天上飞着一只老鹰。 | An eagle is flying in the sky. | preferred
+滋 | 这道菜的滋味很好。 | This dish tastes really good. | preferred
+挡 | 请不要挡着门口。 | Please don't block the doorway. | preferred
+纲 | 他把文章的大纲写好了。 | He has written the outline of the essay. | preferred
+痕 | 墙上留下了很多痕迹。 | Many marks were left on the wall. | preferred
+卓 | 他的成绩很卓越。 | His results are outstanding. | preferred
+贤 | 她是一位贤惠的妻子。 | She is a kind and capable wife. | preferred
+贤 | 我们应该尊重有才能的贤人。 | We should respect wise and talented people. | preferred
+膜 | 保鲜膜可以让食物保持新鲜。 | Cling film keeps food fresh. | preferred
+膜 | 她每天晚上都敷面膜。 | She puts on a face mask every night. | preferred
+锦 | 祝你前程似锦！ | I wish you a bright future! | preferred
+昂 | 他昂着头走了进来。 | He walked in with his head held high. | preferred
+舌 | 医生让我伸出舌头。 | The doctor asked me to stick out my tongue. | preferred
+剥 | 请帮我剥一个橘子。 | Please peel an orange for me. | preferred
+剥 | 他把鸡蛋的壳剥掉了。 | He peeled the shell off the egg. | preferred
+扮 | 她今天打扮得很漂亮。 | She's dressed up very nicely today. | preferred
+罩 | 他在衬衫外面罩了一件外套。 | He put a coat on over his shirt. | preferred
+胎 | 这辆自行车的轮胎没气了。 | This bike's tyre is flat. | preferred
+蓄 | 我想开一个储蓄账户。 | I'd like to open a savings account. | preferred
+奸 | 这个商人很奸诈。 | This merchant is very crafty. | preferred
+柜 | 衣柜里有很多衣服。 | There are lots of clothes in the wardrobe. | preferred
+柜 | 请到二号柜台付款。 | Please pay at counter number two. | preferred
+诞 | 今天是这位作家诞辰一百周年。 | Today is the 100th anniversary of this writer's birth. | preferred
+贼 | 昨晚有贼进了我们家。 | A thief got into our house last night. | preferred
+儒 | 儒家思想对中国影响很大。 | Confucian thought has had a great influence on China. | preferred
+儒 | 他是一位儒雅的学者。 | He is a refined, scholarly man. | preferred
+姻 | 他们的婚姻很幸福。 | Their marriage is very happy. | preferred
+杆 | 这根电线杆很高。 | This utility pole is very tall. | preferred
+蜜 | 我喜欢在茶里加蜂蜜。 | I like to put honey in my tea. | preferred
+蜜 | 这对新婚夫妇去度蜜月了。 | The newlyweds have gone on their honeymoon. | preferred
+猩 | 动物园里有两只大猩猩。 | There are two gorillas at the zoo. | preferred
+狭 | 这条小巷又长又狭窄。 | This alley is long and narrow. | preferred
+肖 | 我属龙，你的生肖是什么？ | I was born in the Year of the Dragon. What's your Chinese zodiac sign? | preferred
+霞 | 天边的彩霞非常好看。 | The rosy clouds on the horizon are very pretty. | preferred
+裕 | 这个地区的人生活很富裕。 | People in this area are well off. | preferred
+畜 | 农民养了很多家畜。 | The farmer raises a lot of livestock. | preferred
+畜 | 牛和羊都是家畜。 | Cattle and sheep are both livestock. | preferred
+辅 | 这本辅导书对我很有帮助。 | This study guide is very helpful to me. | preferred
+辅 | 他在课后辅导学生学数学。 | He tutors students in maths after class. | preferred
+勾 | 老师在正确的答案旁边打了个勾。 | The teacher put a tick next to the correct answers. | preferred
+勾 | 我们拉勾，说话要算数。 | Let's pinky swear: we have to keep our word. | preferred
+冈 | 山冈上有一棵老树。 | There is an old tree on the hillock. | preferred
+冈 | 他们翻过了一座山冈。 | They crossed over a ridge. | preferred
+冈 | 井冈山在江西省。 | Jinggang Mountain is in Jiangxi Province. | preferred
+吊 | 工人用吊车把箱子吊了起来。 | The workers lifted the box with a crane. | preferred
+贾 | 贾宝玉是《红楼梦》里的人物。 | Jia Baoyu is a character in Dream of the Red Chamber. | preferred
+斑 | 她的脸上有几个小斑点。 | She has a few small spots on her face. | preferred
+涛 | 我听见了海浪的波涛声。 | I heard the sound of the waves. | preferred
+赐 | 这是上天赐给我们的礼物。 | This is a gift from heaven. | preferred
+廊 | 学生们在走廊里排队。 | The students are lining up in the corridor. | preferred
+宰 | 每个人都是自己命运的主宰。 | Everyone is master of their own fate. | preferred
+胀 | 吃得太多了，我觉得肚子很胀。 | I ate too much and my stomach feels bloated. | preferred
+裤 | 这条裤子太长了。 | These trousers are too long. | preferred
+唉 | 唉，今天又下雨了。 | Sigh, it's raining again today. | preferred
+唉 | 唉，我的钥匙又找不到了。 | Sigh, I can't find my keys again. | preferred
+唉 | 唉，真拿他没办法。 | Sigh, there's nothing you can do with him. | preferred
+朴 | 这里的人都很朴实。 | The people here are very down-to-earth. | preferred
+孕 | 孕妇需要多休息。 | Pregnant women need plenty of rest. | preferred
+孕 | 她怀孕三个月了。 | She is three months pregnant. | preferred
+誓 | 他们在婚礼上交换了誓言。 | They exchanged vows at the wedding. | preferred
+链 | 我的拉链坏了。 | My zip is broken. | preferred
+艳 | 春天的花开得很鲜艳。 | The spring flowers are bright and colourful. | preferred
+翁 | 那位老渔翁每天都去河边钓鱼。 | That old fisherman goes fishing by the river every day. | preferred
+颈 | 我的颈椎有点痛。 | My neck hurts a bit. | preferred
+颈 | 这个花瓶的瓶颈很细。 | This vase has a very narrow neck. | preferred
+畅 | 大家在会上畅所欲言。 | Everyone spoke their minds freely at the meeting. | preferred
+妮 | 我的同学叫李妮。 | My classmate is called Li Ni. | preferred
+妮 | 小妮子今天很开心。 | The little girl is very happy today. | preferred
+妮 | 妮妮是我妹妹的小名。 | Nini is my little sister's nickname. | preferred
+鸭 | 河里有几只鸭子在游泳。 | There are some ducks swimming in the river. | preferred
+颠 | 汽车在山路上颠簸。 | The car bumped along the mountain road. | preferred
+谊 | 我们之间的友谊很深。 | Our friendship runs deep. | preferred
+瘤 | 树干上长了一个大瘤子。 | A big knot has grown on the tree trunk. | preferred
+亨 | 他是一位商业大亨。 | He's a business tycoon. | preferred
+亨 | 祝你万事亨通！ | May everything go smoothly for you! | preferred
+庸 | 这部电影很平庸。 | This film is mediocre. | preferred
+摊 | 他在路边摆了一个水果摊。 | He set up a fruit stall by the roadside. | preferred
+娇 | 小女孩在向妈妈撒娇。 | The little girl is being sweet to her mum to get her way. | preferred
+裸 | 山上的石头都裸露在外面。 | The rocks on the mountain are all exposed. | preferred
+碧 | 蓝天碧水，风景很美。 | Blue sky and clear green water: the scenery is beautiful. | preferred
+摧 | 大风摧毁了很多房子。 | The strong wind destroyed many houses. | preferred
+摧 | 这次失败没有摧毁他的信心。 | This failure didn't break his confidence. | preferred
+淋 | 我想吃一个冰淇淋。 | I want an ice cream. | preferred
+翠 | 她戴着一个翡翠手镯。 | She's wearing a jade bracelet. | preferred
+翔 | 老鹰在天空中翱翔。 | The eagle soars in the sky. | preferred
+倡 | 政府倡导大家节约用水。 | The government encourages everyone to save water. | preferred
+绵 | 外面下着绵绵细雨。 | A fine drizzle is falling outside. | preferred
+溪 | 小溪的水很清。 | The water in the stream is very clear. | preferred
+蠢 | 这是一个很蠢的问题。 | That's a really silly question. | preferred
+匪 | 这部电影讲的是警察抓土匪的故事。 | This film is about the police catching bandits. | preferred
+琼 | 我的朋友叫王琼。 | My friend is called Wang Qiong. | preferred
+琼 | 海南省简称“琼”。 | Hainan Province is called "Qiong" for short. | preferred
+掘 | 工人们正在挖掘隧道。 | The workers are digging a tunnel. | preferred
+抄 | 考试的时候不能抄别人的答案。 | You mustn't copy other people's answers in an exam. | preferred
+砍 | 爸爸在院子里砍柴。 | Dad is chopping firewood in the yard. | preferred
+掏 | 他从口袋里掏出一张纸。 | He took a piece of paper out of his pocket. | preferred
+掏 | 她掏出手机看了看时间。 | She took out her phone and checked the time. | preferred
+罕 | 这种鸟很罕见。 | This kind of bird is very rare. | preferred
+罕 | 这里冬天很罕见下雪。 | Snow is rare here in winter. | preferred
+弓 | 他拉开弓，射出了一支箭。 | He drew the bow and shot an arrow. | preferred
+僚 | 这个机构的官僚作风很严重。 | This organisation is very bureaucratic. | preferred
+骚 | 请不要骚扰别人。 | Please don't harass other people. | preferred
+窄 | 这条走廊很窄。 | This corridor is very narrow. | preferred
+湘 | 湘江流过长沙。 | The Xiang River flows through Changsha. | preferred
+刹 | 他突然刹住了车。 | He suddenly hit the brakes. | preferred
+鞭 | 农民挥着鞭子赶牛。 | The farmer drove the cattle with a whip. | preferred
+聘 | 公司聘请了一位新经理。 | The company hired a new manager. | preferred
+钩 | 他用鱼钩钓到了一条大鱼。 | He caught a big fish with a fishhook. | preferred
+弦 | 小提琴有四根弦。 | A violin has four strings. | preferred
+饶 | 这个地方物产丰饶。 | This place is rich in natural resources. | preferred
+摔 | 他不小心把手机摔坏了。 | He accidentally dropped his phone and broke it. | preferred
+惹 | 这只小猫很惹人喜爱。 | This kitten is very lovable. | preferred
+喻 | 老师用一个比喻解释了这个问题。 | The teacher explained the problem with a metaphor. | preferred
+溶 | 这种药可以溶在水里。 | This medicine can be dissolved in water. | preferred
+煞 | 他煞费苦心地准备了这顿晚饭。 | He went to great pains to prepare this dinner. | preferred
+煞 | 听到这个消息，她的脸色煞白。 | When she heard the news, her face went deathly pale. | preferred
+姨 | 我小姨今年三十岁。 | My mum's younger sister is thirty this year. | preferred
+棒 | 你做得真棒！ | You did a great job! | preferred
+巢 | 小鸟回到了巢里。 | The little bird went back to its nest. | preferred
+滞 | 经济发展停滞了。 | Economic development has stalled. | preferred
+蝶 | 花园里有很多蝴蝶。 | There are lots of butterflies in the garden. | preferred
+渠 | 水到渠成。 | When the water comes, a channel forms: things fall into place naturally. | preferred
+讽 | 他的话里带着讽刺。 | There was sarcasm in his words. | preferred
+袍 | 她穿了一件红色的旗袍。 | She wore a red qipao. | preferred
+泼 | 这个小女孩很活泼。 | This little girl is very lively. | preferred
+夷 | 他们化险为夷，平安回家了。 | They got out of danger and made it home safely. | preferred
+捧 | 她双手捧着一杯热茶。 | She held a cup of hot tea in both hands. | preferred
+捧 | 这位歌手很受年轻人追捧。 | This singer is very popular with young people. | preferred
+浸 | 把豆子在水里浸一个晚上。 | Soak the beans in water overnight. | preferred
+浸 | 衣服被雨水浸透了。 | The clothes were soaked through by the rain. | preferred
+砖 | 这座房子是用红砖盖的。 | This house is built of red bricks. | preferred
+砖 | 工人们在搬砖。 | The workers are carrying bricks. | preferred
+爪 | 猫用爪子抓老鼠。 | Cats catch mice with their claws. | preferred
+爪 | 老鹰用爪子抓住了一条鱼。 | The eagle caught a fish in its talons. | preferred
+贞 | 他对朋友很忠贞。 | He is very loyal to his friends. | preferred
+贞 | 这是一个关于忠贞爱情的故事。 | This is a story about faithful love. | preferred
+贞 | 我的同学叫王贞。 | My classmate is called Wang Zhen. | preferred
+荐 | 老师向我推荐了一本好书。 | The teacher recommended a good book to me. | preferred
+坟 | 清明节我们去给爷爷上坟。 | At Qingming we visit Grandpa's grave. | preferred
+坟 | 山上有很多古坟。 | There are many ancient tombs on the mountain. | preferred
+眨 | 她眨了眨眼睛，笑了。 | She blinked and smiled. | preferred
+咳 | 他咳得很厉害。 | He's coughing badly. | preferred
+哨 | 裁判吹响了哨子。 | The referee blew the whistle. | preferred
+龟 | 乌龟爬得很慢。 | Tortoises crawl very slowly. | preferred
+媳 | 儿媳妇每周都来看我们。 | Our daughter-in-law comes to see us every week. | preferred
+鸦 | 孩子们在墙上涂鸦。 | The children are doodling on the wall. | preferred
+巷 | 北京有很多老胡同和小巷。 | Beijing has many old hutongs and lanes. | preferred
+琳 | 商店里的商品琳琅满目。 | The shop is full of all kinds of wonderful goods. | preferred
+琳 | 我的好朋友叫张琳。 | My good friend is called Zhang Lin. | preferred
+沾 | 他的鞋上沾满了泥。 | His shoes are covered in mud. | preferred
+厄 | 他一生遭遇了很多厄运。 | He met with a lot of misfortune in his life. | preferred
+厄 | 厄瓜多尔在南美洲。 | Ecuador is in South America. | preferred
+纺 | 古时候，妇女在家里纺线织布。 | In ancient times, women spun thread and wove cloth at home. | preferred
+桶 | 请把垃圾扔进垃圾桶。 | Please put the rubbish in the bin. | preferred
+桶 | 他提着一桶水回家了。 | He carried a bucket of water home. | preferred
+壤 | 这里的土壤很肥沃。 | The soil here is very fertile. | preferred
+谐 | 这一家人生活得很和谐。 | This family lives in harmony. | preferred
+绑 | 他用绳子把箱子绑好了。 | He tied the box up with a rope. | preferred
+宠 | 她养了一只宠物狗。 | She has a pet dog. | preferred
+宠 | 爷爷奶奶很宠孙子。 | Grandparents really spoil their grandchildren. | preferred
+兑 | 他把美元兑换成了人民币。 | He changed his US dollars into renminbi. | preferred
+霉 | 今天真倒霉，我的手机丢了。 | What bad luck today: I lost my phone. | preferred
+挫 | 遇到挫折不要放弃。 | Don't give up when you hit setbacks. | preferred
+哇 | 哇，这里的风景真美！ | Wow, the scenery here is beautiful! | preferred
+杖 | 老人拄着拐杖慢慢地走。 | The old man walks slowly with a walking stick. | preferred
+攀 | 他们攀上了山顶。 | They climbed to the top of the mountain. | preferred
+棚 | 下雨了，我们到棚子里躲一躲吧。 | It's raining; let's shelter in the shed. | preferred
+贩 | 路边有很多小贩在卖水果。 | There are many hawkers selling fruit by the roadside. | preferred
+滨 | 哈尔滨的冬天非常冷。 | Winters in Harbin are very cold. | preferred
+滨 | 我们在海滨度假。 | We're on holiday at the seaside. | preferred
+滨 | 他住在湖滨的一座小房子里。 | He lives in a small house by the lake. | preferred
+苹 | 这个苹果又大又红。 | This apple is big and red. | preferred
+祷 | 她为生病的母亲祈祷。 | She prayed for her sick mother. | preferred
+剖 | 他把自己的想法剖析得很清楚。 | He analysed his own thinking very clearly. | preferred
+劈 | 他把木头劈成了两半。 | He split the log in two. | preferred
+桩 | 这是一桩好事。 | This is a good thing. | preferred
+蹲 | 他蹲下来系鞋带。 | He crouched down to tie his shoelaces. | preferred
+嫩 | 这块牛肉很嫩。 | This beef is very tender. | preferred
+嫩 | 春天，树上长出了嫩叶。 | In spring, tender new leaves grow on the trees. | preferred
+韵 | 这首诗很押韵。 | This poem rhymes nicely. | preferred
+韵 | 这首诗读起来很有韵味。 | This poem has a lovely rhythm and charm when you read it. | preferred
+衬 | 他穿了一件白衬衫。 | He's wearing a white shirt. | preferred
+哄 | 妈妈在哄孩子睡觉。 | Mum is getting the baby to sleep. | preferred
+怡 | 这里的环境很怡人。 | The environment here is very pleasant. | preferred
+怡 | 公园里的空气清新怡人。 | The air in the park is fresh and pleasant. | preferred
+渗 | 汗水渗透了他的衬衫。 | Sweat soaked through his shirt. | preferred
+秃 | 冬天，树枝都光秃秃的。 | In winter, the branches are all bare. | preferred
+哟 | 哟，你今天怎么来了？ | Oh, what brings you here today? | preferred
+铸 | 工人们正在铸造零件。 | The workers are casting parts. | preferred
+锻 | 我每天早上都去公园锻炼身体。 | I go to the park to exercise every morning. | preferred
+毙 | 他穿上新衣服，看起来酷毙了！ | In his new clothes he looks super cool! | preferred
+毙 | 他的计划被老板枪毙了。 | His plan was shot down by his boss. | preferred
+恍 | 恍惚之间，我好像回到了小时候。 | In a daze, I felt as though I were a child again. | preferred
+骇 | 他听到消息后惊骇万分。 | He was utterly horrified by the news. | preferred
+驴 | 这头驴在拉磨。 | The donkey is turning the millstone. | preferred
+朽 | 他的作品是不朽的。 | His works are immortal. | preferred
+崔 | 我的邻居姓崔。 | My neighbour's surname is Cui. | preferred
+崔 | 崔先生是一位医生。 | Mr Cui is a doctor. | preferred
+笛 | 他会吹笛子。 | He can play the flute. | preferred
+勿 | 请勿吸烟。 | No smoking, please. | preferred
+勿 | 请勿在图书馆里大声说话。 | Please don't talk loudly in the library. | preferred
+睹 | 这件事大家有目共睹。 | Everyone has seen this for themselves. | preferred
+睹 | 这座城市的变化有目共睹。 | Everyone can see how much this city has changed. | preferred
+踩 | 他不小心踩到了我的脚。 | He accidentally stepped on my foot. | preferred
+踩 | 小心，别踩到水坑里。 | Careful, don't step in the puddle. | preferred
+缚 | 他终于挣脱了束缚。 | He finally broke free of his bonds. | preferred
+诡 | 这个人很诡诈，别相信他。 | This man is very cunning; don't trust him. | preferred
+腕 | 她手腕上戴着一个手镯。 | She wears a bracelet on her wrist. | preferred
+甸 | 缅甸在中国的西南边。 | Myanmar is to the southwest of China. | preferred
+甸 | 这个袋子沉甸甸的。 | This bag is really heavy. | preferred
+贱 | 人不分贵贱，都应该被尊重。 | Whatever their status, everyone deserves respect. | preferred
+灿 | 夜空中星光灿烂。 | The night sky is full of brilliant stars. | preferred
+囚 | 囚犯们每天都要劳动。 | The prisoners have to work every day. | preferred
+甩 | 小狗甩了甩身上的水。 | The puppy shook the water off itself. | preferred
+黛 | 林黛玉是《红楼梦》里的人物。 | Lin Daiyu is a character in Dream of the Red Chamber. | preferred
+黛 | 远山如黛，风景如画。 | The distant hills are dark green, and the scenery is like a painting. | preferred
+弘 | 这座寺庙的建筑十分恢弘。 | The architecture of this temple is magnificent. | preferred
+鹤 | 丹顶鹤是一种美丽的鸟。 | The red-crowned crane is a beautiful bird. | preferred
+鹤 | 湖边站着一只白鹤。 | A white crane is standing by the lake. | preferred
+浆 | 我每天早上喝一杯豆浆。 | I drink a glass of soy milk every morning. | preferred
+霜 | 秋天的早上，草地上有一层霜。 | On autumn mornings there's a layer of frost on the grass. | preferred
+屿 | 这片海上有很多小岛屿。 | There are many small islands in this sea. | preferred
+屿 | 我们坐船去了附近的岛屿。 | We took a boat to a nearby island. | preferred
+驼 | 骆驼可以好几天不喝水。 | Camels can go several days without drinking water. | preferred
+捆 | 他用绳子把柴捆好了。 | He tied up the firewood with a rope. | preferred
+钞 | 他从钱包里拿出几张钞票。 | He took a few banknotes out of his wallet. | preferred
+蹈 | 她很喜欢舞蹈。 | She loves dance. | preferred
+魅 | 这座城市很有魅力。 | This city is very charming. | preferred
+虐 | 虐待动物是不对的。 | Mistreating animals is wrong. | preferred
+堕 | 他因为交了坏朋友而堕落了。 | He went off the rails because he made bad friends. | preferred
+狡 | 狐狸是一种狡猾的动物。 | The fox is a cunning animal. | preferred
+绞 | 他把肉放进绞肉机里。 | He put the meat into the mincer. | preferred
+缅 | 他常常缅怀过去的日子。 | He often thinks fondly of the old days. | preferred
+喇 | 汽车在路上按喇叭。 | The car honked its horn on the road. | preferred
+绒 | 冬天我穿羽绒服。 | In winter I wear a down jacket. | preferred
+钮 | 他按了电梯的按钮。 | He pressed the lift button. | preferred
+棺 | 中国有句老话叫“不见棺材不落泪”。 | A Chinese saying goes: "They won't shed a tear until they see the coffin." | preferred
+澡 | 我每天晚上都洗澡。 | I have a bath every evening. | preferred
+畴 | 这些问题都属于同一个范畴。 | These questions all belong to the same category. | preferred
+拙 | 他想表现自己，结果弄巧成拙。 | He tried to show off, but it backfired. | preferred
+泻 | 月光倾泻在湖面上。 | Moonlight poured down onto the lake. | preferred
+坪 | 孩子们在草坪上玩。 | The children are playing on the lawn. | preferred
+稚 | 他的想法太幼稚了。 | His ideas are too naive. | preferred
+蝇 | 夏天苍蝇很多。 | There are lots of flies in summer. | preferred
+镖 | 他请了两个保镖。 | He hired two bodyguards. | preferred
+冥 | 他每天早上冥想十分钟。 | He meditates for ten minutes every morning. | preferred
+萝 | 我们买了一个大萝卜。 | We bought a big radish. | preferred
+腥 | 做鱼的时候放点姜可以去腥。 | A little ginger takes away the fishy smell when you cook fish. | preferred
+俺 | 俺是山东人。 | I'm from Shandong. | preferred
+崎 | 这条山路崎岖不平。 | This mountain path is rough and uneven. | preferred
+崎 | 他们走过了一条崎岖的小路。 | They walked along a rugged path. | preferred
+崎 | 人生的道路总是崎岖的。 | The road of life is always bumpy. | preferred
+澄 | 湖水很澄清。 | The lake water is very clear. | preferred
+滔 | 长江滔滔，一去不回。 | The Yangtze surges on and never turns back. | preferred
+暇 | 他工作太忙，无暇休息。 | He is too busy with work to have time to rest. | preferred
+妓 | 艺妓是日本传统文化的一部分。 | Geisha are part of traditional Japanese culture. | preferred
+妓 | 古代的歌妓会唱歌跳舞。 | In ancient times, singing girls would sing and dance. | preferred
+蓉 | 芙蓉花开得很美。 | The hibiscus flowers are blooming beautifully. | preferred
+蓉 | 我最喜欢吃莲蓉月饼。 | My favourite is lotus-seed paste mooncake. | preferred
+伺 | 猫在洞口伺机抓老鼠。 | The cat waits by the hole for a chance to catch the mouse. | preferred
+庇 | 他得到了朋友的庇护。 | He was protected by his friend. | preferred
+庇 | 这棵大树为我们庇荫。 | This big tree gives us shade. | preferred
+婉 | 她的歌声很婉转。 | Her singing is soft and sweet. | preferred
+稼 | 大雨过后，庄稼长得更好了。 | After the heavy rain, the crops grew even better. | preferred
+嗽 | 他感冒了，一直咳嗽。 | He's got a cold and keeps coughing. | preferred
+缸 | 我家有一个鱼缸。 | We have a fish tank at home. | preferred
+揉 | 妈妈在揉面做包子。 | Mum is kneading dough to make baozi. | preferred
+咋 | 你咋还不睡觉？ | How come you're still not asleep? | preferred
+虔 | 她虔诚地祈祷。 | She prayed devoutly. | preferred
+涩 | 他笑得有点羞涩。 | He smiled a little shyly. | preferred
+蹦 | 小兔子蹦蹦跳跳地跑了。 | The little rabbit hopped away. | preferred
+裔 | 他是孔子的后裔。 | He is a descendant of Confucius. | preferred
+裔 | 很多美国人是欧洲人的后裔。 | Many Americans are of European descent. | preferred
+诀 | 老师教了我们一个记单词的口诀。 | The teacher taught us a rhyme for remembering words. | preferred
+呕 | 他吃坏了东西，一直呕吐。 | He ate something bad and keeps vomiting. | preferred
+凸 | 这面镜子是凸的。 | This mirror is convex. | preferred
+凸 | 墙上有一块凸出来的石头。 | There's a stone sticking out of the wall. | preferred
+赎 | 他把当掉的手表赎回来了。 | He redeemed the watch he had pawned. | preferred
+粪 | 鸡粪是很好的肥料。 | Chicken manure is a good fertiliser. | preferred
+烫 | 她去理发店烫了头发。 | She went to the hairdresser to get her hair permed. | preferred
+蛙 | 池塘里有很多青蛙。 | There are lots of frogs in the pond. | preferred
+窟 | 敦煌莫高窟非常有名。 | The Mogao Caves at Dunhuang are very famous. | preferred
+敛 | 他的性格很内敛。 | He has a reserved personality. | preferred
+胚 | 种子里有胚芽。 | Seeds contain an embryo. | preferred
+绰 | 他的绰号叫“小胖”。 | His nickname is "Chubby". | preferred
+琉 | 故宫的屋顶是黄色的琉璃瓦。 | The roofs of the Forbidden City are covered in yellow glazed tiles. | preferred
+悼 | 很多人来参加他的追悼会。 | Many people came to his memorial service. | preferred
+嘘 | 他总爱吹嘘自己有多厉害。 | He always loves bragging about how great he is. | preferred
+槽 | 厨房的水槽堵了。 | The kitchen sink is blocked. | preferred
+槽 | 马在槽里吃草。 | The horse is eating from the trough. | preferred
+槽 | 他对这部电影吐槽了很久。 | He spent ages ranting about this film. | preferred
+梨 | 这个梨又甜又脆。 | This pear is sweet and crisp. | preferred
+熔 | 铁在高温下会熔化。 | Iron melts at high temperatures. | preferred
+迭 | 季节更迭，时间过得很快。 | The seasons change and time flies. | preferred
+迭 | 他忙不迭地向大家道歉。 | He hurriedly apologised to everyone. | preferred
+沧 | 这位老人的脸上写满了沧桑。 | The old man's face shows all he has been through. | preferred
+洽 | 我们正在和他们洽谈合作。 | We're in talks with them about working together. | preferred
+峙 | 两座高楼隔街对峙。 | Two tall buildings face each other across the street. | preferred
+蟹 | 我们去海边抓螃蟹吧。 | Let's go and catch crabs at the seaside. | preferred
+蟹 | 螃蟹是横着走的。 | Crabs walk sideways. | preferred
+靡 | 他最近精神萎靡。 | He's been listless lately. | preferred
+猾 | 狐狸是一种狡猾的动物。 | The fox is a cunning animal. | preferred
+煽 | 他用扇子煽火。 | He fanned the fire. | preferred
+嗦 | 你别再啰嗦了，快走吧。 | Stop going on about it and get going. | preferred
+酱 | 我喜欢在面包上抹果酱。 | I like spreading jam on my bread. | preferred
+蕉 | 猴子喜欢吃香蕉。 | Monkeys like eating bananas. | preferred
+蕉 | 芭蕉的叶子很大。 | Banana plants have very big leaves. | preferred
+苔 | 石头上长满了青苔。 | The stones are covered in moss. | preferred
+苔 | 医生看了看我的舌苔。 | The doctor looked at the coating on my tongue. | preferred
+芭 | 她从小学习芭蕾舞。 | She has studied ballet since she was little. | preferred
+芭 | 芭蕉树在南方很常见。 | Banana plants are very common in the south. | preferred
+芭 | 芭蕉的叶子可以用来包东西。 | Banana leaves can be used to wrap things. | preferred
+扳 | 他用扳手拧紧了螺丝。 | He tightened the bolt with a spanner. | preferred
+拧 | 请帮我把瓶盖拧开。 | Please unscrew the bottle cap for me. | preferred
+肮 | 他的衣服很肮脏。 | His clothes are very dirty. | preferred
+肮 | 这条河被污染得很肮脏。 | This river is badly polluted and filthy. | preferred
+妞 | 小妞妞今年三岁了。 | Little Niuniu is three this year. | preferred
+札 | 他把读书笔记写在札记里。 | He writes his reading notes in a notebook. | preferred
+札 | 这是一本旅行札记。 | This is a travel journal. | preferred
+札 | 他收到了一封信札。 | He received a letter. | preferred
+铝 | 这扇窗户的窗框是铝的。 | The frame of this window is aluminium. | preferred
+涤 | 这场雨洗涤了城市的灰尘。 | The rain washed the dust off the city. | preferred
+楞 | 瓦楞纸箱很结实。 | Corrugated cardboard boxes are very strong. | preferred
+楞 | 这个箱子是用瓦楞纸做的。 | This box is made of corrugated card. | preferred
+楞 | 屋顶上铺着瓦楞铁。 | The roof is covered with corrugated iron. | preferred
+枫 | 秋天，枫叶变红了。 | In autumn, the maple leaves turn red. | preferred
+闸 | 下班后他拉下了电闸。 | After work he switched off the mains. | preferred
+赣 | 他是江西赣州人。 | He is from Ganzhou in Jiangxi. | preferred
+闽 | 闽南人很喜欢喝茶。 | People in southern Fujian love drinking tea. | preferred
+豚 | 海豚是很聪明的动物。 | Dolphins are very clever animals. | preferred
+蕾 | 花园里的玫瑰长出了花蕾。 | The roses in the garden have come into bud. | preferred
+蕾 | 她从小就喜欢跳芭蕾。 | She has loved ballet since she was a child. | preferred
+炊 | 巧妇难为无米之炊。 | Even the cleverest cook can't make a meal without rice. | preferred
+屎 | 他的眼角有眼屎。 | He's got sleep in the corner of his eye. | preferred
+屎 | 屎壳郎在推粪球。 | The dung beetle is rolling a ball of dung. | preferred
+拭 | 我们拭目以待吧。 | Let's wait and see. | preferred
+卉 | 公园里种着各种花卉。 | All kinds of flowers are planted in the park. | preferred
+闺 | 她和她的闺蜜去逛街了。 | She went shopping with her best friend. | preferred
+舔 | 小猫在舔它的爪子。 | The kitten is licking its paw. | preferred
+蹬 | 他蹬着三轮车去卖菜。 | He pedals his tricycle off to sell vegetables. | preferred
+殴 | 他们因为斗殴被警察带走了。 | They were taken away by the police for fighting. | preferred
+殴 | 学校禁止学生打架斗殴。 | The school forbids students from fighting. | preferred
+捅 | 他用手指捅了捅我。 | He poked me with his finger. | preferred
+捅 | 别把窗户纸捅破了。 | Don't poke a hole in the paper window. | preferred
+稠 | 这种蜂蜜很稠。 | This honey is very thick. | preferred
+穗 | 广州也叫“穗”。 | Guangzhou is also called "Sui". | preferred
+肛 | 肛门是消化道的末端。 | The anus is the end of the digestive tract. | preferred
+荧 | 夜里，手表发出荧光。 | At night, the watch gives off a glow. | preferred
+漱 | 我每天早上起床后刷牙漱口。 | I brush my teeth and rinse my mouth after I get up every morning. | preferred
+萤 | 夏天的晚上有很多萤火虫。 | There are lots of fireflies on summer nights. | preferred
+萤 | 孩子们在草地上抓萤火虫。 | The children are catching fireflies on the grass. | preferred
+筝 | 她弹古筝弹得很好。 | She plays the guzheng very well. | preferred
+嘈 | 菜市场里很嘈杂。 | The market is very noisy. | preferred
+嘈 | 外面太嘈杂了，我听不清你说话。 | It's too noisy outside; I can't hear what you're saying. | preferred
+乒 | 乒乓球是中国的国球。 | Table tennis is China's national sport. | preferred
+悴 | 他最近工作太忙，人也憔悴了。 | He's been so busy at work lately that he looks worn out. | preferred
+橄 | 我喜欢在沙拉里放橄榄油。 | I like putting olive oil in my salad. | preferred
+掐 | 他掐了一朵花送给她。 | He picked a flower for her. | preferred
+乓 | 我们一起打乒乓球吧。 | Let's play table tennis together. | preferred
+憔 | 她因为失眠变得很憔悴。 | She has become haggard from lack of sleep. | preferred
+酥 | 这种饼干又香又酥。 | These biscuits are fragrant and crisp. | preferred
+疙 | 他们之间有了点疙瘩。 | There's some bad feeling between them. | preferred
+揍 | 你再不听话，小心挨揍！ | If you don't behave, you'll get a smack! | preferred
+揍 | 他们俩打闹着，假装要揍对方。 | The two of them played around, pretending to hit each other. | preferred
+橙 | 这个橙子很甜。 | This orange is very sweet. | preferred
+葵 | 秋天，向日葵的种子成熟了。 | In autumn, the sunflower seeds ripen. | preferred
+劾 | 他因为贪污被弹劾了。 | He was impeached for corruption. | preferred
+羔 | 小羊羔在草地上吃草。 | The little lamb is grazing on the grass. | preferred
+榄 | 我喜欢在沙拉里放橄榄油。 | I like putting olive oil in my salad. | preferred
+琶 | 琵琶是一种中国传统乐器。 | The pipa is a traditional Chinese instrument. | preferred
+谚 | 中国有很多有趣的谚语。 | China has lots of interesting proverbs. | preferred
+拗 | 他的脾气很执拗。 | He has a stubborn temper. | preferred
+刁 | 他说话很刁钻。 | He's very crafty with his words. | preferred
+渝 | 重庆的简称是“渝”。 | Yu is the short name for Chongqing. | preferred
+黏 | 这种米很黏。 | This kind of rice is very sticky. | preferred
+榨 | 这家工厂用花生榨油。 | This factory presses peanuts for oil. | preferred
+榨 | 我每天早上榨一杯果汁。 | I make a glass of fresh juice every morning. | preferred
+矜 | 他取得了很多成绩，但从不骄矜。 | He has achieved a lot, but is never arrogant. | preferred
+鲨 | 海里有很多鲨鱼。 | There are many sharks in the sea. | preferred
+酪 | 这块奶酪很香。 | This cheese smells great. | preferred
+癖 | 他有洁癖，每天都打扫房间。 | He's a neat freak and cleans his room every day. | preferred
+楠 | 这张桌子是用楠木做的。 | This table is made of nanmu wood. | preferred
+楠 | 楠木是一种很珍贵的木材。 | Nanmu is a very precious timber. | preferred
+偕 | 他偕同妻子参加了晚会。 | He went to the party with his wife. | preferred
+阑 | 春天已经阑珊了。 | Spring is drawing to a close. | preferred
+瞳 | 她有一双明亮的眼瞳。 | She has bright eyes. | preferred
+芹 | 我喜欢吃芹菜炒肉。 | I like stir-fried celery with pork. | preferred
+芹 | 芹菜对身体很好。 | Celery is good for you. | preferred
+鳄 | 动物园里有一条大鳄鱼。 | There is a big crocodile at the zoo. | preferred
+膺 | 看到这种不公平的事，大家义愤填膺。 | Everyone was filled with righteous anger at such injustice. | preferred
+脐 | 我喜欢吃脐橙。 | I like eating navel oranges. | preferred
+暄 | 两个人见面寒暄了几句。 | The two of them exchanged a few pleasantries when they met. | preferred
+踝 | 水只到我的脚踝。 | The water only comes up to my ankles. | preferred
+螃 | 我们去海边抓螃蟹吧。 | Let's go and catch crabs at the seaside. | preferred
+檬 | 我喜欢喝柠檬水。 | I like drinking lemonade. | preferred
+榈 | 海边有很多棕榈树。 | There are many palm trees by the sea. | preferred
+橇 | 冬天，孩子们喜欢在雪地里拉雪橇。 | In winter, children love pulling sledges in the snow. | preferred
+槟 | 他们开了一瓶香槟庆祝。 | They opened a bottle of champagne to celebrate. | preferred
+榕 | 福州也叫“榕城”。 | Fuzhou is also called "Banyan City". | preferred
+蛰 | 很多动物冬天要蛰伏。 | Many animals go dormant in winter. | preferred
+豌 | 我喜欢吃豌豆。 | I like eating peas. | preferred
+芋 | 芋头可以做成很多好吃的点心。 | Taro can be made into lots of tasty snacks. | preferred
+掰 | 他把馒头掰成了两半。 | He broke the steamed bun in two. | preferred
+掰 | 小孩在掰着手指数数。 | The child is counting on his fingers. | preferred
+蟑 | 厨房里有一只蟑螂。 | There's a cockroach in the kitchen. | preferred
+沱 | 外面下着滂沱大雨。 | It's pouring with rain outside. | preferred
+沱 | 一场滂沱大雨过后，天晴了。 | After a torrential downpour, the sky cleared. | preferred
+弈 | 爷爷喜欢和朋友对弈。 | Grandpa likes playing chess with his friends. | preferred
+弈 | 他从小就学习围棋对弈。 | He has played Go since he was little. | preferred

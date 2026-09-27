@@ -61,11 +61,14 @@ const WORD_READINGS = [
   ...['勒着', '勒紧', '勒住', '勒死'].map((word) => [word, 0, 'lēi']),
   ...['盛饭', '盛汤', '盛得', '盛一碗'].map((word) => [word, 0, 'chéng']),
   ['帮你盛', 2, 'chéng'],
+  ['被扒', 1, 'pá'],
+  ['曝出', 0, 'bào'],
+  ['拗断', 0, 'ǎo'],
 ];
 // Words ending in 系 where it stays xì, even before 上 or 着 (关系上).
 const XI_BEFORE = new Set('关联体统派星河阳银谱世直');
 // Characters with one everyday reading that pinyin-pro misses.
-const ALWAYS = new Map([['呗', 'bei'], ['嚣', 'xiāo']]);
+const ALWAYS = new Map([['呗', 'bei'], ['嚣', 'xiāo'], ['咳', 'ké']]);
 
 function fixWords(characters, readings) {
   const text = characters.join('');
