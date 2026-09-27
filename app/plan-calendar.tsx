@@ -1,6 +1,6 @@
 'use client';
 
-import { Check, Play } from 'lucide-react';
+import { BookOpen, Check, Play } from 'lucide-react';
 import { useMemo, useRef, useState } from 'react';
 import type { CharacterEntry } from './characters';
 import type { StudyHistoryEntry } from './progress';
@@ -17,6 +17,13 @@ type PlanDay = {
 };
 
 const DAYS_PER_WEEK = 7;
+
+/** A finished day's lessons: the ones whose characters that day covered (history keeps the characters). */
+function lessonsStudied(entry: StudyHistoryEntry | undefined) {
+  if (!entry) return [];
+  const studied = new Set(entry.characters);
+  return LESSONS.filter((lesson) => Array.from(lesson.characters).every((character) => studied.has(character)));
+}
 const formatDate = (date: Date, options: Intl.DateTimeFormatOptions) => date.toLocaleDateString(undefined, options);
 
 /** Finished days come from history; the rest are laid out from the next unfinished lesson at the chosen pace, one day at a time from today. */
@@ -25,7 +32,7 @@ function buildPlan(mode: StudyMode, lessonsDone: number, studyDays: number, hist
   const days: PlanDay[] = [];
   for (let day = 1; day <= studyDays; day++) {
     const entry = finished.get(day);
-    days.push({ day, status: 'done', title: entry?.title ?? 'Completed', lessons: [], characters: entry?.characters ?? [], date: null });
+    days.push({ day, status: 'done', title: entry?.title ?? 'Completed', lessons: lessonsStudied(entry), characters: entry?.characters ?? [], date: null });
   }
   const perDay = STUDY_PLANS[mode].lessonsPerDay;
   const today = new Date();
@@ -37,7 +44,7 @@ function buildPlan(mode: StudyMode, lessonsDone: number, studyDays: number, hist
   return days;
 }
 
-export function PlanCalendar({ mode, lessonsDone, studyDays, history, completed, resuming, onStart }: {
+export function PlanCalendar({ mode, lessonsDone, studyDays, history, completed, resuming, onStart, onRead, initialDay }: {
   mode: StudyMode;
   lessonsDone: number;
   studyDays: number;
@@ -45,10 +52,14 @@ export function PlanCalendar({ mode, lessonsDone, studyDays, history, completed,
   completed: Set<string>;
   resuming: boolean;
   onStart: () => void;
+  /** Opens a finished day's reading text with the answers filled in. */
+  onRead: (day: number, lessons: Lesson[]) => void;
+  /** The day to show first, e.g. the one whose reading was just opened. */
+  initialDay?: number;
 }) {
   const days = useMemo(() => buildPlan(mode, lessonsDone, studyDays, history), [mode, lessonsDone, studyDays, history]);
   const todayDay = days.find((day) => day.status === 'today')?.day ?? null;
-  const [selectedDay, setSelectedDay] = useState(todayDay ?? days.at(-1)?.day ?? 1);
+  const [selectedDay, setSelectedDay] = useState(initialDay ?? todayDay ?? days.at(-1)?.day ?? 1);
   const selected = days.find((day) => day.day === selectedDay) ?? days[0];
   const detailPanel = useRef<HTMLElement>(null);
   const weeks = useMemo(() => {
@@ -83,6 +94,7 @@ export function PlanCalendar({ mode, lessonsDone, studyDays, history, completed,
             <h3>Day {selected.day}{selected.date ? ` · ${formatDate(selected.date, { weekday: 'short', day: 'numeric', month: 'short' })}` : ''}</h3>
           </div>
           {selected.status === 'today' && <button className="complete-day-button" onClick={onStart}><Play size={18} fill="currentColor" />{resuming ? 'Continue lesson' : 'Start lesson'}</button>}
+          {selected.status === 'done' && selected.lessons.length > 0 && <button className="plan-read-button" onClick={() => onRead(selected.day, selected.lessons)}><BookOpen size={18} />Read the text</button>}
         </header>
         {selected.lessons.length ? selected.lessons.map((lesson, index) => (
           <div className="lesson-summary" key={lesson.number}><p className="lesson-theme">{selected.lessons.length > 1 ? `Part ${index + 1} · ` : ''}{lesson.title}</p><small className="lesson-focus">{lesson.summary}</small></div>

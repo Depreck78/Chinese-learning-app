@@ -98,19 +98,82 @@ type Blank = { id: string; character: string; pinyin: string; number: number };
 /** Three options per gap, the answer among them: [character, pinyin] (scripts/build-reading-choices.py). */
 const CHOICES: Record<string, string[][]> = readingChoices;
 
+/** The gaps of a day's reading, numbered in reading order. */
+function readingBlanks(lessons: Lesson[]) {
+  const found = new Map<string, Blank>();
+  lessons.forEach((lesson) => lesson.paragraphs.forEach(([text, pinyin, positions], paragraphIndex) => {
+    const characters = Array.from(text);
+    const readings = pinyin.split(' ');
+    for (const position of positions) {
+      const id = `${lesson.number}-${paragraphIndex}-${position}`;
+      found.set(id, { id, character: characters[position], pinyin: readings[position], number: found.size + 1 });
+    }
+  }));
+  return found;
+}
+
+/**
+ * The day's reading text. Gaps not yet `solved` show their number (tap to choose one); once
+ * `reading`, every character shows its pinyin and can be tapped to hear it, answers in green.
+ */
+function ReadingText({ lessons, blanks, solved, current, reading, onSelectGap }: {
+  lessons: Lesson[];
+  blanks: Map<string, Blank>;
+  solved: Set<string>;
+  current?: Blank;
+  reading: boolean;
+  onSelectGap?: (id: string) => void;
+}) {
+  return lessons.map((lesson, lessonIndex) => (
+    <article className="reading-text" key={lesson.number}>
+      <h2>{lessons.length > 1 && <span className="label">PART {lessonIndex + 1}</span>}{lesson.title}</h2>
+      {lesson.paragraphs.map(([text, pinyin], paragraphIndex) => {
+        const readings = pinyin.split(' ');
+        return (
+          <p className="reading-paragraph" key={paragraphIndex}>
+            {Array.from(text, (character, position) => {
+              const blank = blanks.get(`${lesson.number}-${paragraphIndex}-${position}`);
+              const spoken = readings[position];
+              if (blank && !solved.has(blank.id)) {
+                return (
+                  <button type="button" key={position} className={`reading-gap ${blank.id === current?.id ? 'current' : ''}`} onClick={() => onSelectGap?.(blank.id)} aria-label={`Gap ${blank.number}`} aria-pressed={blank.id === current?.id}>
+                    <span className="token-pinyin" />
+                    <span className="gap-box">{blank.number}</span>
+                  </button>
+                );
+              }
+              if (!reading) return <span className="reading-token punctuation" key={position}><span className="token-pinyin" /><span className="token-character">{character}</span></span>;
+              return <button type="button" key={position} className={`reading-token ${blank ? 'filled' : ''}`} onClick={() => pronounce(character)} aria-label={`${character}, ${spoken}. Tap to hear it.`}><span className="token-pinyin">{spoken}</span><span className="token-character">{character}</span></button>;
+            })}
+          </p>
+        );
+      })}
+    </article>
+  ));
+}
+
+/** A finished day's reading, with every gap filled in: opened from the full plan. */
+export function CompletedReading({ lessons, dayNumber, onBack }: { lessons: Lesson[]; dayNumber: number; onBack: () => void }) {
+  const blanks = useMemo(() => readingBlanks(lessons), [lessons]);
+  const solved = useMemo(() => new Set(blanks.keys()), [blanks]);
+  useEffect(() => { window.scrollTo({ top: 0 }); }, [dayNumber]);
+  return (
+    <div className="lesson-main">
+      <section className="reading-exercise" aria-labelledby="reading-title">
+        <button className="reading-back reading-return" onClick={onBack}><ArrowLeft size={17} />Back to the plan</button>
+        <header className="reading-heading">
+          <span className="label">DAY {dayNumber} · COMPLETED</span>
+          <h1 id="reading-title">Day {dayNumber} reading</h1>
+          <p>The text from this day with every gap filled in; the answers are in green. Tap any character to hear it, and read it aloud again for practice.</p>
+        </header>
+        <ReadingText lessons={lessons} blanks={blanks} solved={solved} reading />
+      </section>
+    </div>
+  );
+}
+
 function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Lesson[]; dayNumber: number; onBack: () => void; onFinish: () => void }) {
-  const blanks = useMemo(() => {
-    const found = new Map<string, Blank>();
-    lessons.forEach((lesson) => lesson.paragraphs.forEach(([text, pinyin, positions], paragraphIndex) => {
-      const characters = Array.from(text);
-      const readings = pinyin.split(' ');
-      for (const position of positions) {
-        const id = `${lesson.number}-${paragraphIndex}-${position}`;
-        found.set(id, { id, character: characters[position], pinyin: readings[position], number: found.size + 1 });
-      }
-    }));
-    return found;
-  }, [lessons]);
+  const blanks = useMemo(() => readingBlanks(lessons), [lessons]);
   const [solved, setSolved] = useState<Set<string>>(new Set());
   const [missed, setMissed] = useState<Record<string, string[]>>({});
   const [currentId, setCurrentId] = useState<string | null>(null);
@@ -143,32 +206,7 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
           : 'Pick the character that belongs in each numbered gap. Tap a gap to answer it out of order.'}</p>
       </header>
 
-      {lessons.map((lesson, lessonIndex) => (
-        <article className="reading-text" key={lesson.number}>
-          <h2>{lessons.length > 1 && <span className="label">PART {lessonIndex + 1}</span>}{lesson.title}</h2>
-          {lesson.paragraphs.map(([text, pinyin], paragraphIndex) => {
-            const readings = pinyin.split(' ');
-            return (
-              <p className="reading-paragraph" key={paragraphIndex}>
-                {Array.from(text, (character, position) => {
-                  const blank = blanks.get(`${lesson.number}-${paragraphIndex}-${position}`);
-                  const reading = readings[position];
-                  if (blank && !solved.has(blank.id)) {
-                    return (
-                      <button type="button" key={position} className={`reading-gap ${blank.id === current?.id ? 'current' : ''}`} onClick={() => setCurrentId(blank.id)} aria-label={`Gap ${blank.number}`} aria-pressed={blank.id === current?.id}>
-                        <span className="token-pinyin" />
-                        <span className="gap-box">{blank.number}</span>
-                      </button>
-                    );
-                  }
-                  if (!reading) return <span className="reading-token punctuation" key={position}><span className="token-pinyin" /><span className="token-character">{character}</span></span>;
-                  return <button type="button" key={position} className={`reading-token ${blank ? 'filled' : ''}`} onClick={() => pronounce(character)} aria-label={`${character}, ${reading}. Tap to hear it.`}><span className="token-pinyin">{reading}</span><span className="token-character">{character}</span></button>;
-                })}
-              </p>
-            );
-          })}
-        </article>
-      ))}
+      <ReadingText lessons={lessons} blanks={blanks} solved={solved} current={current} reading={reading} onSelectGap={setCurrentId} />
 
       {reading ? (
         <footer className="reading-footer read-aloud">

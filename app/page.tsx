@@ -25,7 +25,7 @@ import { PlanCalendar } from './plan-calendar';
 import { DICTIONARY_FILTERS, matchesFilter, type DictionaryFilterId } from './dictionary-filters';
 import { AccountPanel } from './account-panel';
 import { AvatarBadge } from './avatar-badge';
-import { LessonSession } from './lesson-session';
+import { CompletedReading, LessonSession } from './lesson-session';
 import { useOfflineSupport, useOnline } from './offline';
 import { finishDay, historyEntries, markedCharacters, setActiveLesson, setMarks, setStudyMode, type StudyHistoryEntry } from './progress';
 import { pronounce } from './pronunciation';
@@ -58,7 +58,7 @@ function toneNumber(pinyin: string) {
 }
 
 type NavView = 'home' | 'dictionary' | 'study-plan' | 'review' | 'fun' | 'stats' | 'account';
-type AppView = NavView | 'character' | 'lesson';
+type AppView = NavView | 'character' | 'lesson' | 'reading';
 
 type CurriculumTheme = {
   id: string;
@@ -257,6 +257,10 @@ function StudyPlanPanel({
   history,
   resumeStep,
   onStart,
+  showFullPlan,
+  onShowFullPlan,
+  readingDay,
+  onRead,
 }: {
   mode: StudyMode;
   dayNumber: number;
@@ -267,8 +271,11 @@ function StudyPlanPanel({
   history: StudyHistoryEntry[];
   resumeStep: number | null;
   onStart: () => void;
+  showFullPlan: boolean;
+  onShowFullPlan: (show: boolean) => void;
+  readingDay?: number;
+  onRead: (day: number, lessons: Lesson[]) => void;
 }) {
-  const [showFullPlan, setShowFullPlan] = useState(false);
   const plan = STUDY_PLANS[mode];
   const remainingDays = Math.ceil((LESSONS.length - lessonsDone) / plan.lessonsPerDay);
   const mastery = learnedCount / CHARACTERS.length * 100;
@@ -294,12 +301,12 @@ function StudyPlanPanel({
 
       <fieldset className="plan-view-switch">
         <legend className="sr-only">Study plan view</legend>
-        <button aria-pressed={!showFullPlan} onClick={() => setShowFullPlan(false)}><Play size={16} />Today&apos;s lesson</button>
-        <button aria-pressed={showFullPlan} onClick={() => setShowFullPlan(true)}><CalendarDays size={16} />Full plan</button>
+        <button aria-pressed={!showFullPlan} onClick={() => onShowFullPlan(false)}><Play size={16} />Today&apos;s lesson</button>
+        <button aria-pressed={showFullPlan} onClick={() => onShowFullPlan(true)}><CalendarDays size={16} />Full plan</button>
       </fieldset>
 
       {showFullPlan ? (
-        <PlanCalendar mode={mode} lessonsDone={lessonsDone} studyDays={dayNumber - 1} history={history} completed={completed} resuming={resumeStep !== null} onStart={onStart} />
+        <PlanCalendar mode={mode} lessonsDone={lessonsDone} studyDays={dayNumber - 1} history={history} completed={completed} resuming={resumeStep !== null} onStart={onStart} onRead={onRead} initialDay={readingDay} />
       ) : (
       <section className="daily-lesson">
         {characters.length ? (
@@ -339,6 +346,9 @@ const TRACE_GOAL_TEXT = 'ten times (or writing it on paper)';
 export default function Home() {
   const [view, setView] = useState<AppView>('home');
   const [characterOrigin, setCharacterOrigin] = useState<NavView>('dictionary');
+  // Kept here so coming back from a finished day's reading returns to the full plan on that day.
+  const [showFullPlan, setShowFullPlan] = useState(false);
+  const [readingDay, setReadingDay] = useState<{ day: number; lessons: Lesson[] } | null>(null);
   const [current, setCurrent] = useState(0);
   const [query, setQuery] = useState('');
   const [dictionaryQuery, setDictionaryQuery] = useState('');
@@ -414,7 +424,7 @@ export default function Home() {
   const activeReviewDeck = reviewDecks.find((deck) => deck.id === reviewDeckId) ?? reviewDecks[0];
   const reviewCharacters = activeReviewDeck?.characters ?? [];
   const reviewEntry = reviewCharacters.length ? reviewCharacters[reviewIndex % reviewCharacters.length] : null;
-  const activeNavView: NavView = view === 'character' ? characterOrigin : view === 'lesson' ? 'study-plan' : view;
+  const activeNavView: NavView = view === 'character' ? characterOrigin : view === 'lesson' || view === 'reading' ? 'study-plan' : view;
 
   function choose(entry: CharacterEntry, origin: NavView = 'dictionary') {
     const index = CHARACTERS.findIndex((candidate) => candidate.character === entry.character);
@@ -592,7 +602,7 @@ export default function Home() {
               </TabsList>
               </header>
               {(['normal', 'intensive'] as const).map((mode) => (
-                <StudyPlanPanel key={mode} mode={mode} dayNumber={studyDaysCompleted + 1} lessons={todaysLessons[mode]} lessonsDone={lessonsDone} learnedCount={learnedCharacters.length} completed={completedSet} history={studyHistory} resumeStep={activeLesson && activeLesson.lessons.join() === todaysLessons[mode].map((lesson) => lesson.number).join() ? activeLesson.step : null} onStart={() => startLesson(mode)} />
+                <StudyPlanPanel key={mode} mode={mode} dayNumber={studyDaysCompleted + 1} lessons={todaysLessons[mode]} lessonsDone={lessonsDone} learnedCount={learnedCharacters.length} completed={completedSet} history={studyHistory} resumeStep={activeLesson && activeLesson.lessons.join() === todaysLessons[mode].map((lesson) => lesson.number).join() ? activeLesson.step : null} onStart={() => startLesson(mode)} showFullPlan={showFullPlan} onShowFullPlan={setShowFullPlan} readingDay={readingDay?.day} onRead={(day, lessons) => { setReadingDay({ day, lessons }); setView('reading'); }} />
               ))}
             </Tabs>
           </section>
@@ -665,6 +675,7 @@ export default function Home() {
         {view === 'stats' && account.session?.admin && <StatsPanel token={account.session.token} />}
         {view === 'account' && <AccountPanel account={account} online={online} learnedCount={learnedCharacters.length} />}
 
+        {view === 'reading' && readingDay && <CompletedReading lessons={readingDay.lessons} dayNumber={readingDay.day} onBack={() => setView('study-plan')} />}
         {view === 'lesson' && activeLesson && sessionLessons.length > 0 && (
           <LessonSession
             lessons={sessionLessons}
