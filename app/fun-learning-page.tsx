@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ExternalLink, Play, WifiOff } from 'lucide-react';
 import { useState } from 'react';
+import { FunCarousel } from './fun-carousel';
 import { FUN_KINDS, RECOMMENDATIONS, justWatchUrl, type FunKind, type Recommendation, type WatchLink } from './fun-learning';
 
 const KIND_LABEL: Record<FunKind, string> = { anime: 'Anime', drama: 'TV drama', movie: 'Movie', kids: 'Kids' };
@@ -83,11 +84,27 @@ function RecommendationDetail({ item, online, onBack }: { item: Recommendation; 
   );
 }
 
+function RecommendationCard({ item, online, onOpen }: { item: Recommendation; online: boolean; onOpen: (id: string) => void }) {
+  return (
+    <li>
+      <button className="fun-card" onClick={() => onOpen(item.id)} aria-label={`${item.title}, ${KIND_LABEL[item.kind]}, ${item.level}`}>
+        <span className="fun-card-image" aria-hidden="true"><span className="fun-card-glyph">{item.chinese.slice(0, 2)}</span>{online && <span className="fun-card-thumb" style={{ backgroundImage: `url(${thumbnail(item.trailer)})` }} />}</span>
+        <span className="fun-card-body">
+          <span className="fun-card-meta"><span>{KIND_LABEL[item.kind]} · {item.year}</span><span className={`level-badge level-${item.level.toLowerCase()}`}>{item.level}</span></span>
+          <b>{item.title}</b>
+          <span className="fun-card-chinese" lang="zh-CN">{item.chinese}</span>
+          <span className="fun-card-synopsis">{item.synopsis}</span>
+        </span>
+      </button>
+    </li>
+  );
+}
+
 export function FunLearningPage({ online }: { online: boolean }) {
   const [kind, setKind] = useState<FunKind | 'all'>('all');
   const [openId, setOpenId] = useState<string | null>(null);
   const open = RECOMMENDATIONS.find((item) => item.id === openId);
-  const shown = RECOMMENDATIONS.filter((item) => kind === 'all' || item.kind === kind);
+  const sections = FUN_KINDS.filter((option): option is { id: FunKind; label: string } => option.id !== 'all' && (kind === 'all' || option.id === kind));
 
   function openItem(id: string | null) {
     setOpenId(id);
@@ -102,26 +119,23 @@ export function FunLearningPage({ online }: { online: boolean }) {
         <div><span className="label">LEARN WHILE YOU RELAX</span><h1>Fun Learning</h1></div>
         <p>Chinese shows, anime and films to practise listening. Pick one that matches your level, watch the trailer, and find where to stream it.</p>
       </header>
+      <FunCarousel online={online} onOpen={openItem} />
       <nav className="fun-filters" aria-label="Filter recommendations">
         {FUN_KINDS.map((option) => (
           <button key={option.id} aria-pressed={kind === option.id} onClick={() => setKind(option.id)}>{option.label}</button>
         ))}
       </nav>
-      <ul className="fun-grid">
-        {shown.map((item) => (
-          <li key={item.id}>
-            <button className="fun-card" onClick={() => openItem(item.id)} aria-label={`${item.title}, ${KIND_LABEL[item.kind]}, ${item.level}`}>
-              <span className="fun-card-image" aria-hidden="true"><span className="fun-card-glyph">{item.chinese.slice(0, 2)}</span>{online && <span className="fun-card-thumb" style={{ backgroundImage: `url(${thumbnail(item.trailer)})` }} />}</span>
-              <span className="fun-card-body">
-                <span className="fun-card-meta"><span>{KIND_LABEL[item.kind]} · {item.year}</span><span className={`level-badge level-${item.level.toLowerCase()}`}>{item.level}</span></span>
-                <b>{item.title}</b>
-                <span className="fun-card-chinese" lang="zh-CN">{item.chinese}</span>
-                <span className="fun-card-synopsis">{item.synopsis}</span>
-              </span>
-            </button>
-          </li>
-        ))}
-      </ul>
+      {sections.map((section) => {
+        const items = RECOMMENDATIONS.filter((item) => item.kind === section.id);
+        return (
+          <section className="fun-section" key={section.id} aria-labelledby={`fun-section-${section.id}`}>
+            <h2 id={`fun-section-${section.id}`}>{section.label}<small>{items.length}</small></h2>
+            <ul className="fun-grid">
+              {items.map((item) => <RecommendationCard key={item.id} item={item} online={online} onOpen={openItem} />)}
+            </ul>
+          </section>
+        );
+      })}
     </section>
   );
 }
