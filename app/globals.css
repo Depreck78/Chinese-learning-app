@@ -423,6 +423,7 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
 /* The account page is a single centered column. */
 .account-page .page-heading { flex-direction:column; align-items:center; gap:12px; max-width:560px; text-align:center; }
 .account-page .page-heading p { max-width:480px; }
+.account-page .page-heading .account-privacy { margin-top:8px; font-size:13px; }
 .account-page .account-card { display:grid; gap:14px; max-width:560px; margin:0 auto; padding:22px; border:1px solid var(--ink); background:var(--cream); }
 .account-identity { display:flex; align-items:center; gap:12px; }
 .account-identity svg { color:var(--board-dark); }
@@ -639,3 +640,60 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
   .fun-section h2 { font-size:26px; }
 }
 @media (prefers-reduced-motion:reduce) { .fun-slide,.fun-slide[data-active] { transition:none; } }
+
+/* Owner stats (app/stats-panel.tsx) */
+.admin-page > :not(.page-heading) { max-width:1160px; margin-inline:auto; }
+.admin-heading p { max-width:640px; margin-top:12px; }
+.admin-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.admin-actions button,.admin-metrics button { display:flex; align-items:center; gap:7px; min-height:40px; padding:0 14px; border:1px solid var(--ink); background:var(--cream); color:var(--ink); font-weight:700; cursor:pointer; }
+.admin-actions button:hover,.admin-metrics button:hover { background:var(--paper-deep); }
+.admin-message { margin:24px 0; padding:16px; border:1px solid var(--line); background:var(--cream); }
+.admin-error { color:#b3261e; border-color:#e3b1aa; background:#fbe9e6; }
+.admin-cards { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:22px 0; }
+.admin-card { display:grid; gap:6px; padding:16px; border:1px solid var(--ink); background:var(--cream); }
+.admin-card strong { font:800 40px/1 'Barlow Condensed',sans-serif; }
+.admin-card small { color:var(--ink-soft); }
+.admin-panel { margin-top:14px; padding:18px; border:1px solid var(--ink); background:var(--cream); }
+.admin-panel h2 { margin:0 0 12px; }
+.admin-panel-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.admin-panel-heading h2 { margin:0; }
+.admin-metrics { display:flex; flex-wrap:wrap; gap:6px; min-width:0; margin:0; padding:0; border:0; }
+.admin-figure { margin:0; }
+.admin-metrics button { min-height:34px; padding:0 10px; font-size:14px; }
+.admin-metrics button[aria-pressed="true"] { color:white; background:var(--ink); }
+.admin-chart { display:block; width:100%; height:auto; }
+.admin-bar { fill:var(--board); }
+.admin-bar:hover { fill:var(--board-dark); }
+.admin-axis { stroke:var(--ink); }
+.admin-chart-label { fill:var(--ink-soft); font-size:13px; }
+.admin-columns { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.admin-columns .admin-panel { margin-top:14px; }
+.admin-subheading { margin-top:20px !important; }
+.admin-table { width:100%; border-collapse:collapse; font-size:15px; }
+.admin-table th { padding:8px 10px 8px 0; border-bottom:1px solid var(--ink); color:var(--ink-soft); font-size:13px; font-weight:700; text-align:left; white-space:nowrap; }
+.admin-table td { padding:8px 10px 8px 0; border-bottom:1px solid var(--line); }
+.admin-table small { color:var(--ink-soft); }
+.admin-table-scroll { overflow-x:auto; }
+.admin-learners td { white-space:nowrap; }
+.admin-distribution { display:grid; gap:8px; margin:0; }
+.admin-distribution div { display:grid; grid-template-columns:120px 1fr; align-items:center; gap:10px; }
+.admin-distribution dt { color:var(--ink-soft); font-size:14px; }
+.admin-distribution dd { display:flex; align-items:center; gap:8px; margin:0; }
+.admin-distribution dd span { height:14px; min-width:2px; background:var(--forest); }
+.admin-footnote { margin-top:16px; color:var(--ink-soft); font-size:14px; }
+@media (max-width:900px) {
+  .admin-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .admin-columns { grid-template-columns:1fr; }
+}
+@media (max-width:560px) {
+  .admin-card strong { font-size:32px; }
+}
+
+/* Sign-in required after lesson 1 (app/sign-in-gate.tsx) */
+.sign-in-gate { position:fixed; inset:0; width:min(460px,calc(100% - 32px)); max-height:calc(100dvh - 32px); margin:auto; padding:0; overflow:auto; border:1px solid var(--ink); color:var(--ink); background:var(--cream); box-shadow:0 24px 70px rgba(0,0,0,.35); }
+.sign-in-gate::backdrop { background:rgba(25,23,19,.72); backdrop-filter:blur(3px); }
+.sign-in-gate header { padding:22px 22px 16px; border-bottom:1px solid var(--ink); background:var(--paper-deep); }
+.sign-in-gate h2 { margin:6px 0 8px; font:800 32px/1 'Barlow Condensed',sans-serif; }
+.sign-in-gate header p { margin:0; color:var(--ink-soft); }
+.sign-in-gate-form { display:grid; gap:14px; padding:20px 22px 22px; }
+.sign-in-gate:focus { outline:none; }

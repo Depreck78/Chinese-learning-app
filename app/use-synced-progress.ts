@@ -2,10 +2,11 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { DEFAULT_AVATAR, isAvatarId, type AvatarId } from './avatars';
 import { emptyProgress, forgetProgress, loadProgress, mergeProgress, readProgress, saveProgress, type Progress } from './progress';
 
-export type Session = { token: string; userId: number; username: string; avatar: AvatarId };
+/** `admin` only shows the owner's Stats page in the menu; the server checks it again for the data. */
+export type Session = { token: string; userId: number; username: string; avatar: AvatarId; admin: boolean };
 /** Progress on this device and whose it is: an account's id, or null when signed out. */
 type Owned = { userId: number | null; progress: Progress };
-type Profile = { username: string; avatar: string };
+type Profile = { username: string; avatar: string; admin?: boolean };
 export type SyncStatus =
   | { state: 'signed-out' }
   | { state: 'waiting' }
@@ -17,11 +18,11 @@ const SESSION_KEY = 'hanzi-session';
 const SYNC_DELAY_MS = 2000;
 const SYNC_EVERY_MS = 3 * 60 * 1000;
 
-function loadSession(): Session | null {
+export function loadSession(): Session | null {
   try {
     const session = JSON.parse(localStorage.getItem(SESSION_KEY) ?? 'null') as Session | null;
     if (!session || typeof session.token !== 'string' || typeof session.username !== 'string' || !Number.isInteger(session.userId)) return null;
-    return { ...session, avatar: isAvatarId(session.avatar) ? session.avatar : DEFAULT_AVATAR };
+    return { ...session, avatar: isAvatarId(session.avatar) ? session.avatar : DEFAULT_AVATAR, admin: session.admin === true };
   } catch {
     return null;
   }
@@ -62,13 +63,14 @@ export function useSyncedProgress() {
   const running = useRef(false);
   useEffect(() => { latest.current = owned; }, [owned]);
 
-  // Keeps this device's copy of the username and avatar in step with the account.
+  // Keeps this device's copy of the username, avatar and owner access in step with the account.
   const applyProfile = useCallback((profile: Profile) => {
     setSession((current) => {
       if (!current) return current;
       const avatar = isAvatarId(profile.avatar) ? profile.avatar : DEFAULT_AVATAR;
-      if (current.username === profile.username && current.avatar === avatar) return current;
-      const next = { ...current, username: profile.username, avatar };
+      const admin = profile.admin === true;
+      if (current.username === profile.username && current.avatar === avatar && current.admin === admin) return current;
+      const next = { ...current, username: profile.username, avatar, admin };
       saveSession(next);
       return next;
     });
@@ -148,7 +150,7 @@ export function useSyncedProgress() {
    */
   async function signIn(kind: 'register' | 'login', username: string, password: string, bringDeviceProgress = false) {
     const body = (await request(`/api/auth/${kind}`, { method: 'POST', body: JSON.stringify({ username, password }) })) as Session;
-    const next: Session = { token: body.token, userId: body.userId, username: body.username, avatar: isAvatarId(body.avatar) ? body.avatar : DEFAULT_AVATAR };
+    const next: Session = { token: body.token, userId: body.userId, username: body.username, avatar: isAvatarId(body.avatar) ? body.avatar : DEFAULT_AVATAR, admin: body.admin === true };
     const account = loadOwned(next.userId);
     if (kind === 'register' && bringDeviceProgress) {
       account.progress = mergeProgress(account.progress, loadProgress(null));

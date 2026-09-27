@@ -2,16 +2,17 @@
 import { env } from 'cloudflare:workers';
 import { DEFAULT_AVATAR, isAvatarId } from '../../app/avatars';
 
-type Database = {
-  prepare: (query: string) => {
-    bind: (...values: unknown[]) => { first: <T>() => Promise<T | null>; run: () => Promise<unknown> };
-    first: <T>() => Promise<T | null>;
-    run: () => Promise<unknown>;
-  };
+type Statement = {
+  first: <T>() => Promise<T | null>;
+  all: <T>() => Promise<{ results: T[] }>;
+  run: () => Promise<unknown>;
+};
+export type Database = {
+  prepare: (query: string) => Statement & { bind: (...values: unknown[]) => Statement };
   batch: (statements: unknown[]) => Promise<unknown>;
 };
 
-const database = () => (env as unknown as { DB: Database }).DB;
+export const database = () => (env as unknown as { DB: Database }).DB;
 
 let schemaReady: Promise<unknown> | null = null;
 
@@ -115,7 +116,7 @@ export async function register(rawUsername: unknown, rawPassword: unknown) {
     .bind(username, await hashPassword(password, salt), toHex(salt), Date.now()).run();
   const user = await database().prepare('SELECT id, username FROM users WHERE username = ?').bind(username).first<{ id: number; username: string }>();
   if (!user) throw new AccountError('Could not create the account. Please try again.', 500);
-  return { token: await createSession(user.id), userId: user.id, username: user.username, avatar: DEFAULT_AVATAR };
+  return { token: await createSession(user.id), userId: user.id, username: user.username, avatar: DEFAULT_AVATAR, admin: isAdmin(user.id) };
 }
 
 export async function logIn(rawUsername: unknown, rawPassword: unknown) {
@@ -135,7 +136,7 @@ export async function logIn(rawUsername: unknown, rawPassword: unknown) {
     throw wrong;
   }
   await database().prepare('UPDATE users SET failed_logins = 0 WHERE id = ?').bind(user.id).run();
-  return { token: await createSession(user.id), userId: user.id, username: user.username, avatar: user.avatar };
+  return { token: await createSession(user.id), userId: user.id, username: user.username, avatar: user.avatar, admin: isAdmin(user.id) };
 }
 
 /** Returns the signed-in user's id for a request's `Authorization: Bearer <token>` header. */
@@ -157,10 +158,19 @@ export async function logOut(request: Request) {
   await database().prepare('DELETE FROM sessions WHERE token_hash = ?').bind(tokenHash).run();
 }
 
+/**
+ * The owner accounts that may see usage stats, from the ADMIN_USER_IDS secret (comma-separated user
+ * ids). It is set on Cloudflare with `wrangler secret put ADMIN_USER_IDS`, so it never appears in the repo.
+ */
+export function isAdmin(userId: number) {
+  const ids = String((env as unknown as { ADMIN_USER_IDS?: string }).ADMIN_USER_IDS ?? '').split(',').map((id) => id.trim()).filter(Boolean).map(Number);
+  return ids.includes(userId);
+}
+
 export async function profileFor(userId: number) {
   const user = await database().prepare('SELECT username, avatar FROM users WHERE id = ?').bind(userId).first<{ username: string; avatar: string }>();
   if (!user) throw new AccountError('Please log in again.', 401);
-  return user;
+  return { ...user, admin: isAdmin(userId) };
 }
 
 /** Changes the signed-in user's username and/or avatar. */

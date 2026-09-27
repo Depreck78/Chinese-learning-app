@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, Check, ClipboardCheck, Clock3, Gauge, House, Menu, PencilLine, Play, Search, Star, Tv, UserRound, Volume2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, CalendarDays, ChartColumn, Check, ClipboardCheck, Clock3, Gauge, House, Menu, PencilLine, Play, Search, Star, Tv, UserRound, Volume2, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Sidebar,
@@ -30,6 +30,9 @@ import { useOfflineSupport, useOnline } from './offline';
 import { finishDay, historyEntries, markedCharacters, setActiveLesson, setMarks, setStudyMode, type StudyHistoryEntry } from './progress';
 import { pronounce } from './pronunciation';
 import { LESSONS, lessonCharacters, lessonsForDay, STUDY_PLANS, type ActiveLesson, type Lesson, type StudyMode } from './study-plan';
+import { SignInGate } from './sign-in-gate';
+import { StatsPanel } from './stats-panel';
+import { useUsageTracking } from './usage';
 import { useSyncedProgress } from './use-synced-progress';
 import { VideoPanel } from './video-panel';
 import { WritingPad } from './writing-pad';
@@ -53,7 +56,7 @@ function toneNumber(pinyin: string) {
   return 0;
 }
 
-type NavView = 'home' | 'dictionary' | 'study-plan' | 'review' | 'fun' | 'account';
+type NavView = 'home' | 'dictionary' | 'study-plan' | 'review' | 'fun' | 'stats' | 'account';
 type AppView = NavView | 'character' | 'lesson';
 
 type CurriculumTheme = {
@@ -171,7 +174,7 @@ function makeReviewDecks(grouping: ReviewGrouping, learnedCharacters: CharacterE
     : [allDeck, ...lessonDecks];
 }
 
-function AppNavigation({ activeView, onNavigate, avatar }: { activeView: NavView; onNavigate: (view: NavView) => void; avatar: string | null }) {
+function AppNavigation({ activeView, onNavigate, avatar, admin }: { activeView: NavView; onNavigate: (view: NavView) => void; avatar: string | null; admin: boolean }) {
 
   return (
     <Sidebar collapsible="none" className="side-rail" id="app-navigation">
@@ -210,6 +213,14 @@ function AppNavigation({ activeView, onNavigate, avatar }: { activeView: NavView
                   <span><b>Fun Learning</b><small>Shows, anime and films</small></span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
+              {admin && (
+                <SidebarMenuItem>
+                  <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'stats'} onClick={() => onNavigate('stats')}>
+                    <ChartColumn />
+                    <span><b>Stats</b><small>Users and learning</small></span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              )}
               {/* On phones Account sits in the menu; on larger screens it is pinned to the bottom of the rail. */}
               <SidebarMenuItem className="account-menu-item">
                 <SidebarMenuButton className="page-link" size="lg" isActive={activeView === 'account'} onClick={() => onNavigate('account')}>
@@ -320,7 +331,7 @@ function StudyPlanPanel({
   );
 }
 
-const NAV_LABELS: Record<NavView, string> = { home: 'Home', dictionary: 'Dictionary', 'study-plan': 'Study Plan', review: 'Review', fun: 'Fun Learning', account: 'Account' };
+const NAV_LABELS: Record<NavView, string> = { home: 'Home', dictionary: 'Dictionary', 'study-plan': 'Study Plan', review: 'Review', fun: 'Fun Learning', stats: 'Stats', account: 'Account' };
 
 const TRACE_GOAL_TEXT = 'ten times (or writing it on paper)';
 
@@ -351,6 +362,10 @@ export default function Home() {
   const online = useOnline();
   // Saves every character, recording and font for offline use in the background.
   useOfflineSupport(online);
+  // Anonymous study time and characters learned, for the owner's stats page (app/admin).
+  useUsageTracking(completed.length, account.session?.token);
+  // After the first lesson, the app is locked until the learner signs in.
+  const mustSignIn = !account.session && lessonsDone >= 1;
   const item = CHARACTERS[current];
 
   useEffect(() => {
@@ -507,10 +522,11 @@ export default function Home() {
       </header>
 
       <SidebarProvider className={`workspace ${menuOpen ? 'menu-open' : ''}`} style={{ '--sidebar-width': '250px' } as React.CSSProperties}>
-        <AppNavigation activeView={activeNavView} avatar={account.session?.avatar ?? null} onNavigate={(nextView) => { setView(nextView); setMenuOpen(false); if (nextView === 'review') setReviewAnswerShown(false); }} />
+        <AppNavigation activeView={activeNavView} avatar={account.session?.avatar ?? null} admin={account.session?.admin === true} onNavigate={(nextView) => { setView(nextView); setMenuOpen(false); if (nextView === 'review') setReviewAnswerShown(false); }} />
         {menuOpen && <button className="menu-backdrop" onClick={() => setMenuOpen(false)} aria-label="Close menu" tabIndex={-1} />}
 
-        {view === 'home' && (
+        {/* Stats is owner-only; anyone else (or an owner who was signed out) sees Home instead. */}
+        {(view === 'home' || (view === 'stats' && !account.session?.admin)) && (
           <HomePage
             progress={progress}
             learned={learnedInOrder}
@@ -645,6 +661,7 @@ export default function Home() {
             <nav className="lesson-nav" aria-label="Character navigation"><button disabled={current === 0} onClick={() => selectIndex(Math.max(0, current - 1))}><ArrowLeft size={18} />Previous</button><span>{current + 1} of {CHARACTERS.length.toLocaleString()} characters</span><button onClick={() => selectIndex((current + 1) % CHARACTERS.length)}>Next character<ArrowRight size={18} /></button></nav>
           </div>
         )}
+        {view === 'stats' && account.session?.admin && <StatsPanel token={account.session.token} />}
         {view === 'account' && <AccountPanel account={account} online={online} learnedCount={learnedCharacters.length} />}
 
         {view === 'lesson' && activeLesson && sessionLessons.length > 0 && (
@@ -663,6 +680,7 @@ export default function Home() {
           />
         )}
       </SidebarProvider>
+      {mustSignIn && <SignInGate account={account} online={online} />}
     </main>
   );
 }

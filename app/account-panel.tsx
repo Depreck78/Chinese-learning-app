@@ -16,13 +16,9 @@ function timeAgo(at: number) {
 }
 
 export function AccountPanel({ account, online, learnedCount }: { account: Account; online: boolean; learnedCount: number }) {
-  const [mode, setMode] = useState<'register' | 'login'>('register');
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [confirmDelete, setConfirmDelete] = useState(false);
-  const [bringProgress, setBringProgress] = useState(false);
   const [newUsername, setNewUsername] = useState('');
   const [profileMessage, setProfileMessage] = useState<{ kind: 'ok' | 'error'; text: string } | null>(null);
   const { session, status } = account;
@@ -41,20 +37,6 @@ export function AccountPanel({ account, online, learnedCount }: { account: Accou
     }
   }
 
-  async function submit(event: React.SyntheticEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setBusy(true);
-    setError('');
-    try {
-      await account.signIn(mode, username.trim(), password, bringProgress && canBringProgress);
-      setPassword('');
-    } catch (failure) {
-      setError((failure as Error).message);
-    } finally {
-      setBusy(false);
-    }
-  }
-
   async function removeAccount() {
     if (!confirmDelete) return setConfirmDelete(true);
     setBusy(true);
@@ -68,8 +50,6 @@ export function AccountPanel({ account, online, learnedCount }: { account: Accou
     }
   }
 
-  // While signed out, `account.progress` is what was studied here without an account.
-  const canBringProgress = mode === 'register' && !session && hasProgress(account.progress);
   const statusText = status.state === 'synced' ? `Synced ${timeAgo(status.at)}`
     : status.state === 'syncing' ? 'Syncing…'
       : status.state === 'error' ? status.message
@@ -80,6 +60,7 @@ export function AccountPanel({ account, online, learnedCount }: { account: Accou
       <header className="page-heading">
         <div><span className="label">YOUR PROGRESS</span><h1>Account</h1></div>
         <p>Each account keeps its own progress, saved on this device so it works offline. Signed in, it syncs with your other phones and computers whenever you’re online.</p>
+        <p className="account-privacy">To see how the app is used, it records the minutes you study and the characters you learn each day, linked to your account once you sign in. Nothing else you type or write is included.</p>
       </header>
 
       {session ? (
@@ -119,26 +100,60 @@ export function AccountPanel({ account, online, learnedCount }: { account: Accou
           {error && <p className="account-error" role="alert">{error}</p>}
         </div>
       ) : (
-        <form className="account-card" onSubmit={(event) => void submit(event)}>
-          <div className="account-switch" role="tablist" aria-label="Account">
-            <button type="button" role="tab" aria-selected={mode === 'register'} onClick={() => { setMode('register'); setError(''); }}>Create account</button>
-            <button type="button" role="tab" aria-selected={mode === 'login'} onClick={() => { setMode('login'); setError(''); }}>Log in</button>
-          </div>
-          <label className="account-field"><span>Username</span><input value={username} onChange={(event) => setUsername(event.target.value)} autoComplete="username" autoCapitalize="off" autoCorrect="off" spellCheck={false} required minLength={3} maxLength={32} pattern="[A-Za-z0-9_.\-]+" /></label>
-          <label className="account-field"><span>Password</span><input type="password" value={password} onChange={(event) => setPassword(event.target.value)} autoComplete={mode === 'register' ? 'new-password' : 'current-password'} required minLength={8} maxLength={200} /></label>
-          <p className="account-note">{mode === 'register' ? 'At least 8 characters. A new account starts from Day 1.' : 'You’ll pick up where this account left off on your other devices.'}</p>
-          {canBringProgress && (
-            <label className="account-check">
-              <input type="checkbox" checked={bringProgress} onChange={(event) => setBringProgress(event.target.checked)} />
-              <span>Bring the progress already on this device into the new account</span>
-            </label>
-          )}
-          {account.signedOutNotice && !error && <p className="account-error" role="alert">{account.signedOutNotice}</p>}
-          {error && <p className="account-error" role="alert">{error}</p>}
-          {!online && <p className="account-error">You’re offline. Connect to the internet to sign in.</p>}
-          <button className="complete-day-button" type="submit" disabled={busy || !online}>{busy ? 'Please wait…' : mode === 'register' ? 'Create account' : 'Log in'}</button>
-        </form>
+        <SignInForm account={account} online={online} className="account-card" />
       )}
     </section>
+  );
+}
+
+/**
+ * Create an account or log in. With `keepProgress`, a new account always takes what was studied
+ * on this device while signed out; otherwise the learner can choose to bring it along.
+ */
+export function SignInForm({ account, online, className, keepProgress = false }: { account: Account; online: boolean; className: string; keepProgress?: boolean }) {
+  const [mode, setMode] = useState<'register' | 'login'>('register');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+  const [bringProgress, setBringProgress] = useState(false);
+  // While signed out, `account.progress` is what was studied here without an account.
+  const hasDeviceProgress = mode === 'register' && !account.session && hasProgress(account.progress);
+
+  async function submit(event: React.SyntheticEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy(true);
+    setError('');
+    try {
+      await account.signIn(mode, username.trim(), password, hasDeviceProgress && (keepProgress || bringProgress));
+      setPassword('');
+    } catch (failure) {
+      setError((failure as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  const registerNote = keepProgress && hasDeviceProgress ? 'At least 8 characters. What you’ve studied so far moves into your new account.' : 'At least 8 characters. A new account starts from Day 1.';
+  return (
+    <form className={className} onSubmit={(event) => void submit(event)}>
+      <div className="account-switch" role="tablist" aria-label="Account">
+        <button type="button" role="tab" aria-selected={mode === 'register'} onClick={() => { setMode('register'); setError(''); }}>Create account</button>
+        <button type="button" role="tab" aria-selected={mode === 'login'} onClick={() => { setMode('login'); setError(''); }}>Log in</button>
+      </div>
+      <label className="account-field"><span>Username</span><input value={username} onChange={(event) => setUsername(event.target.value)} autoComplete="username" autoCapitalize="off" autoCorrect="off" spellCheck={false} required minLength={3} maxLength={32} pattern="[A-Za-z0-9_.\-]+" /></label>
+      <label className="account-field"><span>Password</span><input type="password" value={password} onChange={(event) => setPassword(event.target.value)} autoComplete={mode === 'register' ? 'new-password' : 'current-password'} required minLength={8} maxLength={200} /></label>
+      <p className="account-note">{mode === 'register' ? registerNote : 'You’ll pick up where this account left off on your other devices.'}</p>
+      {hasDeviceProgress && !keepProgress && (
+        <label className="account-check">
+          <input type="checkbox" checked={bringProgress} onChange={(event) => setBringProgress(event.target.checked)} />
+          <span>Bring the progress already on this device into the new account</span>
+        </label>
+      )}
+      {account.signedOutNotice && !error && <p className="account-error" role="alert">{account.signedOutNotice}</p>}
+      {error && <p className="account-error" role="alert">{error}</p>}
+      {!online && <p className="account-error">You’re offline. Connect to the internet to {mode === 'register' ? 'create your account' : 'log in'}.</p>}
+      <button className="complete-day-button" type="submit" disabled={busy || !online}>{busy ? 'Please wait…' : mode === 'register' ? 'Create account' : 'Log in'}</button>
+    </form>
   );
 }
