@@ -2,6 +2,8 @@
 // - App shell (HTML, JS, CSS, icons): network-first for pages, cache-first for hashed assets.
 // - Stroke-order data and pronunciation recordings: cache-first once downloaded.
 // - Example sentences: saved for offline, refreshed in the background.
+// - Sentence recordings: lesson indexes saved for offline and refreshed; the packs of recordings
+//   (named by their contents) are saved the first time one is played, as they are too big to get up front.
 // - Everything else (YouTube) goes straight to the network.
 // Fonts are bundled under /_next/static/, so they are cached with the shell.
 // Keep the cache names in sync with app/offline.ts.
@@ -10,7 +12,8 @@ const SHELL_CACHE = 'hanzi-shell-v1';
 const STROKE_CACHE = 'hanzi-strokes-v2';
 const AUDIO_CACHE = 'hanzi-audio-v2';
 const SENTENCE_CACHE = 'hanzi-sentences-v1';
-const CACHES = [SHELL_CACHE, STROKE_CACHE, AUDIO_CACHE, SENTENCE_CACHE];
+const SENTENCE_AUDIO_CACHE = 'hanzi-sentence-audio-v1';
+const CACHES = [SHELL_CACHE, STROKE_CACHE, AUDIO_CACHE, SENTENCE_CACHE, SENTENCE_AUDIO_CACHE];
 
 const SHELL_URLS = [
   '/',
@@ -70,6 +73,8 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(cacheFirst(request, STROKE_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/audio/')) {
     event.respondWith(cacheFirst(request, AUDIO_CACHE));
+  } else if (url.origin === self.location.origin && url.pathname.startsWith('/sentence-audio/')) {
+    event.respondWith(url.pathname.endsWith('.json') ? staleWhileRevalidate(request, SENTENCE_AUDIO_CACHE) : cacheFirst(request, SENTENCE_AUDIO_CACHE));
   } else if (url.origin === self.location.origin && url.pathname.startsWith('/sentences/')) {
     // Rebuilt sentence files keep their names, so refresh them in the background.
     event.respondWith(staleWhileRevalidate(request, SENTENCE_CACHE));

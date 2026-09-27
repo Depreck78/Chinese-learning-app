@@ -1,0 +1,4 @@
+Example sentence recordings were generated for this app with the Kokoro-82M v1.1-zh text-to-speech
+model by hexgrad (https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh), licensed Apache 2.0, voice zf_003.
+Each lesson has an index (<lesson>.json) and a few MP3 packs holding its sentences back to back;
+see scripts/build-sentence-audio.py.

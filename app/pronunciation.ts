@@ -110,3 +110,43 @@ export function pronounce(text: string) {
     })
     .catch(() => speakWithDeviceVoice(text));
 }
+
+// Sentence recordings come in packs of many sentences (scripts/build-sentence-audio.py). A decoded
+// pack is large, so only the last two stay in memory.
+const packs = new Map<string, Promise<AudioBuffer>>();
+
+function loadPack(ctx: AudioContext, url: string) {
+  let pack = packs.get(url);
+  if (!pack) {
+    pack = fetch(url)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Recording request failed with ${response.status}`);
+        return response.arrayBuffer();
+      })
+      .then((data) => ctx.decodeAudioData(data));
+    pack.catch(() => packs.delete(url));
+    packs.set(url, pack);
+    for (const old of [...packs.keys()].slice(0, -2)) packs.delete(old);
+  }
+  return pack;
+}
+
+/** Plays one sentence from a pack of recordings, or reads `text` with the device voice. */
+export function pronounceSentence(text: string, clip: { url: string; start: number; duration: number } | null) {
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  playing?.stop();
+  playing = null;
+  if (!clip) return speakWithDeviceVoice(text);
+
+  const ctx = audioContext();
+  loadPack(ctx, clip.url)
+    .then((pack) => {
+      playing?.stop();
+      const source = ctx.createBufferSource();
+      source.buffer = pack;
+      source.connect(ctx.destination);
+      source.start(0, clip.start, clip.duration);
+      playing = source;
+    })
+    .catch(() => speakWithDeviceVoice(text));
+}

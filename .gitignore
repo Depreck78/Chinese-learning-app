@@ -46,3 +46,6 @@ next-env.d.ts
 /outputs/
 /work/
 *.tsbuildinfo
+
+# Python bytecode (scripts/build-sentence-audio.py)
+__pycache__/

@@ -1,6 +1,6 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
 import { CHARACTERS } from './characters';
-import { sentencesUrl } from './example-sentences';
+import { sentenceAudioIndexUrl, sentencesUrl } from './example-sentences';
 import { allRecordingUrls } from './pronunciation';
 import { LESSONS } from './study-plan';
 
@@ -8,6 +8,7 @@ import { LESSONS } from './study-plan';
 const STROKE_CACHE = 'hanzi-strokes-v2';
 const AUDIO_CACHE = 'hanzi-audio-v2';
 const SENTENCE_CACHE = 'hanzi-sentences-v1';
+const SENTENCE_AUDIO_CACHE = 'hanzi-sentence-audio-v1';
 const DOWNLOAD_CONCURRENCY = 6;
 
 export function strokeDataUrl(character: string) {
@@ -75,8 +76,10 @@ export function useOfflineSupport(online: boolean) {
         ...CHARACTERS.map((entry) => ({ cacheName: STROKE_CACHE, url: strokeDataUrl(entry.character) })),
         ...allRecordingUrls().map((url) => ({ cacheName: AUDIO_CACHE, url })),
         ...LESSONS.map((lesson) => ({ cacheName: SENTENCE_CACHE, url: sentencesUrl(lesson.number) })),
+        // Only the small index of each lesson's recordings; the recordings are saved when first played.
+        ...LESSONS.map((lesson) => ({ cacheName: SENTENCE_AUDIO_CACHE, url: sentenceAudioIndexUrl(lesson.number) })),
       ];
-      const cachesByName = new Map(await Promise.all([STROKE_CACHE, AUDIO_CACHE, SENTENCE_CACHE].map(async (name) => [name, await caches.open(name)] as const)));
+      const cachesByName = new Map(await Promise.all([STROKE_CACHE, AUDIO_CACHE, SENTENCE_CACHE, SENTENCE_AUDIO_CACHE].map(async (name) => [name, await caches.open(name)] as const)));
       const saved = new Set((await Promise.all([...cachesByName.values()].map((cache) => cache.keys()))).flat().map((request) => request.url));
       const missing = files.filter(({ url }) => !saved.has(new URL(url, location.origin).href));
       const total = files.length;

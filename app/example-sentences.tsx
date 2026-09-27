@@ -1,10 +1,36 @@
+import { Volume2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { pronounceSentence } from './pronunciation';
 
 /** [sentence, pinyin per character separated by spaces ('' for punctuation), English, source] */
 type Sentence = [string, string, string, string];
 type LessonSentences = Record<string, Sentence[]>;
 
 export const sentencesUrl = (lessonNumber: number) => `/sentences/${lessonNumber}.json`;
+
+/** Where each sentence of a lesson is recorded: packs of MP3s, and [pack, start, duration] per sentence. */
+type AudioIndex = { packs: string[]; clips: Record<string, [number, number, number]> };
+export const sentenceAudioIndexUrl = (lessonNumber: number) => `/sentence-audio/${lessonNumber}.json`;
+
+const audioIndexes = new Map<number, Promise<AudioIndex | null>>();
+
+function loadAudioIndex(lessonNumber: number) {
+  let request = audioIndexes.get(lessonNumber);
+  if (!request) {
+    // Without an index (offline and never loaded), sentences are read by the device voice.
+    request = fetch(sentenceAudioIndexUrl(lessonNumber))
+      .then((response) => (response.ok ? (response.json() as Promise<AudioIndex>) : null))
+      .catch(() => null);
+    void request.then((index) => { if (!index) audioIndexes.delete(lessonNumber); });
+    audioIndexes.set(lessonNumber, request);
+  }
+  return request;
+}
+
+function sentenceClip(index: AudioIndex | null, text: string) {
+  const clip = index?.clips[text];
+  return clip ? { url: `/sentence-audio/${index.packs[clip[0]]}`, start: clip[1], duration: clip[2] } : null;
+}
 
 const loaded = new Map<number, Promise<LessonSentences>>();
 
@@ -23,14 +49,15 @@ function loadSentences(lessonNumber: number) {
 
 /** Three sentences showing a character used in different situations, with pinyin and English. */
 export function ExampleSentences({ character, lessonNumber }: { character: string; lessonNumber: number }) {
-  const [state, setState] = useState<{ key: string; sentences: Sentence[] | null }>({ key: '', sentences: null });
+  const [state, setState] = useState<{ key: string; sentences: Sentence[] | null; audio: AudioIndex | null }>({ key: '', sentences: null, audio: null });
   const key = `${lessonNumber}:${character}`;
 
   useEffect(() => {
     let current = true;
-    loadSentences(lessonNumber)
-      .then((lesson) => { if (current) setState({ key, sentences: lesson[character] ?? [] }); })
-      .catch(() => { if (current) setState({ key, sentences: [] }); });
+    // The recordings index loads with the sentences: iPhones only play sound started right inside the tap.
+    Promise.all([loadSentences(lessonNumber), loadAudioIndex(lessonNumber)])
+      .then(([lesson, audio]) => { if (current) setState({ key, sentences: lesson[character] ?? [], audio }); })
+      .catch(() => { if (current) setState({ key, sentences: [], audio: null }); });
     return () => { current = false; };
   }, [character, key, lessonNumber]);
 
@@ -46,6 +73,7 @@ export function ExampleSentences({ character, lessonNumber }: { character: strin
             const readings = pinyin.split(' ');
             return (
               <li key={source + text}>
+                <button type="button" className="example-play" onClick={() => pronounceSentence(text, sentenceClip(state.audio, text))} aria-label={`Hear “${text}”`}><Volume2 size={18} /></button>
                 <p className="example-line" lang="zh-CN">
                   {Array.from(text, (part, index) => (
                     <span key={index} className={`example-token ${part === character ? 'target' : ''}`}>
