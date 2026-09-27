@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Check, Mic, Star, Volume2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Eye, EyeOff, Mic, Star, Volume2, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import readingChoices from './reading-choices.json';
 import { lessonCharacters, TRACES_TO_COMPLETE, type ActiveLesson, type Lesson } from './study-plan';
@@ -112,21 +112,54 @@ function readingBlanks(lessons: Lesson[]) {
   return found;
 }
 
+const PINYIN_KEY = 'hanzi-reading-pinyin';
+
+/** Whether readings show pinyin; remembered on this device. */
+function usePinyinShown() {
+  const [shown, setShown] = useState(() => {
+    try {
+      return localStorage.getItem(PINYIN_KEY) !== 'hidden';
+    } catch {
+      return true;
+    }
+  });
+  function toggle() {
+    setShown(!shown);
+    try {
+      localStorage.setItem(PINYIN_KEY, shown ? 'hidden' : 'shown');
+    } catch {
+      // Not remembered, which is fine.
+    }
+  }
+  return [shown, toggle] as const;
+}
+
+function PinyinToggle({ shown, onToggle }: { shown: boolean; onToggle: () => void }) {
+  return (
+    <button type="button" className="pinyin-toggle" onClick={onToggle} aria-pressed={!shown}>
+      {shown ? <EyeOff size={15} /> : <Eye size={15} />}{shown ? 'Hide pinyin' : 'Show pinyin'}
+    </button>
+  );
+}
+
 /**
- * The day's reading text. Gaps not yet `solved` show their number (tap to choose one); once
- * `reading`, every character shows its pinyin and can be tapped to hear it, answers in green.
+ * The day's reading text, with pinyin over every character unless hidden (tap one to hear it).
+ * Gaps not yet `solved` show their number (tap to choose one); filled gaps are in green.
  */
-function ReadingText({ lessons, blanks, solved, current, reading, onSelectGap }: {
+function ReadingText({ lessons, blanks, solved, current, showPinyin, toggle, onSelectGap }: {
   lessons: Lesson[];
   blanks: Map<string, Blank>;
   solved: Set<string>;
   current?: Blank;
-  reading: boolean;
+  showPinyin: boolean;
+  /** Shown in the top-right corner of the first text, when given. */
+  toggle?: React.ReactNode;
   onSelectGap?: (id: string) => void;
 }) {
   return lessons.map((lesson, lessonIndex) => (
-    <article className="reading-text" key={lesson.number}>
-      <h2>{lessons.length > 1 && <span className="label">PART {lessonIndex + 1}</span>}{lesson.title}</h2>
+    <article className={`reading-text ${showPinyin ? '' : 'pinyin-hidden'}`} key={lesson.number}>
+      {lessonIndex === 0 && toggle}
+      <h2 className={lessonIndex === 0 && toggle ? 'beside-toggle' : undefined}>{lessons.length > 1 && <span className="label">PART {lessonIndex + 1}</span>}{lesson.title}</h2>
       {lesson.paragraphs.map(([text, pinyin], paragraphIndex) => {
         const readings = pinyin.split(' ');
         return (
@@ -142,7 +175,7 @@ function ReadingText({ lessons, blanks, solved, current, reading, onSelectGap }:
                   </button>
                 );
               }
-              if (!reading) return <span className="reading-token punctuation" key={position}><span className="token-pinyin" /><span className="token-character">{character}</span></span>;
+              if (!spoken) return <span className="reading-token punctuation" key={position}><span className="token-pinyin" /><span className="token-character">{character}</span></span>;
               return <button type="button" key={position} className={`reading-token ${blank ? 'filled' : ''}`} onClick={() => pronounce(character)} aria-label={`${character}, ${spoken}. Tap to hear it.`}><span className="token-pinyin">{spoken}</span><span className="token-character">{character}</span></button>;
             })}
           </p>
@@ -156,6 +189,7 @@ function ReadingText({ lessons, blanks, solved, current, reading, onSelectGap }:
 export function CompletedReading({ lessons, dayNumber, onBack }: { lessons: Lesson[]; dayNumber: number; onBack: () => void }) {
   const blanks = useMemo(() => readingBlanks(lessons), [lessons]);
   const solved = useMemo(() => new Set(blanks.keys()), [blanks]);
+  const [showPinyin, togglePinyin] = usePinyinShown();
   useEffect(() => { window.scrollTo({ top: 0 }); }, [dayNumber]);
   return (
     <div className="lesson-main">
@@ -166,7 +200,7 @@ export function CompletedReading({ lessons, dayNumber, onBack }: { lessons: Less
           <h1 id="reading-title">Day {dayNumber} reading</h1>
           <p>The text from this day with every gap filled in; the answers are in green. Tap any character to hear it, and read it aloud again for practice.</p>
         </header>
-        <ReadingText lessons={lessons} blanks={blanks} solved={solved} reading />
+        <ReadingText lessons={lessons} blanks={blanks} solved={solved} showPinyin={showPinyin} toggle={<PinyinToggle shown={showPinyin} onToggle={togglePinyin} />} />
       </section>
     </div>
   );
@@ -178,6 +212,7 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
   const [missed, setMissed] = useState<Record<string, string[]>>({});
   const [currentId, setCurrentId] = useState<string | null>(null);
   const [reading, setReading] = useState(false);
+  const [showPinyin, togglePinyin] = usePinyinShown();
 
   const unsolved = [...blanks.values()].filter((blank) => !solved.has(blank.id));
   // The gap being answered: the one tapped, or else the first gap still empty.
@@ -206,7 +241,7 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
           : 'Pick the character that belongs in each numbered gap. Tap a gap to answer it out of order.'}</p>
       </header>
 
-      <ReadingText lessons={lessons} blanks={blanks} solved={solved} current={current} reading={reading} onSelectGap={setCurrentId} />
+      <ReadingText lessons={lessons} blanks={blanks} solved={solved} current={current} showPinyin={showPinyin} toggle={reading ? <PinyinToggle shown={showPinyin} onToggle={togglePinyin} /> : undefined} onSelectGap={setCurrentId} />
 
       {reading ? (
         <footer className="reading-footer read-aloud">
@@ -218,6 +253,7 @@ function ReadingExercise({ lessons, dayNumber, onBack, onFinish }: { lessons: Le
         <>
           {current && (
             <fieldset className="reading-choices">
+              <PinyinToggle shown={showPinyin} onToggle={togglePinyin} />
               <legend><span className="label">GAP {current.number} OF {blanks.size}</span>Which character goes here?</legend>
               <div className="choice-grid">
                 {options.map(([option, optionPinyin]) => {

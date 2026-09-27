@@ -705,3 +705,9 @@ button,input { font:inherit; } button { color:inherit; } button:focus-visible,in
 .plan-read-button { display:flex; flex:0 0 auto; align-items:center; justify-content:center; gap:8px; min-height:46px; padding:0 16px; border:1px solid var(--ink); color:var(--ink); background:var(--cream); font-weight:700; cursor:pointer; }
 .plan-read-button:hover { background:#ead8bf; }
 .reading-return { margin-bottom:18px; }
+/* Small show/hide pinyin button in the top-right corner of the answer panel or the reading text */
+.pinyin-toggle { position:absolute; top:10px; right:10px; z-index:1; display:inline-flex; align-items:center; gap:5px; min-height:30px; padding:0 10px; border:1px solid var(--ink); color:var(--ink); background:var(--cream); font-size:13px; font-weight:700; cursor:pointer; }
+.pinyin-toggle:hover { background:#ead8bf; }
+.reading-text { position:relative; }
+.reading-choices legend,.reading-text h2.beside-toggle { padding-right:124px; }
+.reading-text.pinyin-hidden .token-pinyin { display:none; }
