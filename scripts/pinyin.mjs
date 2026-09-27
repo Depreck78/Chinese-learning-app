@@ -52,7 +52,39 @@ function fixReading(characters, readings, index) {
   }
 }
 
+// Words whose reading pinyin-pro gets wrong: [word, position of the character in it, reading].
+const WORD_READINGS = [
+  // 系 is xì (关系, 系统) except as "to tie" (系上领带).
+  ...['系上', '系着', '系好', '系紧', '系鞋', '系领', '系围', '系安全带'].map((word) => [word, 0, 'jì']),
+  ...['一沓', '两沓', '几沓'].map((word) => [word, 1, 'dá']),
+  ...['撮小胡子', '撮胡子', '撮头发', '撮毛'].map((word) => [word, 0, 'zuǒ']),
+  ...['勒着', '勒紧', '勒住', '勒死'].map((word) => [word, 0, 'lēi']),
+  ...['盛饭', '盛汤', '盛得', '盛一碗'].map((word) => [word, 0, 'chéng']),
+  ['帮你盛', 2, 'chéng'],
+];
+// Words ending in 系 where it stays xì, even before 上 or 着 (关系上).
+const XI_BEFORE = new Set('关联体统派星河阳银谱世直');
+// Characters with one everyday reading that pinyin-pro misses.
+const ALWAYS = new Map([['呗', 'bei'], ['嚣', 'xiāo']]);
+
+function fixWords(characters, readings) {
+  const text = characters.join('');
+  for (const [word, offset, reading] of WORD_READINGS) {
+    for (let at = text.indexOf(word); at !== -1; at = text.indexOf(word, at + 1)) {
+      const index = Array.from(text.slice(0, at)).length + offset;
+      if (characters[index] === '系' && XI_BEFORE.has(characters[index - 1])) continue;
+      readings[index] = reading;
+    }
+  }
+  characters.forEach((character, index) => {
+    if (ALWAYS.has(character)) readings[index] = ALWAYS.get(character);
+    // 粘 is zhān as a verb (粘在一起), nián only for "sticky" (粘稠, 粘米).
+    if (character === '粘') readings[index] = '稠性液土米糊糕'.includes(characters[index + 1] ?? '') ? 'nián' : 'zhān';
+  });
+}
+
 export function fixParticles(characters, readings) {
+  fixWords(characters, readings);
   characters.forEach((character, index) => {
     fixReading(characters, readings, index);
     if (character === '得' && readings[index] === 'dé' && index > 0 && !'获取赢'.includes(characters[index - 1]) && DEGREE_AFTER_DE.has(characters[index + 1])) readings[index] = 'de';
