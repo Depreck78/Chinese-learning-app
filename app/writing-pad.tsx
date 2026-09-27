@@ -1,4 +1,4 @@
-import { Eraser, Pause, Play, RotateCcw, Sparkles } from 'lucide-react';
+import { Eraser, Map as MapIcon, Pause, Play, RotateCcw } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { strokeDataUrl } from './offline';
 
@@ -56,6 +56,9 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
   const [demoPlaying, setDemoPlaying] = useState(false);
   const [feedback, setFeedback] = useState<'miss' | 'traced' | null>(null);
   const frame = useRef<SVGSVGElement>(null);
+  // The stroke being drawn. Kept in a ref as well as state so no points are lost when several
+  // pointer events arrive between renders, which happens a lot with fast strokes on phones.
+  const drawn = useRef<Stroke | null>(null);
   const demoTimer = useRef<number | null>(null);
   const feedbackTimer = useRef<number | null>(null);
   const tracing = Boolean(onTrace && strokeOrder);
@@ -89,16 +92,52 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
     };
   }, [character]);
 
+  // On phones a drawing finger would otherwise start a text selection, often on the buttons under the pad,
+  // or open the long-press menu. Touch listeners must be non-passive to cancel that.
+  useEffect(() => {
+    const pad = frame.current;
+    if (!pad) return;
+    const cancel = (event: Event) => event.preventDefault();
+    pad.addEventListener('touchstart', cancel, { passive: false });
+    pad.addEventListener('touchmove', cancel, { passive: false });
+    pad.addEventListener('contextmenu', cancel);
+    return () => {
+      pad.removeEventListener('touchstart', cancel);
+      pad.removeEventListener('touchmove', cancel);
+      pad.removeEventListener('contextmenu', cancel);
+    };
+  }, []);
+
+  // While a stroke is being drawn, nothing on the page can be selected.
+  const drawing = active !== null;
+  useEffect(() => {
+    if (!drawing) return;
+    const cancel = (event: Event) => event.preventDefault();
+    document.addEventListener('selectstart', cancel);
+    return () => document.removeEventListener('selectstart', cancel);
+  }, [drawing]);
+
+  // A finger that runs past the pad's edge keeps drawing along the edge instead of off the pad,
+  // so overshooting the end of a stroke doesn't make it fail the check.
   function point(event: React.PointerEvent<SVGSVGElement>) {
     const rect = frame.current!.getBoundingClientRect();
-    return { x: ((event.clientX - rect.left) / rect.width) * 100, y: ((event.clientY - rect.top) / rect.height) * 100 };
+    const clamp = (value: number) => Math.min(100, Math.max(0, value));
+    return { x: clamp(((event.clientX - rect.left) / rect.width) * 100), y: clamp(((event.clientY - rect.top) / rect.height) * 100) };
   }
   function start(event: React.PointerEvent<SVGSVGElement>) {
     // Ignore new strokes while a finished trace is being cleared.
+    event.preventDefault();
     if (feedback === 'traced') return;
-    event.currentTarget.setPointerCapture(event.pointerId); setActive([point(event)]);
+    window.getSelection()?.removeAllRanges();
+    event.currentTarget.setPointerCapture(event.pointerId);
+    drawn.current = [point(event)];
+    setActive(drawn.current);
   }
-  function move(event: React.PointerEvent<SVGSVGElement>) { if (active) setActive([...active, point(event)]); }
+  function move(event: React.PointerEvent<SVGSVGElement>) {
+    if (!drawn.current) return;
+    drawn.current = [...drawn.current, point(event)];
+    setActive(drawn.current);
+  }
 
   function showFeedback(kind: 'miss' | 'traced', then?: () => void) {
     if (feedbackTimer.current !== null) window.clearTimeout(feedbackTimer.current);
@@ -106,11 +145,12 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
     feedbackTimer.current = window.setTimeout(() => {
       setFeedback(null);
       then?.();
-    }, kind === 'traced' ? 550 : 900);
+    }, kind === 'traced' ? 1300 : 900);
   }
 
   function end() {
-    const stroke = active;
+    const stroke = drawn.current;
+    drawn.current = null;
     setActive(null);
     if (!stroke?.length) return;
     if (!tracing || !strokeOrder || !onTrace) {
@@ -136,6 +176,10 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
   const medianPoints = (median: [number, number][]) => median
     .map(([x, y]) => `${(x * 0.09765625).toFixed(2)},${(87.890625 - y * 0.09765625).toFixed(2)}`)
     .join(' ');
+  // Real stroke length in pad units. Safari does not reliably honour pathLength on polylines,
+  // so the drawing animation dashes by the measured length instead.
+  const medianLength = (median: [number, number][]) => median
+    .reduce((total, [x, y], index) => index ? total + Math.hypot(x - median[index - 1][0], y - median[index - 1][1]) * 0.09765625 : 0, 0) + 1;
 
   function runStrokeOrderCycle() {
     if (!strokeOrder) return;
@@ -189,7 +233,7 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
                   const labelY = 87.890625 - startY * 0.09765625;
                   return (
                     <g key={index}>
-                      <polyline points={medianPoints(median)} pathLength="1" style={{ animationDelay: `${index * 0.62}s` }} />
+                      <polyline points={medianPoints(median)} style={{ animationDelay: `${index * 0.62}s`, '--stroke-length': medianLength(median).toFixed(2) } as React.CSSProperties} />
                       <circle cx={labelX} cy={labelY} r={index > 8 ? 3.15 : 2.75} />
                       <text x={labelX} y={labelY + 0.2} textAnchor="middle">{index + 1}</text>
                     </g>
@@ -203,7 +247,7 @@ export function WritingPad({ character, onTrace }: { character: string; onTrace?
           {strokes.map((stroke, index) => <path key={index} className="ink-stroke" d={path(stroke)} />)}{active && <path className="ink-stroke" d={path(active)} />}
         </svg>
         <div className="pad-actions">
-          <button className={`tool-button ${guide ? 'active' : ''}`} onClick={() => setGuide(!guide)} aria-pressed={guide}><Sparkles size={17} /> Guide</button>
+          <button className={`tool-button ${guide ? 'active' : ''}`} onClick={() => setGuide(!guide)} aria-pressed={guide}><MapIcon size={17} /> Guide</button>
           <button className={`tool-button ${demoPlaying ? 'active' : ''}`} onClick={toggleStrokeOrder} disabled={!strokeOrder} aria-pressed={demoPlaying}>
             {demoPlaying ? <Pause size={17} fill="currentColor" /> : <Play size={17} fill="currentColor" />}
             {demoPlaying ? 'Pause' : 'Play'}
