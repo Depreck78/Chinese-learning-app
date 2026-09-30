@@ -141,6 +141,31 @@ function buildCurriculum(): CurriculumItem[] {
 const CURRICULUM = buildCurriculum();
 const CHARACTER_BY_ID = new Map(CHARACTERS.map((entry) => [entry.character, entry]));
 
+/** The deck in a random order fixed by `seed`, so it stays put between renders until reshuffled. */
+function shuffleDeck<T>(items: T[], seed: number): T[] {
+  let state = Math.floor(seed * 2 ** 32) || 1;
+  const random = () => {
+    // mulberry32
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 2 ** 32;
+  };
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index--) {
+    const other = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[other]] = [shuffled[other], shuffled[index]];
+  }
+  return shuffled;
+}
+
+/** A new shuffle for a deck, avoiding one that opens with the card just seen. */
+function newReviewSeed(characters: CharacterEntry[], justSeen?: string) {
+  let seed = Math.random();
+  for (let tries = 0; tries < 5 && characters.length > 1 && shuffleDeck(characters, seed)[0]?.character === justSeen; tries++) seed = Math.random();
+  return seed;
+}
+
 function makeReviewDecks(grouping: ReviewGrouping, learnedCharacters: CharacterEntry[], history: StudyHistoryEntry[]): ReviewDeck[] {
   const allDeck: ReviewDeck = {
     id: 'all',
@@ -366,6 +391,8 @@ export default function Home() {
   const [reviewGrouping, setReviewGrouping] = useState<ReviewGrouping>('category');
   const [reviewDeckId, setReviewDeckId] = useState('all');
   const [reviewIndex, setReviewIndex] = useState(0);
+  // Cards come in a new random order each time Review or a deck is opened, and after each full round.
+  const [reviewSeed, setReviewSeed] = useState(0.5);
   const [reviewAnswerShown, setReviewAnswerShown] = useState(false);
   const [reviewTracing, setReviewTracing] = useState(false);
   const reviewTracePanel = useRef<HTMLDivElement>(null);
@@ -422,7 +449,7 @@ export default function Home() {
   const sessionLessons = useMemo(() => activeLesson ? LESSONS.filter((lesson) => activeLesson.lessons.includes(lesson.number)) : [], [activeLesson]);
   const reviewDecks = useMemo(() => makeReviewDecks(reviewGrouping, learnedCharacters, studyHistory), [learnedCharacters, reviewGrouping, studyHistory]);
   const activeReviewDeck = reviewDecks.find((deck) => deck.id === reviewDeckId) ?? reviewDecks[0];
-  const reviewCharacters = activeReviewDeck?.characters ?? [];
+  const reviewCharacters = useMemo(() => shuffleDeck(activeReviewDeck?.characters ?? [], reviewSeed), [activeReviewDeck, reviewSeed]);
   const reviewEntry = reviewCharacters.length ? reviewCharacters[reviewIndex % reviewCharacters.length] : null;
   const activeNavView: NavView = view === 'character' ? characterOrigin : view === 'lesson' || view === 'reading' ? 'study-plan' : view;
 
@@ -490,10 +517,26 @@ export default function Home() {
     setView('study-plan');
   }
 
+  /** Starts the deck over in a new order that doesn't open with the card just seen. */
+  function reshuffleReview(characters = activeReviewDeck?.characters ?? [], justSeen?: string) {
+    setReviewSeed(newReviewSeed(characters, justSeen));
+    setReviewIndex(0);
+    setReviewAnswerShown(false);
+  }
+
   function moveReview(direction: 1 | -1) {
     if (!reviewCharacters.length) return;
-    setReviewIndex((index) => (index + direction + reviewCharacters.length) % reviewCharacters.length);
+    const position = reviewIndex % reviewCharacters.length;
+    // Going past the last card starts a new round in a fresh order.
+    if (direction === 1 && position === reviewCharacters.length - 1) return reshuffleReview(activeReviewDeck?.characters, reviewEntry?.character);
+    setReviewIndex((position + direction + reviewCharacters.length) % reviewCharacters.length);
     setReviewAnswerShown(false);
+  }
+
+  /** Opens a page from the menu or Home; Review always starts in a fresh order. */
+  function openView(next: AppView) {
+    setView(next);
+    if (next === 'review') reshuffleReview();
   }
 
   function toggleReviewTracing() {
@@ -505,14 +548,12 @@ export default function Home() {
   function changeReviewGrouping(grouping: ReviewGrouping) {
     setReviewGrouping(grouping);
     setReviewDeckId('all');
-    setReviewIndex(0);
-    setReviewAnswerShown(false);
+    reshuffleReview();
   }
 
   function selectReviewDeck(deckId: string) {
     setReviewDeckId(deckId);
-    setReviewIndex(0);
-    setReviewAnswerShown(false);
+    reshuffleReview();
   }
 
   const sampleExamples = examples[item.character] ?? [{ word: item.character, pinyin: item.pinyin, meaning: item.definition }];
@@ -533,7 +574,7 @@ export default function Home() {
       </header>
 
       <SidebarProvider className={`workspace ${menuOpen ? 'menu-open' : ''}`} style={{ '--sidebar-width': '250px' } as React.CSSProperties}>
-        <AppNavigation activeView={activeNavView} avatar={account.session?.avatar ?? null} admin={account.session?.admin === true} onNavigate={(nextView) => { setView(nextView); setMenuOpen(false); if (nextView === 'review') setReviewAnswerShown(false); }} />
+        <AppNavigation activeView={activeNavView} avatar={account.session?.avatar ?? null} admin={account.session?.admin === true} onNavigate={(nextView) => { openView(nextView); setMenuOpen(false); }} />
         {menuOpen && <button className="menu-backdrop" onClick={() => setMenuOpen(false)} aria-label="Close menu" tabIndex={-1} />}
 
         {/* Stats is owner-only; anyone else (or an owner who was signed out) sees Home instead. */}
@@ -547,7 +588,7 @@ export default function Home() {
             resuming={Boolean(activeLesson && activeLesson.lessons.join() === todaysLessons[studyMode].map((lesson) => lesson.number).join())}
             username={account.session?.username ?? null}
             onStartLesson={() => startLesson(studyMode)}
-            onNavigate={setView}
+            onNavigate={openView}
             onOpenCharacter={(entry) => choose(entry, 'home')}
           />
         )}
