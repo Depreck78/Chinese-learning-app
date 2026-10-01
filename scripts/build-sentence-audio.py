@@ -5,7 +5,8 @@ sentences of CHARS_PER_PACK characters each, back to back with a short pause bet
 index maps each sentence's text to [pack, start, duration] in seconds, and the app plays just that
 stretch. Packs keep the file count small: one file per sentence (9,000+) is more than local
 `wrangler dev` can handle. Pack names include a hash of their contents, so browsers can cache them
-forever; a pack is only re-recorded when its sentences change.
+forever; a pack is only re-recorded when its sentences or their pinyin change (the index keeps a
+hash of each pack's sentences and pinyin under "readings").
 
 The voice is Kokoro-82M v1.1-zh (Apache-2.0, https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh),
 run with ONNX Runtime. The pinyin shown in the app is fed to it, so polyphones are read the same way
@@ -81,7 +82,9 @@ class PinyinFrontend:
         parts = [SPOKEN.get(character, (character, reading)) for character, reading in zip(text, pinyin.split(' '))]
         text = ''.join(character for character, _ in parts)
         pinyin = ' '.join(reading for character, reading in parts if character)
-        readings = [reading for character, reading in zip(text, pinyin.split(' ')) if HANZI.match(character)]
+        # Erhua 儿 is written r (哪儿 nǎ r); Kokoro's frontend expects er and joins it to the syllable before.
+        readings = ['er' if reading == 'r' else reading
+                    for character, reading in zip(text, pinyin.split(' ')) if HANZI.match(character)]
         self.queue = readings if len(readings) == len(HANZI.findall(text)) and all(readings) else None
         result, _ = self.g2p(text)
         return result
@@ -178,8 +181,9 @@ def record_pack(voice, sentences):
     return encode_mp3(np.concatenate(parts)), timings
 
 
-def pack_texts(index, pack):
-    return [text for text, (number, *_) in index['clips'].items() if number == pack]
+def readings_hash(sentences):
+    """Changes whenever a sentence or its pinyin does, so a corrected reading gets re-recorded."""
+    return hashlib.sha1('\n'.join(f'{text}\t{pinyin}' for text, pinyin in sentences).encode()).hexdigest()[:12]
 
 
 def main():
@@ -223,14 +227,18 @@ def main():
                 old = json.load(file)
         except (FileNotFoundError, ValueError):
             old = {'packs': [], 'clips': {}}
-        index = {'packs': [], 'clips': {}}
+        index = {'packs': [], 'readings': [], 'clips': {}}
         for number, sentences in enumerate(packs):
-            texts = [text for text, _ in sentences]
-            unchanged = (number < len(old['packs']) and pack_texts(old, number) == texts
+            readings = readings_hash(sentences)
+            # A sentence shared by two packs is listed in clips under the last one only, so compare
+            # packs by their readings hash rather than by the texts in clips.
+            unchanged = (number < len(old['packs']) and number < len(old.get('readings', []))
+                         and old['readings'][number] == readings
                          and os.path.exists(f"{args.out}/{old['packs'][number]}"))
+            index['readings'].append(readings)
             if unchanged:
                 index['packs'].append(old['packs'][number])
-                for text in texts:
+                for text, _ in sentences:
                     index['clips'][text] = old['clips'][text]
                 kept += 1
                 continue
